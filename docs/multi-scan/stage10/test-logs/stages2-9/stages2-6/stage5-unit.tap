@@ -1,0 +1,215 @@
+TAP version 13
+# Subtest: configuration and tenant paths fail closed
+ok 1 - configuration and tenant paths fail closed
+  ---
+  duration_ms: 2.389368
+  ...
+# Subtest: model and processor manifests reject CLIP-like assumptions
+ok 2 - model and processor manifests reject CLIP-like assumptions
+  ---
+  duration_ms: 0.378027
+  ...
+# Subtest: artifact size/hash/missing-file and symlink checks
+ok 3 - artifact size/hash/missing-file and symlink checks
+  ---
+  duration_ms: 10.443536
+  ...
+# Subtest: all six bicubic fixtures exactly match isolated Pillow 11.1.0
+ok 4 - all six bicubic fixtures exactly match isolated Pillow 11.1.0
+  ---
+  duration_ms: 220.619839
+  ...
+# Subtest: supported formats yield RGB normalized tensors without CLIP normalization
+ok 5 - supported formats yield RGB normalized tensors without CLIP normalization
+  ---
+  duration_ms: 80.413163
+  ...
+# Subtest: invalid, truncated, unsupported and oversized images rejected
+ok 6 - invalid, truncated, unsupported and oversized images rejected
+  ---
+  duration_ms: 36.172147
+  ...
+# Subtest: EXIF rotation and animated image rejection
+ok 7 - EXIF rotation and animated image rejection
+  ---
+  duration_ms: 29.907007
+  ...
+# Subtest: L2 normalization validates dimensions, NaN, Infinity and zero norm
+ok 8 - L2 normalization validates dimensions, NaN, Infinity and zero norm
+  ---
+  duration_ms: 0.333623
+  ...
+# Subtest: mocked CPU session initializes once, selects pooled output and closes
+ok 9 - mocked CPU session initializes once, selects pooled output and closes
+  ---
+  duration_ms: 30.150723
+  ...
+# Subtest: failed model initialization retries and metadata mismatch is rejected
+ok 10 - failed model initialization retries and metadata mismatch is rejected
+  ---
+  duration_ms: 38.101583
+  ...
+# Subtest: malformed pooled outputs and native inference failures fail closed
+ok 11 - malformed pooled outputs and native inference failures fail closed
+  ---
+  duration_ms: 34.584236
+  ...
+# Subtest: native inference retains its capacity slot after cancellation until completion
+ok 12 - native inference retains its capacity slot after cancellation until completion
+  ---
+  duration_ms: 8.971032
+  ...
+# Subtest: pre-aborted and closed workers never load a session
+ok 13 - pre-aborted and closed workers never load a session
+  ---
+  duration_ms: 3.12562
+  ...
+# Subtest: unconfigured telemetry isolation fails before native runtime import
+ok 14 - unconfigured telemetry isolation fails before native runtime import
+  ---
+  duration_ms: 11.164386
+  ...
+# Subtest: real HNSW indexes multiple references and returns distinct stable SKU candidates
+ok 15 - real HNSW indexes multiple references and returns distinct stable SKU candidates
+  ---
+  duration_ms: 86.424887
+  ...
+# Subtest: topK validation and reference oversampling collapse duplicate SKU references
+ok 16 - topK validation and reference oversampling collapse duplicate SKU references
+  ---
+  duration_ms: 45.044872
+  ...
+# Subtest: model fingerprint prevents CLIP/DINO or preprocessing-version mixing
+ok 17 - model fingerprint prevents CLIP/DINO or preprocessing-version mixing
+  ---
+  duration_ms: 30.903576
+  ...
+# Subtest: authorization rejects foreign stores/packages and invalid path segments
+ok 18 - authorization rejects foreign stores/packages and invalid path segments
+  ---
+  duration_ms: 29.213957
+  ...
+# Subtest: foreign catalog ownership, duplicate SKUs/references and invalid IDs are rejected
+ok 19 - foreign catalog ownership, duplicate SKUs/references and invalid IDs are rejected
+  ---
+  duration_ms: 23.794176
+  ...
+# Subtest: missing/corrupt reference images are reported while good references remain searchable
+ok 20 - missing/corrupt reference images are reported while good references remain searchable
+  ---
+  duration_ms: 31.345308
+  ...
+# Subtest: empty catalogs and catalogs with only missing images publish valid empty indexes
+ok 21 - empty catalogs and catalogs with only missing images publish valid empty indexes
+  ---
+  duration_ms: 57.238631
+  ...
+# Subtest: immutable generation publication preserves old mappings and active handles
+ok 22 - immutable generation publication preserves old mappings and active handles
+  ---
+  duration_ms: 64.587949
+  ...
+# Subtest: cold loading verifies native labels and reference mappings
+ok 23 - cold loading verifies native labels and reference mappings
+  ---
+  duration_ms: 34.186108
+  ...
+# Subtest: binary, mapping and manifest corruption are rejected before native loading
+ok 24 - binary, mapping and manifest corruption are rejected before native loading
+  ---
+  duration_ms: 92.812137
+  ...
+# Subtest: incomplete generations and corrupt pointers fail closed
+ok 25 - incomplete generations and corrupt pointers fail closed
+  ---
+  duration_ms: 31.299705
+  ...
+# Subtest: previous generation recovery is explicit and rollback atomically restores it
+ok 26 - previous generation recovery is explicit and rollback atomically restores it
+  ---
+  duration_ms: 74.978181
+  ...
+# Subtest: rollback refuses an invalid previous generation
+ok 27 - rollback refuses an invalid previous generation
+  ---
+  duration_ms: 54.966271
+  ...
+# Subtest: concurrent builds are rejected and stale expected generations cannot publish
+ok 28 - concurrent builds are rejected and stale expected generations cannot publish
+  ---
+  duration_ms: 36.252853
+  ...
+# Subtest: publication failure retains old pointer and never deletes the active generation
+ok 29 - publication failure retains old pointer and never deletes the active generation
+  ---
+  duration_ms: 58.128994
+  ...
+# Subtest: symlinked tenant directories are rejected
+ok 30 - symlinked tenant directories are rejected
+  ---
+  duration_ms: 2.087547
+  ...
+# Subtest: cached generation count is bounded and forced audits verify disk again
+ok 31 - cached generation count is bounded and forced audits verify disk again
+  ---
+  duration_ms: 105.983981
+  ...
+# Subtest: recognition authorizes before embedding and returns no authoritative prices
+ok 32 - recognition authorizes before embedding and returns no authoritative prices
+  ---
+  duration_ms: 34.927175
+  ...
+# Subtest: module imports do not load legacy scanner controllers, databases or native ONNX
+ok 33 - module imports do not load legacy scanner controllers, databases or native ONNX
+  ---
+  duration_ms: 10.047869
+  ...
+# Subtest: searches stay on the validated active generation while another build is pending
+ok 34 - searches stay on the validated active generation while another build is pending
+  ---
+  duration_ms: 60.116399
+  ...
+# Subtest: generation contents cannot be transplanted between tenant directories
+ok 35 - generation contents cannot be transplanted between tenant directories
+  ---
+  duration_ms: 33.106672
+  ...
+# Subtest: SKU/reference mappings remain stable when snapshot ordering changes
+ok 36 - SKU/reference mappings remain stable when snapshot ordering changes
+  ---
+  duration_ms: 58.907831
+  ...
+# Subtest: model failures during a rebuild leave the published index unchanged
+ok 37 - model failures during a rebuild leave the published index unchanged
+  ---
+  duration_ms: 38.72609
+  ...
+# Subtest: semantically identical model keys do not depend on JSON property order
+ok 38 - semantically identical model keys do not depend on JSON property order
+  ---
+  duration_ms: 32.18662
+  ...
+# Subtest: invalid recognition topK is rejected without consuming embedding CPU
+ok 39 - invalid recognition topK is rejected without consuming embedding CPU
+  ---
+  duration_ms: 1.941709
+  ...
+# Subtest: DINO store rejects SigLIP, CLIP and incorrect feature dimensions
+ok 40 - DINO store rejects SigLIP, CLIP and incorrect feature dimensions
+  ---
+  duration_ms: 0.200811
+  ...
+# Subtest: DINO namespace is always appended to unscoped caller roots
+ok 41 - DINO namespace is always appended to unscoped caller roots
+  ---
+  duration_ms: 0.091905
+  ...
+1..41
+# tests 41
+# suites 0
+# pass 41
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1647.157252

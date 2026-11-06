@@ -1,0 +1,47 @@
+[
+  {
+    "path": "routes/user.js",
+    "sha256": "a8c092ffc22484b7d5cfd0b876ac160a04a2343d12bedea0d39a56a198216ddd",
+    "artifact": "rollback-preimages/routes__user.js.txt"
+  },
+  {
+    "path": "routes/appuser.js",
+    "sha256": "4914854967c2b0d2139e285a48790cc2b2c40b8c2216746082f83fc9e35e2339",
+    "artifact": "rollback-preimages/routes__appuser.js.txt"
+  },
+  {
+    "path": "routes/estore.js",
+    "sha256": "5af12554d439319a7cf3b480c6168ea937a19a7ecc9b44b25376a0d699e2aefe",
+    "artifact": "rollback-preimages/routes__estore.js.txt"
+  },
+  {
+    "path": "routes/order.js",
+    "sha256": "cab1f734e9b34b2585d3f8777b42325ba934412a7d6a639925dad61b796664bd",
+    "artifact": "rollback-preimages/routes__order.js.txt"
+  },
+  {
+    "path": "routes/withdraw.js",
+    "sha256": "897e7827fbd4e8cb63b7469798de5393f4e98f7ada0d3e29eb5c6abc92951a85",
+    "artifact": "rollback-preimages/routes__withdraw.js.txt"
+  },
+  {
+    "path": "controllers/user.js",
+    "sha256": "2a09aff9e6dc78e5d5365e71ce9f973865d0cb17e3bf6202027a2660f6b6bcb6",
+    "artifact": "rollback-preimages/controllers__user.js.txt"
+  },
+  {
+    "path": "controllers/order.js",
+    "sha256": "44591ff2e486deebfecbd853d7a57280b7548a27b505804cf187da8590a15008",
+    "artifact": "rollback-preimages/controllers__order.js.txt"
+  },
+  {
+    "path": "controllers/app/order.js",
+    "sha256": "69e13e320f64ee88de0af05a36860ca2b784a2fe8bbde8b3d01be2092d26260b",
+    "artifact": "rollback-preimages/controllers__app__order.js.txt"
+  },
+  {
+    "path": "routes/payment.js",
+    "sha256": "dcb59b7c6ed941ac3e0f84c103f03014eac57d577e4488e50cb678f870a8a71f",
+    "artifact": "rollback-preimages/routes__payment.js.txt"
+  }
+]

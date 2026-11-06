@@ -1,0 +1,14 @@
+{
+  "exact_patch_applied": true,
+  "original_sha256": "f4948acc53c4e6d6b2029e8896bd8ef21b5e33516a47c31bff44ab7736440c08",
+  "result_sha256": "469c88c14c7472b59aa145e74c785d8ec85adbd1540a8be3fcffd0f98cd99836",
+  "rollback_artifact": "docs/multi-scan/stage11-b/batch-a-implementation/routes-multi-scan-original-20261022.txt",
+  "modules": {
+    "services/multi-scan/stage11/session-config.js": "833b2b7aaf5f8100da410ab8dce51c9d7b5e49f7b7c488c9c62de7d719e39f2e",
+    "services/multi-scan/stage11/credential-repository.js": "4b8b78e9271aa8738d24df03c4d405d82bdfee463495e024a8b0587680f4c924",
+    "services/multi-scan/stage11/session-service.js": "64da81d5cca96822a2d7b7887997679ca3b1457c1e8d29f5fd410ff08c42635c",
+    "services/multi-scan/stage11/session-handler.js": "dc3692dcc8bd22cf334f9756844946e3a3162f00a218f54fedf6943c133d052d",
+    "services/multi-scan/stage11/session-factory.js": "4da44715ffbf65683baa0011c5cbc2a4eeb0171f5e924dadec7c8811e051d13e"
+  },
+  "syntax_checks_passed": 6
+}

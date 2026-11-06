@@ -1,0 +1,204 @@
+TAP version 13
+# Subtest: default disabled gate and unrelated legacy route
+ok 1 - default disabled gate and unrelated legacy route
+  ---
+  duration_ms: 11.837399
+  ...
+# Subtest: invalid optional env cannot break default route import
+ok 2 - invalid optional env cannot break default route import
+  ---
+  duration_ms: 4.4001
+  ...
+# Subtest: missing, forged, expired and unsigned JWTs rejected
+ok 3 - missing, forged, expired and unsigned JWTs rejected
+  ---
+  duration_ms: 8.8877
+  ...
+# Subtest: JWT role claims cannot grant store membership
+ok 4 - JWT role claims cannot grant store membership
+  ---
+  duration_ms: 2.0378
+  ...
+# Subtest: store, package and customer isolation
+ok 5 - store, package and customer isolation
+  ---
+  duration_ms: 6.939399
+  ...
+# Subtest: unconfigured tenant adapter fails closed
+ok 6 - unconfigured tenant adapter fails closed
+  ---
+  duration_ms: 1.0239
+  ...
+# Subtest: authenticated readiness is honest and privileged rebuild denied
+ok 7 - authenticated readiness is honest and privileged rebuild denied
+  ---
+  duration_ms: 3.3426
+  ...
+# Subtest: tenant adapter timeout returns bounded error
+ok 8 - tenant adapter timeout returns bounded error
+  ---
+  duration_ms: 20.477399
+  ...
+# Subtest: main missing isolated runtime gives explicit 503
+ok 9 - main missing isolated runtime gives explicit 503
+  ---
+  duration_ms: 2.5208
+  ...
+# Subtest: multipart enforcement, missing photo and wrong field
+ok 10 - multipart enforcement, missing photo and wrong field
+  ---
+  duration_ms: 7.4373
+  ...
+# Subtest: actual JPEG PNG WebP decode and MIME mismatch validation
+ok 11 - actual JPEG PNG WebP decode and MIME mismatch validation
+  ---
+  duration_ms: 24.219898
+  ...
+# Subtest: EXIF orientation is applied before coordinates
+ok 12 - EXIF orientation is applied before coordinates
+  ---
+  duration_ms: 9.3924
+  ...
+# Subtest: pixel, dimension and multipart byte limits
+ok 13 - pixel, dimension and multipart byte limits
+  ---
+  duration_ms: 4.8183
+  ...
+# Subtest: extra multipart fields rejected
+ok 14 - extra multipart fields rejected
+  ---
+  duration_ms: 1.9093
+  ...
+# Subtest: scan output requires review and filters foreign candidates and metadata
+ok 15 - scan output requires review and filters foreign candidates and metadata
+  ---
+  duration_ms: 4.803599
+  ...
+# Subtest: unknowns and empty detections are valid; malformed boxes and duplicates rejected
+ok 16 - unknowns and empty detections are valid; malformed boxes and duplicates rejected
+  ---
+  duration_ms: 0.3527
+  ...
+# Subtest: scan integration timeout and unhandled error do not leak details
+ok 17 - scan integration timeout and unhandled error do not leak details
+  ---
+  duration_ms: 26.126699
+  ...
+# Subtest: concurrent scan rejected before another image decode
+ok 18 - concurrent scan rejected before another image decode
+  ---
+  duration_ms: 4.4258
+  ...
+# Subtest: confirmation rejects invalid quantities, duplicates and browser prices
+ok 19 - confirmation rejects invalid quantities, duplicates and browser prices
+  ---
+  duration_ms: 0.5176
+  ...
+# Subtest: confirmation uses trusted fresh records and never mutates cart
+ok 20 - confirmation uses trusted fresh records and never mutates cart
+  ---
+  duration_ms: 73.855796
+  ...
+# Subtest: confirmation rejects foreign/deactivated products and malformed JSON
+ok 21 - confirmation rejects foreign/deactivated products and malformed JSON
+  ---
+  duration_ms: 2.4502
+  ...
+# Subtest: internal missing, forged, expired, wrong route and wrong tenant capabilities rejected
+ok 22 - internal missing, forged, expired, wrong route and wrong tenant capabilities rejected
+  ---
+  duration_ms: 4.4829
+  ...
+# Subtest: internal readiness, replay prevention, admin restriction and body binding
+ok 23 - internal readiness, replay prevention, admin restriction and body binding
+  ---
+  duration_ms: 58.495097
+  ...
+# Subtest: internal valid upload returns model unavailable without fabricated inference
+ok 24 - internal valid upload returns model unavailable without fabricated inference
+  ---
+  duration_ms: 12.275999
+  ...
+# Subtest: route auto-discovery and inactive imports preserve existing registrations
+not ok 25 - route auto-discovery and inactive imports preserve existing registrations
+  ---
+  duration_ms: 7.4827
+  location: '/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/tests/multi-scan/stage2.test.js:199:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    
+      [
+        '/ai/multi-scan/confirm',
+        '/ai/multi-scan/index/rebuild',
+        '/ai/multi-scan/index/status',
+        '/ai/multi-scan/scan',
+    +   '/ai/multi-scan/session',
+        '/ai/multi-scan/status'
+      ]
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    0: '/ai/multi-scan/confirm'
+    1: '/ai/multi-scan/index/rebuild'
+    2: '/ai/multi-scan/index/status'
+    3: '/ai/multi-scan/scan'
+    4: '/ai/multi-scan/status'
+  actual:
+    0: '/ai/multi-scan/confirm'
+    1: '/ai/multi-scan/index/rebuild'
+    2: '/ai/multi-scan/index/status'
+    3: '/ai/multi-scan/scan'
+    4: '/ai/multi-scan/session'
+    5: '/ai/multi-scan/status'
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/tests/multi-scan/stage2.test.js:206:9)
+    Test.runInAsyncScope (node:async_hooks:203:9)
+    Test.run (node:internal/test_runner/test:631:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:374:18)
+    Test.postRun (node:internal/test_runner/test:715:19)
+    Test.run (node:internal/test_runner/test:673:12)
+    process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    async Test.processPendingSubtests (node:internal/test_runner/test:374:7)
+  ...
+# Subtest: incomplete upload times out with a clear error
+ok 26 - incomplete upload times out with a clear error
+  ---
+  duration_ms: 22.537699
+  ...
+# Subtest: internal image digest is bound to the actual uploaded bytes
+ok 27 - internal image digest is bound to the actual uploaded bytes
+  ---
+  duration_ms: 3.316
+  ...
+# Subtest: admin rebuild and index status responses are validated and sanitized
+ok 28 - admin rebuild and index status responses are validated and sanitized
+  ---
+  duration_ms: 2.9069
+  ...
+# Subtest: a scan must be recorded against its tenant before returning a scanId
+ok 29 - a scan must be recorded against its tenant before returning a scanId
+  ---
+  duration_ms: 9.178599
+  ...
+# Subtest: corrupt/truncated image data and animated inputs are rejected
+ok 30 - corrupt/truncated image data and animated inputs are rejected
+  ---
+  duration_ms: 4.4204
+  ...
+# Subtest: JSON limit survives the existing server global parser
+ok 31 - JSON limit survives the existing server global parser
+  ---
+  duration_ms: 1.295
+  ...
+1..31
+# tests 31
+# suites 0
+# pass 30
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 356.806383

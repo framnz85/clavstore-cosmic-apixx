@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "endpoint": "127.0.0.1:27017",
+  "database": "cosmic_scanner_local_test",
+  "storeId": "6aea21f9b2f055c904c7ba16",
+  "products": [
+    {
+      "labSkuId": "lab-five-milo",
+      "title": "Nestlé Milo powdered choco malt milk drink 24g",
+      "variantName": "Powdered Choco Malt Milk Drink",
+      "_id": "6aea21f9b2f055c904c7ba17",
+      "customid": "SCANNER-LOCAL-TEST-lab-five-milo"
+    },
+    {
+      "labSkuId": "lab-five-bearbrand",
+      "title": "Bear Brand Fortified powdered milk drink 33g",
+      "variantName": "Fortified Swak Pack",
+      "_id": "6aea21f9b2f055c904c7ba18",
+      "customid": "SCANNER-LOCAL-TEST-lab-five-bearbrand"
+    },
+    {
+      "labSkuId": "lab-five-luckyme-beef",
+      "title": "Lucky Me Beef Na Beef instant noodles 55g",
+      "variantName": "Beef Na Beef",
+      "_id": "6aea21f9b2f055c904c7ba19",
+      "customid": "SCANNER-LOCAL-TEST-lab-five-luckyme-beef"
+    },
+    {
+      "labSkuId": "lab-five-ligo-sardines",
+      "title": "Ligo Sardines in Tomato Sauce 155g",
+      "variantName": "In Tomato Sauce",
+      "_id": "6aea21f9b2f055c904c7ba1a",
+      "customid": "SCANNER-LOCAL-TEST-lab-five-ligo-sardines"
+    },
+    {
+      "labSkuId": "lab-five-colgate-multipack",
+      "title": "Colgate Fresh Confidence toothpaste multipack",
+      "variantName": "Cool Menthol Fresh with Cooling Crystals",
+      "_id": "6aea21f9b2f055c904c7ba1b",
+      "customid": "SCANNER-LOCAL-TEST-lab-five-colgate-multipack"
+    }
+  ]
+}

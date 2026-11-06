@@ -1,0 +1,14 @@
+--- a/dbconnect/gratis.js
++++ b/dbconnect/gratis.js
+@@ -4,9 +4,9 @@
+ 
+ try {
+   conn = mongoose.createConnection(process.env.GRATIS_DATABASE);
+-  console.log(`DB CONNECTED TO ${process.env.GRATIS_DATABASE}`);
++  console.log("DB connection initialization requested");
+ } catch (err) {
+-  console.log(`DB CONNECTION ERR ${err}`);
++  console.log("DB connection initialization failed");
+ }
+ 
+ module.exports = conn;

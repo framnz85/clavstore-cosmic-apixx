@@ -1,0 +1,130 @@
+TAP version 13
+# Subtest: full secure mocked composition returns current price after inference, IDs and model generations
+ok 1 - full secure mocked composition returns current price after inference, IDs and model generations
+  ---
+  duration_ms: 30.317807
+  ...
+# Subtest: quantity grouping requires explicit cashier decisions and separates exact variants
+ok 2 - quantity grouping requires explicit cashier decisions and separates exact variants
+  ---
+  duration_ms: 0.596538
+  ...
+# Subtest: unknown remains separate and explicitly excluded
+ok 3 - unknown remains separate and explicitly excluded
+  ---
+  duration_ms: 0.119608
+  ...
+# Subtest: inactive current product cannot survive vector suggestion
+ok 4 - inactive current product cannot survive vector suggestion
+  ---
+  duration_ms: 2.934084
+  ...
+# Subtest: missing SKU is rejected without silently promoting another SKU
+ok 5 - missing SKU is rejected without silently promoting another SKU
+  ---
+  duration_ms: 2.693969
+  ...
+# Subtest: foreign catalog product returned by a faulty adapter fails closed
+ok 6 - foreign catalog product returned by a faulty adapter fails closed
+  ---
+  duration_ms: 1.966324
+  ...
+# Subtest: forged JWT is rejected before inference
+ok 7 - forged JWT is rejected before inference
+  ---
+  duration_ms: 0.759248
+  ...
+# Subtest: expired JWT is rejected before inference
+ok 8 - expired JWT is rejected before inference
+  ---
+  duration_ms: 0.526333
+  ...
+# Subtest: cross-store and package access are rejected
+ok 9 - cross-store and package access are rejected
+  ---
+  duration_ms: 0.752347
+  ...
+# Subtest: invalid encoded image container is rejected
+ok 10 - invalid encoded image container is rejected
+  ---
+  duration_ms: 0.741047
+  ...
+# Subtest: empty detections preserve review-only flags
+ok 11 - empty detections preserve review-only flags
+  ---
+  duration_ms: 1.74591
+  ...
+# Subtest: network/service failure does not become catalog authority
+ok 12 - network/service failure does not become catalog authority
+  ---
+  duration_ms: 0.79715
+  ...
+# Subtest: service timeout fails closed
+ok 13 - service timeout fails closed
+  ---
+  duration_ms: 10.96849
+  ...
+# Subtest: duplicate submissions and concurrent scans are bounded
+ok 14 - duplicate submissions and concurrent scans are bounded
+  ---
+  duration_ms: 2.656567
+  ...
+# Subtest: resource limits reject oversized photo and 20-object native request
+ok 15 - resource limits reject oversized photo and 20-object native request
+  ---
+  duration_ms: 1.030765
+  ...
+# Subtest: stale model index revisions cannot be fused
+ok 16 - stale model index revisions cannot be fused
+  ---
+  duration_ms: 1.193475
+  ...
+# Subtest: missing pinned model is rejected without native inference
+ok 17 - missing pinned model is rejected without native inference
+  ---
+  duration_ms: 8.383727
+  ...
+# Subtest: corrupt index checksum cannot bypass index verification
+ok 18 - corrupt index checksum cannot bypass index verification
+  ---
+  duration_ms: 9.166877
+  ...
+# Subtest: partial inference failure becomes an explicitly unknown result with no candidates
+ok 19 - partial inference failure becomes an explicitly unknown result with no candidates
+  ---
+  duration_ms: 605.078962
+  ...
+# Subtest: partial adapter never swallows security failures
+ok 20 - partial adapter never swallows security failures
+  ---
+  duration_ms: 0.249116
+  ...
+# Subtest: frozen scan pipeline propagates crop IDs and stops at ten crops
+ok 21 - frozen scan pipeline propagates crop IDs and stops at ten crops
+  ---
+  duration_ms: 0.903457
+  ...
+# Subtest: fresh review uses current wholesale price for total existing cart quantity
+ok 22 - fresh review uses current wholesale price for total existing cart quantity
+  ---
+  duration_ms: 0.992162
+  ...
+# Subtest: fresh review rejects stale cart, missing products and insufficient total stock
+ok 23 - fresh review rejects stale cart, missing products and insufficient total stock
+  ---
+  duration_ms: 1.11827
+  ...
+# Subtest: partial crop failure remains an unknown object through secure scan and current catalog resolution
+ok 24 - partial crop failure remains an unknown object through secure scan and current catalog resolution
+  ---
+  duration_ms: 9.343788
+  ...
+1..24
+# tests 24
+# suites 0
+# pass 24
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 703.827174

@@ -1,0 +1,59 @@
+{
+  "existing_file_count": 106823,
+  "unchanged_symlinks": 88,
+  "changed_existing_files": 0,
+  "missing_existing_files": 0,
+  "unrelated_changes": [],
+  "new_document_count": 12,
+  "new_documentation": [
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-preview/AUTH-MODULE-SPEC.md",
+      "sha256": "b09a0fc22227ed79481f3a7b2b702c434d6c2ab2456f9fe4edb2696b1a7c2337"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-preview/BASELINE-20261022.json.gz",
+      "sha256": "9cd10c737bca5e4820ab867ca567424dfe984ac2f2bdac75dc570bd60838132a"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-preview/BATCH-A-PREVIEW.md",
+      "sha256": "9199727022d0c984facfdbd0267fc0fd44a240ec97f59f49919af4f025bf048a"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-preview/FINAL-AUDIT-20261022.json.gz",
+      "sha256": "0436d06e153beb61f9cd667006da089a0cbbab7c4f541b763fd16854dc47cb51"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-preview/INTEGRITY-REPORT.md",
+      "sha256": "ded91741b73f6b841a89d363a7771f0277e48920d5e5ee6684a71e8db9bb1107"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-preview/JWT-COMPATIBILITY.md",
+      "sha256": "5d0776156d7ecd5320d5205225e5b00155be52808cf819e68da4ae180b8ec9a2"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-preview/PREVIEW-MANIFEST.json",
+      "sha256": "bb93af59b5fc31a4c8f19aa1cc38f927b4e7ff3e7ab2447974536254d596a27d"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-preview/ROLLBACK-PLAN.md",
+      "sha256": "60730b7a606bd82c5860d5eea6d75fe4349adf015cab67af13602b8d0481e340"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-preview/ROUTE-PATCH.diff",
+      "sha256": "afaf590d2d30560dee6705c1b6fa91bb80ee758d4e2f082b28cc03156426f4f8"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-preview/SECURITY-TEST-PLAN.md",
+      "sha256": "d071b453b51b83ef6897fcfaa60d5406406774598d60d71bfab961ed573a6d7f"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-preview/VALIDATION.json",
+      "sha256": "9aa993f62bd948c5a6e3967fbf395647bcda8ba7c60efbc9ba202a9d3770497a"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-preview/INVENTORY.json",
+      "sha256": null,
+      "reason": "self-referential inventory boundary"
+    }
+  ]
+}

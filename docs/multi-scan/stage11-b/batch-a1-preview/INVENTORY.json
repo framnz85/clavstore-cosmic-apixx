@@ -1,0 +1,38 @@
+{
+  "unchanged_existing_files": 106872,
+  "unchanged_symlinks": 88,
+  "modified_existing_files": [],
+  "unrelated_changes": [],
+  "new_document_count": 7,
+  "new_documentation": [
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-preview/BASELINE.json.gz",
+      "sha256": "802403e4ddfceb5e9907870f4a538c3db6ff32e27e5412c257c085eb1224a6f1"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-preview/EVIDENCE.json",
+      "sha256": "219895537390ff9d874c80e82806a14ef365ea616b26f828588df0a776fe0b5b"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-preview/FINAL-AUDIT.json.gz",
+      "sha256": "76d746653afcb235f8f255b5555a6a390b845c2d1de00ee325e78263127982c4"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-preview/INTEGRITY-REPORT.md",
+      "sha256": "13bf0dcf230f57a9e68ec0826b966145d133a9d3be7cbc8250b9328329770b7e"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-preview/REVIEW.md",
+      "sha256": "736078491a5126743b372911078d00498af98a91c9958910b5a057fefaf3d94e"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-preview/TEST-PATCH.diff",
+      "sha256": "16c9e4b710480dd75121756c9d4ffd59059222d2d5e752d9bd7c695a5dd1e94c"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-preview/INVENTORY.json",
+      "sha256": null,
+      "reason": "self-referential inventory boundary"
+    }
+  ]
+}

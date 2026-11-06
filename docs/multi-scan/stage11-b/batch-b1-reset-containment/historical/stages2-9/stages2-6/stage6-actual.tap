@@ -1,0 +1,85 @@
+TAP version 13
+# Subtest: actual OCR: milo20.png
+ok 1 - actual OCR: milo20.png
+  ---
+  duration_ms: 1676.786298
+  ...
+# Subtest: actual OCR: milo30.png
+ok 2 - actual OCR: milo30.png
+  ---
+  duration_ms: 421.083369
+  ...
+# Subtest: actual OCR: nescafe-original.png
+ok 3 - actual OCR: nescafe-original.png
+  ---
+  duration_ms: 365.474373
+  ...
+# Subtest: actual OCR: nescafe-creamy.png
+ok 4 - actual OCR: nescafe-creamy.png
+  ---
+  duration_ms: 345.095375
+  ...
+# Subtest: actual OCR: cola500.png
+ok 5 - actual OCR: cola500.png
+  ---
+  duration_ms: 341.678474
+  ...
+# Subtest: actual OCR: cola1000.png
+ok 6 - actual OCR: cola1000.png
+  ---
+  duration_ms: 336.572876
+  ...
+# Subtest: actual OCR: beef.png
+ok 7 - actual OCR: beef.png
+  ---
+  duration_ms: 355.586373
+  ...
+# Subtest: actual OCR: chicken.png
+ok 8 - actual OCR: chicken.png
+  ---
+  duration_ms: 344.204775
+  ...
+# Subtest: actual OCR: latin.png
+ok 9 - actual OCR: latin.png
+  ---
+  duration_ms: 318.026476
+  ...
+# Subtest: actual OCR: milo20-rot90.png
+ok 10 - actual OCR: milo20-rot90.png
+  ---
+  duration_ms: 331.722976
+  ...
+# Subtest: actual OCR: milo20-rot180.png
+ok 11 - actual OCR: milo20-rot180.png
+  ---
+  duration_ms: 386.194271
+  ...
+# Subtest: actual OCR: milo20-rot15.png
+ok 12 - actual OCR: milo20-rot15.png
+  ---
+  duration_ms: 402.46487
+  ...
+# Subtest: actual OCR: blank.png
+ok 13 - actual OCR: blank.png
+  ---
+  duration_ms: 417.60217
+  ...
+# Subtest: actual OCR text resolves Milo size conflict against injected authorized metadata
+ok 14 - actual OCR text resolves Milo size conflict against injected authorized metadata
+  ---
+  duration_ms: 5.044599
+  ...
+# Subtest: actual native sessions are reused and output dictionary dimension matches pinned 18385 classes
+ok 15 - actual native sessions are reused and output dictionary dimension matches pinned 18385 classes
+  ---
+  duration_ms: 331.661876
+  ...
+1..15
+# tests 15
+# suites 0
+# pass 15
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 11.964499

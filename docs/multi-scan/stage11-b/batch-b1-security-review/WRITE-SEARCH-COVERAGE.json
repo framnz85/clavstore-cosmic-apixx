@@ -1,0 +1,365 @@
+{
+  "boundary": "Direct User/Estore writes/constructors across controller tree plus manually inspected save/update paths; aliases/external writers remain coverage limits, not proof of global absence.",
+  "matches": [
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/app/order.js",
+      "line": 278,
+      "function": "saveOrder",
+      "model_alias": "User",
+      "operation": "new model",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/app/order.js",
+      "line": 372,
+      "function": "saveOrder",
+      "model_alias": "Estore",
+      "operation": "findOneAndUpdate",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/app/order.js",
+      "line": 415,
+      "function": "submitEditOrder",
+      "model_alias": "Estore",
+      "operation": "findOneAndUpdate",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/app/order.js",
+      "line": 480,
+      "function": "sendOrder",
+      "model_alias": "User",
+      "operation": "new model",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/app/order.js",
+      "line": 550,
+      "function": "sendOrder",
+      "model_alias": "Estore",
+      "operation": "findByIdAndUpdate",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/app/order.js",
+      "line": 591,
+      "function": "updateOrder",
+      "model_alias": "Estore",
+      "operation": "findOneAndUpdate",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/app/order.js",
+      "line": 619,
+      "function": "deleteOrder",
+      "model_alias": "Estore",
+      "operation": "findOneAndUpdate",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/app/user.js",
+      "line": 160,
+      "function": "updateUser",
+      "model_alias": "User",
+      "operation": "findOneAndUpdate",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/estore.js",
+      "line": 318,
+      "function": "updateEstore",
+      "model_alias": "Estore",
+      "operation": "findByIdAndUpdate",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/estore.js",
+      "line": 328,
+      "function": "updateEstore",
+      "model_alias": "Estore",
+      "operation": "findByIdAndUpdate",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/estore.js",
+      "line": 352,
+      "function": "createEstore",
+      "model_alias": "Estore",
+      "operation": "new model",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/estore.js",
+      "line": 405,
+      "function": "createEstore",
+      "model_alias": "Estore",
+      "operation": "findOneAndUpdate",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/estore.js",
+      "line": 425,
+      "function": "createEstore",
+      "model_alias": "Estore",
+      "operation": "findOneAndUpdate",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/estore.js",
+      "line": 464,
+      "function": "addNewEstore",
+      "model_alias": "Estore",
+      "operation": "new model",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/estore.js",
+      "line": 504,
+      "function": "copyingEstore",
+      "model_alias": "Estore",
+      "operation": "new model",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/estore.js",
+      "line": 642,
+      "function": "updateEstoreCounters",
+      "model_alias": "Estore",
+      "operation": "findByIdAndUpdate",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/estore.js",
+      "line": 666,
+      "function": "updateEstoresDefault",
+      "model_alias": "Estore",
+      "operation": "updateMany",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/estore.js",
+      "line": 667,
+      "function": "updateEstoresDefault",
+      "model_alias": "Estore",
+      "operation": "findByIdAndUpdate",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/estore.js",
+      "line": 686,
+      "function": "updateEstoresVissible",
+      "model_alias": "Estore",
+      "operation": "findByIdAndUpdate",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/estore.js",
+      "line": 703,
+      "function": "deletingEstore",
+      "model_alias": "Estore",
+      "operation": "findOneAndDelete",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/estore.js",
+      "line": 715,
+      "function": "deletingEstore",
+      "model_alias": "User",
+      "operation": "deleteMany",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/estore.js",
+      "line": 723,
+      "function": "deletingEstore",
+      "model_alias": "User",
+      "operation": "updateMany",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/joborder.js",
+      "line": 216,
+      "function": "createJobOrder",
+      "model_alias": "Estore",
+      "operation": "findByIdAndUpdate",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/order.js",
+      "line": 1201,
+      "function": "saveCartOrder",
+      "model_alias": "User",
+      "operation": "new model",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/order.js",
+      "line": 1384,
+      "function": "saveCartPurchase",
+      "model_alias": "User",
+      "operation": "new model",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/user.js",
+      "line": 134,
+      "function": "getUserDetails",
+      "model_alias": "User",
+      "operation": "updateOne",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/user.js",
+      "line": 269,
+      "function": "getUserDetails",
+      "model_alias": "User",
+      "operation": "updateOne",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/user.js",
+      "line": 769,
+      "function": "createNewUser",
+      "model_alias": "User",
+      "operation": "new model",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/user.js",
+      "line": 867,
+      "function": "addToWishlist",
+      "model_alias": "User",
+      "operation": "findOneAndUpdate",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/user.js",
+      "line": 1000,
+      "function": "updateUser",
+      "model_alias": "User",
+      "operation": "findOneAndUpdate",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/user.js",
+      "line": 1034,
+      "function": "updateCustomer",
+      "model_alias": "User",
+      "operation": "findOneAndUpdate",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/user.js",
+      "line": 1038,
+      "function": "updateCustomer",
+      "model_alias": "User",
+      "operation": "findOneAndUpdate",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/user.js",
+      "line": 1062,
+      "function": "verifyUserEmail",
+      "model_alias": "User",
+      "operation": "findOneAndUpdate",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/user.js",
+      "line": 1078,
+      "function": "verifyUserEmail",
+      "model_alias": "Estore",
+      "operation": "findOneAndUpdate",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/user.js",
+      "line": 1106,
+      "function": "changePassword",
+      "model_alias": "User",
+      "operation": "findOneAndUpdate",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/user.js",
+      "line": 1134,
+      "function": "resetPassword",
+      "model_alias": "User",
+      "operation": "findOneAndUpdate",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/user.js",
+      "line": 1160,
+      "function": "forgotPassword",
+      "model_alias": "User",
+      "operation": "findOneAndUpdate",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/user.js",
+      "line": 1172,
+      "function": "forgotPassword",
+      "model_alias": "User",
+      "operation": "findOneAndUpdate",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/user.js",
+      "line": 1185,
+      "function": "forgotPassword",
+      "model_alias": "User",
+      "operation": "findOneAndUpdate",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/user.js",
+      "line": 1213,
+      "function": "deleteAccountRequest",
+      "model_alias": "User",
+      "operation": "findOneAndUpdate",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/user.js",
+      "line": 1238,
+      "function": "importUsers",
+      "model_alias": "User",
+      "operation": "findOneAndUpdate",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/user.js",
+      "line": 1252,
+      "function": "importUsers",
+      "model_alias": "User",
+      "operation": "findOneAndUpdate",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/user.js",
+      "line": 1261,
+      "function": "importUsers",
+      "model_alias": "User",
+      "operation": "new model",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/user.js",
+      "line": 1283,
+      "function": "deleteUser",
+      "model_alias": "User",
+      "operation": "findOneAndDelete",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    },
+    {
+      "file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/withdraw.js",
+      "line": 70,
+      "function": "getUserToAffiliate",
+      "model_alias": "User",
+      "operation": "findOneAndUpdate",
+      "classification": "See inventory by function; counters/wishlist/referrals/checkout explicitly distinguished from authority"
+    }
+  ]
+}

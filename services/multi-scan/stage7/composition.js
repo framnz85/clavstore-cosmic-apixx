@@ -1,0 +1,5 @@
+'use strict';
+const {check}=require('./contracts'),{MongooseRepository}=require('./repository'),{Security}=require('./security'),{Catalog,ImagePolicy}=require('./catalog'),{AiClient}=require('./client'),{Integration}=require('./integration');
+// Explicit composition only. No environment-driven loading, app registration, model imports or database access.
+function createSubsystem({repository,models,connection,snapshotRunner,jwtConfig,aiConfig,imagePrefixes,snapshotLimits={}}={}){check(jwtConfig?.key&&aiConfig?.serviceKey&&jwtConfig.key!==aiConfig.serviceKey,'DISTINCT_KEYS_REQUIRED','JWT and service credentials must be separate',503);const repo=repository||new MongooseRepository({...models,connection,snapshotRunner}),security=new Security({...jwtConfig,repository:repo}),catalog=new Catalog({...snapshotLimits,repository:repo,security,imagePolicy:new ImagePolicy(imagePrefixes)}),client=new AiClient(aiConfig),integration=new Integration({security,catalog,client});return Object.freeze({repository:repo,security,catalog,integration,featureActivated:false});}
+module.exports={createSubsystem};

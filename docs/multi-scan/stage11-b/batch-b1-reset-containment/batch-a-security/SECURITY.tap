@@ -1,0 +1,150 @@
+TAP version 13
+# Subtest: 01 undefined session flag returns503 before source acquisition
+ok 1 - 01 undefined session flag returns503 before source acquisition
+  ---
+  duration_ms: 5.210601
+  ...
+# Subtest: 02 disabled session flag returns503
+ok 2 - 02 disabled session flag returns503
+  ---
+  duration_ms: 3.446901
+  ...
+# Subtest: 03 empty malformed and unexpected flags never enable
+ok 3 - 03 empty malformed and unexpected flags never enable
+  ---
+  duration_ms: 15.878002
+  ...
+# Subtest: 04 explicit enabled fixture succeeds; main false still disabled
+ok 4 - 04 explicit enabled fixture succeeds; main false still disabled
+  ---
+  duration_ms: 108.529214
+  ...
+# Subtest: 05 absent Authorization requires fresh password proof
+ok 5 - 05 absent Authorization requires fresh password proof
+  ---
+  duration_ms: 6.196601
+  ...
+# Subtest: 06 malformed Bearer headers are rejected
+ok 6 - 06 malformed Bearer headers are rejected
+  ---
+  duration_ms: 5.718501
+  ...
+# Subtest: 07 invalid signature cannot authenticate
+ok 7 - 07 invalid signature cannot authenticate
+  ---
+  duration_ms: 2.1878
+  ...
+# Subtest: 08 unsupported HS384 and unsigned tokens rejected
+ok 8 - 08 unsupported HS384 and unsigned tokens rejected
+  ---
+  duration_ms: 2.908001
+  ...
+# Subtest: 09 expiry and bounded lifetime mandatory
+ok 9 - 09 expiry and bounded lifetime mandatory
+  ---
+  duration_ms: 7.845901
+  ...
+# Subtest: 10 identity and signed scope required
+ok 10 - 10 identity and signed scope required
+  ---
+  duration_ms: 6.501101
+  ...
+# Subtest: 11 wrong issuer rejected
+ok 11 - 11 wrong issuer rejected
+  ---
+  duration_ms: 1.4635
+  ...
+# Subtest: 12 wrong audience and legacy purpose rejected
+ok 12 - 12 wrong audience and legacy purpose rejected
+  ---
+  duration_ms: 3.6012
+  ...
+# Subtest: 13 inactive or revoked current store denied
+ok 13 - 13 inactive or revoked current store denied
+  ---
+  duration_ms: 2.414001
+  ...
+# Subtest: 14 cross-tenant store selector cannot grant access
+ok 14 - 14 cross-tenant store selector cannot grant access
+  ---
+  duration_ms: 5.0283
+  ...
+# Subtest: 15 cashier with primary or secondary membership and orders permitted
+ok 15 - 15 cashier with primary or secondary membership and orders permitted
+  ---
+  duration_ms: 3.400901
+  ...
+# Subtest: 16 cashier lacking current orders permission denied
+ok 16 - 16 cashier lacking current orders permission denied
+  ---
+  duration_ms: 1.2045
+  ...
+# Subtest: 17 only trusted admin role grants admin scope
+ok 17 - 17 only trusted admin role grants admin scope
+  ---
+  duration_ms: 2.4002
+  ...
+# Subtest: 18 unknown revoked and ambiguous users fail closed
+ok 18 - 18 unknown revoked and ambiguous users fail closed
+  ---
+  duration_ms: 3.562101
+  ...
+# Subtest: 19 missing trusted authorization data fails closed
+ok 19 - 19 missing trusted authorization data fails closed
+  ---
+  duration_ms: 6.257301
+  ...
+# Subtest: 20 public response excludes internal credentials and hashes
+ok 20 - 20 public response excludes internal credentials and hashes
+  ---
+  duration_ms: 13.168301
+  ...
+# Subtest: 21 concurrent duplicate requests cannot overlap credential work
+ok 21 - 21 concurrent duplicate requests cannot overlap credential work
+  ---
+  duration_ms: 7.053001
+  ...
+# Subtest: 22 exact payload shape and serialized bound enforced
+ok 22 - 22 exact payload shape and serialized bound enforced
+  ---
+  duration_ms: 11.269402
+  ...
+# Subtest: 23 unexpected exception sanitized; timed-out operation retains admission
+ok 23 - 23 unexpected exception sanitized; timed-out operation retains admission
+  ---
+  duration_ms: 10007.037882
+  ...
+# Subtest: 24 existing routes preserved and default export remains feature-disabled
+ok 24 - 24 existing routes preserved and default export remains feature-disabled
+  ---
+  duration_ms: 62.595008
+  ...
+# Subtest: configuration has no fallback and rejects key reuse
+ok 25 - configuration has no fallback and rejects key reuse
+  ---
+  duration_ms: 0.6105
+  ...
+# Subtest: fresh credential hash shortcut and changed identity rejected
+ok 26 - fresh credential hash shortcut and changed identity rejected
+  ---
+  duration_ms: 4.473501
+  ...
+# Subtest: service injected clock rejects expiration without changing runtime clocks
+ok 27 - service injected clock rejects expiration without changing runtime clocks
+  ---
+  duration_ms: 0.9991
+  ...
+# Subtest: rate map bounded; forwarded headers do not select peer
+ok 28 - rate map bounded; forwarded headers do not select peer
+  ---
+  duration_ms: 97.664912
+  ...
+1..28
+# tests 28
+# suites 0
+# pass 28
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 10407.769834

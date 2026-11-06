@@ -1,0 +1,16 @@
+{
+  "counts": {
+    "stage2": 31,
+    "stage3": 33,
+    "stage4": 39,
+    "stage5-unit": 41,
+    "stage5-combined": 11,
+    "stage5-actual": 4,
+    "stage6-ocr": 24,
+    "stage6-reranker": 38,
+    "stage6-pipeline": 10,
+    "stage6-actual": 15
+  },
+  "total": 246,
+  "failures": 0
+}

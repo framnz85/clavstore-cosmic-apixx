@@ -1,0 +1,284 @@
+{
+  "stage": "11-A",
+  "reviewedSourcePins": [
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/server.js",
+      "sha256": "bcb24bb081ad79884a4f71d806d2ce7150c4d5d1d30a078d763211aed7123d51"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/routes/multi-scan.js",
+      "sha256": "f4948acc53c4e6d6b2029e8896bd8ef21b5e33516a47c31bff44ab7736440c08"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/multi-scan.js",
+      "sha256": "e630cd4c7ceb80bd861b424cd2fdb2af22175b16b8b52d893b8183bfd449f457"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/auth.js",
+      "sha256": "d01a8be6f5c7095b64076d5582bc0ec7668029ee080a095c179aee32c9eaaeda"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/user.js",
+      "sha256": "2a09aff9e6dc78e5d5365e71ce9f973865d0cb17e3bf6202027a2660f6b6bcb6"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/app/user.js",
+      "sha256": "e0f084616a0fcaf5017ce73d180819624cf495afaa4bcbd54b386e79d642ebf9"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/order.js",
+      "sha256": "44591ff2e486deebfecbd853d7a57280b7548a27b505804cf187da8590a15008"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/middlewares/auth.js",
+      "sha256": "be118b88031b759c5ef555dfc3492cede26e8d569691279c66296ef3de01cbb8"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/middlewares/multi-scan-auth.js",
+      "sha256": "38cc362892fbbbc0b40e5428a26c5a44cc327189aef3690c4467a2757206acb9"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/models/user.js",
+      "sha256": "2645c0a8e8f071b5263fd0dfe443d4f2f17d7483e3c8978d61b989f1d9401a83"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/models/product.js",
+      "sha256": "8350d9aac50501c8b75914a52b0d24069c82038f9209e01d3463d88cc0dbb5cc"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/dbconnect/gratis.js",
+      "sha256": "d32854d271b043c57e0d28bd9e92a3b11a37470b681f7adc6b5be81c4310144d"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/services/multi-scan/contracts.js",
+      "sha256": "c8eac759d1d76bc7e9a7de7164439e2c8bdee7790181b5a5aa020585a10df8ff"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/services/multi-scan/upload.js",
+      "sha256": "3f082bb1330904284434848af1053948bdd75cbd82a23f004ba0ba5a129525fd"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/services/multi-scan/runtime.js",
+      "sha256": "007d64b3167067651f0269d1e5c3792eff1ac317fa23e372a566a5b4b09b000e"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/services/multi-scan/stage7/security.js",
+      "sha256": "6a7a064ab3d94d2dc0a5f8c5e7408a715bd681ad2921b545f1264e827991e763"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/services/multi-scan/stage7/repository.js",
+      "sha256": "429cb03fcd0f788adff7a0ee3e71598e7398f187a5c086bbb08716c8f2699bee"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/services/multi-scan/stage7/catalog.js",
+      "sha256": "9b57dc10a3b8a3ddefb77c545b0990f76985ac1c45fd0270c7cb0aac9321cb83"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/services/multi-scan/stage7/validation.js",
+      "sha256": "70b8ba54faf6769e8861389fbc812f46fe831b29f2e5e8f088d4d1ad610d370e"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/services/multi-scan/stage7/resolution.js",
+      "sha256": "a9fe75f4e033b299793e362f4523b9652cddb27786179cbdd990fe1ce71e7d47"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/services/multi-scan/stage7/integration.js",
+      "sha256": "774dc015564880333460313f6c20a2ed18858fafd64ffb6588f282db4b928c6a"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/services/multi-scan/stage7/client.js",
+      "sha256": "e983b8795f9595c6ec25b3db1b9d4336f98ef82e503c3b59693f21a86cf60295"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/services/multi-scan/stage7/composition.js",
+      "sha256": "3130d571939635fceab207a1e4b317ff397fa7df5688276f9b2ffd1272e87cd9"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/services/multi-scan/stage9/native.js",
+      "sha256": "fec7eb47a4cdb73ce678acfb52cf54b969ca6e25516c98ea19b6d375a9da08fc"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/services/multi-scan/stage9/fixture.js",
+      "sha256": "dc5e2220ce5137efe5a0f6f37c80d72fde4915da4f38d8fc4a7d0c3913976ebb"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/services/multi-scan/stage9/review-verifier.js",
+      "sha256": "df56d6b5fc64d5ba90f037923f9ca26f7f3ba3ec3081a0bc45fad848870b02c3"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/services/multi-scan/stage10/upload-bridge.js",
+      "sha256": "c3ac65403eb664a77f5cb77fc73142f0016594b0b8c6bca7eb8d7306b58744c8"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/services/multi-scan/stage10/review-contract.js",
+      "sha256": "9d039fab29a05ce91e98772e840ae2976561f561d11a79d41e3a6e7aedd6b5fa"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/services/multi-scan/stage10/admission.js",
+      "sha256": "259bb20a426b6b06acc7269b95b346f61f882cce8ef40a544b79a1b8b437da5f"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/services/multi-scan/stage10/observability.js",
+      "sha256": "857432f4c41be4062533746170c78de18a73243177dc0fcf9eb5e681329704c8"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/docs/multi-scan/stage10/STAGE10.md",
+      "sha256": "8c9207856daa7435f4a01aebe62699ed02f39f1630928c0602f5d75af104b752"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/docs/multi-scan/stage10/INTEGRATION-PATCHES.md",
+      "sha256": "6b122c59abf43a44f644cda8acf935ac49458a222be1ec64d07aae526560be99"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/docs/multi-scan/stage10/test-summary.json",
+      "sha256": "00e5d6e52e967bb0b9acfcdaf8951b965a39208da5617ee1a1a72f5a921da167"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/docs/multi-scan/stage9/INTEGRATION-PROPOSAL.md",
+      "sha256": "bdb773680854749f051867fb2491f6f783816c1bc0a1010f3efb28082bf98b13"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-ai-image-api/server.js",
+      "sha256": "5065b86ac77687fd388f3040b06c6503ab369392cdacf860bedad24af6e09c02"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-ai-image-api/routes/multi-scan.js",
+      "sha256": "a97305a9b0f59d70acd37c1ad35fdefdcc604915cae96abe563b9fd18831aa5b"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-ai-image-api/middlewares/multi-scan-service-auth.js",
+      "sha256": "78df37d1e7c3947df20bc8caf10b1d9deb0d16c9398b7003f098fd0c04f3392d"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-ai-image-api/services/multi-scan/stage3/config.js",
+      "sha256": "1811b2b6cd38a533b969cf72a2559f5ebbde0faf0abd2dff6b157933bde872ad"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-ai-image-api/services/multi-scan/stage3/postprocess.js",
+      "sha256": "6ac14f6b725534f3d64ad2096c9f7291203acce9401582b2b24d481bae1617cb"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-ai-image-api/services/multi-scan/stage3/crops.js",
+      "sha256": "5332217eba99447a09bf02dedb4015cc7aa1014b0f4cfa1bf89f3116b4d47239"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-ai-image-api/services/multi-scan/stage3/detector.js",
+      "sha256": "32366d68d32493b79d5cb80d755b509a9f3b85e4db1223efb92f05ab4890ad63"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-ai-image-api/services/multi-scan/stage4/index-store.js",
+      "sha256": "9451da311f11889ca214e2073e13e40581bedf7d71cd51370a71e780c0b79d50"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-ai-image-api/services/multi-scan/stage5/combined-recognizer.js",
+      "sha256": "25f8423eca5355b6f1677ff2a4032d159fd53f0c663b1e13ae3b6c3d3737f0cc"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-ai-image-api/services/multi-scan/stage6/pipeline.js",
+      "sha256": "4f15bd863d2c6fe7185d8159c0988ecb07ab4af46e2ba750cadb1d6b6ad6e809"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-ai-image-api/services/multi-scan/stage6/ocr.js",
+      "sha256": "d3f0812418534e5d95cb51079b2035dad5f887739864e053cbc706f445617a93"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-ai-image-api/services/multi-scan/stage6/reranker.js",
+      "sha256": "05420da9dd73823a6c9d365c03a6f12a4e59c7168e1a824e2181a8899a6fbf00"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-ai-image-api/services/multi-scan/stage7/receiver.js",
+      "sha256": "3aa12bdfb9f0a4c791cc31bf609b5786dfba86444908dba95e74284a745d53b7"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-ai-image-api/docs/multi-scan/stage6/actual-cpu-benchmark-final.json",
+      "sha256": "46e15536d6182d1075135aae3521f0910205ca64fc354b775e0339169bdaa16d"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-ui/clavstore-reseller-original/src/App.js",
+      "sha256": "e96b1fccd47cd6492c626c49a95c8e0a352991187328ae2cac25f48847597b19"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-ui/clavstore-reseller-original/src/pages/PointOfSale.js",
+      "sha256": "d08d19a4bed2711c503d6cddedabf3c9da047735435b3e7203947dcc233d80b2"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-ui/clavstore-reseller-original/src/components/routes/AdminRoute.js",
+      "sha256": "bbd87a0307d0912edd21fc15370f58ced2c51ff7b75252ad9ec754e03f25f625"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-ui/clavstore-reseller-original/src/components/routes/UserRoute.js",
+      "sha256": "ffe6075bef3a4a2ff97bb4d77eb97ac321850e4e1efc69fafad6cb9ea2d8d4df"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-ui/clavstore-reseller-original/src/components/navigation/PointOfSaleButton.js",
+      "sha256": "118d05b0cc5e477e8da76e9e85be1fb7b9411539959f5bee62899fae67eaa32f"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-ui/clavstore-reseller-original/src/components/navigation/Header.js",
+      "sha256": "d40c36df3da4d0c838dcbf900de25bbf14eb0765ebc6466e07e99b3002992f3d"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-ui/clavstore-reseller-original/src/components/checkout/PointOfSaleDetails.js",
+      "sha256": "e3e3c9b6e9ae77ad351a2d3ab781ee45cb60343cad2735ea9f4fc18faff4e446"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-ui/clavstore-reseller-original/src/components/modal/AddToCart.js",
+      "sha256": "917e12b7c194cac8c07011710f4b2d2fa3fd6cc5bf2420e43a3c4948b32e61ed"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-ui/clavstore-reseller-original/src/components/common/getUnique.js",
+      "sha256": "652f2ff50cecc81467fe22d49cd4c885d8df433ef7800005af23e48a1e9eaf1c"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-ui/clavstore-reseller-original/src/components/modal/modalComponents/ImageCapture.js",
+      "sha256": "7717f4b9b9482f95dabfec8c3b5afe224b3ec31399522ab968d38f2719e2f7f9"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-ui/clavstore-reseller-original/src/functions/ai-image.js",
+      "sha256": "86b5519867162128acce45ec9a240604aa50361b4a759fb0ac3e4255b2a3288e"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-ui/clavstore-reseller-original/src/functions/auth.js",
+      "sha256": "977620dba30a659e3f4409ba6d99c039d073629227fc0ba6b5a199dc60690a12"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-ui/clavstore-reseller-original/src/functions/order.js",
+      "sha256": "2d95f626a8bbe553bedc9f94412db5206a8e9167720b083fd48d23bffead31c8"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-ui/clavstore-reseller-original/src/reducers/cartSlice.js",
+      "sha256": "0bc9cf7496608399a111ed6f8ba8fc1d344440d30c09fd568f548bd114162ab8"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-ui/clavstore-reseller-original/src/components/multiScan/MultiScanPosPanel.jsx",
+      "sha256": "791fa56e7619a4391c17b456f2b60ef0781040db9654aa8067a924fc2d74fce2"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-ui/clavstore-reseller-original/src/components/multiScan/model.js",
+      "sha256": "f8f7ed44794013830dc223b38a128590372ea5b30e475cd3315b4e04b715ead2"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-ui/clavstore-reseller-original/src/components/multiScan/useMultiScan.js",
+      "sha256": "9f96b4a9cd475870bdec5cfcf9903201c5adff877fac87e863fe64bac5d293ae"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-ui/clavstore-reseller-original/src/components/multiScan/cartAdapter.js",
+      "sha256": "84bc68e23f2c52512d8f74447b9d1834c88f0c43dea495715d9d68de27b7f3e7"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-ui/clavstore-reseller-original/src/components/multiScan/ManualProductSearch.jsx",
+      "sha256": "1361e29fcaf7693518ee1b302a1beace01e8c11856236cb6def026da60c1d1c9"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-ui/clavstore-reseller-original/src/functions/multi-scan.js",
+      "sha256": "66d616dace0582812704d1309a31a7e03e4746c60407c171ca34a55fc6a04046"
+    }
+  ],
+  "historicalTests": {
+    "count": 428,
+    "rerunIn11A": false,
+    "source": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/docs/multi-scan/stage10/test-summary.json"
+  },
+  "currentProbes": "source-probes.json",
+  "noActualSecretsOrTokensRecorded": true
+}

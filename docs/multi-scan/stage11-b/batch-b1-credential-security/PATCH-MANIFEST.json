@@ -1,0 +1,122 @@
+{
+  "review_only": true,
+  "applied": false,
+  "sequence": [
+    {
+      "patch": "01-GENERIC-WRITER-CONTAINMENT.diff",
+      "depends_on": null,
+      "files": [
+        {
+          "path": "routes/user.js",
+          "before_sha256": "a8c092ffc22484b7d5cfd0b876ac160a04a2343d12bedea0d39a56a198216ddd",
+          "proposed_sha256": "172f5d6c52d3f95cafad7c8cd1181600498586fbe1448b37fb7b73160b849139"
+        },
+        {
+          "path": "routes/appuser.js",
+          "before_sha256": "4914854967c2b0d2139e285a48790cc2b2c40b8c2216746082f83fc9e35e2339",
+          "proposed_sha256": "ea9d64347320293aadd75976162196920ca97ae648aba03f0cfb10422cbb86f6"
+        }
+      ],
+      "clean_check": true,
+      "syntax_checked": [
+        "routes/user.js",
+        "routes/appuser.js"
+      ]
+    },
+    {
+      "patch": "02-RELATED-AUTHORITY-CONTAINMENT.diff",
+      "depends_on": "01-GENERIC-WRITER-CONTAINMENT.diff",
+      "files": [
+        {
+          "path": "routes/user.js",
+          "before_sha256": "172f5d6c52d3f95cafad7c8cd1181600498586fbe1448b37fb7b73160b849139",
+          "proposed_sha256": "377ced62bb55ea4568c919feacac8c4177f2c7f1fc4fad73f8f2212e8e5926d5"
+        },
+        {
+          "path": "routes/estore.js",
+          "before_sha256": "5af12554d439319a7cf3b480c6168ea937a19a7ecc9b44b25376a0d699e2aefe",
+          "proposed_sha256": "cd1032c6a6b7c53993462f5430e3b10295afa8cfc3d7938f91b5ad26fee3f53a"
+        },
+        {
+          "path": "routes/order.js",
+          "before_sha256": "cab1f734e9b34b2585d3f8777b42325ba934412a7d6a639925dad61b796664bd",
+          "proposed_sha256": "2a448f501d35157b9c4a11ac3c0a2a21ed476aeb6f8d4d7dceb8064457223bdf"
+        },
+        {
+          "path": "routes/withdraw.js",
+          "before_sha256": "897e7827fbd4e8cb63b7469798de5393f4e98f7ada0d3e29eb5c6abc92951a85",
+          "proposed_sha256": "d6e6844883c4f7939a1760dabd34d541f0a893166d6c9659f5807bb02d541b49"
+        }
+      ],
+      "clean_check": true,
+      "syntax_checked": [
+        "routes/user.js",
+        "routes/estore.js",
+        "routes/order.js",
+        "routes/withdraw.js"
+      ]
+    },
+    {
+      "patch": "03-REMOVE-IMPLICIT-MEMBERSHIP-WRITE.diff",
+      "depends_on": "02-RELATED-AUTHORITY-CONTAINMENT.diff",
+      "files": [
+        {
+          "path": "controllers/user.js",
+          "before_sha256": "2a09aff9e6dc78e5d5365e71ce9f973865d0cb17e3bf6202027a2660f6b6bcb6",
+          "proposed_sha256": "889c0d2d14f3ca4ce71f354cd8ab57976408b3c5076800b426331ea94f81752e"
+        }
+      ],
+      "clean_check": true,
+      "syntax_checked": [
+        "controllers/user.js"
+      ]
+    },
+    {
+      "patch": "04-STOP-SHARED-PASSWORD-PROVISIONING.diff",
+      "depends_on": "03-REMOVE-IMPLICIT-MEMBERSHIP-WRITE.diff",
+      "files": [
+        {
+          "path": "controllers/order.js",
+          "before_sha256": "44591ff2e486deebfecbd853d7a57280b7548a27b505804cf187da8590a15008",
+          "proposed_sha256": "33e09edbc9327bdfffcdf9686521e73d10c512c9ecdcd3dcb9aacf130b6b4e69"
+        },
+        {
+          "path": "controllers/app/order.js",
+          "before_sha256": "69e13e320f64ee88de0af05a36860ca2b784a2fe8bbde8b3d01be2092d26260b",
+          "proposed_sha256": "ee434306cc9e37b95bc4cb73c319751db3376a9ed2a5b95e2fc8bdd806629e55"
+        }
+      ],
+      "clean_check": true,
+      "syntax_checked": [
+        "controllers/order.js",
+        "controllers/app/order.js"
+      ]
+    },
+    {
+      "patch": "05-PAYMENT-CREDENTIAL-CONTAINMENT.diff",
+      "depends_on": "04-STOP-SHARED-PASSWORD-PROVISIONING.diff",
+      "files": [
+        {
+          "path": "routes/payment.js",
+          "before_sha256": "dcb59b7c6ed941ac3e0f84c103f03014eac57d577e4488e50cb678f870a8a71f",
+          "proposed_sha256": "ed1d76fe182d09ca84b8da8d1cf2f61a9d9fae4e6517c9eb8f02ab0b0f06a4ad"
+        }
+      ],
+      "clean_check": true,
+      "syntax_checked": [
+        "routes/payment.js"
+      ]
+    }
+  ],
+  "original_source_hashes": {
+    "routes/user.js": "a8c092ffc22484b7d5cfd0b876ac160a04a2343d12bedea0d39a56a198216ddd",
+    "routes/appuser.js": "4914854967c2b0d2139e285a48790cc2b2c40b8c2216746082f83fc9e35e2339",
+    "routes/estore.js": "5af12554d439319a7cf3b480c6168ea937a19a7ecc9b44b25376a0d699e2aefe",
+    "routes/order.js": "cab1f734e9b34b2585d3f8777b42325ba934412a7d6a639925dad61b796664bd",
+    "routes/withdraw.js": "897e7827fbd4e8cb63b7469798de5393f4e98f7ada0d3e29eb5c6abc92951a85",
+    "controllers/user.js": "2a09aff9e6dc78e5d5365e71ce9f973865d0cb17e3bf6202027a2660f6b6bcb6",
+    "controllers/order.js": "44591ff2e486deebfecbd853d7a57280b7548a27b505804cf187da8590a15008",
+    "controllers/app/order.js": "69e13e320f64ee88de0af05a36860ca2b784a2fe8bbde8b3d01be2092d26260b",
+    "routes/payment.js": "dcb59b7c6ed941ac3e0f84c103f03014eac57d577e4488e50cb678f870a8a71f"
+  }
+}

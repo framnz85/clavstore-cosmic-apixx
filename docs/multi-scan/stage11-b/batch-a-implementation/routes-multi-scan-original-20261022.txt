@@ -1,0 +1,33 @@
+'use strict';
+const express = require('express');
+const { config, gate, wrap, capacity, errorHandler, ScanError } = require('../services/multi-scan/contracts');
+const { createUpload } = require('../services/multi-scan/upload');
+function createRouter(options = {}) {
+  const cfg = options.config || config();
+  const adapters = options.adapters || {};
+  const router = express.Router();
+  const prefix = '/ai/multi-scan';
+  const auth = require('../middlewares/multi-scan-auth')(cfg, adapters);
+  const c = require('../controllers/multi-scan')(cfg, adapters);
+  const upload = createUpload(cfg, options.loadRuntime || require('../services/multi-scan/runtime'));
+  const admin = (req,res,next) => req.multiScanTenant.role === 'admin' ? next() : next(new ScanError(403,'ADMIN_REQUIRED','Administrator access required'));
+  // Existing global JSON middleware may already have consumed the stream.
+  const jsonLimit = (req,res,next) => {
+    if (req.body && Buffer.byteLength(JSON.stringify(req.body)) > 32768) return next(new ScanError(413,'JSON_TOO_LARGE','Multi-scan JSON body exceeds limit'));
+    next();
+  };
+  router.use(prefix, gate(cfg), express.json({limit:'32kb'}), jsonLimit, (req,res,next) => { req.multiScanRoute = prefix + req.path; next(); }, wrap(auth));
+  router.get(prefix+'/status', wrap(c.status));
+  router.get(prefix+'/index/status', admin, wrap(c.indexStatus));
+  router.post(prefix+'/scan', capacity(cfg), upload, wrap(c.scan));
+  // Confirmation returns records only; existing cart API remains the persistence boundary.
+  router.post(prefix+'/confirm', express.json({limit:'32kb'}), wrap(c.confirm));
+  router.post(prefix+'/index/rebuild', admin, express.json({limit:'32kb'}), wrap(c.rebuild));
+  router.use(prefix, errorHandler);
+  return router;
+}
+// Invalid optional configuration must never prevent legacy server startup.
+let defaultRouter;
+try { defaultRouter = createRouter(); } catch { defaultRouter = createRouter({config:config({})}); }
+module.exports = defaultRouter;
+module.exports.createRouter = createRouter;

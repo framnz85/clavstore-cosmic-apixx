@@ -1,0 +1,30 @@
+--- a/routes/user.js
++++ b/routes/user.js
+@@ -44,14 +44,14 @@
+ router.post("/gratis/add-wishlist", authCheck, addToWishlist);
+ router.post("/gratis/workflow-register1", handleWorkflow1);
+ router.post("/gratis/send-verification-code", sendVerificationCode);
+-router.put("/gratis/user-update", authCheck, updateUser);
+-router.put("/gratis/update-customer/:userid", authCheck, updateCustomer);
++router.put("/gratis/user-update", (_req, res) => res.status(503).json({ err: "Account updates are temporarily unavailable." }));
++router.put("/gratis/update-customer/:userid", (_req, res) => res.status(503).json({ err: "Account updates are temporarily unavailable." }));
+ router.put("/gratis/user-verify", authCheck, verifyUserEmail);
+ router.put("/gratis/change-password", authCheck, changePassword);
+ router.put("/gratis/reset-password/:userid", (_req, res) => res.status(503).json({ err: "Password recovery is temporarily unavailable." }));
+ router.put("/gratis/forgot-password", (_req, res) => res.status(503).json({ err: "Password recovery is temporarily unavailable." }));
+ router.put("/gratis/delete-account-request", deleteAccountRequest);
+-router.put("/gratis/import-users", authCheck, adminGratisCheck, importUsers);
++router.put("/gratis/import-users", (_req, res) => res.status(503).json({ err: "Account updates are temporarily unavailable." }));
+ router.delete(
+   "/gratis/user-delete/:userid",
+   authCheck,
+--- a/routes/appuser.js
++++ b/routes/appuser.js
+@@ -13,6 +13,6 @@
+ router.get("/app/default-estore/:estoreid", authCheck, getDefaultEstore);
+ router.post("/app/all-users", authCheck, adminGratisCheck, getUsers);
+ router.post("/app/auth-login", loginUser);
+-router.put("/app/update-user", authCheck, updateUser);
++router.put("/app/update-user", (_req, res) => res.status(503).json({ err: "Account updates are temporarily unavailable." }));
+ 
+ module.exports = router;

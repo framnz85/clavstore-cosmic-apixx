@@ -1,0 +1,12 @@
+'use strict';
+const {test}=require('node:test');
+const assert=require('node:assert/strict');
+const {ObjectId}=require('mongodb');
+const {readManifest,projectCatalog}=require('../../../services/multi-scan/stage13/local-catalog');
+const manifest=readManifest();
+const rows=()=>manifest.products.map(p=>({_id:new ObjectId(p._id),estoreid:new ObjectId(manifest.storeId),customid:p.customid,title:p.title,variantName:p.variantName,activate:true,price:0}));
+test('five scanner IDs are unique and tied to one local test store',()=>{assert.equal(manifest.products.length,5);assert.equal(new Set(manifest.products.map(p=>p._id)).size,5);assert.equal(manifest.database,'cosmic_scanner_local_test');assert.equal(manifest.endpoint,'127.0.0.1:27017');});
+test('exact store, identity, variant and active state produce five catalog rows',()=>{const x=projectCatalog(manifest,rows());assert.equal(x.trustedCatalog.products.length,5);assert.ok(x.trustedCatalog.products.every(p=>p.storeId===manifest.storeId&&p.status==='active'));});
+test('wrong store is rejected',()=>{const x=rows();x[0].estoreid=new ObjectId();assert.throws(()=>projectCatalog(manifest,x),/INVALID_LOCAL_PRODUCT/);});
+test('inactive, missing and variant-changed rows cannot become active matches',()=>{const inactive=rows();inactive[0].activate=false;assert.equal(projectCatalog(manifest,inactive).trustedCatalog.products[0].status,'inactive');assert.equal(projectCatalog(manifest,rows().slice(1)).trustedCatalog.products.length,4);const variant=rows();variant[0].variantName='different';assert.equal(projectCatalog(manifest,variant).trustedCatalog.products.length,4);});
+test('invalid identity mapping is omitted',()=>{const changed=rows();changed[0].customid='OTHER';assert.equal(projectCatalog(manifest,changed).trustedCatalog.products.length,4);});

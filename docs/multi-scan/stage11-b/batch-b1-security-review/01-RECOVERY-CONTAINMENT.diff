@@ -1,0 +1,11 @@
+--- a/routes/user.js
++++ b/routes/user.js
+@@ -54,7 +54,7 @@
+   adminGratisCheck,
+   resetPassword,
+ );
+-router.put("/gratis/forgot-password", forgotPassword);
++router.put("/gratis/forgot-password", (_req, res) => res.status(503).json({ err: "Password recovery is temporarily unavailable." }));
+ router.put("/gratis/delete-account-request", deleteAccountRequest);
+ router.put("/gratis/import-users", authCheck, adminGratisCheck, importUsers);
+ router.delete(

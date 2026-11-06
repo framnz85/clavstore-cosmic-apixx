@@ -1,0 +1,105 @@
+TAP version 13
+# Subtest: perfect synthetic metric arithmetic and null false-acceptance denominator
+ok 1 - perfect synthetic metric arithmetic and null false-acceptance denominator
+  ---
+  duration_ms: 3.689201
+  ...
+# Subtest: missed objects reduce recall and all-known retrieval denominator
+ok 2 - missed objects reduce recall and all-known retrieval denominator
+  ---
+  duration_ms: 0.4128
+  ...
+# Subtest: wrong variant and unknown false acceptance are counted
+ok 3 - wrong variant and unknown false acceptance are counted
+  ---
+  duration_ms: 0.268
+  ...
+# Subtest: duplicate boxes cannot match one object twice
+ok 4 - duplicate boxes cannot match one object twice
+  ---
+  duration_ms: 0.3746
+  ...
+# Subtest: IoU geometry and disjoint boxes
+ok 5 - IoU geometry and disjoint boxes
+  ---
+  duration_ms: 0.1033
+  ...
+# Subtest: empty dataset produces null metrics, never fabricated accuracy
+ok 6 - empty dataset produces null metrics, never fabricated accuracy
+  ---
+  duration_ms: 0.1707
+  ...
+# Subtest: every scene must have a prediction including failures
+ok 7 - every scene must have a prediction including failures
+  ---
+  duration_ms: 0.720801
+  ...
+# Subtest: foreign tenant evaluation is rejected
+ok 8 - foreign tenant evaluation is rejected
+  ---
+  duration_ms: 0.196
+  ...
+# Subtest: unverified ground truth is rejected
+ok 9 - unverified ground truth is rejected
+  ---
+  duration_ms: 0.2132
+  ...
+# Subtest: usage rights evidence is mandatory
+ok 10 - usage rights evidence is mandatory
+  ---
+  duration_ms: 0.2446
+  ...
+# Subtest: reference/checkout session leakage is rejected
+ok 11 - reference/checkout session leakage is rejected
+  ---
+  duration_ms: 0.3132
+  ...
+# Subtest: exact image leakage is rejected even with distinct sessions
+ok 12 - exact image leakage is rejected even with distinct sessions
+  ---
+  duration_ms: 0.1855
+  ...
+# Subtest: path traversal and absolute paths are rejected
+ok 13 - path traversal and absolute paths are rejected
+  ---
+  duration_ms: 0.1891
+  ...
+# Subtest: count annotations must match per-object exact IDs
+ok 14 - count annotations must match per-object exact IDs
+  ---
+  duration_ms: 0.2718
+  ...
+# Subtest: out-of-bounds ground truth and unknown prediction IDs are rejected
+ok 15 - out-of-bounds ground truth and unknown prediction IDs are rejected
+  ---
+  duration_ms: 0.2095
+  ...
+# Subtest: negative/nonfinite latency and duplicate prediction IDs are rejected
+ok 16 - negative/nonfinite latency and duplicate prediction IDs are rejected
+  ---
+  duration_ms: 0.390501
+  ...
+# Subtest: photo verifier checks actual bytes, oriented dimensions and checksum
+ok 17 - photo verifier checks actual bytes, oriented dimensions and checksum
+  ---
+  duration_ms: 687.892515
+  ...
+# Subtest: photo verifier rejects changed bytes
+ok 18 - photo verifier rejects changed bytes
+  ---
+  duration_ms: 2.074501
+  ...
+# Subtest: photo verifier rejects symlink escape
+ok 19 - photo verifier rejects symlink escape
+  ---
+  duration_ms: 2.271
+  ...
+1..19
+# tests 19
+# suites 0
+# pass 19
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 708.546222

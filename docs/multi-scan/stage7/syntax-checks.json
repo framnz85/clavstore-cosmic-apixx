@@ -1,0 +1,21 @@
+{
+  "passed": 15,
+  "files": [
+    "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/services/multi-scan/stage7/catalog.js",
+    "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/services/multi-scan/stage7/client.js",
+    "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/services/multi-scan/stage7/composition.js",
+    "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/services/multi-scan/stage7/contracts.js",
+    "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/services/multi-scan/stage7/integration.js",
+    "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/services/multi-scan/stage7/repository.js",
+    "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/services/multi-scan/stage7/resolution.js",
+    "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/services/multi-scan/stage7/security.js",
+    "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/services/multi-scan/stage7/validation.js",
+    "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/tests/multi-scan/stage7/fixtures.js",
+    "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/tests/multi-scan/stage7/repository.test.js",
+    "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/tests/multi-scan/stage7/security-catalog.test.js",
+    "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/tests/multi-scan/stage7/service.test.js",
+    "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/scripts/multi-scan/stage7/smoke.js",
+    "/mnt/g/clavstore/clavstore-api/clavstore-ai-image-api/services/multi-scan/stage7/receiver.js"
+  ],
+  "unexpectedOrtDatabasePresent": false
+}

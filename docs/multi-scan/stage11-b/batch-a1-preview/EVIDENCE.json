@@ -1,0 +1,93 @@
+{
+  "test": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/tests/multi-scan/stage2.test.js",
+  "test_sha256": "62d3bf92d27c5f8b84edf89985760f1720cc296d84154920fa74967d6eb75ec3",
+  "line": 206,
+  "test_name": "route auto-discovery and inactive imports preserve existing registrations",
+  "expected_paths": [
+    "/ai/multi-scan/status",
+    "/ai/multi-scan/index/status",
+    "/ai/multi-scan/scan",
+    "/ai/multi-scan/confirm",
+    "/ai/multi-scan/index/rebuild"
+  ],
+  "actual_inventory": {
+    "routes": [
+      {
+        "path": "/ai/multi-scan/session",
+        "methods": [
+          "post"
+        ]
+      },
+      {
+        "path": "/ai/multi-scan/status",
+        "methods": [
+          "get"
+        ]
+      },
+      {
+        "path": "/ai/multi-scan/index/status",
+        "methods": [
+          "get"
+        ]
+      },
+      {
+        "path": "/ai/multi-scan/scan",
+        "methods": [
+          "post"
+        ]
+      },
+      {
+        "path": "/ai/multi-scan/confirm",
+        "methods": [
+          "post"
+        ]
+      },
+      {
+        "path": "/ai/multi-scan/index/rebuild",
+        "methods": [
+          "post"
+        ]
+      }
+    ],
+    "forbiddenImports": []
+  },
+  "added_paths": [
+    "/ai/multi-scan/session"
+  ],
+  "removed_paths": [],
+  "approved_batch_a_provenance": {
+    "router_sha256": "469c88c14c7472b59aa145e74c785d8ec85adbd1540a8be3fcffd0f98cd99836",
+    "removing_exact_two_approved_added_lines_reconstructs_original_archive": true,
+    "original_router_sha256": "f4948acc53c4e6d6b2029e8896bd8ef21b5e33516a47c31bff44ab7736440c08"
+  },
+  "disabled_in_memory_http_probe": {
+    "status": 503,
+    "body": {
+      "error": {
+        "code": "DISABLED",
+        "message": "Scanner sessions are disabled"
+      },
+      "requestId": "d9ed34cd-b317-4bf3-b84e-ba93d74bb5ec"
+    },
+    "headers": {
+      "x-powered-by": "Express",
+      "cache-control": "no-store",
+      "pragma": "no-cache",
+      "content-type": "application/json; charset=utf-8",
+      "content-length": "122",
+      "etag": "W/\"7a-N4ARXaR5Rem4hQvAgBjdtQhIhXg\""
+    }
+  },
+  "proposed_test_sha256": "a7ff4edd000f7882b9d27e4b3c7e709904a5063f0ddf7dbdadd1ff56465ebe4a",
+  "validation": {
+    "git_apply_check": true,
+    "proposed_test_syntax_only": true,
+    "proposed_inventory_matches_actual": true,
+    "unexpected_route_still_rejected": true,
+    "missing_route_still_rejected": true,
+    "duplicate_route_still_rejected": true,
+    "proposed_source_executed": false,
+    "patch_applied": false
+  },
+  "environment_boundary": "Only independent diagnostic child processes with both feature flags absent; no parent/process-service environment or environment files changed. No production servers, listening sockets, DBs or Redis accessed."
+}

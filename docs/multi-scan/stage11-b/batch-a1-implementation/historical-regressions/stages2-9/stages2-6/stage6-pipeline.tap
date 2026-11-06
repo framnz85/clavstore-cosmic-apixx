@@ -1,0 +1,60 @@
+TAP version 13
+# Subtest: crop composition authorizes, invokes visual then OCR, reranks and remains review-only
+ok 1 - crop composition authorizes, invokes visual then OCR, reranks and remains review-only
+  ---
+  duration_ms: 9.1756
+  ...
+# Subtest: authorization fails before any visual or OCR CPU
+ok 2 - authorization fails before any visual or OCR CPU
+  ---
+  duration_ms: 0.588
+  ...
+# Subtest: no OCR runs when the visual service fails
+ok 3 - no OCR runs when the visual service fails
+  ---
+  duration_ms: 0.6122
+  ...
+# Subtest: crop pipeline rejects concurrent work until active work completes
+ok 4 - crop pipeline rejects concurrent work until active work completes
+  ---
+  duration_ms: 0.9425
+  ...
+# Subtest: Stage 3-shaped Buffers compose without editing frozen detector modules
+ok 5 - Stage 3-shaped Buffers compose without editing frozen detector modules
+  ---
+  duration_ms: 3.0135
+  ...
+# Subtest: scan authorizes before detector CPU
+ok 6 - scan authorizes before detector CPU
+  ---
+  duration_ms: 0.3419
+  ...
+# Subtest: scan limits are explicit and no-object results remain review-only
+ok 7 - scan limits are explicit and no-object results remain review-only
+  ---
+  duration_ms: 2.0648
+  ...
+# Subtest: foreign detector tenant, malformed crops and duplicate IDs fail closed
+ok 8 - foreign detector tenant, malformed crops and duplicate IDs fail closed
+  ---
+  duration_ms: 1.5647
+  ...
+# Subtest: invalid scan IDs, image Buffers and detection IDs reject early
+ok 9 - invalid scan IDs, image Buffers and detection IDs reject early
+  ---
+  duration_ms: 0.4509
+  ...
+# Subtest: scan capacity and cancellation stay bounded
+ok 10 - scan capacity and cancellation stay bounded
+  ---
+  duration_ms: 0.8288
+  ...
+1..10
+# tests 10
+# suites 0
+# pass 10
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 36.6485

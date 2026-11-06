@@ -1,0 +1,200 @@
+TAP version 13
+# Subtest: Unicode NFKC normalization preserves non-English text
+ok 1 - Unicode NFKC normalization preserves non-English text
+  ---
+  duration_ms: 1.9473
+  ...
+# Subtest: explicit mass and volume normalize across units without mixing kinds
+ok 2 - explicit mass and volume normalize across units without mixing kinds
+  ---
+  duration_ms: 1.4806
+  ...
+# Subtest: pack quantities preserve individual size and count separately
+ok 3 - pack quantities preserve individual size and count separately
+  ---
+  duration_ms: 0.5625
+  ...
+# Subtest: phrase matching is token-based and missing metadata is not agreement
+ok 4 - phrase matching is token-based and missing metadata is not agreement
+  ---
+  duration_ms: 0.8952
+  ...
+# Subtest: configurable weights and per-model floors validate and merge deterministically
+ok 5 - configurable weights and per-model floors validate and merge deterministically
+  ---
+  duration_ms: 0.6319
+  ...
+# Subtest: Milo 20g beats visually leading 30g while mismatch stays explicit
+ok 6 - Milo 20g beats visually leading 30g while mismatch stays explicit
+  ---
+  duration_ms: 3.5079
+  ...
+# Subtest: Nescafe Original versus Creamy White produces a variant conflict
+ok 7 - Nescafe Original versus Creamy White produces a variant conflict
+  ---
+  duration_ms: 0.8329
+  ...
+# Subtest: Coca-Cola 500mL and 1L retain explicit size conflicts
+ok 8 - Coca-Cola 500mL and 1L retain explicit size conflicts
+  ---
+  duration_ms: 1.5924
+  ...
+# Subtest: Lucky Me Beef and Chicken remain distinct SKUs
+ok 9 - Lucky Me Beef and Chicken remain distinct SKUs
+  ---
+  duration_ms: 0.9847
+  ...
+# Subtest: observed alternate flavor outside candidate variants is flagged by configurable lexicon
+ok 10 - observed alternate flavor outside candidate variants is flagged by configurable lexicon
+  ---
+  duration_ms: 0.8687
+  ...
+# Subtest: brand disagreement is candidate-specific and explainable
+ok 11 - brand disagreement is candidate-specific and explainable
+  ---
+  duration_ms: 0.7537
+  ...
+# Subtest: non-English candidate variants match without transliteration assumptions
+ok 12 - non-English candidate variants match without transliteration assumptions
+  ---
+  duration_ms: 1.6318
+  ...
+# Subtest: independent visual scores survive rank normalization unchanged
+ok 13 - independent visual scores survive rank normalization unchanged
+  ---
+  duration_ms: 0.7656
+  ...
+# Subtest: conflicting model leaders produce explicit review reason
+ok 14 - conflicting model leaders produce explicit review reason
+  ---
+  duration_ms: 1.1598
+  ...
+# Subtest: no visual candidates return unknown review-only output
+ok 15 - no visual candidates return unknown review-only output
+  ---
+  duration_ms: 0.4015
+  ...
+# Subtest: weak retrieval gates use separate uncalibrated model floors
+ok 16 - weak retrieval gates use separate uncalibrated model floors
+  ---
+  duration_ms: 0.7053
+  ...
+# Subtest: missing authorized catalog rows are unverified, not confirmed matches
+ok 17 - missing authorized catalog rows are unverified, not confirmed matches
+  ---
+  duration_ms: 0.4725
+  ...
+# Subtest: unresolved ObjectId brand and unitless packaging do not become confirmed evidence
+ok 18 - unresolved ObjectId brand and unitless packaging do not become confirmed evidence
+  ---
+  duration_ms: 1.0457
+  ...
+# Subtest: missing reference from either model is explicit
+ok 19 - missing reference from either model is explicit
+  ---
+  duration_ms: 0.5703
+  ...
+# Subtest: empty and low-score OCR are retained but contribute no positive text evidence
+ok 20 - empty and low-score OCR are retained but contribute no positive text evidence
+  ---
+  duration_ms: 0.9077
+  ...
+# Subtest: claimed normalized OCR cannot override low-confidence raw regions
+ok 21 - claimed normalized OCR cannot override low-confidence raw regions
+  ---
+  duration_ms: 0.4325
+  ...
+# Subtest: low-quality crop returns unknown review reasons
+ok 22 - low-quality crop returns unknown review reasons
+  ---
+  duration_ms: 0.5764
+  ...
+# Subtest: multiple plausible SKUs and alternative IDs are retained
+ok 23 - multiple plausible SKUs and alternative IDs are retained
+  ---
+  duration_ms: 0.6693
+  ...
+# Subtest: deterministic scores and tie breaks do not depend on catalog row order
+ok 24 - deterministic scores and tie breaks do not depend on catalog row order
+  ---
+  duration_ms: 1.5399
+  ...
+# Subtest: all candidates stay review-only and vector prices are not returned
+ok 25 - all candidates stay review-only and vector prices are not returned
+  ---
+  duration_ms: 1.0821
+  ...
+# Subtest: foreign tenant authorization is denied before catalog lookup
+ok 26 - foreign tenant authorization is denied before catalog lookup
+  ---
+  duration_ms: 0.4848
+  ...
+# Subtest: foreign visual candidates are rejected
+ok 27 - foreign visual candidates are rejected
+  ---
+  duration_ms: 0.2298
+  ...
+# Subtest: foreign metadata and unrequested rows cannot be exposed
+ok 28 - foreign metadata and unrequested rows cannot be exposed
+  ---
+  duration_ms: 0.7093
+  ...
+# Subtest: catalog revision mismatch and duplicate metadata fail closed
+ok 29 - catalog revision mismatch and duplicate metadata fail closed
+  ---
+  duration_ms: 0.4778
+  ...
+# Subtest: malformed scores, duplicate ranks and model versions fail closed
+ok 30 - malformed scores, duplicate ranks and model versions fail closed
+  ---
+  duration_ms: 1.0104
+  ...
+# Subtest: invalid OCR tensors/scores and pre-aborted requests fail closed
+ok 31 - invalid OCR tensors/scores and pre-aborted requests fail closed
+  ---
+  duration_ms: 0.4782
+  ...
+# Subtest: ambiguous comma measurements are not silently converted to a size
+ok 32 - ambiguous comma measurements are not silently converted to a size
+  ---
+  duration_ms: 0.5651
+  ...
+# Subtest: CJK brand and variant tokens do not require English-style spacing
+ok 33 - CJK brand and variant tokens do not require English-style spacing
+  ---
+  duration_ms: 0.5719
+  ...
+# Subtest: pack count mismatch is distinct from a matching individual sachet size
+ok 34 - pack count mismatch is distinct from a matching individual sachet size
+  ---
+  duration_ms: 0.6854
+  ...
+# Subtest: quality affects explicit policy contributions without inventing SKU confidence
+ok 35 - quality affects explicit policy contributions without inventing SKU confidence
+  ---
+  duration_ms: 1.4858
+  ...
+# Subtest: multiple observed variants are ambiguous instead of a clean flavor confirmation
+ok 36 - multiple observed variants are ambiguous instead of a clean flavor confirmation
+  ---
+  duration_ms: 0.568
+  ...
+# Subtest: policy settings remain immutable and fingerprint-consistent
+ok 37 - policy settings remain immutable and fingerprint-consistent
+  ---
+  duration_ms: 0.1872
+  ...
+# Subtest: catalog awaits cannot mutate already captured OCR or visual evidence
+ok 38 - catalog awaits cannot mutate already captured OCR or visual evidence
+  ---
+  duration_ms: 0.5247
+  ...
+1..38
+# tests 38
+# suites 0
+# pass 38
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 59.2684

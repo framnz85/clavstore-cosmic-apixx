@@ -1,0 +1,31 @@
+TAP version 13
+{"actualCpu":{"preprocessMs":29.702001001685858,"initializeMs":1110.997905999422,"inferenceMs":69.66820000112057,"normalizationMs":1.6464000009000301,"totalMs":1212.136307001114},"memory":{"rssBytes":332136448,"peakProcessRssBytes":332136448,"scope":"process-lifetime-high-water-mark"}}
+# Subtest: actual pinned CPU ONNX returns normalized 384-dimensional CLS features
+ok 1 - actual pinned CPU ONNX returns normalized 384-dimensional CLS features
+  ---
+  duration_ms: 1221.615207
+  ...
+# Subtest: actual session is reused and repeated RGB Buffer embeddings are deterministic
+ok 2 - actual session is reused and repeated RGB Buffer embeddings are deterministic
+  ---
+  duration_ms: 85.3021
+  ...
+# Subtest: actual features respond to a different image Buffer
+ok 3 - actual features respond to a different image Buffer
+  ---
+  duration_ms: 89.9731
+  ...
+# Subtest: invalid image is rejected without invalidating the actual resident session
+ok 4 - invalid image is rejected without invalidating the actual resident session
+  ---
+  duration_ms: 12.6711
+  ...
+1..4
+# tests 4
+# suites 0
+# pass 4
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 3.824

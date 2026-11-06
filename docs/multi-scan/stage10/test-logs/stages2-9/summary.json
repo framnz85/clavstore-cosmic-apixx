@@ -1,0 +1,13 @@
+{
+  "counts": {
+    "stage9-pipeline": 24,
+    "stage9-evaluation": 19,
+    "stage7-security-catalog": 24,
+    "stage7-repository": 8,
+    "stage7-service": 30,
+    "frontend-stages8-9": 38,
+    "stages2-6": 246
+  },
+  "total": 389,
+  "failures": 0
+}

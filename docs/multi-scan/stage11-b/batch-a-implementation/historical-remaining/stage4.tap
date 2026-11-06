@@ -1,0 +1,205 @@
+TAP version 13
+# Subtest: configuration and tenant paths fail closed
+ok 1 - configuration and tenant paths fail closed
+  ---
+  duration_ms: 2.4189
+  ...
+# Subtest: model and processor manifests reject CLIP-like assumptions
+ok 2 - model and processor manifests reject CLIP-like assumptions
+  ---
+  duration_ms: 0.3691
+  ...
+# Subtest: artifact size/hash/missing-file and symlink checks
+ok 3 - artifact size/hash/missing-file and symlink checks
+  ---
+  duration_ms: 9.8681
+  ...
+# Subtest: all six bilinear fixtures exactly match isolated Pillow 11.1.0
+ok 4 - all six bilinear fixtures exactly match isolated Pillow 11.1.0
+  ---
+  duration_ms: 142.230497
+  ...
+# Subtest: supported formats yield RGB normalized tensors without CLIP normalization
+ok 5 - supported formats yield RGB normalized tensors without CLIP normalization
+  ---
+  duration_ms: 51.751498
+  ...
+# Subtest: invalid, truncated, unsupported and oversized images rejected
+ok 6 - invalid, truncated, unsupported and oversized images rejected
+  ---
+  duration_ms: 35.5288
+  ...
+# Subtest: EXIF rotation and animated image rejection
+ok 7 - EXIF rotation and animated image rejection
+  ---
+  duration_ms: 24.420399
+  ...
+# Subtest: L2 normalization validates dimensions, NaN, Infinity and zero norm
+ok 8 - L2 normalization validates dimensions, NaN, Infinity and zero norm
+  ---
+  duration_ms: 0.3077
+  ...
+# Subtest: mocked CPU session initializes once, selects pooled output and closes
+ok 9 - mocked CPU session initializes once, selects pooled output and closes
+  ---
+  duration_ms: 20.1842
+  ...
+# Subtest: failed model initialization retries and metadata mismatch is rejected
+ok 10 - failed model initialization retries and metadata mismatch is rejected
+  ---
+  duration_ms: 24.284599
+  ...
+# Subtest: malformed pooled outputs and native inference failures fail closed
+ok 11 - malformed pooled outputs and native inference failures fail closed
+  ---
+  duration_ms: 20.6414
+  ...
+# Subtest: native inference retains its capacity slot after cancellation until completion
+ok 12 - native inference retains its capacity slot after cancellation until completion
+  ---
+  duration_ms: 15.778599
+  ...
+# Subtest: pre-aborted and closed workers never load a session
+ok 13 - pre-aborted and closed workers never load a session
+  ---
+  duration_ms: 3.1883
+  ...
+# Subtest: unconfigured telemetry isolation fails before native runtime import
+ok 14 - unconfigured telemetry isolation fails before native runtime import
+  ---
+  duration_ms: 14.4566
+  ...
+# Subtest: real HNSW indexes multiple references and returns distinct stable SKU candidates
+ok 15 - real HNSW indexes multiple references and returns distinct stable SKU candidates
+  ---
+  duration_ms: 83.447598
+  ...
+# Subtest: topK validation and reference oversampling collapse duplicate SKU references
+ok 16 - topK validation and reference oversampling collapse duplicate SKU references
+  ---
+  duration_ms: 28.9068
+  ...
+# Subtest: model fingerprint prevents CLIP/DINO or preprocessing-version mixing
+ok 17 - model fingerprint prevents CLIP/DINO or preprocessing-version mixing
+  ---
+  duration_ms: 25.899899
+  ...
+# Subtest: authorization rejects foreign stores/packages and invalid path segments
+ok 18 - authorization rejects foreign stores/packages and invalid path segments
+  ---
+  duration_ms: 24.162799
+  ...
+# Subtest: foreign catalog ownership, duplicate SKUs/references and invalid IDs are rejected
+ok 19 - foreign catalog ownership, duplicate SKUs/references and invalid IDs are rejected
+  ---
+  duration_ms: 20.9164
+  ...
+# Subtest: missing/corrupt reference images are reported while good references remain searchable
+ok 20 - missing/corrupt reference images are reported while good references remain searchable
+  ---
+  duration_ms: 24.125299
+  ...
+# Subtest: empty catalogs and catalogs with only missing images publish valid empty indexes
+ok 21 - empty catalogs and catalogs with only missing images publish valid empty indexes
+  ---
+  duration_ms: 50.451399
+  ...
+# Subtest: immutable generation publication preserves old mappings and active handles
+ok 22 - immutable generation publication preserves old mappings and active handles
+  ---
+  duration_ms: 57.784599
+  ...
+# Subtest: cold loading verifies native labels and reference mappings
+ok 23 - cold loading verifies native labels and reference mappings
+  ---
+  duration_ms: 28.1377
+  ...
+# Subtest: binary, mapping and manifest corruption are rejected before native loading
+ok 24 - binary, mapping and manifest corruption are rejected before native loading
+  ---
+  duration_ms: 77.584998
+  ...
+# Subtest: incomplete generations and corrupt pointers fail closed
+ok 25 - incomplete generations and corrupt pointers fail closed
+  ---
+  duration_ms: 23.467399
+  ...
+# Subtest: previous generation recovery is explicit and rollback atomically restores it
+ok 26 - previous generation recovery is explicit and rollback atomically restores it
+  ---
+  duration_ms: 71.777199
+  ...
+# Subtest: rollback refuses an invalid previous generation
+ok 27 - rollback refuses an invalid previous generation
+  ---
+  duration_ms: 53.437299
+  ...
+# Subtest: concurrent builds are rejected and stale expected generations cannot publish
+ok 28 - concurrent builds are rejected and stale expected generations cannot publish
+  ---
+  duration_ms: 27.428299
+  ...
+# Subtest: publication failure retains old pointer and never deletes the active generation
+ok 29 - publication failure retains old pointer and never deletes the active generation
+  ---
+  duration_ms: 47.876599
+  ...
+# Subtest: symlinked tenant directories are rejected
+ok 30 - symlinked tenant directories are rejected
+  ---
+  duration_ms: 1.6231
+  ...
+# Subtest: cached generation count is bounded and forced audits verify disk again
+ok 31 - cached generation count is bounded and forced audits verify disk again
+  ---
+  duration_ms: 84.909098
+  ...
+# Subtest: recognition authorizes before embedding and returns no authoritative prices
+ok 32 - recognition authorizes before embedding and returns no authoritative prices
+  ---
+  duration_ms: 27.8387
+  ...
+# Subtest: module imports do not load legacy scanner controllers, databases or native ONNX
+ok 33 - module imports do not load legacy scanner controllers, databases or native ONNX
+  ---
+  duration_ms: 9.420899
+  ...
+# Subtest: searches stay on the validated active generation while another build is pending
+ok 34 - searches stay on the validated active generation while another build is pending
+  ---
+  duration_ms: 50.855199
+  ...
+# Subtest: generation contents cannot be transplanted between tenant directories
+ok 35 - generation contents cannot be transplanted between tenant directories
+  ---
+  duration_ms: 27.0698
+  ...
+# Subtest: SKU/reference mappings remain stable when snapshot ordering changes
+ok 36 - SKU/reference mappings remain stable when snapshot ordering changes
+  ---
+  duration_ms: 53.999199
+  ...
+# Subtest: model failures during a rebuild leave the published index unchanged
+ok 37 - model failures during a rebuild leave the published index unchanged
+  ---
+  duration_ms: 27.989299
+  ...
+# Subtest: semantically identical model keys do not depend on JSON property order
+ok 38 - semantically identical model keys do not depend on JSON property order
+  ---
+  duration_ms: 26.013099
+  ...
+# Subtest: invalid recognition topK is rejected without consuming embedding CPU
+ok 39 - invalid recognition topK is rejected without consuming embedding CPU
+  ---
+  duration_ms: 1.9506
+  ...
+1..39
+# tests 39
+# suites 0
+# pass 39
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1333.234171

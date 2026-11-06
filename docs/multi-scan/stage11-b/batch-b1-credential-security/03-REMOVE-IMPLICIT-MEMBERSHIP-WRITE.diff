@@ -1,0 +1,34 @@
+--- a/controllers/user.js
++++ b/controllers/user.js
+@@ -254,30 +254,7 @@
+         .lean()
+         .exec();
+ 
+-      if (
+-        userWithReseller &&
+-        !userWithReseller.estoreid &&
+-        process.env.ESTORE_TYPE === "dedicated"
+-      ) {
+-        const oldEstore = await Estore.findOne({
+-          _id: new ObjectId(resellid),
+-        })
+-          .lean()
+-          .exec();
+-
+-        if (oldEstore) {
+-          await User.updateOne(
+-            { email },
+-            {
+-              $set: {
+-                estoreid: oldEstore._id,
+-              },
+-            },
+-          ).exec();
+-
+-          userWithReseller.estoreid = oldEstore;
+-        }
+-      }
++      // Membership grants require a separately verified enrollment operation.
+ 
+       if (userWithReseller) {
+         userWithReseller = await ensurePromoStart(userWithReseller);

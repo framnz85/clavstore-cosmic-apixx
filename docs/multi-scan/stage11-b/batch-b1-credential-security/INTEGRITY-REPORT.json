@@ -1,0 +1,102 @@
+{
+  "scope_pass": true,
+  "existing_files_verified": 106998,
+  "unchanged_symlink_targets": 88,
+  "projects": [
+    {
+      "project": "/mnt/g/clavstore/clavstore-ui/clavstore-reseller-original",
+      "protected_file_count": 85533,
+      "changed_existing_files": [],
+      "missing_files": [],
+      "unchanged_symlink_targets": 75,
+      "git_status_unchanged": true,
+      "new_files_at_scan": []
+    },
+    {
+      "project": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api",
+      "protected_file_count": 7173,
+      "changed_existing_files": [],
+      "missing_files": [],
+      "unchanged_symlink_targets": 5,
+      "git_status_unchanged": true,
+      "new_files_at_scan": [
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/01-GENERIC-WRITER-CONTAINMENT.diff",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/02-RELATED-AUTHORITY-CONTAINMENT.diff",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/03-REMOVE-IMPLICIT-MEMBERSHIP-WRITE.diff",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/04-STOP-SHARED-PASSWORD-PROVISIONING.diff",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/05-PAYMENT-CREDENTIAL-CONTAINMENT.diff",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/06-FUTURE-SELF-PROFILE-CORE.diff",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/AUTHENTICATION-ANALYSIS.md",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/BASELINE.json.gz",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/COMPATIBILITY.md",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/CREDENTIAL-WRITE-INVENTORY.json",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/CREDENTIAL-WRITE-INVENTORY.md",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/DIFF-INVENTORY.json",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/FUTURE-CORE-CHECKS.json",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/INLINE-AND-TRUST-GAPS.md",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/MUTATION-SCAN-EXCLUSIONS.json",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/MUTATION-SCAN.json",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/PATCH-MANIFEST.json",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/PROFILE-WRITE.js.txt",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/PROFILE-WRITE.test.js.txt",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/REMEDIATION-PLAN.md",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/ROLLBACK-PREIMAGES.json",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/ROLLBACK.md",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/SECURITY-FINDINGS.md",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/SECURITY-TEST-SPECIFICATIONS.md",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/SOURCE-EVIDENCE.json",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/build-inventory.py",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/prepare-patches.py",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/rollback-preimages/controllers__app__order.js.txt",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/rollback-preimages/controllers__order.js.txt",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/rollback-preimages/controllers__user.js.txt",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/rollback-preimages/routes__appuser.js.txt",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/rollback-preimages/routes__estore.js.txt",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/rollback-preimages/routes__order.js.txt",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/rollback-preimages/routes__payment.js.txt",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/rollback-preimages/routes__user.js.txt",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/rollback-preimages/routes__withdraw.js.txt",
+        "docs/multi-scan/stage11-b/batch-b1-credential-security/write-review.py"
+      ]
+    },
+    {
+      "project": "/mnt/g/clavstore/clavstore-api/clavstore-ai-image-api",
+      "protected_file_count": 14292,
+      "changed_existing_files": [],
+      "missing_files": [],
+      "unchanged_symlink_targets": 8,
+      "git_status_unchanged": true,
+      "new_files_at_scan": []
+    }
+  ],
+  "protected_pins": {
+    "routes/user.js": "a8c092ffc22484b7d5cfd0b876ac160a04a2343d12bedea0d39a56a198216ddd",
+    "routes/multi-scan.js": "469c88c14c7472b59aa145e74c785d8ec85adbd1540a8be3fcffd0f98cd99836",
+    "tests/multi-scan/stage2.test.js": "a7ff4edd000f7882b9d27e4b3c7e709904a5063f0ddf7dbdadd1ff56465ebe4a"
+  },
+  "scanner_flags": {
+    "MULTI_SCAN_ENABLED": {
+      "inherited_present": false,
+      "inherited_exact_true": false,
+      "env_files": [
+        {
+          "file": ".env",
+          "present": false,
+          "any_exact_true": false
+        }
+      ]
+    },
+    "MULTI_SCAN_SESSION_ENABLED": {
+      "inherited_present": false,
+      "inherited_exact_true": false,
+      "env_files": [
+        {
+          "file": ".env",
+          "present": false,
+          "any_exact_true": false
+        }
+      ]
+    }
+  },
+  "notes": "No existing files modified; prior routes/user.js Git modification remains identical to baseline. New review artifacts finalized after full scan are covered by INVENTORY.json."
+}

@@ -1,0 +1,72 @@
+'use strict';
+// PROPOSED CORE ONLY. No default key, environment access, model import or trusted-data adapter.
+const jwt = require('jsonwebtoken');
+const ISSUER = 'cosmic-clavstore-account-security';
+const AUDIENCE = 'clavstore-self-profile';
+const PURPOSE = 'self-profile-v1';
+const ID = /^[0-9a-f]{24}$/;
+const epoch = n => Number.isSafeInteger(n) && n >= 0;
+const validId = x => typeof x === 'string' && ID.test(x);
+const unavailable = res => res.status(503).json({err:'Account updates are temporarily unavailable.'});
+function createSelfProfileEndpoint(options = {}) {
+  const {key, forbiddenKeys, resolveCurrent, commitProfile, clock = () => Math.floor(Date.now()/1000)} = options;
+  const ready = typeof key === 'string' && Buffer.byteLength(key) >= 32 &&
+    Array.isArray(forbiddenKeys) && forbiddenKeys.length > 0 &&
+    forbiddenKeys.every(k => typeof k === 'string' && k !== key) &&
+    typeof resolveCurrent === 'function' && typeof commitProfile === 'function' && typeof clock === 'function';
+  return async function selfProfile(req, res) {
+    res.set('Cache-Control','no-store');
+    if (!ready) return unavailable(res);
+    const token = req.headers.authtoken;
+    let claims;
+    try {
+      const now = clock();
+      if (!Number.isSafeInteger(now) || typeof token !== 'string' || token.length > 4096) throw Error('invalid');
+      claims = jwt.verify(token, key, {algorithms:['HS256'],issuer:ISSUER,audience:AUDIENCE,clockTimestamp:now,clockTolerance:0});
+      if (!claims || typeof claims !== 'object' || claims.iss !== ISSUER || claims.aud !== AUDIENCE ||
+          claims.purpose !== PURPOSE || !validId(claims.sub) || !validId(claims.storeId) || !validId(claims.packageId) ||
+          !epoch(claims.credentialEpoch) || !epoch(claims.authorizationEpoch) ||
+          !Number.isSafeInteger(claims.iat) || !Number.isSafeInteger(claims.exp) || claims.iat > now ||
+          claims.exp <= now || claims.exp <= claims.iat || claims.exp-claims.iat > 900) throw Error('invalid');
+    } catch (_) {
+      return res.status(401).json({err:'Invalid or expired profile token.'});
+    }
+    if (req.headers.estoreid !== claims.storeId ||
+        (req.headers.resellid !== undefined && req.headers.resellid !== claims.packageId))
+      return res.status(403).json({err:'Profile update denied.'});
+    const input = req.body;
+    if (!input || typeof input !== 'object' || Array.isArray(input) ||
+        ![Object.prototype, null].includes(Object.getPrototypeOf(input)))
+      return res.status(400).json({err:'Invalid profile update.'});
+    const keys = Object.keys(input);
+    if (!keys.length || keys.some(k => !['name','phone'].includes(k)) || keys.some(k =>
+      typeof input[k] !== 'string' || input[k].trim().length < 1 || input[k].length > (k === 'name' ? 120 : 40)))
+      return res.status(400).json({err:'Invalid profile update.'});
+    const patch = Object.freeze(Object.fromEntries(keys.map(k => [k,input[k].trim()])));
+    try {
+      // Contract: fresh trusted state; never a Redis cached legacy user or a claim-derived grant.
+      const current = await resolveCurrent(Object.freeze({userId:claims.sub,storeId:claims.storeId,packageId:claims.packageId}));
+      if (!current || current.userId !== claims.sub || current.storeId !== claims.storeId ||
+          current.packageId !== claims.packageId || current.active !== true || current.deleted !== false ||
+          current.storeActive !== true || current.packageActive !== true ||
+          !['customer','cashier','moderator','admin'].includes(current.role) ||
+          current.credentialEpoch !== claims.credentialEpoch || current.authorizationEpoch !== claims.authorizationEpoch ||
+          !epoch(current.profileVersion)) return res.status(403).json({err:'Profile update denied.'});
+      const commitTime = clock();
+      if (!Number.isSafeInteger(commitTime) || claims.exp <= commitTime)
+        return res.status(401).json({err:'Invalid or expired profile token.'});
+      // Contract: atomic recheck of identity, tenant, token expiry, active/revocation state and all versions;
+      // scoped $set of these two fields only, validators on, upsert off, cache invalidation owned here.
+      const result = await commitProfile(Object.freeze({
+        userId:claims.sub,storeId:claims.storeId,packageId:claims.packageId,
+        credentialEpoch:claims.credentialEpoch,authorizationEpoch:claims.authorizationEpoch,
+        profileVersion:current.profileVersion,tokenExpiresAt:claims.exp,patch
+      }));
+      if (!result || result.matchedCount !== 1) return res.status(409).json({err:'Profile changed; authenticate again.'});
+      return res.status(200).json({ok:true});
+    } catch (_) {
+      return unavailable(res);
+    }
+  };
+}
+module.exports = {createSelfProfileEndpoint,ISSUER,AUDIENCE,PURPOSE};

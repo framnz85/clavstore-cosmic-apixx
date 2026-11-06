@@ -1,0 +1,84 @@
+{
+  "scope_pass": true,
+  "existing_files_audited": 107062,
+  "sole_existing_file_changed": "routes/order.js",
+  "unchanged_symlink_targets": 88,
+  "projects": [
+    {
+      "root": "/mnt/g/clavstore/clavstore-ui/clavstore-reseller-original",
+      "protected_files": 85533,
+      "changed_existing_files": [],
+      "missing": [],
+      "unchanged_symlink_targets": 75,
+      "new_files_at_scan": [],
+      "git_status_added": [],
+      "git_status_removed": []
+    },
+    {
+      "root": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api",
+      "protected_files": 7237,
+      "changed_existing_files": [
+        "routes/order.js"
+      ],
+      "missing": [],
+      "unchanged_symlink_targets": 5,
+      "new_files_at_scan": [
+        "docs/multi-scan/stage11-b/public-order-token-implementation/APPLIED.diff",
+        "docs/multi-scan/stage11-b/public-order-token-implementation/BASELINE.json.gz",
+        "docs/multi-scan/stage11-b/public-order-token-implementation/COMPATIBILITY-AND-RISKS.md",
+        "docs/multi-scan/stage11-b/public-order-token-implementation/CONTAINMENT.tap",
+        "docs/multi-scan/stage11-b/public-order-token-implementation/FEATURE-DISABLED.json",
+        "docs/multi-scan/stage11-b/public-order-token-implementation/RECOVERY.tap",
+        "docs/multi-scan/stage11-b/public-order-token-implementation/REPRODUCE.md",
+        "docs/multi-scan/stage11-b/public-order-token-implementation/ROLLBACK.md",
+        "docs/multi-scan/stage11-b/public-order-token-implementation/SOURCE-PINS.json",
+        "docs/multi-scan/stage11-b/public-order-token-implementation/SYNTAX.json",
+        "docs/multi-scan/stage11-b/public-order-token-implementation/TEST-RESULTS.json",
+        "docs/multi-scan/stage11-b/public-order-token-implementation/historical/stage10.tap",
+        "docs/multi-scan/stage11-b/public-order-token-implementation/historical/stages2-9/frontend-stages8-9.log",
+        "docs/multi-scan/stage11-b/public-order-token-implementation/historical/stages2-9/stage7-repository.log",
+        "docs/multi-scan/stage11-b/public-order-token-implementation/historical/stages2-9/stage7-security-catalog.log",
+        "docs/multi-scan/stage11-b/public-order-token-implementation/historical/stages2-9/stage7-service.log",
+        "docs/multi-scan/stage11-b/public-order-token-implementation/historical/stages2-9/stage9-evaluation.log",
+        "docs/multi-scan/stage11-b/public-order-token-implementation/historical/stages2-9/stage9-pipeline.log",
+        "docs/multi-scan/stage11-b/public-order-token-implementation/historical/stages2-9/stages2-6/stage2.tap",
+        "docs/multi-scan/stage11-b/public-order-token-implementation/historical/stages2-9/stages2-6/stage3.tap",
+        "docs/multi-scan/stage11-b/public-order-token-implementation/historical/stages2-9/stages2-6/stage4.tap",
+        "docs/multi-scan/stage11-b/public-order-token-implementation/historical/stages2-9/stages2-6/stage5-actual.tap",
+        "docs/multi-scan/stage11-b/public-order-token-implementation/historical/stages2-9/stages2-6/stage5-combined.tap",
+        "docs/multi-scan/stage11-b/public-order-token-implementation/historical/stages2-9/stages2-6/stage5-unit.tap",
+        "docs/multi-scan/stage11-b/public-order-token-implementation/historical/stages2-9/stages2-6/stage6-actual.tap",
+        "docs/multi-scan/stage11-b/public-order-token-implementation/historical/stages2-9/stages2-6/stage6-ocr.tap",
+        "docs/multi-scan/stage11-b/public-order-token-implementation/historical/stages2-9/stages2-6/stage6-pipeline.tap",
+        "docs/multi-scan/stage11-b/public-order-token-implementation/historical/stages2-9/stages2-6/stage6-reranker.tap",
+        "docs/multi-scan/stage11-b/public-order-token-implementation/historical/stages2-9/stages2-6/summary.json",
+        "docs/multi-scan/stage11-b/public-order-token-implementation/historical/stages2-9/summary.json",
+        "docs/multi-scan/stage11-b/public-order-token-implementation/historical/summary.json",
+        "docs/multi-scan/stage11-b/public-order-token-implementation/scanner-security/FLAG-RESULTS.json",
+        "docs/multi-scan/stage11-b/public-order-token-implementation/scanner-security/SECURITY.tap",
+        "tests/multi-scan/stage11/public-order-containment.test.js"
+      ],
+      "git_status_added": [
+        " M routes/order.js"
+      ],
+      "git_status_removed": []
+    },
+    {
+      "root": "/mnt/g/clavstore/clavstore-api/clavstore-ai-image-api",
+      "protected_files": 14292,
+      "changed_existing_files": [],
+      "missing": [],
+      "unchanged_symlink_targets": 8,
+      "new_files_at_scan": [],
+      "git_status_added": [],
+      "git_status_removed": []
+    }
+  ],
+  "protected_hashes": {
+    "routes/order.js": "2a448f501d35157b9c4a11ac3c0a2a21ed476aeb6f8d4d7dceb8064457223bdf",
+    "routes/user.js": "a8c092ffc22484b7d5cfd0b876ac160a04a2343d12bedea0d39a56a198216ddd",
+    "routes/multi-scan.js": "469c88c14c7472b59aa145e74c785d8ec85adbd1540a8be3fcffd0f98cd99836",
+    "tests/multi-scan/stage2.test.js": "a7ff4edd000f7882b9d27e4b3c7e709904a5063f0ddf7dbdadd1ff56465ebe4a"
+  },
+  "note": "Generic verifier exit1/unchanged=false is expected for authorized router delta; exact allowlist audit passes. Final new docs written after scan remain within this implementation directory."
+}

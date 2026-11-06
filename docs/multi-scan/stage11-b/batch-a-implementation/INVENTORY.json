@@ -1,0 +1,160 @@
+{
+  "new_file_count": 37,
+  "changed_existing_files": [
+    "routes/multi-scan.js"
+  ],
+  "unchanged_existing_file_count": 106834,
+  "symlinks_unchanged": 88,
+  "unexpected_changes": [],
+  "new_files": [
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-implementation/APPLICATION.json",
+      "sha256": "bce86e33051340f4ff27afe1a9c0ecc1f058df52ec25c973813ae431a57e7895"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-implementation/BASELINE-20261022.json.gz",
+      "sha256": "ef9073bed7bf7d2c3905e4546edc1f325d9a6c9ad879f7952d98719640ef263e"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-implementation/FINAL-AUDIT-20261022.json.gz",
+      "sha256": "2c54befd2cbe0d3c9b12d3d44284ae03501333bec1aeca9bfa268c74c3981ec1"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-implementation/IMPLEMENTATION-REPORT.md",
+      "sha256": "f5353bc3dfb31a689c5c8745526f036bbab1f801ed8edf2bd2d0eea008e371f3"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-implementation/INTEGRITY-REPORT.md",
+      "sha256": "601d3ec5ded3f7fa900e5b0c02c964e6e66884e3d6cb5fd8c3b6fbe257a23ad6"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-implementation/SECURITY-FIRST.tap",
+      "sha256": "0143013fd395342247fde4bc8eccd37c38f810b4d119ec6ab67b85a2a42a9e0f"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-implementation/TEMP-ARTIFACTS.json",
+      "sha256": "071b57c74cd112d410997cec87cb8e93589e20e8534e142ae9819de76f9e6123"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-implementation/TEST-RESULTS.json",
+      "sha256": "a842503cab6547d43d985ecc12e424414172d3d5aa18d133ac0526cdc0ab4c7d"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-implementation/historical-regressions/stage10.tap",
+      "sha256": "8e48209faf2c52346839bf8b6af218cc3b758f245519164d8a11ce43908cd8a7"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-implementation/historical-regressions/stages2-9/frontend-stages8-9.log",
+      "sha256": "2e8f73c8363b14b5f2f5e4f2ab9e838060a00b5e6b6110bd8a43460de28e1cac"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-implementation/historical-regressions/stages2-9/stage7-repository.log",
+      "sha256": "544cf9fc65c6c9c6cec10dd38b1ac3302723b376bd963a0401394d1a796774ce"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-implementation/historical-regressions/stages2-9/stage7-security-catalog.log",
+      "sha256": "6165cbf41dbad1aa05de9dd787460290a2be7707f753cfe1fe98633256cf1d89"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-implementation/historical-regressions/stages2-9/stage7-service.log",
+      "sha256": "113f8ee8a68b9f3ae27576888c6171256cafb1ed9bd73c853aec1e9b8410f9f6"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-implementation/historical-regressions/stages2-9/stage9-evaluation.log",
+      "sha256": "4451cb8060eb1e060b3307888d2cc6aa79c6f7ef1487229df2c998d4365fe27b"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-implementation/historical-regressions/stages2-9/stage9-pipeline.log",
+      "sha256": "6e85a4771f9eb0520deeeffa1fbe3a6e1dcaf903c3d280e9e2b250f0416b6839"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-implementation/historical-regressions/stages2-9/stages2-6/stage2.tap",
+      "sha256": "44f3b370dcf8dfbfb1ac356cb779dc7cf0333537d33683b72b48ebdbeaa0f8c7"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-implementation/historical-remaining/SUMMARY.json",
+      "sha256": "9bcfe77189336d8f91d745640b39ca048d03e5fd11a45b37f3d69e275b10bfdd"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-implementation/historical-remaining/stage3.tap",
+      "sha256": "4ed87141dc89d8090b325ce4c61e7c9fb2df7b880167051ab87a8018a4df4748"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-implementation/historical-remaining/stage4.tap",
+      "sha256": "d163cfeaca267fb05403b408b4bdb2d976bf19b45baf2b6aab913f9aefb34394"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-implementation/historical-remaining/stage5-actual.tap",
+      "sha256": "81281a5ace09590d2bc75e0b9e0e6e30f766b71c48a49fea9c86b92256c29329"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-implementation/historical-remaining/stage5-combined.tap",
+      "sha256": "eb301e3eb38e2e13d7100b5c4f5cec13275399c9ac2d1c09a71200b81a4bf1e6"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-implementation/historical-remaining/stage5-unit.tap",
+      "sha256": "650d8569dd82c0a6d1431264f0c447dea8b8609bb8ebee40e08188e212b1558f"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-implementation/historical-remaining/stage6-actual.tap",
+      "sha256": "9001124ff88555e72c63314ca34261a2b354896682dafc1849cc1b511c2c7468"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-implementation/historical-remaining/stage6-ocr.tap",
+      "sha256": "1a5950a64b9a5021b9ff11400cba5f4c96e82ff50f34dbf0dcfef0b613ec1a89"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-implementation/historical-remaining/stage6-pipeline.tap",
+      "sha256": "a45a3cb1eb4409d99c9d908df23a0cbdc5fe98098346db827e07d41c33e88558"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-implementation/historical-remaining/stage6-reranker.tap",
+      "sha256": "f1efe5e42345d750ec1d9367ccf5dc9df5b2532b76efcefe0048f762ade91e1c"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-implementation/routes-multi-scan-original-20261022.txt",
+      "sha256": "f4948acc53c4e6d6b2029e8896bd8ef21b5e33516a47c31bff44ab7736440c08"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-implementation/security-run/FLAG-RESULTS.json",
+      "sha256": "f7d18a3354ae4ba1594bc24251d2eacb26f284b7a5b89d2c42538ebff3a1ecf7"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-implementation/security-run/SECURITY.tap",
+      "sha256": "aa4057a4dff272ae6c0beea449c46ba59f136fbe7022040ef4e3a123c769c298"
+    },
+    {
+      "path": "services/multi-scan/stage11/credential-repository.js",
+      "sha256": "4b8b78e9271aa8738d24df03c4d405d82bdfee463495e024a8b0587680f4c924"
+    },
+    {
+      "path": "services/multi-scan/stage11/session-config.js",
+      "sha256": "833b2b7aaf5f8100da410ab8dce51c9d7b5e49f7b7c488c9c62de7d719e39f2e"
+    },
+    {
+      "path": "services/multi-scan/stage11/session-factory.js",
+      "sha256": "4da44715ffbf65683baa0011c5cbc2a4eeb0171f5e924dadec7c8811e051d13e"
+    },
+    {
+      "path": "services/multi-scan/stage11/session-handler.js",
+      "sha256": "dc3692dcc8bd22cf334f9756844946e3a3162f00a218f54fedf6943c133d052d"
+    },
+    {
+      "path": "services/multi-scan/stage11/session-service.js",
+      "sha256": "64da81d5cca96822a2d7b7887997679ca3b1457c1e8d29f5fd410ff08c42635c"
+    },
+    {
+      "path": "tests/multi-scan/stage11/auth-session.test.js",
+      "sha256": "6eb9e9601b994a3da377b00b64b553a114ce3831c31019d0289faa8b1ac67c2c"
+    },
+    {
+      "path": "tests/multi-scan/stage11/run-auth-session.py",
+      "sha256": "28c049bfa4097837dc3f8c899e5c6b41fd2d5f009ffab9e1e0e0c799c0d589d1"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a-implementation/INVENTORY.json",
+      "sha256": null,
+      "reason": "self-referential inventory boundary"
+    }
+  ]
+}

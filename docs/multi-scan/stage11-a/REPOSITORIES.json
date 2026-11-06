@@ -1,0 +1,23 @@
+[
+  {
+    "project": "/mnt/g/clavstore/clavstore-ui/clavstore-reseller-original",
+    "repositoryRoot": "/mnt/g",
+    "gitDirectoryReported": "/mnt/g/.git",
+    "statusBefore": "?? clavstore/clavstore-ui/clavstore-reseller-original/\n",
+    "note": "Project scoped status captured independently; no assumption of shared repository. Git status alone insufficient for untracked frozen files."
+  },
+  {
+    "project": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api",
+    "repositoryRoot": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api",
+    "gitDirectoryReported": ".git",
+    "statusBefore": "?? controllers/multi-scan.js\n?? docs/\n?? middlewares/multi-scan-auth.js\n?? multi-scan-runtime/\n?? routes/multi-scan.js\n?? scripts/\n?? services/\n?? tests/\n",
+    "note": "Project scoped status captured independently; no assumption of shared repository. Git status alone insufficient for untracked frozen files."
+  },
+  {
+    "project": "/mnt/g/clavstore/clavstore-api/clavstore-ai-image-api",
+    "repositoryRoot": "/mnt/g/clavstore/clavstore-api/clavstore-ai-image-api",
+    "gitDirectoryReported": ".git",
+    "statusBefore": "?? controllers/multi-scan.js\n?? docs/\n?? middlewares/multi-scan-service-auth.js\n?? multi-scan-data/\n?? routes/multi-scan.js\n?? scripts/\n?? services/\n?? tests/\n",
+    "note": "Project scoped status captured independently; no assumption of shared repository. Git status alone insufficient for untracked frozen files."
+  }
+]

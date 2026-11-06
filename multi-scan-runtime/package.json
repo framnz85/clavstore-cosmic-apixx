@@ -1,0 +1,10 @@
+{
+  "name": "clavstore-multi-scan-upload-runtime",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Optional isolated upload dependencies; install only inside this new directory.",
+  "dependencies": {
+    "multer": "2.0.2",
+    "sharp": "0.34.5"
+  }
+}

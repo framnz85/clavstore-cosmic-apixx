@@ -1,0 +1,130 @@
+TAP version 13
+# Subtest: OCR configuration rejects unbounded resource settings
+ok 1 - OCR configuration rejects unbounded resource settings
+  ---
+  duration_ms: 1.6089
+  ...
+# Subtest: verified artifacts reject size, digest, symlink and missing file
+ok 2 - verified artifacts reject size, digest, symlink and missing file
+  ---
+  duration_ms: 9.3313
+  ...
+# Subtest: RGB decode rejects unsupported, malformed, oversized and animated images
+ok 3 - RGB decode rejects unsupported, malformed, oversized and animated images
+  ---
+  duration_ms: 30.7827
+  ...
+# Subtest: OCR honors EXIF orientation
+ok 4 - OCR honors EXIF orientation
+  ---
+  duration_ms: 12.446399
+  ...
+# Subtest: detector uses BGR ImageNet CHW and ceil128 long-side resizing
+ok 5 - detector uses BGR ImageNet CHW and ceil128 long-side resizing
+  ---
+  duration_ms: 8.6074
+  ...
+# Subtest: recognizer uses BGR height48 normalization and zero-valued right padding
+ok 6 - recognizer uses BGR height48 normalization and zero-valued right padding
+  ---
+  duration_ms: 18.9966
+  ...
+# Subtest: bilinear resize and right-angle rotations preserve bounded raw RGB
+ok 7 - bilinear resize and right-angle rotations preserve bounded raw RGB
+  ---
+  duration_ms: 0.3621
+  ...
+# Subtest: crop quality flags tiny, blank and low contrast images
+ok 8 - crop quality flags tiny, blank and low contrast images
+  ---
+  duration_ms: 0.3257
+  ...
+# Subtest: DB component, hull/minimum rectangle, score and unclip return source coordinates
+ok 9 - DB component, hull/minimum rectangle, score and unclip return source coordinates
+  ---
+  duration_ms: 7.8432
+  ...
+# Subtest: DB empty, malformed, nonfinite and out-of-range tensors fail appropriately
+ok 10 - DB empty, malformed, nonfinite and out-of-range tensors fail appropriately
+  ---
+  duration_ms: 4.1663
+  ...
+# Subtest: DB component/region truncation is explicit
+ok 11 - DB component/region truncation is explicit
+  ---
+  duration_ms: 7.4722
+  ...
+# Subtest: projective rectification maps perspective corners and rejects degenerate boxes
+ok 12 - projective rectification maps perspective corners and rejects degenerate boxes
+  ---
+  duration_ms: 0.8147
+  ...
+# Subtest: CTC collapses repeats, preserves blank-separated repeats and spaces
+ok 13 - CTC collapses repeats, preserves blank-separated repeats and spaces
+  ---
+  duration_ms: 0.2661
+  ...
+# Subtest: CTC validates shape, distribution, NaN and empty blank output
+ok 14 - CTC validates shape, distribution, NaN and empty blank output
+  ---
+  duration_ms: 0.2912
+  ...
+# Subtest: mock OCR completes detection, rectification, CTC and packaging extraction
+ok 15 - mock OCR completes detection, rectification, CTC and packaging extraction
+  ---
+  duration_ms: 54.705099
+  ...
+# Subtest: empty OCR returns an explicit reason and sessions are reused
+ok 16 - empty OCR returns an explicit reason and sessions are reused
+  ---
+  duration_ms: 17.7857
+  ...
+# Subtest: session contract mismatch releases all partially initialized models
+ok 17 - session contract mismatch releases all partially initialized models
+  ---
+  duration_ms: 6.3099
+  ...
+# Subtest: artifact/dictionary failures occur before inference
+ok 18 - artifact/dictionary failures occur before inference
+  ---
+  duration_ms: 3.1219
+  ...
+# Subtest: native inference errors fail closed and release request capacity
+ok 19 - native inference errors fail closed and release request capacity
+  ---
+  duration_ms: 6.7758
+  ...
+# Subtest: failed model load can retry without a persistent service
+ok 20 - failed model load can retry without a persistent service
+  ---
+  duration_ms: 15.461
+  ...
+# Subtest: concurrent inference and close reject until native work finishes after abort
+ok 21 - concurrent inference and close reject until native work finishes after abort
+  ---
+  duration_ms: 8.8904
+  ...
+# Subtest: pre-aborted and closed workers consume no native capacity
+ok 22 - pre-aborted and closed workers consume no native capacity
+  ---
+  duration_ms: 3.4208
+  ...
+# Subtest: dedicated telemetry isolation is required before native import
+ok 23 - dedicated telemetry isolation is required before native import
+  ---
+  duration_ms: 6.2643
+  ...
+# Subtest: imports do not initialize native runtime, databases or legacy scanner
+ok 24 - imports do not initialize native runtime, databases or legacy scanner
+  ---
+  duration_ms: 0.2151
+  ...
+1..24
+# tests 24
+# suites 0
+# pass 24
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 235.176998

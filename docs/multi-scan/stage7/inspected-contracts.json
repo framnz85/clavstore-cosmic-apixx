@@ -1,0 +1,20 @@
+{
+  "inspection": "Read source files only; never imported existing model/database modules",
+  "mainApiSha256": {
+    "models/product.js": "8350d9aac50501c8b75914a52b0d24069c82038f9209e01d3463d88cc0dbb5cc",
+    "models/user.js": "2645c0a8e8f071b5263fd0dfe443d4f2f17d7483e3c8978d61b989f1d9401a83",
+    "models/estore.js": "93f5f17ffe1e55864303daf50fb6ea05a118c29ab5248ae7184834a4a0870830",
+    "models/brand.js": "e05155a9e754f396dbf8e67e8bf9e16439062f6ff6692602a43106acece3546a",
+    "models/package.js": "4f4c64d7721fc305aaaf6c914e912e1e9ee9c535469b02654870570d2e9972af",
+    "controllers/auth.js": "d01a8be6f5c7095b64076d5582bc0ec7668029ee080a095c179aee32c9eaaeda",
+    "controllers/user.js": "2a09aff9e6dc78e5d5365e71ce9f973865d0cb17e3bf6202027a2660f6b6bcb6",
+    "controllers/order.js": "44591ff2e486deebfecbd853d7a57280b7548a27b505804cf187da8590a15008",
+    "controllers/multi-scan.js": "e630cd4c7ceb80bd861b424cd2fdb2af22175b16b8b52d893b8183bfd449f457",
+    "middlewares/multi-scan-auth.js": "38cc362892fbbbc0b40e5428a26c5a44cc327189aef3690c4467a2757206acb9",
+    "routes/multi-scan.js": "f4948acc53c4e6d6b2029e8896bd8ef21b5e33516a47c31bff44ab7736440c08",
+    "services/multi-scan/upload.js": "3f082bb1330904284434848af1053948bdd75cbd82a23f004ba0ba5a129525fd"
+  },
+  "jwtLibraryVersion": "8.5.1",
+  "billingPlanIsNotTenantNamespace": true,
+  "tenantNamespaceConvention": "Existing Store.resellid + User.resellid and scoped membership; verify active parent Estore reseller record. Requires production-data validation before deployment."
+}

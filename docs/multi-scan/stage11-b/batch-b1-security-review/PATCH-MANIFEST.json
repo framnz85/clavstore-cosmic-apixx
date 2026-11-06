@@ -1,0 +1,28 @@
+[
+  {
+    "absolute_path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/routes/user.js",
+    "original_sha256": "0dd77b60b993926406bfdc2ebeee92dff90966e92a3c955785313df95460516e",
+    "proposed_sha256": "984e17abf59326cc6e617d87364802f4ca076775cc9ac0a71a23dc1235845fab",
+    "diff": "01-RECOVERY-CONTAINMENT.diff",
+    "reason": "Temporarily stop unauthenticated password replacement; explicit recovery downtime until a verified single-use recovery flow is separately approved.",
+    "original_crlf_lines": 73,
+    "proposed_crlf_lines": 73,
+    "clean_apply_check": true,
+    "syntax_only_pass": true,
+    "applied": false,
+    "executed": false
+  },
+  {
+    "absolute_path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/dbconnect/gratis.js",
+    "original_sha256": "d32854d271b043c57e0d28bd9e92a3b11a37470b681f7adc6b5be81c4310144d",
+    "proposed_sha256": "52dd7903136bf8ea0d3d2e828cec24f1b78b13bf41a88d32160b9526be685326",
+    "diff": "02-CONNECTION-LOG-REDACTION.diff",
+    "reason": "Remove configured URI and raw exception text from known connection-bootstrap logs; preserve connection creation/export/lifecycle behavior.",
+    "original_crlf_lines": 12,
+    "proposed_crlf_lines": 12,
+    "clean_apply_check": true,
+    "syntax_only_pass": true,
+    "applied": false,
+    "executed": false
+  }
+]

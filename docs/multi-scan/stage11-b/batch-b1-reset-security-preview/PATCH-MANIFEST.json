@@ -1,0 +1,26 @@
+{
+  "option": "A",
+  "existing_files_proposed": [
+    {
+      "absolute_path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/routes/user.js",
+      "current_sha256": "0dd77b60b993926406bfdc2ebeee92dff90966e92a3c955785313df95460516e",
+      "proposed_sha256": "a8c092ffc22484b7d5cfd0b876ac160a04a2343d12bedea0d39a56a198216ddd",
+      "exact_diff": "OPTION-A.diff",
+      "affected_routes": [
+        "PUT /gratis/reset-password/:userid",
+        "PUT /gratis/forgot-password"
+      ],
+      "expected_status": 503,
+      "expected_body": {
+        "err": "Password recovery is temporarily unavailable."
+      },
+      "crlf_preserved": true,
+      "clean_apply_check": true,
+      "syntax_only_pass": true,
+      "applied": false,
+      "executed": false
+    }
+  ],
+  "other_existing_files_proposed": [],
+  "runtime_tests_executed": false
+}

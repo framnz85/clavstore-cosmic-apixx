@@ -1,0 +1,14 @@
+{
+  "authoritative_spec": "TRUSTED-ADAPTER-v2.md",
+  "authoritative_diff": "NEW-ADAPTER-v2.diff",
+  "source_sha256": "0c1fc0b16b5aeceab9622c472c8bcaabe3d1285b111021a1786ea77affad6d55",
+  "syntax_only_pass": true,
+  "new_file_clean_apply_check": true,
+  "executed": false,
+  "applied": false,
+  "superseded": [
+    "TRUSTED-ADAPTER.md",
+    "NEW-ADAPTER.diff"
+  ],
+  "reason": "Preserve ambiguity rejection when an inactive row would otherwise be filtered out. No production implementation or source edits."
+}

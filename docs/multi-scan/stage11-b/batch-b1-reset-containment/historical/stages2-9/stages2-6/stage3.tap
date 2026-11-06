@@ -1,0 +1,175 @@
+TAP version 13
+# Subtest: config thresholds and limits reject invalid values
+ok 1 - config thresholds and limits reject invalid values
+  ---
+  duration_ms: 1.875999
+  ...
+# Subtest: manifest rejects unpinned, inconsistent or guessed model contracts
+ok 2 - manifest rejects unpinned, inconsistent or guessed model contracts
+  ---
+  duration_ms: 0.3813
+  ...
+# Subtest: artifact verification checks exact size and digest and refuses missing files/symlinks
+ok 3 - artifact verification checks exact size and digest and refuses missing files/symlinks
+  ---
+  duration_ms: 10.227998
+  ...
+# Subtest: JPEG PNG and WebP decode to full-resolution RGB
+ok 4 - JPEG PNG and WebP decode to full-resolution RGB
+  ---
+  duration_ms: 23.606895
+  ...
+# Subtest: invalid bytes, corrupt images and unsupported vector images fail decode
+ok 5 - invalid bytes, corrupt images and unsupported vector images fail decode
+  ---
+  duration_ms: 19.378197
+  ...
+# Subtest: animated WebP images are rejected rather than silently scanning one frame
+ok 6 - animated WebP images are rejected rather than silently scanning one frame
+  ---
+  duration_ms: 2.816999
+  ...
+# Subtest: dimension, pixel and byte budgets are enforced
+ok 7 - dimension, pixel and byte budgets are enforced
+  ---
+  duration_ms: 2.5195
+  ...
+# Subtest: EXIF orientation is applied before transformation and crop coordinates
+ok 8 - EXIF orientation is applied before transformation and crop coordinates
+  ---
+  duration_ms: 17.473696
+  ...
+# Subtest: Stage 2 oriented RGB input is accepted without double rotation
+ok 9 - Stage 2 oriented RGB input is accepted without double rotation
+  ---
+  duration_ms: 0.6911
+  ...
+# Subtest: preprocessing uses BGR CHW 0..255 and top-left padding 114
+ok 10 - preprocessing uses BGR CHW 0..255 and top-left padding 114
+  ---
+  duration_ms: 27.728095
+  ...
+# Subtest: aspect ratio and integer rounding are represented by exact inverse scales
+ok 11 - aspect ratio and integer rounding are represented by exact inverse scales
+  ---
+  duration_ms: 12.712397
+  ...
+# Subtest: portrait uses right padding and recovered boxes exclude padding
+ok 12 - portrait uses right padding and recovered boxes exclude padding
+  ---
+  duration_ms: 13.896098
+  ...
+# Subtest: boxes clip to the oriented source and reject nonfinite/zero/outside coordinates
+ok 13 - boxes clip to the oriented source and reject nonfinite/zero/outside coordinates
+  ---
+  duration_ms: 0.287999
+  ...
+# Subtest: raw-grid decoding uses correct stride and objectness times class probability
+ok 14 - raw-grid decoding uses correct stride and objectness times class probability
+  ---
+  duration_ms: 0.9011
+  ...
+# Subtest: raw-grid order advances x then y then stride pyramid
+ok 15 - raw-grid order advances x then y then stride pyramid
+  ---
+  duration_ms: 0.5406
+  ...
+# Subtest: already decoded output is supported only through explicit manifest encoding
+ok 16 - already decoded output is supported only through explicit manifest encoding
+  ---
+  duration_ms: 0.5433
+  ...
+# Subtest: output shape/type mismatch fails closed; invalid rows never fabricate boxes
+ok 17 - output shape/type mismatch fails closed; invalid rows never fabricate boxes
+  ---
+  duration_ms: 0.6656
+  ...
+# Subtest: confidence filtering and candidate caps are deterministic
+ok 18 - confidence filtering and candidate caps are deterministic
+  ---
+  duration_ms: 0.875
+  ...
+# Subtest: class-agnostic NMS suppresses duplicates without merging adjacent instances
+ok 19 - class-agnostic NMS suppresses duplicates without merging adjacent instances
+  ---
+  duration_ms: 0.237
+  ...
+# Subtest: NMS ties use anchor order and truncated results are flagged
+ok 20 - NMS ties use anchor order and truncated results are flagged
+  ---
+  duration_ms: 0.2175
+  ...
+# Subtest: empty outputs produce no crops and never identify SKUs
+ok 21 - empty outputs produce no crops and never identify SKUs
+  ---
+  duration_ms: 9.410398
+  ...
+# Subtest: multiple detections retain real scores, full-resolution crops and stable scoped IDs
+ok 22 - multiple detections retain real scores, full-resolution crops and stable scoped IDs
+  ---
+  duration_ms: 13.371197
+  ...
+# Subtest: crop pixel and byte budgets fail rather than silently dropping visible items
+ok 23 - crop pixel and byte budgets fail rather than silently dropping visible items
+  ---
+  duration_ms: 1.4917
+  ...
+# Subtest: crop IDs cannot collide across tenant scopes and no shared crop cache exists
+ok 24 - crop IDs cannot collide across tenant scopes and no shared crop cache exists
+  ---
+  duration_ms: 12.098198
+  ...
+# Subtest: missing model, failed load, corrupt metadata and model-run errors are explicit
+ok 25 - missing model, failed load, corrupt metadata and model-run errors are explicit
+  ---
+  duration_ms: 9.578298
+  ...
+# Subtest: failed initialization can retry without caching a rejected promise
+ok 26 - failed initialization can retry without caching a rejected promise
+  ---
+  duration_ms: 6.160698
+  ...
+# Subtest: one active pipeline per worker; cancelled native runs retain their slot until completion
+ok 27 - one active pipeline per worker; cancelled native runs retain their slot until completion
+  ---
+  duration_ms: 3.551
+  ...
+# Subtest: pre-aborted requests do not initialize a model and closing is final
+ok 28 - pre-aborted requests do not initialize a model and closing is final
+  ---
+  duration_ms: 0.9311
+  ...
+# Subtest: session manager independently rejects concurrent native inference
+ok 29 - session manager independently rejects concurrent native inference
+  ---
+  duration_ms: 0.650099
+  ...
+# Subtest: singleton factory imports no legacy models, databases or route controllers
+ok 30 - singleton factory imports no legacy models, databases or route controllers
+  ---
+  duration_ms: 14.165798
+  ...
+# Subtest: crop pixels come from the original oriented image without resize
+ok 31 - crop pixels come from the original oriented image without resize
+  ---
+  duration_ms: 2.616699
+  ...
+# Subtest: output buffers are never written into shared image storage
+ok 32 - output buffers are never written into shared image storage
+  ---
+  duration_ms: 8.979098
+  ...
+# Subtest: default native loader fails closed without a dedicated telemetry-disabled environment
+ok 33 - default native loader fails closed without a dedicated telemetry-disabled environment
+  ---
+  duration_ms: 1.9797
+  ...
+1..33
+# tests 33
+# suites 0
+# pass 33
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 231.309355

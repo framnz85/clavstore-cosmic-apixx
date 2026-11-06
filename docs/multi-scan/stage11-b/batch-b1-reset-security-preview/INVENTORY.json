@@ -1,0 +1,58 @@
+{
+  "unchanged_existing_files": 106948,
+  "unchanged_symlink_targets": 88,
+  "existing_files_changed": [],
+  "unrelated_changes": [],
+  "new_document_count": 12,
+  "new_documentation": [
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-security-preview/BASELINE.json.gz",
+      "sha256": "bb90c91ba624620590b33680e312168d17e5acc5f666441610752d3cd25b20f3"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-security-preview/FINAL-AUDIT.json.gz",
+      "sha256": "6f4494e03e49de7648fdfff8ac47d9e98f515d6eb3452938751b9a019992b914"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-security-preview/INTEGRITY-REPORT.md",
+      "sha256": "1a3217e85d9ad765d9bbc05d755f4009f5e055dc2d1a471f85b420eb7f57d286"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-security-preview/OPTION-A.diff",
+      "sha256": "c9aa86fb7120ded785f6dc63f2880402b5be5a521546a383e5f573a924a56563"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-security-preview/OPTION-B-SECURE-REPLACEMENT.md",
+      "sha256": "c2e1dc77ec475924e3ea3ba959e7a5349a4be2f5f0fe83cde519bccbf26c323d"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-security-preview/PATCH-MANIFEST.json",
+      "sha256": "59db9f3bc185f2b52d8c278eeda38fa72ac08fc5c29c13c57417e827231c23bd"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-security-preview/REGRESSION-ROLLBACK.md",
+      "sha256": "86507c90949aedf0c157f7551af807755b4feae2d0e1f61a9c83864470d63171"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-security-preview/REVIEW.md",
+      "sha256": "ad9d19f2ae44244a6f67af1dc27c91224d3041c8b051c04a9fb6c42601f3850b"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-security-preview/SECURITY-TEST-PLAN.md",
+      "sha256": "ac497bc1a83b96dc4f19dc21181f690d774716b47dc25e891004972371829c9a"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-security-preview/SOURCE-EVIDENCE.json",
+      "sha256": "7fbf82da58bd45fb8fdb82ac2f056c19e868c92993ee9e8850dd2b07ec739211"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-security-preview/VERIFIED-ANALYSIS.md",
+      "sha256": "70cd79f79b589e41846bc168796af2649334e87bbf1fcc94a25975c77cfaa772"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-security-preview/INVENTORY.json",
+      "sha256": null,
+      "reason": "self-referential inventory boundary"
+    }
+  ]
+}

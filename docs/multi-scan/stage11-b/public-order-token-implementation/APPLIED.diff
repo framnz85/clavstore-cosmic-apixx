@@ -1,0 +1,13 @@
+diff --git a/routes/order.js b/routes/order.js
+index 471b131..9adfd4f 100644
+--- a/routes/order.js
++++ b/routes/order.js
+@@ -29,7 +29,7 @@ const {
+ const { authCheck, adminGratisCheck } = require("../middlewares/auth");
+ 
+ router.get("/gratis/user-order/:orderid", authCheck, userOrder);
+-router.get("/gratis/user-order-app/:orderid", userAppOrder);
++router.get("/gratis/user-order-app/:orderid", (_req, res) => res.status(503).json({ err: "Account authority operations are temporarily unavailable." }));
+ router.get(
+   "/gratis/admin-order/:orderid",
+   authCheck,

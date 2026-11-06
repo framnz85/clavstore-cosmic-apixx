@@ -1,0 +1,21 @@
+{
+  "applied": false,
+  "wired_to_application": false,
+  "clean_check": true,
+  "syntax": [
+    {
+      "draft": "PROFILE-WRITE.js.txt",
+      "proposed_new_path": "services/account-security/profile-write.js",
+      "sha256": "c33cd316bec8a709899e832418e5f1f35c5299a053b1a82cd196f5726f704e0b",
+      "syntax_exit": 0
+    },
+    {
+      "draft": "PROFILE-WRITE.test.js.txt",
+      "proposed_new_path": "tests/multi-scan/stage11/profile-write.test.js",
+      "sha256": "bbf3c997cac8c46cc9833caac44ca5d6861c9740c2b0aa760e7b154f5efdff7f",
+      "syntax_exit": 0
+    }
+  ],
+  "runtime_tests_run": false,
+  "blocker": "No trusted adapter, schema/epoch migration, fresh profile-token issuer or frontend migration is proposed as implemented; this core alone is not a deployable replacement."
+}

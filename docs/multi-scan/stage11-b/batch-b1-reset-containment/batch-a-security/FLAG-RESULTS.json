@@ -1,0 +1,149 @@
+[
+  {
+    "value": null,
+    "result": {
+      "status": 503,
+      "body": {
+        "error": {
+          "code": "DISABLED",
+          "message": "Scanner sessions are disabled"
+        },
+        "requestId": "eb960deb-0550-4845-9671-a9b85dfd37e4"
+      },
+      "headers": {
+        "x-powered-by": "Express",
+        "cache-control": "no-store",
+        "pragma": "no-cache",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "122",
+        "etag": "W/\"7a-WkBz7ClAp4jV8YRB2HAH5URYlj8\""
+      }
+    }
+  },
+  {
+    "value": "false",
+    "result": {
+      "status": 503,
+      "body": {
+        "error": {
+          "code": "DISABLED",
+          "message": "Scanner sessions are disabled"
+        },
+        "requestId": "167c6728-7ba0-48db-bc3b-ff045762b985"
+      },
+      "headers": {
+        "x-powered-by": "Express",
+        "cache-control": "no-store",
+        "pragma": "no-cache",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "122",
+        "etag": "W/\"7a-HmypZ3aAkceF/F6eItwL7Ma9+gI\""
+      }
+    }
+  },
+  {
+    "value": "",
+    "result": {
+      "status": 503,
+      "body": {
+        "error": {
+          "code": "DISABLED",
+          "message": "Scanner sessions are disabled"
+        },
+        "requestId": "8fba9802-36cc-4527-a420-38a3993e7487"
+      },
+      "headers": {
+        "x-powered-by": "Express",
+        "cache-control": "no-store",
+        "pragma": "no-cache",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "122",
+        "etag": "W/\"7a-n8/pMMg9W2RFcMdVu+QsjbJ9KJQ\""
+      }
+    }
+  },
+  {
+    "value": "TRUE",
+    "result": {
+      "status": 503,
+      "body": {
+        "error": {
+          "code": "DISABLED",
+          "message": "Scanner sessions are disabled"
+        },
+        "requestId": "9fb368da-6144-4a79-b6e1-73d805aa7fd7"
+      },
+      "headers": {
+        "x-powered-by": "Express",
+        "cache-control": "no-store",
+        "pragma": "no-cache",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "122",
+        "etag": "W/\"7a-9ue/lAtSkAV2N4YtKC0P3WnBLqg\""
+      }
+    }
+  },
+  {
+    "value": "1",
+    "result": {
+      "status": 503,
+      "body": {
+        "error": {
+          "code": "DISABLED",
+          "message": "Scanner sessions are disabled"
+        },
+        "requestId": "1b287e3c-633f-49b3-af83-f178a0576067"
+      },
+      "headers": {
+        "x-powered-by": "Express",
+        "cache-control": "no-store",
+        "pragma": "no-cache",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "122",
+        "etag": "W/\"7a-u6NWOmAAAB01gSsEg+UKL0YOBcI\""
+      }
+    }
+  },
+  {
+    "value": "true ",
+    "result": {
+      "status": 503,
+      "body": {
+        "error": {
+          "code": "DISABLED",
+          "message": "Scanner sessions are disabled"
+        },
+        "requestId": "71da943b-8f90-4131-8bc3-1d3165c1425f"
+      },
+      "headers": {
+        "x-powered-by": "Express",
+        "cache-control": "no-store",
+        "pragma": "no-cache",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "122",
+        "etag": "W/\"7a-gief+o4ZYW076kYxgtk8IugIMBE\""
+      }
+    }
+  },
+  {
+    "value": "yes",
+    "result": {
+      "status": 503,
+      "body": {
+        "error": {
+          "code": "DISABLED",
+          "message": "Scanner sessions are disabled"
+        },
+        "requestId": "3c457863-73bf-4a00-8a93-35ffe27c754f"
+      },
+      "headers": {
+        "x-powered-by": "Express",
+        "cache-control": "no-store",
+        "pragma": "no-cache",
+        "content-type": "application/json; charset=utf-8",
+        "content-length": "122",
+        "etag": "W/\"7a-VELHGR31a8bcLVRowGSZ8Z404Ug\""
+      }
+    }
+  }
+]

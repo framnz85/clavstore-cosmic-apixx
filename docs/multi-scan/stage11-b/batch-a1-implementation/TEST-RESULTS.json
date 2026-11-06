@@ -1,0 +1,171 @@
+{
+  "stage2_separate_run": {
+    "tests": 31,
+    "pass": 31,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0
+  },
+  "batch_a_security": {
+    "tests": 28,
+    "pass": 28,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0
+  },
+  "historical": {
+    "tests": 428,
+    "pass": 428,
+    "fail": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "suites": [
+      {
+        "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stage10.tap",
+        "tests": 39,
+        "pass": 39,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      {
+        "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stages2-9/frontend-stages8-9.log",
+        "tests": 38,
+        "pass": 38,
+        "fail": 0,
+        "skipped": 0,
+        "cancelled": 0
+      },
+      {
+        "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stages2-9/stage7-repository.log",
+        "tests": 8,
+        "pass": 8,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      {
+        "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stages2-9/stage7-security-catalog.log",
+        "tests": 24,
+        "pass": 24,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      {
+        "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stages2-9/stage7-service.log",
+        "tests": 30,
+        "pass": 30,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      {
+        "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stages2-9/stage9-evaluation.log",
+        "tests": 19,
+        "pass": 19,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      {
+        "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stages2-9/stage9-pipeline.log",
+        "tests": 24,
+        "pass": 24,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      {
+        "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stages2-9/stages2-6/stage2.tap",
+        "tests": 31,
+        "pass": 31,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      {
+        "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stages2-9/stages2-6/stage3.tap",
+        "tests": 33,
+        "pass": 33,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      {
+        "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stages2-9/stages2-6/stage4.tap",
+        "tests": 39,
+        "pass": 39,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      {
+        "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stages2-9/stages2-6/stage5-actual.tap",
+        "tests": 4,
+        "pass": 4,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      {
+        "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stages2-9/stages2-6/stage5-combined.tap",
+        "tests": 11,
+        "pass": 11,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      {
+        "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stages2-9/stages2-6/stage5-unit.tap",
+        "tests": 41,
+        "pass": 41,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      {
+        "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stages2-9/stages2-6/stage6-actual.tap",
+        "tests": 15,
+        "pass": 15,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      {
+        "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stages2-9/stages2-6/stage6-ocr.tap",
+        "tests": 24,
+        "pass": 24,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      {
+        "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stages2-9/stages2-6/stage6-pipeline.tap",
+        "tests": 10,
+        "pass": 10,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      },
+      {
+        "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stages2-9/stages2-6/stage6-reranker.tap",
+        "tests": 38,
+        "pass": 38,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0
+      }
+    ]
+  },
+  "syntax_checks_passed": 8,
+  "feature_disabled": {
+    "isolated_flag_probes": 7,
+    "all_status": 503,
+    "all_code": "DISABLED",
+    "default_export_disabled_test": "security test24 passed",
+    "live_flags_changed": false
+  },
+  "skipped_tests": [],
+  "scope": "Child-process synthetic fixtures, in-memory HTTP streams, local pinned native models and temporary test artifacts only; no production server/DB/Redis or deployment."
+}

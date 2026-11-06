@@ -1,0 +1,8 @@
+PASS src/components/multiScan/__tests__/stage8.test.js (11.444 s)
+PASS src/components/multiScan/__tests_stage9__/handoff.test.js
+
+Test Suites: 2 passed, 2 total
+Tests:       38 passed, 38 total
+Snapshots:   0 total
+Time:        22.782 s
+Ran all test suites.

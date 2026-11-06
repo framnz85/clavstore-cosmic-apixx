@@ -1,0 +1,18 @@
+{
+  "checked": [
+    "services/multi-scan/stage9/dataset.js",
+    "services/multi-scan/stage9/evaluation.js",
+    "services/multi-scan/stage9/fixture.js",
+    "services/multi-scan/stage9/native.js",
+    "services/multi-scan/stage9/orchestrator.js",
+    "services/multi-scan/stage9/review-verifier.js",
+    "scripts/multi-scan/stage9/evaluate.js",
+    "scripts/multi-scan/stage9/native-worker.js",
+    "scripts/multi-scan/stage9/run-native.py",
+    "scripts/multi-scan/stage9/run-tests.py",
+    "scripts/multi-scan/stage9/verify-protected.py",
+    "tests/multi-scan/stage9/evaluation.test.js",
+    "tests/multi-scan/stage9/pipeline.test.js"
+  ],
+  "failures": 0
+}

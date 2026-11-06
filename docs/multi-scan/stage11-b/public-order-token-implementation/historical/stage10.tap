@@ -1,0 +1,205 @@
+TAP version 13
+# Subtest: installed JWT issuer defaults to HS256 and iat, without exp or iss
+ok 1 - installed JWT issuer defaults to HS256 and iat, without exp or iss
+  ---
+  duration_ms: 3.4544
+  ...
+# Subtest: legacy-style no-exp token is incompatible with strict Stage 7
+ok 2 - legacy-style no-exp token is incompatible with strict Stage 7
+  ---
+  duration_ms: 13.991199
+  ...
+# Subtest: bounded HS256 with existing optional audience is compatible
+ok 3 - bounded HS256 with existing optional audience is compatible
+  ---
+  duration_ms: 1.1874
+  ...
+# Subtest: rejects expired
+ok 4 - rejects expired
+  ---
+  duration_ms: 0.7756
+  ...
+# Subtest: rejects unexpected issuer
+ok 5 - rejects unexpected issuer
+  ---
+  duration_ms: 0.433
+  ...
+# Subtest: rejects wrong audience
+ok 6 - rejects wrong audience
+  ---
+  duration_ms: 0.3948
+  ...
+# Subtest: rejects wrong subject
+ok 7 - rejects wrong subject
+  ---
+  duration_ms: 0.3996
+  ...
+# Subtest: rejects overlong life
+ok 8 - rejects overlong life
+  ---
+  duration_ms: 0.3706
+  ...
+# Subtest: rejects HS512
+ok 9 - rejects HS512
+  ---
+  duration_ms: 0.4697
+  ...
+# Subtest: rejects unsigned
+ok 10 - rejects unsigned
+  ---
+  duration_ms: 0.5079
+  ...
+# Subtest: forged signature cannot authenticate
+ok 11 - forged signature cannot authenticate
+  ---
+  duration_ms: 0.4516
+  ...
+# Subtest: upload bridge encodes oriented raw RGB without changing dimensions or pixels
+ok 12 - upload bridge encodes oriented raw RGB without changing dimensions or pixels
+  ---
+  duration_ms: 11.07
+  ...
+# Subtest: frozen Stage 2 validation composes with new bridge and Stage 7 encoded container
+ok 13 - frozen Stage 2 validation composes with new bridge and Stage 7 encoded container
+  ---
+  duration_ms: 23.686299
+  ...
+# Subtest: bridge rejects invalid dimensions, bytes and cancelled work
+ok 14 - bridge rejects invalid dimensions, bytes and cancelled work
+  ---
+  duration_ms: 0.6088
+  ...
+# Subtest: bridge enforces encoded byte cap
+ok 15 - bridge enforces encoded byte cap
+  ---
+  duration_ms: 1.919199
+  ...
+# Subtest: admission is disabled by default
+ok 16 - admission is disabled by default
+  ---
+  duration_ms: 0.3384
+  ...
+# Subtest: admission blocks concurrent work and release is idempotent
+ok 17 - admission blocks concurrent work and release is idempotent
+  ---
+  duration_ms: 0.375
+  ...
+# Subtest: per-tenant/user token bucket refills and has bounded keys
+ok 18 - per-tenant/user token bucket refills and has bounded keys
+  ---
+  duration_ms: 0.3478
+  ...
+# Subtest: rollback disable rejects new scans but preserves existing operation lease until it settles
+ok 19 - rollback disable rejects new scans but preserves existing operation lease until it settles
+  ---
+  duration_ms: 0.1799
+  ...
+# Subtest: invalid trusted context cannot enter admission
+ok 20 - invalid trusted context cannot enter admission
+  ---
+  duration_ms: 0.1883
+  ...
+# Subtest: safe event allowlist removes tokens, images, OCR, titles, headers, raw IDs and exception messages
+ok 21 - safe event allowlist removes tokens, images, OCR, titles, headers, raw IDs and exception messages
+  ---
+  duration_ms: 1.073
+  ...
+# Subtest: generation/model pins are validated and arbitrary keys dropped
+ok 22 - generation/model pins are validated and arbitrary keys dropped
+  ---
+  duration_ms: 0.2686
+  ...
+# Subtest: tenant pseudonyms are separated by store/package and keyed
+ok 23 - tenant pseudonyms are separated by store/package and keyed
+  ---
+  duration_ms: 0.388
+  ...
+# Subtest: invalid event/correlation cannot reach sink
+ok 24 - invalid event/correlation cannot reach sink
+  ---
+  duration_ms: 0.1752
+  ...
+# Subtest: local sink failure does not leak exception or fail inference diagnostics
+ok 25 - local sink failure does not leak exception or fail inference diagnostics
+  ---
+  duration_ms: 0.1607
+  ...
+# Subtest: public errors hide foreign catalog details and stack traces
+ok 26 - public errors hide foreign catalog details and stack traces
+  ---
+  duration_ms: 0.2746
+  ...
+# Subtest: administrative audit events require same bounded schema
+ok 27 - administrative audit events require same bounded schema
+  ---
+  duration_ms: 0.2105
+  ...
+# Subtest: no real accuracy evidence keeps commercial readiness blocked
+ok 28 - no real accuracy evidence keeps commercial readiness blocked
+  ---
+  duration_ms: 0.2831
+  ...
+# Subtest: zero false acceptances still have nonzero uncertainty bound
+ok 29 - zero false acceptances still have nonzero uncertainty bound
+  ---
+  duration_ms: 0.093
+  ...
+# Subtest: proposed offline accuracy gates never authorize deployment
+ok 30 - proposed offline accuracy gates never authorize deployment
+  ---
+  duration_ms: 0.1922
+  ...
+# Subtest: even a favorable readiness summary leaves feature/cart disabled and requires approval
+ok 31 - even a favorable readiness summary leaves feature/cart disabled and requires approval
+  ---
+  duration_ms: 0.1299
+  ...
+# Subtest: fresh offline review still rejects stale, unknown and cross-tenant records
+ok 32 - fresh offline review still rejects stale, unknown and cross-tenant records
+  ---
+  duration_ms: 2.6737
+  ...
+# Subtest: new diagnostics/admission can surround offline public interfaces without modifying them
+ok 33 - new diagnostics/admission can surround offline public interfaces without modifying them
+  ---
+  duration_ms: 23.110599
+  ...
+# Subtest: complete review guard preserves unknowns but never preselects a product
+ok 34 - complete review guard preserves unknowns but never preselects a product
+  ---
+  duration_ms: 8.1835
+  ...
+# Subtest: complete review guard rejects frozen pipeline crop truncation
+ok 35 - complete review guard rejects frozen pipeline crop truncation
+  ---
+  duration_ms: 0.1564
+  ...
+# Subtest: complete review guard rejects foreign scope and unsafe confirmation
+ok 36 - complete review guard rejects foreign scope and unsafe confirmation
+  ---
+  duration_ms: 0.1847
+  ...
+# Subtest: new complete review guard accepts the real frozen authoritative offline result
+ok 37 - new complete review guard accepts the real frozen authoritative offline result
+  ---
+  duration_ms: 2.9135
+  ...
+# Subtest: nonfinite or noninteger claimed sample counts cannot satisfy readiness evidence
+ok 38 - nonfinite or noninteger claimed sample counts cannot satisfy readiness evidence
+  ---
+  duration_ms: 0.154
+  ...
+# Subtest: public truncation error safely explains recapture limit
+ok 39 - public truncation error safely explains recapture limit
+  ---
+  duration_ms: 0.1395
+  ...
+1..39
+# tests 39
+# suites 0
+# pass 39
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 121.675895

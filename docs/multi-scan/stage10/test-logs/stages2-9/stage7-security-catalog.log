@@ -1,0 +1,130 @@
+TAP version 13
+# Subtest: valid signed expiring JWT resolves trusted DB role/store/reseller namespace
+ok 1 - valid signed expiring JWT resolves trusted DB role/store/reseller namespace
+  ---
+  duration_ms: 5.469706
+  ...
+# Subtest: forged, unsigned, expired, future and wrong-algorithm JWTs are denied
+ok 2 - forged, unsigned, expired, future and wrong-algorithm JWTs are denied
+  ---
+  duration_ms: 2.436581
+  ...
+# Subtest: legacy JWT without expiry fails closed rather than changing existing login
+ok 3 - legacy JWT without expiry fails closed rather than changing existing login
+  ---
+  duration_ms: 0.93367
+  ...
+# Subtest: issuer/audience enforced when configured; actual legacy admin audience is accepted
+ok 4 - issuer/audience enforced when configured; actual legacy admin audience is accepted
+  ---
+  duration_ms: 1.245093
+  ...
+# Subtest: token role and browser package headers cannot grant admin or change tenant
+ok 5 - token role and browser package headers cannot grant admin or change tenant
+  ---
+  duration_ms: 0.927269
+  ...
+# Subtest: foreign stores, missing membership, mismatched reseller and paused stores denied
+ok 6 - foreign stores, missing membership, mismatched reseller and paused stores denied
+  ---
+  duration_ms: 2.619594
+  ...
+# Subtest: explicit secondary store membership works only in the same reseller tenant
+ok 7 - explicit secondary store membership works only in the same reseller tenant
+  ---
+  duration_ms: 0.724854
+  ...
+# Subtest: ambiguous email users are denied instead of selecting an arbitrary account
+ok 8 - ambiguous email users are denied instead of selecting an arbitrary account
+  ---
+  duration_ms: 0.313023
+  ...
+# Subtest: forged grants, expired sessions and changed permissions cannot read catalog
+ok 9 - forged grants, expired sessions and changed permissions cannot read catalog
+  ---
+  duration_ms: 0.639947
+  ...
+# Subtest: Stage 2 route-local auth is reused without modifying frozen middleware
+ok 10 - Stage 2 route-local auth is reused without modifying frozen middleware
+  ---
+  duration_ms: 20.248205
+  ...
+# Subtest: cashiers cannot create/rebuild or export indexing snapshots
+ok 11 - cashiers cannot create/rebuild or export indexing snapshots
+  ---
+  duration_ms: 0.66425
+  ...
+# Subtest: admin snapshot pagination uses bounded keyset queries and a stable fingerprint
+ok 12 - admin snapshot pagination uses bounded keyset queries and a stable fingerprint
+  ---
+  duration_ms: 10.210758
+  ...
+# Subtest: snapshot metadata is immutable despite later price/stock/title edits
+ok 13 - snapshot metadata is immutable despite later price/stock/title edits
+  ---
+  duration_ms: 1.108383
+  ...
+# Subtest: snapshot read session remains consistent across concurrent page changes
+ok 14 - snapshot read session remains consistent across concurrent page changes
+  ---
+  duration_ms: 1.035277
+  ...
+# Subtest: deleted products disappear from a new snapshot and fingerprint changes
+ok 15 - deleted products disappear from a new snapshot and fingerprint changes
+  ---
+  duration_ms: 1.958246
+  ...
+# Subtest: inactive and imageless products are represented with no inference references
+ok 16 - inactive and imageless products are represented with no inference references
+  ---
+  duration_ms: 0.820361
+  ...
+# Subtest: safe CDN URLs preserve stable reference identity across image ordering
+ok 17 - safe CDN URLs preserve stable reference identity across image ordering
+  ---
+  duration_ms: 1.74803
+  ...
+# Subtest: image URL allowlist rejects credentials, traversal, IPs, queries and wrong origins
+ok 18 - image URL allowlist rejects credentials, traversal, IPs, queries and wrong origins
+  ---
+  duration_ms: 0.283221
+  ...
+# Subtest: unsafe URLs are skipped with warnings and no outbound image fetch
+ok 19 - unsafe URLs are skipped with warnings and no outbound image fetch
+  ---
+  duration_ms: 0.624347
+  ...
+# Subtest: snapshot tenant/revision mismatch, expiry and capacity are enforced
+ok 20 - snapshot tenant/revision mismatch, expiry and capacity are enforced
+  ---
+  duration_ms: 1.159386
+  ...
+# Subtest: oversized snapshots and unstable/foreign pages fail instead of partial publication
+ok 21 - oversized snapshots and unstable/foreign pages fail instead of partial publication
+  ---
+  duration_ms: 1.08138
+  ...
+# Subtest: current product lookup stays scoped and rejects malicious foreign adapter rows
+ok 22 - current product lookup stays scoped and rejects malicious foreign adapter rows
+  ---
+  duration_ms: 0.613446
+  ...
+# Subtest: authorized second-store session cannot read the first store snapshot
+ok 23 - authorized second-store session cannot read the first store snapshot
+  ---
+  duration_ms: 0.80016
+  ...
+# Subtest: subject mismatch is rejected by both standalone authentication and Stage 2 guard
+ok 24 - subject mismatch is rejected by both standalone authentication and Stage 2 guard
+  ---
+  duration_ms: 0.621046
+  ...
+1..24
+# tests 24
+# suites 0
+# pass 24
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 80.971616

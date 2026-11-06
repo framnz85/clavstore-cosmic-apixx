@@ -1,0 +1,193 @@
+{
+  "new_files": [
+    {
+      "path": "tests/multi-scan/stage11/recovery-containment.test.js",
+      "sha256": "fe7b8931149c63abcd8629443714a135fb55c01bd9539662e62d91bae5dc38c2",
+      "bytes": 9116
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/AFTER.json.gz",
+      "sha256": "8e61f50ae3a3cf666a23414c74f273e480ea87a42a2c6081e81fd8890b62f765",
+      "bytes": 4809881
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/APPLIED.diff",
+      "sha256": "3ea5a847239c5843c7a83a83161acaf2563066ad3bafb24b8d0222d017045e97",
+      "bytes": 1019
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/BASELINE.json.gz",
+      "sha256": "b870a8080b279682659b57df60bbf0db47fee1ae72f6badf6e183e07eb2ab0ca",
+      "bytes": 4871314
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/CONTAINMENT-DIRECT.tap",
+      "sha256": "f6791cf4a7e381a841bc63b210a3581d0084f438569f0566827b10dc61a5d1dd",
+      "bytes": 2586
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/CONTAINMENT.tap",
+      "sha256": "af933e1bc0a5b41e9c38aa23e096343c167d16a50fef0ca7a81a4e9d8485e5db",
+      "bytes": 389
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/FEATURE-CONFIG.json",
+      "sha256": "58450111c3bee208c7a038d311b470a1369f8d540ae0d0bfd0480988c100d168",
+      "bytes": 662
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/HISTORICAL-TAP-AUDIT.json",
+      "sha256": "f58afc99f05738234a7e0021e8bab7352c42015f5ec5c953e3d45c94879f5360",
+      "bytes": 1847
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/IMPLEMENTATION-REPORT.md",
+      "sha256": "ba3f8e3207dedb695b1962702fe7954d9b9cd8525e636431d7258eaf5bc0647e",
+      "bytes": 6760
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/INTEGRITY.json",
+      "sha256": "3b966848132dfc7c4325e5340bb060066dffa51b4c2361beac8a8153618cb91f",
+      "bytes": 4832
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/REMAINING-RISKS.md",
+      "sha256": "0ea22d3b0b4f8df2faff9a5535877f924728dc23ba79823556e432f4457a298d",
+      "bytes": 3764
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/REPRODUCE.md",
+      "sha256": "5ea46a16da0470c4fa4dd8d8ac6937ce5cd445e2caacd987259a5f5669f64ab6",
+      "bytes": 1773
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/ROLLBACK.md",
+      "sha256": "143e4dade29dbc0897b0108e3aa2a2866ffcfee0ef489502eb0c9561a2fea7f0",
+      "bytes": 1306
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/SYNTAX.json",
+      "sha256": "560f8e10e60d9b0aa42dfa0c6b6bf21ed10f65b1deda32ac5721d5cdc4719604",
+      "bytes": 724
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/USER-ROUTES-ORIGINAL.txt",
+      "sha256": "0dd77b60b993926406bfdc2ebeee92dff90966e92a3c955785313df95460516e",
+      "bytes": 2119
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/batch-a-security/FLAG-RESULTS.json",
+      "sha256": "5dfa908c508cff6ebf30a26974293720de7d121d6fb3dd8e741683b098fcd122",
+      "bytes": 3823
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/batch-a-security/SECURITY.tap",
+      "sha256": "5b610cee321d8c8826848bb0e61d0e63d10607868d3a5cfbb87ec822c74be9c3",
+      "bytes": 4612
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/historical/stage10.tap",
+      "sha256": "e175f9f2b2050328456986d4c36665f1c6c426149a34761c79083369c1161b90",
+      "bytes": 6607
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/historical/stages2-9/frontend-stages8-9.log",
+      "sha256": "f62aeb9bef92082c95f6b103ff5837acf9ea97ff01981ea601503a08b92eb1ab",
+      "bytes": 258
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/historical/stages2-9/stage7-repository.log",
+      "sha256": "7a7c0989c4993b2f2f624cd3e7067161efb3cbb0b2112af8ad352dc8b6da38fa",
+      "bytes": 1728
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/historical/stages2-9/stage7-security-catalog.log",
+      "sha256": "c82249fd83b50b9662a4084f3b6f51fbfa8f20092372995861ba3326c0e67f6d",
+      "bytes": 4997
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/historical/stages2-9/stage7-service.log",
+      "sha256": "a4b3b492e34a42d6c2ff231dd78206b0c327ea7349ebb76e1b89251f0dd9050d",
+      "bytes": 6329
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/historical/stages2-9/stage9-evaluation.log",
+      "sha256": "990aaf08e4748b981e599908b56ffeb0f64c9ebfc733c128d1f6b4a36289ce06",
+      "bytes": 3103
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/historical/stages2-9/stage9-pipeline.log",
+      "sha256": "424fed6791c623131c97a7ad1c482fcdba7bb72020a996e3419c6a2ab230f537",
+      "bytes": 4294
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/historical/stages2-9/stages2-6/stage2.tap",
+      "sha256": "b49bd248f2604179c3dbe33e0c08c386ab6c1e61f34988d7b952164b226db816",
+      "bytes": 5441
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/historical/stages2-9/stages2-6/stage3.tap",
+      "sha256": "69e87d9681b65ce8ef8cb1847676552b06313586a6d5e6d256fe95b1571159bb",
+      "bytes": 6465
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/historical/stages2-9/stages2-6/stage4.tap",
+      "sha256": "2180b6376f849eca6cc28f577eb6ee9e6609cb178baa3dabcca1deb20f366b60",
+      "bytes": 7552
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/historical/stages2-9/stages2-6/stage5-actual.tap",
+      "sha256": "fdc49d60147f8dba8de6e142b889ea11af5a19c428b3e61dde10266d3f42230c",
+      "bytes": 1174
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/historical/stages2-9/stages2-6/stage5-combined.tap",
+      "sha256": "1d7e2484afcef7c9f26e8d3fdd0fd8f0b5e4f7c9fd073fe286f4c91f8212bb6b",
+      "bytes": 1967
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/historical/stages2-9/stages2-6/stage5-unit.tap",
+      "sha256": "b08bf25d1689b51f4ab95c99e7d03a104d55faa26b0aca55d468a2ac9367b4cb",
+      "bytes": 7906
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/historical/stages2-9/stages2-6/stage6-actual.tap",
+      "sha256": "558d732cc8b90fdb64571dcefa67c4918df2738ee8e519597ff4ee5c9d16d88c",
+      "bytes": 1988
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/historical/stages2-9/stages2-6/stage6-ocr.tap",
+      "sha256": "5114d5abf0aafdb54bff01e5c1793759127aa681411feb00e2cfee9ce809badc",
+      "bytes": 4456
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/historical/stages2-9/stages2-6/stage6-pipeline.tap",
+      "sha256": "cb19b90f485f99fe7a951b986d36dfa48bf2d1ec1202f8d03f749fe72b7ce90a",
+      "bytes": 1830
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/historical/stages2-9/stages2-6/stage6-reranker.tap",
+      "sha256": "c9b17371aff73ff3f311b364fb3ce8ebd43a267a1827d258291906db8e79ac6a",
+      "bytes": 7007
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/historical/stages2-9/stages2-6/summary.json",
+      "sha256": "bf7f2a2e8268b8faa760e8e1209d97aa59eb484f61a75e2043d0c56cf233c4d2",
+      "bytes": 282
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/historical/stages2-9/summary.json",
+      "sha256": "72156dd6cd0db203b9b49a37ba83ac2ee6b0a7f10e5ac70fdb6e4407838b7ee2",
+      "bytes": 250
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-reset-containment/historical/summary.json",
+      "sha256": "440f26f906cd3bf44c37c615e9f126dc1a98d3705eab63fff6287404e8db516f",
+      "bytes": 72
+    }
+  ],
+  "self_excluded": "docs/multi-scan/stage11-b/batch-b1-reset-containment/INVENTORY.json",
+  "modified_existing_files": [
+    "routes/user.js"
+  ]
+}

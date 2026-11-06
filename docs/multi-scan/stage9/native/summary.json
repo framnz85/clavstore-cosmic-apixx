@@ -1,0 +1,44 @@
+{
+  "reports": [
+    {
+      "name": "index-build",
+      "report": "index-build.json",
+      "workerMs": 5834.428179001436,
+      "peakRssBytes": 1142824960
+    },
+    {
+      "name": "controlled-1",
+      "report": "controlled-1.json",
+      "workerMs": 8074.1076630000025,
+      "peakRssBytes": 1169403904
+    },
+    {
+      "name": "controlled-5",
+      "report": "controlled-5.json",
+      "workerMs": 18065.424308000132,
+      "peakRssBytes": 1189748736
+    },
+    {
+      "name": "controlled-10",
+      "report": "controlled-10.json",
+      "workerMs": 28379.87907199934,
+      "peakRssBytes": 1197920256
+    },
+    {
+      "name": "yolox-native",
+      "report": "yolox-native.json",
+      "workerMs": 1229.226529000327,
+      "peakRssBytes": 212946944
+    }
+  ],
+  "indexes": "/tmp/clav-stage9-indexes-dqfe83n4",
+  "twentyObjects": {
+    "executed": false,
+    "reason": "Frozen Stage 6 ScanPipeline and Stage 7 validator hard-cap 10 objects; no bypass attempted."
+  },
+  "coldDefinition": "Fresh child per workload; indexes built separately; first scan loads native sessions; OS page cache is not purged. Setup includes authenticated snapshot, index read and reference photo load.",
+  "warmDefinition": "Two subsequent scans on same resident sessions/index handles.",
+  "controlledWorkload": "Actual YOLOX runs, but supplied synthetic rectangles drive crop workloads; supplied count is not a detector-accuracy result.",
+  "peakMemoryDefinition": "Process lifetime high-water RSS per child, includes model/index loading and warm/concurrency scans.",
+  "deploymentCapacityEstablished": false
+}

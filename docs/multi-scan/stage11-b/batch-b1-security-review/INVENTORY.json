@@ -1,0 +1,94 @@
+{
+  "unchanged_existing_regular_files": 106927,
+  "unchanged_symlink_targets": 88,
+  "existing_files_changed": [],
+  "unrelated_changes": [],
+  "new_documentation_count": 21,
+  "new_documentation": [
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-security-review/01-RECOVERY-CONTAINMENT.diff",
+      "sha256": "b367b1a5b3de60e705c97fa0ccf1d31d1d92baff072aec701f24bfcb3e4d981c"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-security-review/02-CONNECTION-LOG-REDACTION.diff",
+      "sha256": "4883e8edd389a226ce9a8f815ddadc06dc577b4aba2335e2dc3f2678c97bbf8a"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-security-review/AUTHORIZATION-LIFECYCLE.md",
+      "sha256": "9fa392da8ac6d7c14b1394bcf0e8f95f5be075d33a3d68f645999d449d7b81af"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-security-review/BASELINE.json.gz",
+      "sha256": "fcc828232e69b7594c256c7092c35a9066b76abd270070873eafdf723e65cc04"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-security-review/DATABASE-COMPOSITION.md",
+      "sha256": "665bc51fb4ab42b8f29564a560192fd27cbe75959649922cabf48f1242a52fd4"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-security-review/DESIGN-OPTIONS.md",
+      "sha256": "cd570fc746af1b5b0d44d6721289379612c542dbbd4647858600e8dfeef9a214"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-security-review/FINAL-AUDIT.json.gz",
+      "sha256": "a614ee222247f8fd42996c28b8b6906b8b1dfb844af2a8d0768dc53381e655ac"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-security-review/INTEGRITY-REPORT.md",
+      "sha256": "1fc69afaa44d6042f064ef92ce3b86afe578f2f6e47c096e3c2e9a178ec558db"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-security-review/MINIMUM-APPROVAL-SCOPE.md",
+      "sha256": "d8d128fb4d57219c2bdb94e42d9d402687fcc25949524240f10748a805e53188"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-security-review/PATCH-MANIFEST.json",
+      "sha256": "f697a44d8c6dedf7d499c48a7e0d31de8e327f8f34cdb9493ac8c0345b124561"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-security-review/PATCH-PROPOSALS.md",
+      "sha256": "db788f55fd963004f071589293fa98e9ff60b31b176da0ca62de24b7d46e7414"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-security-review/REGRESSION-ROLLBACK.md",
+      "sha256": "a5737f1973137ddd45ebc120073ec8afbac31f6b0941e996d809eb1b66330937"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-security-review/REVIEW.md",
+      "sha256": "ed333ca3ac13002b43a2085247f1aa3cd543594202776fe9ff363da56d165765"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-security-review/RISK-ASSESSMENT.md",
+      "sha256": "49beaa059d775edc3a94c6b9a4c9fb82d0ab7227d06ee13fa53c40f90fbadc8a"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-security-review/SECURITY-TEST-SPECIFICATIONS.md",
+      "sha256": "4bbd1d8e8b7cc154303b238ddc2a8288fa760b49358a9e7365d7becc6160c693"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-security-review/SOURCE-EVIDENCE.json",
+      "sha256": "8583ed197226d8b69550e7b62a56c35b46652f621b29ae0c66190bf3dffd6d43"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-security-review/STATUS-REVOCATION.md",
+      "sha256": "fe6377f50337cfcad330a1858e1ede8c6cdf10a03f7852abfe6af907c93bb11f"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-security-review/WRITE-PATH-INVENTORY.md",
+      "sha256": "02411733ace513955535e90077acb01f6e343a3243b4be4834f5b7e29cad7169"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-security-review/WRITE-PATHS.json",
+      "sha256": "52f70f27d939a72f3571285a885e36724227928e7c42100d7af5fe2664a55e20"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-security-review/WRITE-SEARCH-COVERAGE.json",
+      "sha256": "4d9511f7b526d75f8b7d9995e2611417b8956d0c267ddbac6609a3dee434a4a2"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-security-review/INVENTORY.json",
+      "sha256": null,
+      "reason": "self-referential inventory boundary"
+    }
+  ]
+}

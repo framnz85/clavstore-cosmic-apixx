@@ -1,0 +1,17 @@
+{
+  "stage2": 31,
+  "stage3": 33,
+  "stage4": 39,
+  "stage5": 56,
+  "stage6": 87,
+  "stage7": 62,
+  "stage7Groups": {
+    "security-catalog.tap": 24,
+    "repository.tap": 8,
+    "service-validation.tap": 30
+  },
+  "total": 308,
+  "failures": 0,
+  "existingNativeInferenceTestsRerun": 19,
+  "stage7Inference": "serialized frozen Stage 6 fixture; no new native model or live network/database integration claimed"
+}

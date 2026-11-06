@@ -1,0 +1,55 @@
+TAP version 13
+# Subtest: 01 applied router has exact approved hashes and only one source substitution
+ok 1 - 01 applied router has exact approved hashes and only one source substitution
+  ---
+  duration_ms: 1.2839
+  ...
+# Subtest: 02 actual source-bound endpoint returns503 regardless of credentials/order/store selectors
+ok 2 - 02 actual source-bound endpoint returns503 regardless of credentials/order/store selectors
+  ---
+  duration_ms: 0.5981
+  ...
+# Subtest: 03 original controller, token issuer and model/cache functions are not called
+ok 3 - 03 original controller, token issuer and model/cache functions are not called
+  ---
+  duration_ms: 0.5934
+  ...
+# Subtest: 04 no request/account information read or disclosed; constant existing/missing response
+ok 4 - 04 no request/account information read or disclosed; constant existing/missing response
+  ---
+  duration_ms: 0.3341
+  ...
+# Subtest: 05 all21 other order bindings and original controller imports/source remain unchanged
+ok 5 - 05 all21 other order bindings and original controller imports/source remain unchanged
+  ---
+  duration_ms: 3.9433
+  ...
+# Subtest: 06 source-bound callback on owned Express router: mounted GET, trailing slash and implicit HEAD503
+ok 6 - 06 source-bound callback on owned Express router: mounted GET, trailing slash and implicit HEAD503
+  ---
+  duration_ms: 1624.780973
+  ...
+# Subtest: 07 existing recovery routes stay exact terminal503 and user router is unmodified
+ok 7 - 07 existing recovery routes stay exact terminal503 and user router is unmodified
+  ---
+  duration_ms: 4.4037
+  ...
+# Subtest: 08 scanner defaults fail closed; protected router and historical inventory hashes unchanged
+ok 8 - 08 scanner defaults fail closed; protected router and historical inventory hashes unchanged
+  ---
+  duration_ms: 23.810303
+  ...
+# Subtest: 09 login/token-generation sources and frontend payment sources remain untouched
+ok 9 - 09 login/token-generation sources and frontend payment sources remain untouched
+  ---
+  duration_ms: 18.046301
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1720.794283

@@ -1,0 +1,258 @@
+'use strict';
+const { test } = require('node:test');
+const assert = require('node:assert/strict');
+const http = require('node:http');
+const path = require('node:path');
+const fs = require('node:fs');
+const crypto = require('node:crypto');
+const { createRequire } = require('node:module');
+const mainRoot = path.resolve(__dirname, '../..');
+const aiRoot = path.resolve(mainRoot, '../clavstore-ai-image-api');
+const requireAI = createRequire(path.join(aiRoot,'package.json'));
+const express = require('express');
+const jwt = require('jsonwebtoken');
+const sharp = requireAI('sharp');
+const multer = requireAI('multer');
+const main = require('../../routes/multi-scan');
+const image = requireAI('./routes/multi-scan');
+const { config, scanResponse, selections } = require('../../services/multi-scan/contracts');
+const { validateImage } = require('../../services/multi-scan/upload');
+const key = 'test-only-secret-key-for-multi-scan-123456789';
+const storeId='111111111111111111111111', packageId='222222222222222222222222', userId='333333333333333333333333', productId='444444444444444444444444';
+const tenant={storeId,packageId,userId,role:'cashier'};
+const cfg = overrides => ({...config({MULTI_SCAN_ENABLED:'true',MULTI_SCAN_JWT_KEY:key,MULTI_SCAN_SERVICE_KEY:key}),...overrides});
+const adapters = overrides => ({resolveTenant:async()=>tenant,recordScan:async()=>{},...overrides});
+const authHeaders = token => ({authtoken:token || jwt.sign({email:'cashier@example.test'},key),estoreid:storeId});
+const prefix='/cosmic-api/ai/multi-scan';
+const internal='/ai-image-api/internal/ai/multi-scan';
+function app(router, mount='/cosmic-api') { const a=express(); a.use(mount,router); a.get('/legacy', (q,s)=>s.json({legacy:true})); return a; }
+async function request(a,url,opts={}) {
+ // Exercise real Express, Multer and body-parser over Node HTTP streams, without opening ports.
+ const { Duplex } = require('node:stream');
+ return new Promise((resolve,reject)=>{
+  const chunks=[];
+  const socket=new Duplex({read(){},write(chunk,encoding,done){chunks.push(Buffer.from(chunk));done();}});
+  const req=new http.IncomingMessage(socket);
+  req.url=url;req.method=opts.method || 'GET';req.headers={...opts.headers};
+  const body=opts.body===undefined?Buffer.alloc(0):Buffer.from(opts.body);
+  if(body.length) req.headers['content-length']=String(body.length);
+  req.httpVersionMajor=1;req.httpVersionMinor=1;
+  const res=new http.ServerResponse(req);res.assignSocket(socket);
+  res.on('error',reject);
+  res.once('finish',()=>{
+   const raw=Buffer.concat(chunks).toString();const text=raw.slice(raw.indexOf('\r\n\r\n')+4);
+   let data;try{data=JSON.parse(text);}catch{data=text;}
+   resolve({status:res.statusCode,body:data});socket.destroy();
+  });
+  a.handle(req,res,err=>{if(err)reject(err);else{res.statusCode=404;res.end();}});
+  if(body.length)req.push(body);if(!opts.incomplete){req.push(null);req.complete=true;}
+ });
+}
+
+function multipart(buffer,mimetype='image/png',field='photo',extra='') {
+ const boundary='multiscan-fixture-boundary';
+ return {method:'POST',headers:{...authHeaders(),'content-type':`multipart/form-data; boundary=${boundary}`},body:Buffer.concat([Buffer.from(`--${boundary}\r\nContent-Disposition: form-data; name="${field}"; filename="photo.png"\r\nContent-Type: ${mimetype}\r\n\r\n`),buffer,Buffer.from(`\r\n${extra}--${boundary}--\r\n`)])};
+}
+const mainApp=(a={},c={})=>app(main.createRouter({config:cfg(c),adapters:adapters(a),loadRuntime:()=>({multer,sharp})}));
+function capability(url,method='GET',extra={}) {
+ const now=Math.floor(Date.now()/1000);
+ const payload=Buffer.from(JSON.stringify({aud:'multi-scan-image',...tenant,method,path:url,iat:now,exp:now+30,requestId:crypto.randomUUID(),...extra})).toString('base64url');
+ return payload+'.'+crypto.createHmac('sha256',key).update(payload).digest('hex');
+}
+const internalOptions=(url,method='GET',body={})=>({method,headers:{'x-multi-scan-capability':capability(url,method,method==='POST'?{bodyHash:crypto.createHash('sha256').update(JSON.stringify(body)).digest('hex')} : {}),'content-type':'application/json'},body:method==='POST'?JSON.stringify(body):undefined});
+const rawResult=()=>({image:{width:30,height:20},indexVersion:'fixture-only-v1',detections:[{id:'one',box:[0,0,10,10],candidates:[{productId,score:0.7}]}]});
+
+test('default disabled gate and unrelated legacy route',async()=>{
+ const a=app(main.createRouter({config:config({})}));
+ assert.equal((await request(a,prefix+'/status')).body.error.code,'FEATURE_DISABLED');
+ assert.equal((await request(a,'/legacy')).status,200);
+ assert.equal((await request(app(image.createRouter({config:config({})}),'/ai-image-api'),internal+'/status')).status,503);
+});
+test('invalid optional env cannot break default route import',()=>{
+ const filename=require.resolve('../../routes/multi-scan'); const previous=process.env.MULTI_SCAN_MAX_BYTES;
+ try {process.env.MULTI_SCAN_MAX_BYTES='invalid';delete require.cache[filename];assert.equal(typeof require(filename),'function');}
+ finally {if(previous===undefined)delete process.env.MULTI_SCAN_MAX_BYTES;else process.env.MULTI_SCAN_MAX_BYTES=previous;delete require.cache[filename];}
+});
+test('missing, forged, expired and unsigned JWTs rejected',async()=>{
+ for(const token of ['bad',jwt.sign({email:'x'},'wrong'),jwt.sign({email:'x',exp:1},key),Buffer.from('{"alg":"none"}').toString('base64url')+'.'+Buffer.from('{"email":"x"}').toString('base64url')+'.']) {
+  assert.equal((await request(mainApp(),prefix+'/status',{headers:authHeaders(token)})).status,401);
+ }
+ assert.equal((await request(mainApp(),prefix+'/status',{headers:{estoreid:storeId}})).status,401);
+});
+test('JWT role claims cannot grant store membership',async()=>{
+ const token=jwt.sign({email:'x',role:'admin'},key);
+ assert.equal((await request(mainApp({resolveTenant:async()=>null}),prefix+'/status',{headers:authHeaders(token)})).status,403);
+});
+test('store, package and customer isolation',async()=>{
+ for(const headers of [{...authHeaders(),estoreid:'../x'},{...authHeaders(),resellid:'999999999999999999999999'}]) assert.ok([400,403].includes((await request(mainApp(),prefix+'/status',{headers})).status));
+ assert.equal((await request(mainApp({resolveTenant:async()=>({...tenant,storeId:packageId})}),prefix+'/status',{headers:authHeaders()})).status,403);
+ assert.equal((await request(mainApp({resolveTenant:async()=>({...tenant,role:'customer'})}),prefix+'/status',{headers:authHeaders()})).status,403);
+});
+test('unconfigured tenant adapter fails closed',async()=>{
+ assert.equal((await request(app(main.createRouter({config:cfg()})),prefix+'/status',{headers:authHeaders()})).body.error.code,'TENANT_ADAPTER_UNAVAILABLE');
+});
+test('authenticated readiness is honest and privileged rebuild denied',async()=>{
+ const result=await request(mainApp(),prefix+'/status',{headers:authHeaders()});assert.equal(result.status,200);assert.equal(result.body.ready,false);
+ assert.equal((await request(mainApp(),prefix+'/index/rebuild',{method:'POST',headers:authHeaders()})).status,403);
+ assert.equal((await request(mainApp({resolveTenant:async()=>({...tenant,role:'admin'})}),prefix+'/index/rebuild',{method:'POST',headers:authHeaders()})).status,503);
+});
+test('tenant adapter timeout returns bounded error',async()=>{
+ assert.equal((await request(mainApp({resolveTenant:()=>new Promise(()=>{})},{operationTimeoutMs:20}),prefix+'/status',{headers:authHeaders()})).status,504);
+});
+test('main missing isolated runtime gives explicit 503',async()=>{
+ const a=app(main.createRouter({config:cfg(),adapters:adapters(),loadRuntime:()=>{throw Error('missing');}}));
+ assert.equal((await request(a,prefix+'/scan',multipart(Buffer.from('x')))).body.error.code,'UPLOAD_RUNTIME_UNAVAILABLE');
+});
+test('multipart enforcement, missing photo and wrong field',async()=>{
+ assert.equal((await request(mainApp(),prefix+'/scan',{method:'POST',headers:authHeaders()})).status,415);
+ assert.equal((await request(mainApp(),prefix+'/scan',multipart(Buffer.from('x'),'image/png','wrong'))).status,400);
+ const boundary='multiscan-fixture-boundary';
+ assert.equal((await request(mainApp(),prefix+'/scan',{method:'POST',headers:{...authHeaders(),'content-type':`multipart/form-data; boundary=${boundary}`},body:`--${boundary}--\r\n`})).status,400);
+});
+test('actual JPEG PNG WebP decode and MIME mismatch validation',async()=>{
+ for(const [format,mime] of [['png','image/png'],['jpeg','image/jpeg'],['webp','image/webp']]) {
+  const buffer=await sharp({create:{width:30,height:20,channels:3,background:'red'}}).toFormat(format).toBuffer();
+  const photo=await validateImage({buffer,mimetype:mime},cfg(),sharp);
+  assert.equal(photo.width,30);assert.equal(photo.height,20);assert.equal(photo.data.length,30*20*3);
+  await assert.rejects(validateImage({buffer,mimetype:'text/html'},cfg(),sharp),{code:'INVALID_IMAGE'});
+ }
+ await assert.rejects(validateImage({buffer:Buffer.from('<script>bad</script>'),mimetype:'image/png'},cfg(),sharp),{code:'INVALID_IMAGE'});
+});
+test('EXIF orientation is applied before coordinates',async()=>{
+ const buffer=await sharp({create:{width:30,height:20,channels:3,background:'red'}}).jpeg().withMetadata({orientation:6}).toBuffer();
+ const p=await validateImage({buffer,mimetype:'image/jpeg'},cfg(),sharp);assert.equal(p.width,20);assert.equal(p.height,30);
+});
+test('pixel, dimension and multipart byte limits',async()=>{
+ const buffer=await sharp({create:{width:30,height:20,channels:3,background:'red'}}).png().toBuffer();
+ await assert.rejects(validateImage({buffer,mimetype:'image/png'},cfg({maxPixels:100}),sharp),{code:'INVALID_IMAGE'});
+ await assert.rejects(validateImage({buffer,mimetype:'image/png'},cfg({maxDimension:10}),sharp),{code:'INVALID_IMAGE'});
+ assert.equal((await request(mainApp({}, {maxBytes:10}),prefix+'/scan',multipart(buffer))).status,413);
+});
+test('extra multipart fields rejected',async()=>{
+ const extra='--multiscan-fixture-boundary\r\nContent-Disposition: form-data; name="estoreid"\r\n\r\nforeign\r\n';
+ assert.equal((await request(mainApp(),prefix+'/scan',multipart(Buffer.from('x'),'image/png','photo',extra))).status,400);
+});
+test('scan output requires review and filters foreign candidates and metadata',async()=>{
+ const buffer=await sharp({create:{width:30,height:20,channels:3,background:'red'}}).png().toBuffer();
+ const raw=rawResult();raw.detections[0].candidates.push({productId:packageId,score:0.8,price:1});
+ const a=mainApp({scan:async()=>raw,authorizeProducts:async()=>[productId]});
+ const r=await request(a,prefix+'/scan',multipart(buffer));assert.equal(r.status,200);assert.equal(r.body.detections[0].candidates.length,1);assert.equal(r.body.detections[0].reviewRequired,true);assert.equal(r.body.detections[0].candidates[0].price,undefined);
+});
+test('unknowns and empty detections are valid; malformed boxes and duplicates rejected',()=>{
+ const r=rawResult();r.detections[0].candidates=[];assert.equal(scanResponse(r).detections[0].reviewReasons[0],'UNKNOWN_PRODUCT');
+ r.detections=[];assert.equal(scanResponse(r).detections.length,0);
+ for(const box of [[-1,0,1,1],[0,0,40,40],[0,0,0,1],[0,0,NaN,1]]) {const bad=rawResult();bad.detections[0].box=box;assert.throws(()=>scanResponse(bad),{code:'INVALID_INFERENCE_RESPONSE'});}
+ const duplicate=rawResult();duplicate.detections.push(duplicate.detections[0]);assert.throws(()=>scanResponse(duplicate));
+});
+test('scan integration timeout and unhandled error do not leak details',async()=>{
+ const buffer=await sharp({create:{width:30,height:20,channels:3,background:'red'}}).png().toBuffer();
+ assert.equal((await request(mainApp({scan:()=>new Promise(()=>{})},{operationTimeoutMs:20}),prefix+'/scan',multipart(buffer))).status,504);
+ const r=await request(mainApp({scan:async()=>{throw Error('secret database URI');}}),prefix+'/scan',multipart(buffer));assert.equal(r.status,500);assert.ok(!JSON.stringify(r.body).includes('secret'));
+});
+test('concurrent scan rejected before another image decode',async()=>{
+ let release,entered;const started=new Promise(r=>entered=r);
+ const buffer=await sharp({create:{width:30,height:20,channels:3,background:'red'}}).png().toBuffer();
+ const a=mainApp({scan:async()=>{entered();await new Promise(r=>release=r);return rawResult();},authorizeProducts:async()=>[productId]});
+ const first=request(a,prefix+'/scan',multipart(buffer));await started;
+ try{assert.equal((await request(a,prefix+'/scan',multipart(buffer))).status,429);}finally{release();}
+ assert.equal((await first).status,200);
+});
+test('confirmation rejects invalid quantities, duplicates and browser prices',()=>{
+ const scanId=crypto.randomUUID();
+ for(const quantity of [0,-1,1.5,101,'2',NaN]) assert.throws(()=>selections({scanId,items:[{productId,quantity}]}));
+ assert.throws(()=>selections({scanId,items:[{productId,quantity:1},{productId,quantity:2}]}));
+ assert.throws(()=>selections({scanId,items:[{productId,quantity:1,price:0}]}));
+});
+test('confirmation uses trusted fresh records and never mutates cart',async()=>{
+ const scanId=crypto.randomUUID();let received;
+ const a=mainApp({confirm:async args=>{received=args;return {catalogRevision:'fresh',items:[{productId,quantity:2,storeId,activate:true,title:'Fixture',price:10,requiresVariantSelection:true}]};}});
+ const r=await request(a,prefix+'/confirm',{method:'POST',headers:{...authHeaders(),'content-type':'application/json'},body:JSON.stringify({scanId,items:[{productId,quantity:2}]})});
+ assert.equal(r.status,200);assert.equal(r.body.cartMutation,false);assert.equal(r.body.items[0].requiresVariantSelection,true);assert.equal(received.tenant.storeId,storeId);
+});
+test('confirmation rejects foreign/deactivated products and malformed JSON',async()=>{
+ const data={scanId:crypto.randomUUID(),items:[{productId,quantity:1}]};
+ const a=mainApp({confirm:async()=>({catalogRevision:'fresh',items:[{productId,quantity:1,storeId:packageId,activate:false,title:'Bad',price:10}]})});
+ assert.equal((await request(a,prefix+'/confirm',{method:'POST',headers:{...authHeaders(),'content-type':'application/json'},body:JSON.stringify(data)})).status,502);
+ assert.equal((await request(a,prefix+'/confirm',{method:'POST',headers:{...authHeaders(),'content-type':'application/json'},body:'{'})).status,400);
+});
+test('internal missing, forged, expired, wrong route and wrong tenant capabilities rejected',async()=>{
+ const a=app(image.createRouter({config:cfg()}),'/ai-image-api');
+ assert.equal((await request(a,internal+'/status')).status,401);
+ for(const extra of [{exp:1},{storeId:'foreign'},{path:'/other'},{method:'POST'}]) assert.equal((await request(a,internal+'/status',{headers:{'x-multi-scan-capability':capability('/internal/ai/multi-scan/status','GET',extra)}})).status,401);
+ assert.equal((await request(a,internal+'/status',{headers:{'x-multi-scan-capability':'bad.bad'}})).status,401);
+});
+test('internal readiness, replay prevention, admin restriction and body binding',async()=>{
+ const a=app(image.createRouter({config:cfg()}),'/ai-image-api');
+ const options=internalOptions('/internal/ai/multi-scan/status');
+ const r=await request(a,internal+'/status',options);assert.equal(r.status,200);assert.equal(r.body.ready,false);
+ assert.equal((await request(a,internal+'/status',options)).body.error.code,'CAPABILITY_REPLAY');
+ assert.equal((await request(a,internal+'/index/rebuild',internalOptions('/internal/ai/multi-scan/index/rebuild','POST'))).status,403);
+ const wrong=internalOptions('/internal/ai/multi-scan/index/rebuild','POST');wrong.body='{"foreign":true}';
+ assert.equal((await request(a,internal+'/index/rebuild',wrong)).status,401);
+});
+test('internal valid upload returns model unavailable without fabricated inference',async()=>{
+ const a=app(image.createRouter({config:cfg()}),'/ai-image-api');
+ const buffer=await sharp({create:{width:30,height:20,channels:3,background:'red'}}).png().toBuffer();
+ const opts=multipart(buffer);opts.headers={'content-type':opts.headers['content-type'],'x-multi-scan-capability':capability('/internal/ai/multi-scan/scan','POST',{photoHash:crypto.createHash('sha256').update(buffer).digest('hex')})};
+ assert.equal((await request(a,internal+'/scan',opts)).body.error.code,'MODELS_UNAVAILABLE');
+});
+test('route auto-discovery and inactive imports preserve existing registrations',()=>{
+ for(const root of [mainRoot,aiRoot]) {
+  const server=fs.readFileSync(path.join(root,'server.js'),'utf8');
+  assert.match(server,/readdirSync\("\.\/routes"\)/);assert.match(server,/require\("\.\/routes\/" \+ file\)/);
+  assert.ok(fs.readdirSync(path.join(root,'routes')).includes('multi-scan.js'));
+ }
+ const mainPaths=main.stack.filter(l=>l.route).map(l=>l.route.path);
+ assert.deepEqual(mainPaths.sort(),['/ai/multi-scan/status','/ai/multi-scan/index/status','/ai/multi-scan/scan','/ai/multi-scan/confirm','/ai/multi-scan/index/rebuild','/ai/multi-scan/session'].sort());
+ assert.ok(image.stack.filter(l=>l.route).every(l=>l.route.path.startsWith('/internal/ai/multi-scan/')));
+ const cache=Object.keys(require.cache);
+ assert.ok(!cache.some(p=>/controllers\/(ai-image|index-builder|embed_helper)\.js$/.test(p)));
+ assert.ok(!cache.some(p=>/dbconnect\//.test(p)));
+});
+
+
+test('incomplete upload times out with a clear error',async()=>{
+ const opts=multipart(Buffer.from('partial'));opts.incomplete=true;
+ // Advertise more bytes than are delivered and omit the ending boundary.
+ opts.body=opts.body.subarray(0,opts.body.length-40);
+ const r=await request(mainApp({}, {uploadTimeoutMs:20}),prefix+'/scan',opts);
+ assert.equal(r.status,408);assert.equal(r.body.error.code,'UPLOAD_TIMEOUT');
+});
+test('internal image digest is bound to the actual uploaded bytes',async()=>{
+ const a=app(image.createRouter({config:cfg()}),'/ai-image-api');
+ const buffer=await sharp({create:{width:30,height:20,channels:3,background:'red'}}).png().toBuffer();
+ const opts=multipart(buffer);opts.headers={'content-type':opts.headers['content-type'],'x-multi-scan-capability':capability('/internal/ai/multi-scan/scan','POST',{photoHash:'0'.repeat(64)})};
+ assert.equal((await request(a,internal+'/scan',opts)).body.error.code,'PHOTO_DIGEST_MISMATCH');
+});
+
+test('admin rebuild and index status responses are validated and sanitized',async()=>{
+ const a=mainApp({resolveTenant:async()=>({...tenant,role:'admin'}),requestRebuild:async()=>({jobId:'fixture-job',secret:'hidden'}),indexStatus:async()=>({state:'queued',path:'/private'})});
+ const rebuild=await request(a,prefix+'/index/rebuild',{method:'POST',headers:authHeaders()});
+ assert.equal(rebuild.status,202);assert.deepEqual(rebuild.body,{ok:true,state:'accepted',jobId:'fixture-job'});
+ assert.deepEqual((await request(a,prefix+'/index/status',{headers:authHeaders()})).body,{ok:true,state:'queued',ready:false});
+ const aiApp=app(image.createRouter({config:cfg()}),'/ai-image-api');
+ const headers={'x-multi-scan-capability':capability('/internal/ai/multi-scan/index/status','GET',{role:'admin'})};
+ assert.deepEqual((await request(aiApp,internal+'/index/status',{headers})).body,{ok:true,ready:false,state:'not_built'});
+});
+test('a scan must be recorded against its tenant before returning a scanId',async()=>{
+ let record;
+ const buffer=await sharp({create:{width:30,height:20,channels:3,background:'red'}}).png().toBuffer();
+ const a=mainApp({scan:async()=>rawResult(),authorizeProducts:async()=>[productId],recordScan:async data=>{record=data;}});
+ const result=await request(a,prefix+'/scan',multipart(buffer));
+ assert.equal(result.status,200);assert.equal(record.scanId,result.body.scanId);assert.equal(record.tenant.storeId,storeId);
+ const missing=mainApp({scan:async()=>rawResult(),authorizeProducts:async()=>[productId],recordScan:undefined});
+ assert.equal((await request(missing,prefix+'/scan',multipart(buffer))).body.error.code,'INTEGRATION_UNAVAILABLE');
+});
+test('corrupt/truncated image data and animated inputs are rejected',async()=>{
+ const buffer=await sharp({create:{width:30,height:20,channels:3,background:'red'}}).png().toBuffer();
+ await assert.rejects(validateImage({buffer:buffer.subarray(0,40),mimetype:'image/png'},cfg(),sharp),{code:'INVALID_IMAGE'});
+ // GIF is unsupported regardless of browser MIME claims.
+ const gif=Buffer.from('R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7','base64');
+ await assert.rejects(validateImage({buffer:gif,mimetype:'image/gif'},cfg(),sharp),{code:'INVALID_IMAGE'});
+});
+
+test('JSON limit survives the existing server global parser',async()=>{
+ const a=express();a.use(express.json({limit:'2mb'}));a.use('/cosmic-api',main.createRouter({config:cfg(),adapters:adapters()}));
+ const result=await request(a,prefix+'/confirm',{method:'POST',headers:{...authHeaders(),'content-type':'application/json'},body:JSON.stringify({padding:'x'.repeat(40000)})});
+ assert.equal(result.status,413);assert.equal(result.body.error.code,'JSON_TOO_LARGE');
+});

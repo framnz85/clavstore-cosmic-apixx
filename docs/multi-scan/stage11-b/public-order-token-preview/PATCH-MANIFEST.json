@@ -1,0 +1,28 @@
+{
+  "applied": false,
+  "target": "routes/order.js",
+  "original_sha256": "cab1f734e9b34b2585d3f8777b42325ba934412a7d6a639925dad61b796664bd",
+  "proposed_sha256": "2a448f501d35157b9c4a11ac3c0a2a21ed476aeb6f8d4d7dceb8064457223bdf",
+  "approved_parent_patch": "docs/multi-scan/stage11-b/batch-b1-credential-security/02-RELATED-AUTHORITY-CONTAINMENT.diff",
+  "extracted_identical_old_and_new_lines": true,
+  "clean_apply_check": true,
+  "proposed_syntax_exit": 0,
+  "source_pins": {
+    "routes/order.js": "cab1f734e9b34b2585d3f8777b42325ba934412a7d6a639925dad61b796664bd",
+    "controllers/order.js": "44591ff2e486deebfecbd853d7a57280b7548a27b505804cf187da8590a15008",
+    "routes/auth.js": "5556f5834f6091d2cbca430864b13b698191ea3dc617fa9623ac8a64b9f21fef",
+    "controllers/auth.js": "d01a8be6f5c7095b64076d5582bc0ec7668029ee080a095c179aee32c9eaaeda",
+    "controllers/user.js": "2a09aff9e6dc78e5d5365e71ce9f973865d0cb17e3bf6202027a2660f6b6bcb6",
+    "routes/user.js": "a8c092ffc22484b7d5cfd0b876ac160a04a2343d12bedea0d39a56a198216ddd",
+    "controllers/app/user.js": "e0f084616a0fcaf5017ce73d180819624cf495afaa4bcbd54b386e79d642ebf9",
+    "routes/appuser.js": "4914854967c2b0d2139e285a48790cc2b2c40b8c2216746082f83fc9e35e2339",
+    "middlewares/auth.js": "be118b88031b759c5ef555dfc3492cede26e8d569691279c66296ef3de01cbb8",
+    "server.js": "bcb24bb081ad79884a4f71d806d2ce7150c4d5d1d30a078d763211aed7123d51",
+    "routes/multi-scan.js": "469c88c14c7472b59aa145e74c785d8ec85adbd1540a8be3fcffd0f98cd99836",
+    "tests/multi-scan/stage2.test.js": "a7ff4edd000f7882b9d27e4b3c7e709904a5063f0ddf7dbdadd1ff56465ebe4a",
+    "../../clavstore-ui/clavstore-reseller-original/src/functions/order.js": "2d95f626a8bbe553bedc9f94412db5206a8e9167720b083fd48d23bffead31c8",
+    "../../clavstore-ui/clavstore-reseller-original/src/pages/user/AppPayment.js": "09983a82eb49766c03d320a805eff9685353feaa50701cfa5ffd9456c338a211",
+    "../../clavstore-ui/clavstore-reseller-original/src/pages/user/OrderDetails.js": "35c16a579c1e5f4c2004252f5fc0daeb31a54892d607611545e1f6a8b19d3b70",
+    "../../clavstore-ui/clavstore-reseller-original/src/App.js": "e96b1fccd47cd6492c626c49a95c8e0a352991187328ae2cac25f48847597b19"
+  }
+}

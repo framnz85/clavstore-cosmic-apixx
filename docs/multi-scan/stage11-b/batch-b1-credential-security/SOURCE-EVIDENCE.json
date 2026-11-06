@@ -1,0 +1,2537 @@
+[
+  {
+    "project": "main",
+    "path": "routes/address.js",
+    "sha256": "16d9f08ea56986019b4d3d54b333625a687e28d8a7e7ce9ad828685e672c396d"
+  },
+  {
+    "project": "main",
+    "path": "routes/appcategory.js",
+    "sha256": "04a3b1b4ec15afb61a916afbf5742db7410adb644dfb3b2cbf11377238ec5fa8"
+  },
+  {
+    "project": "main",
+    "path": "routes/apporder.js",
+    "sha256": "b7e79501adb7cb89a3cd8e7ee8600bb4b3f2d50a7551ed3d200c1a7e51f7143a"
+  },
+  {
+    "project": "main",
+    "path": "routes/appproduct.js",
+    "sha256": "ddf748464de4c502556aa68d506260e2d023e9b3ee53fc412082ae4d66b5472f"
+  },
+  {
+    "project": "main",
+    "path": "routes/appuser.js",
+    "sha256": "4914854967c2b0d2139e285a48790cc2b2c40b8c2216746082f83fc9e35e2339"
+  },
+  {
+    "project": "main",
+    "path": "routes/auth.js",
+    "sha256": "5556f5834f6091d2cbca430864b13b698191ea3dc617fa9623ac8a64b9f21fef"
+  },
+  {
+    "project": "main",
+    "path": "routes/billing.js",
+    "sha256": "b54d41fb5e7fcdaab2190d8dfafca52d55d0d875694eb4d092debcec92e0acf3"
+  },
+  {
+    "project": "main",
+    "path": "routes/brand.js",
+    "sha256": "bc66abd389a505a49d27ba1a88b4b6f7b614e9caa8c55f56c834f559884ff1a3"
+  },
+  {
+    "project": "main",
+    "path": "routes/cashflow.js",
+    "sha256": "dac59b35e0d25601aaffdcac6d9e260623ed043d6fa6f9519ab35010292ab01e"
+  },
+  {
+    "project": "main",
+    "path": "routes/category.js",
+    "sha256": "7321b85725ab528ff115233e6f520b4406e1554bc1ab47a30934e4bd03708bf1"
+  },
+  {
+    "project": "main",
+    "path": "routes/customerRoutes.js",
+    "sha256": "7f9fb33164d62f995405dd8558b052c6d83fc2012ed4ea74c4f63750968e8254"
+  },
+  {
+    "project": "main",
+    "path": "routes/estore.js",
+    "sha256": "5af12554d439319a7cf3b480c6168ea937a19a7ecc9b44b25376a0d699e2aefe"
+  },
+  {
+    "project": "main",
+    "path": "routes/events.js",
+    "sha256": "334180bf4c22800d925bd51b07206c43d69565e15a2ae87c9d116124d1c53cb9"
+  },
+  {
+    "project": "main",
+    "path": "routes/jobList.js",
+    "sha256": "97186f60d5b6fc6bf8ef0a2a2dc1172ac626c03ad8f3534d74c49243c6afa148"
+  },
+  {
+    "project": "main",
+    "path": "routes/joborder.js",
+    "sha256": "1ff6d49e21fd02eb13635c143b87442032dbc5457e91c6079c1aa2d44bc41d60"
+  },
+  {
+    "project": "main",
+    "path": "routes/multi-scan.js",
+    "sha256": "469c88c14c7472b59aa145e74c785d8ec85adbd1540a8be3fcffd0f98cd99836"
+  },
+  {
+    "project": "main",
+    "path": "routes/order.js",
+    "sha256": "cab1f734e9b34b2585d3f8777b42325ba934412a7d6a639925dad61b796664bd"
+  },
+  {
+    "project": "main",
+    "path": "routes/payment.js",
+    "sha256": "dcb59b7c6ed941ac3e0f84c103f03014eac57d577e4488e50cb678f870a8a71f"
+  },
+  {
+    "project": "main",
+    "path": "routes/paymentRoutes.js",
+    "sha256": "37cf539ae2b48a031996176ef25e06cb7fea233f84954c9ce8004501b3eb1686"
+  },
+  {
+    "project": "main",
+    "path": "routes/points.js",
+    "sha256": "7a019d1345fb3f7eb82bd7070d3d7f92fa777db3af7a0d28632cb08551439f88"
+  },
+  {
+    "project": "main",
+    "path": "routes/product.js",
+    "sha256": "76a0ed93b4f9b5551a6f52f2bdfcba32b49282ce45b648d94a29298164bb2dd9"
+  },
+  {
+    "project": "main",
+    "path": "routes/user.js",
+    "sha256": "a8c092ffc22484b7d5cfd0b876ac160a04a2343d12bedea0d39a56a198216ddd"
+  },
+  {
+    "project": "main",
+    "path": "routes/withdraw.js",
+    "sha256": "897e7827fbd4e8cb63b7469798de5393f4e98f7ada0d3e29eb5c6abc92951a85"
+  },
+  {
+    "project": "main",
+    "path": "controllers/address.js",
+    "sha256": "b5931b7a9850b0a823b4702f713a9978ff8eb7a2f53d7a707276a754e463e23c"
+  },
+  {
+    "project": "main",
+    "path": "controllers/app/category.js",
+    "sha256": "610cb8f45e416433c463d21110e00e1593bb926ef12a824a59719215ace534ea"
+  },
+  {
+    "project": "main",
+    "path": "controllers/app/common.js",
+    "sha256": "dae524e7e5317a8d82d4243f3a04cdb05b47c8c0d1a02533c341b36c4c92c3c8"
+  },
+  {
+    "project": "main",
+    "path": "controllers/app/order.js",
+    "sha256": "69e13e320f64ee88de0af05a36860ca2b784a2fe8bbde8b3d01be2092d26260b"
+  },
+  {
+    "project": "main",
+    "path": "controllers/app/product.js",
+    "sha256": "268b3512d676b8df04b4d603ff8110496db41636bf772c1c8a28f45f56b75fdc"
+  },
+  {
+    "project": "main",
+    "path": "controllers/app/user.js",
+    "sha256": "e0f084616a0fcaf5017ce73d180819624cf495afaa4bcbd54b386e79d642ebf9"
+  },
+  {
+    "project": "main",
+    "path": "controllers/auth.js",
+    "sha256": "d01a8be6f5c7095b64076d5582bc0ec7668029ee080a095c179aee32c9eaaeda"
+  },
+  {
+    "project": "main",
+    "path": "controllers/billing.js",
+    "sha256": "1b5ca17ccefa6b63adccb30c85927e9e6de19b33a103d4e710004389a1197e0e"
+  },
+  {
+    "project": "main",
+    "path": "controllers/brand.js",
+    "sha256": "fd1bcc687140fc662969596fe8ad82a8873ed2e9bc310e3424992ce6cbf334d4"
+  },
+  {
+    "project": "main",
+    "path": "controllers/cashflow.js",
+    "sha256": "2971299d5b3a3ef65708c9426cd8d145f54e4a9e093676b9591657e6ca2c6fce"
+  },
+  {
+    "project": "main",
+    "path": "controllers/category.js",
+    "sha256": "84fb4e09fe415dab9fdba1621c7d98b9f67dd350a725afeda32d5c127366553b"
+  },
+  {
+    "project": "main",
+    "path": "controllers/common.js",
+    "sha256": "6db8ba88fd06f9f004e830e3c10cb129ffbcdce3f708f08dd9550a7f41eff888"
+  },
+  {
+    "project": "main",
+    "path": "controllers/estore.js",
+    "sha256": "0bcf4818c1791cb5f0fd3bf80218bd05379d7804e609fc32e46afbea713f8a94"
+  },
+  {
+    "project": "main",
+    "path": "controllers/events.js",
+    "sha256": "87a90ca848cdbb6ac8ef38c2defbc73786a6903b32440eb4be9b60dc138d25ae"
+  },
+  {
+    "project": "main",
+    "path": "controllers/jobList.js",
+    "sha256": "29801ddd85a4856560d9d629f990c3e73253ca331d5d5e526766cbc9d66cc19f"
+  },
+  {
+    "project": "main",
+    "path": "controllers/joborder.js",
+    "sha256": "3e4b160e3506705b21e537b4679da34455396d19012ad4d88cac6be2abda9c61"
+  },
+  {
+    "project": "main",
+    "path": "controllers/multi-scan.js",
+    "sha256": "e630cd4c7ceb80bd861b424cd2fdb2af22175b16b8b52d893b8183bfd449f457"
+  },
+  {
+    "project": "main",
+    "path": "controllers/order.js",
+    "sha256": "44591ff2e486deebfecbd853d7a57280b7548a27b505804cf187da8590a15008"
+  },
+  {
+    "project": "main",
+    "path": "controllers/orderware.js",
+    "sha256": "dc663eb164fc8975fe08b6cf8543b20938109f7b2c15b71484825c5619e8e7c9"
+  },
+  {
+    "project": "main",
+    "path": "controllers/payment.js",
+    "sha256": "b33e2a847f24f3315e9ba4e8398d356fecbba2ea873d2c94e5c94d2fc9b76f9a"
+  },
+  {
+    "project": "main",
+    "path": "controllers/points.js",
+    "sha256": "160fb9f6591afca163270982e01a32713aa87161a0b466495e2d92ce8c2d64a1"
+  },
+  {
+    "project": "main",
+    "path": "controllers/product.js",
+    "sha256": "44d579d233e0b88d96786279dc71f50defe0347daf0af473738a0fbd6399ca60"
+  },
+  {
+    "project": "main",
+    "path": "controllers/redis/clearing.js",
+    "sha256": "0e75acdc60e5faad2a9c740da0005e0427c32be895fa28ae4cc5ba8bcfc1b617"
+  },
+  {
+    "project": "main",
+    "path": "controllers/superBilling.js",
+    "sha256": "d09849d3c9fdcf7b304686e31af11a1dc0d4e4c2d52726f415540c45163cfa51"
+  },
+  {
+    "project": "main",
+    "path": "controllers/superProduct.js",
+    "sha256": "ad4603599a4ed888fa2e3311b27865b388931596e74cc3ef02276feccbf72651"
+  },
+  {
+    "project": "main",
+    "path": "controllers/user.js",
+    "sha256": "2a09aff9e6dc78e5d5365e71ce9f973865d0cb17e3bf6202027a2660f6b6bcb6"
+  },
+  {
+    "project": "main",
+    "path": "controllers/withdraw.js",
+    "sha256": "0747771775d60fb13d7f4eed372196d3ab181777e216298da91df2630b49fed9"
+  },
+  {
+    "project": "main",
+    "path": "middlewares/auth.js",
+    "sha256": "be118b88031b759c5ef555dfc3492cede26e8d569691279c66296ef3de01cbb8"
+  },
+  {
+    "project": "main",
+    "path": "middlewares/multi-scan-auth.js",
+    "sha256": "38cc362892fbbbc0b40e5428a26c5a44cc327189aef3690c4467a2757206acb9"
+  },
+  {
+    "project": "main",
+    "path": "models/addiv1.js",
+    "sha256": "8f5bee07c66186f12850a2c3e3baabea288df5510066287b828485fa8787b531"
+  },
+  {
+    "project": "main",
+    "path": "models/addiv2.js",
+    "sha256": "20daf5c37cf7e7845155b051f032a3028694c9df51333ee11918ff83bb0cf15c"
+  },
+  {
+    "project": "main",
+    "path": "models/addiv3.js",
+    "sha256": "e97d7531180856bdafce7e5d7bb34098dbb5a6651012fc0bff012908d53401d5"
+  },
+  {
+    "project": "main",
+    "path": "models/app/category.js",
+    "sha256": "48f86ca456aaa674c761d641290d38d1338a3989bbc627880289c3edad34719a"
+  },
+  {
+    "project": "main",
+    "path": "models/app/country.js",
+    "sha256": "eab3fb5adec8d3331ff2a7056a9b8882cbed9aef436bfa27c8b52cdd1c1baddf"
+  },
+  {
+    "project": "main",
+    "path": "models/app/estore.js",
+    "sha256": "cdd8ef893781d3fa967b053d4513c97c7ad7c653161aab800e8a64c2cdfea93b"
+  },
+  {
+    "project": "main",
+    "path": "models/app/order.js",
+    "sha256": "35a3add8b488564c07fba3f8bade2622f4dbf4cc301cac83eacee9cdf5283419"
+  },
+  {
+    "project": "main",
+    "path": "models/app/product.js",
+    "sha256": "176768825555105bcc39733fa969f35ec0e3910a366fb794339c93ae1f2db6cc"
+  },
+  {
+    "project": "main",
+    "path": "models/app/raffle.js",
+    "sha256": "f27abc5842cf8f1f9022649b94135d032d142fb963caf436b509a2e3d6de602f"
+  },
+  {
+    "project": "main",
+    "path": "models/app/user.js",
+    "sha256": "7bc43604a8c8c8916db7476160c09e15e75639452c0b11809813b3eb2d301a37"
+  },
+  {
+    "project": "main",
+    "path": "models/billing.js",
+    "sha256": "2ade4ec1cd77b49be203d193f9c059e6d0f0e6b368f49faa88ae9af5d0b490ff"
+  },
+  {
+    "project": "main",
+    "path": "models/brand.js",
+    "sha256": "e05155a9e754f396dbf8e67e8bf9e16439062f6ff6692602a43106acece3546a"
+  },
+  {
+    "project": "main",
+    "path": "models/cart.js",
+    "sha256": "449a4d46fe290012eece78939a7091cb55039d604120d0dff9887d6f1e99412f"
+  },
+  {
+    "project": "main",
+    "path": "models/cashflow.js",
+    "sha256": "0fa86c08d99fa699c9c0e1144f88206f766d8fbd2bde76f34b2c8e62be5c6c9e"
+  },
+  {
+    "project": "main",
+    "path": "models/category.js",
+    "sha256": "e5448dc17d2fee0d6273541f2b16391b43cd6b44ed7ea1a568331440b8fad58a"
+  },
+  {
+    "project": "main",
+    "path": "models/country.js",
+    "sha256": "259db4ff33af3ebcca401bcb04eac860cb0015a35d94481cb4be0d91eeae5cad"
+  },
+  {
+    "project": "main",
+    "path": "models/estore.js",
+    "sha256": "93f5f17ffe1e55864303daf50fb6ea05a118c29ab5248ae7184834a4a0870830"
+  },
+  {
+    "project": "main",
+    "path": "models/jobList.js",
+    "sha256": "c1f885bfdef52df684b9d528381f8b0b90a2496b337e05225fcb2c55ea3bb7bd"
+  },
+  {
+    "project": "main",
+    "path": "models/joborder.js",
+    "sha256": "c1ea26e380b74da663f9bbf50ec19f2d9e9455cd6e8fa506262f0f6b02f3586d"
+  },
+  {
+    "project": "main",
+    "path": "models/myAddiv1.js",
+    "sha256": "ef63f34edcd343ca0e7963a1f8ecd86794c1722fe41d86b8ce124ce028aed467"
+  },
+  {
+    "project": "main",
+    "path": "models/myAddiv2.js",
+    "sha256": "03d9ef5950be7f5403426e40a9be4c377e51eb2f9f0973ffc47493b1ceb38842"
+  },
+  {
+    "project": "main",
+    "path": "models/myAddiv3.js",
+    "sha256": "f7d9fdac5b01e6c9ad4c1da1fb2728b923b2279e43d1fc2ec86d0ab034afc4ec"
+  },
+  {
+    "project": "main",
+    "path": "models/myCountry.js",
+    "sha256": "4ac594625d9fedb7ddbb4a3ee89eeaeb7c17b045904fdab32a7760a8226e89aa"
+  },
+  {
+    "project": "main",
+    "path": "models/notification.js",
+    "sha256": "1506a8fc23dc736866e32dca03a18eb41feff232a9415563fdb09ebff4adc93b"
+  },
+  {
+    "project": "main",
+    "path": "models/order.js",
+    "sha256": "b9e46ed7cd9832b319fdd5d8df2b387a6a5d607aa6fdd1e608d9711261867e9c"
+  },
+  {
+    "project": "main",
+    "path": "models/orderWare.js",
+    "sha256": "f82ff066ee76b15cf1491065f517df53501c3c9323d623d82cff2caee9bb0850"
+  },
+  {
+    "project": "main",
+    "path": "models/package.js",
+    "sha256": "4f4c64d7721fc305aaaf6c914e912e1e9ee9c535469b02654870570d2e9972af"
+  },
+  {
+    "project": "main",
+    "path": "models/payment.js",
+    "sha256": "e786bdf5bf3074e46b1861a04f631f03283e26fecd175a3a1989742bf7aea763"
+  },
+  {
+    "project": "main",
+    "path": "models/points.js",
+    "sha256": "2b9acfe5e882a27205c7349447462ecd26c8015e8c8476f5006889210de3a03e"
+  },
+  {
+    "project": "main",
+    "path": "models/product.js",
+    "sha256": "8350d9aac50501c8b75914a52b0d24069c82038f9209e01d3463d88cc0dbb5cc"
+  },
+  {
+    "project": "main",
+    "path": "models/raffle.js",
+    "sha256": "f2a95c913c384e12a5da4a274a3b048e85d8ebd60b2d6ea998116b2a3b23e26f"
+  },
+  {
+    "project": "main",
+    "path": "models/rating.js",
+    "sha256": "aef45ea84ff8c115806de912a60025e214c1e2325e9a24c139b2e4ed22214a35"
+  },
+  {
+    "project": "main",
+    "path": "models/salesnotify.js",
+    "sha256": "9250dad44360a6e57bfb1472b384db6500806de94d295d2e243c6d8111cd2d4f"
+  },
+  {
+    "project": "main",
+    "path": "models/superBilling.js",
+    "sha256": "0b933193e31618e014eb86d4ea3387a5f5e7ef2c143fc73e9e9bc83aa3cbea66"
+  },
+  {
+    "project": "main",
+    "path": "models/superEstore.js",
+    "sha256": "6f4c9bf3dcd074d5ada47e1b41555383abf172d3ecd08ecf17ec43e1102b1944"
+  },
+  {
+    "project": "main",
+    "path": "models/superPackage.js",
+    "sha256": "50946cc4e93037bee7b6cc22d9a9bb65622d2977086aed6383d1f22ec2998b8a"
+  },
+  {
+    "project": "main",
+    "path": "models/superPayment.js",
+    "sha256": "bf3c44bc7ad2e863322d0c2b71ec4800d7596e0f6ed323869b39aecc6b8f4353"
+  },
+  {
+    "project": "main",
+    "path": "models/superProduct.js",
+    "sha256": "6be31935f0166fa3eecdadec26731fa20985ae3fb6735a57d9287d133bf7ebac"
+  },
+  {
+    "project": "main",
+    "path": "models/user.js",
+    "sha256": "2645c0a8e8f071b5263fd0dfe443d4f2f17d7483e3c8978d61b989f1d9401a83"
+  },
+  {
+    "project": "main",
+    "path": "models/withdraw.js",
+    "sha256": "0a94c642e8464dc915ed0d7d9a749e6ecd7476bf6a46cd332ec2409b8d87898b"
+  },
+  {
+    "project": "main",
+    "path": "services/multi-scan/contracts.js",
+    "sha256": "c8eac759d1d76bc7e9a7de7164439e2c8bdee7790181b5a5aa020585a10df8ff"
+  },
+  {
+    "project": "main",
+    "path": "services/multi-scan/runtime.js",
+    "sha256": "007d64b3167067651f0269d1e5c3792eff1ac317fa23e372a566a5b4b09b000e"
+  },
+  {
+    "project": "main",
+    "path": "services/multi-scan/stage10/admission.js",
+    "sha256": "259bb20a426b6b06acc7269b95b346f61f882cce8ef40a544b79a1b8b437da5f"
+  },
+  {
+    "project": "main",
+    "path": "services/multi-scan/stage10/observability.js",
+    "sha256": "857432f4c41be4062533746170c78de18a73243177dc0fcf9eb5e681329704c8"
+  },
+  {
+    "project": "main",
+    "path": "services/multi-scan/stage10/readiness.js",
+    "sha256": "99c7e680365b0c74d56991656c1aac46f53ce12112eaca68b571ed8c003585c1"
+  },
+  {
+    "project": "main",
+    "path": "services/multi-scan/stage10/review-contract.js",
+    "sha256": "9d039fab29a05ce91e98772e840ae2976561f561d11a79d41e3a6e7aedd6b5fa"
+  },
+  {
+    "project": "main",
+    "path": "services/multi-scan/stage10/upload-bridge.js",
+    "sha256": "c3ac65403eb664a77f5cb77fc73142f0016594b0b8c6bca7eb8d7306b58744c8"
+  },
+  {
+    "project": "main",
+    "path": "services/multi-scan/stage11/credential-repository.js",
+    "sha256": "4b8b78e9271aa8738d24df03c4d405d82bdfee463495e024a8b0587680f4c924"
+  },
+  {
+    "project": "main",
+    "path": "services/multi-scan/stage11/session-config.js",
+    "sha256": "833b2b7aaf5f8100da410ab8dce51c9d7b5e49f7b7c488c9c62de7d719e39f2e"
+  },
+  {
+    "project": "main",
+    "path": "services/multi-scan/stage11/session-factory.js",
+    "sha256": "4da44715ffbf65683baa0011c5cbc2a4eeb0171f5e924dadec7c8811e051d13e"
+  },
+  {
+    "project": "main",
+    "path": "services/multi-scan/stage11/session-handler.js",
+    "sha256": "dc3692dcc8bd22cf334f9756844946e3a3162f00a218f54fedf6943c133d052d"
+  },
+  {
+    "project": "main",
+    "path": "services/multi-scan/stage11/session-service.js",
+    "sha256": "64da81d5cca96822a2d7b7887997679ca3b1457c1e8d29f5fd410ff08c42635c"
+  },
+  {
+    "project": "main",
+    "path": "services/multi-scan/stage7/catalog.js",
+    "sha256": "9b57dc10a3b8a3ddefb77c545b0990f76985ac1c45fd0270c7cb0aac9321cb83"
+  },
+  {
+    "project": "main",
+    "path": "services/multi-scan/stage7/client.js",
+    "sha256": "e983b8795f9595c6ec25b3db1b9d4336f98ef82e503c3b59693f21a86cf60295"
+  },
+  {
+    "project": "main",
+    "path": "services/multi-scan/stage7/composition.js",
+    "sha256": "3130d571939635fceab207a1e4b317ff397fa7df5688276f9b2ffd1272e87cd9"
+  },
+  {
+    "project": "main",
+    "path": "services/multi-scan/stage7/contracts.js",
+    "sha256": "a4340c1329a874a63d6bae6492fcbbeb4e50cb5c542eb8842a7402c18a36e955"
+  },
+  {
+    "project": "main",
+    "path": "services/multi-scan/stage7/integration.js",
+    "sha256": "774dc015564880333460313f6c20a2ed18858fafd64ffb6588f282db4b928c6a"
+  },
+  {
+    "project": "main",
+    "path": "services/multi-scan/stage7/repository.js",
+    "sha256": "429cb03fcd0f788adff7a0ee3e71598e7398f187a5c086bbb08716c8f2699bee"
+  },
+  {
+    "project": "main",
+    "path": "services/multi-scan/stage7/resolution.js",
+    "sha256": "a9fe75f4e033b299793e362f4523b9652cddb27786179cbdd990fe1ce71e7d47"
+  },
+  {
+    "project": "main",
+    "path": "services/multi-scan/stage7/security.js",
+    "sha256": "6a7a064ab3d94d2dc0a5f8c5e7408a715bd681ad2921b545f1264e827991e763"
+  },
+  {
+    "project": "main",
+    "path": "services/multi-scan/stage7/validation.js",
+    "sha256": "70b8ba54faf6769e8861389fbc812f46fe831b29f2e5e8f088d4d1ad610d370e"
+  },
+  {
+    "project": "main",
+    "path": "services/multi-scan/stage9/dataset.js",
+    "sha256": "57ab82c1b61a9552e20345a9ced7bd571ece59bf637baaee2f33e6a37ef574a8"
+  },
+  {
+    "project": "main",
+    "path": "services/multi-scan/stage9/evaluation.js",
+    "sha256": "08929e2f4a65c8427e4953c8a52da26d7a3768c4d03a81801a544fd1e212e997"
+  },
+  {
+    "project": "main",
+    "path": "services/multi-scan/stage9/fixture.js",
+    "sha256": "dc5e2220ce5137efe5a0f6f37c80d72fde4915da4f38d8fc4a7d0c3913976ebb"
+  },
+  {
+    "project": "main",
+    "path": "services/multi-scan/stage9/native.js",
+    "sha256": "fec7eb47a4cdb73ce678acfb52cf54b969ca6e25516c98ea19b6d375a9da08fc"
+  },
+  {
+    "project": "main",
+    "path": "services/multi-scan/stage9/orchestrator.js",
+    "sha256": "5eb8ee817d939141478b30f03ab63cb806c7319dc012fdfbdf4b5d80a941b89f"
+  },
+  {
+    "project": "main",
+    "path": "services/multi-scan/stage9/review-verifier.js",
+    "sha256": "df56d6b5fc64d5ba90f037923f9ca26f7f3ba3ec3081a0bc45fad848870b02c3"
+  },
+  {
+    "project": "main",
+    "path": "services/multi-scan/upload.js",
+    "sha256": "3f082bb1330904284434848af1053948bdd75cbd82a23f004ba0ba5a129525fd"
+  },
+  {
+    "project": "main",
+    "path": "dbconnect/address.js",
+    "sha256": "8607a6896c480af62e6afde3a7b13777d527e45b8dfcb44d8a912d3db4c0512e"
+  },
+  {
+    "project": "main",
+    "path": "dbconnect/gratis.js",
+    "sha256": "d32854d271b043c57e0d28bd9e92a3b11a37470b681f7adc6b5be81c4310144d"
+  },
+  {
+    "project": "main",
+    "path": "dbconnect/super.js",
+    "sha256": "d974e3ce581d99a2ab3a1c1f98421c4f24a29396ed5c1b934e74b7fa49e1d983"
+  },
+  {
+    "project": "main",
+    "path": "config/redis.js",
+    "sha256": "541472fe1161c30616a60ba15aace1d6137bbeea960b0f1edce2deec63dada86"
+  },
+  {
+    "project": "main",
+    "path": "server.js",
+    "sha256": "bcb24bb081ad79884a4f71d806d2ce7150c4d5d1d30a078d763211aed7123d51"
+  },
+  {
+    "project": "main",
+    "path": "package.json",
+    "sha256": "ad7db18c59527c814efb406d4abe0dbfd5b57d4a258f0939cbcbd8f36ecd2a58"
+  },
+  {
+    "project": "main",
+    "path": "package-lock.json",
+    "sha256": "ef17d9fab0a1d5bd6e8736f02d05eb440fa305a702aa442bcf23144a2f45a082"
+  },
+  {
+    "project": "ai",
+    "path": "routes/ai-image.js",
+    "sha256": "060c77d0e16da4a0c482db0192c479fadb864cde7e32ac06ad29d226fc33ac9d"
+  },
+  {
+    "project": "ai",
+    "path": "routes/brand.js",
+    "sha256": "b9cef7636033bb425434971e362f0bf86de98d060133ba628816e364d9476935"
+  },
+  {
+    "project": "ai",
+    "path": "routes/category.js",
+    "sha256": "3d8681782f06aafe1996f66ba81be85f38ba5ecd2be7015af6a6f569ab889e2d"
+  },
+  {
+    "project": "ai",
+    "path": "routes/jobs.js",
+    "sha256": "edeb71fd5842da1fd5863779a5eb5db94fa809b7a06082e5d7b48e3474ca1a42"
+  },
+  {
+    "project": "ai",
+    "path": "routes/migrate.js",
+    "sha256": "53925a4ad9307ac7a0a364d7d63c61e69b86ad1128ddf71fa2ec2bf0d3b44cd8"
+  },
+  {
+    "project": "ai",
+    "path": "routes/multi-scan.js",
+    "sha256": "a97305a9b0f59d70acd37c1ad35fdefdcc604915cae96abe563b9fd18831aa5b"
+  },
+  {
+    "project": "ai",
+    "path": "routes/payment.js",
+    "sha256": "e1e31d1596f868ecec5bfc0f93d1ea748183784f3c69203e6acab0e2543fc1fb"
+  },
+  {
+    "project": "ai",
+    "path": "routes/product.js",
+    "sha256": "4b40b8f2b42d9548f9a9d0562caa42b416a45af676bf3642ffb9fd4e93a98752"
+  },
+  {
+    "project": "ai",
+    "path": "routes/rating.js",
+    "sha256": "76287825e226d35ca43a4a586e3d4b4f5c4e7a7239b93582e4e657fbd99d7c18"
+  },
+  {
+    "project": "ai",
+    "path": "routes/setting.js",
+    "sha256": "5a5d1478109fe3500cb8527625e99d56736b43fdbb076fbb3a1e4020cf9c56d6"
+  },
+  {
+    "project": "ai",
+    "path": "routes/user.js",
+    "sha256": "b372145916ddb85387fb7d1bea02e0d2dd5dd966ce6330047ad6c147311ea804"
+  },
+  {
+    "project": "ai",
+    "path": "controllers/ai-image.js",
+    "sha256": "68a9878d25a4165175735ae231f415068f6d0f1f1d22b974da0d04507b7394da"
+  },
+  {
+    "project": "ai",
+    "path": "controllers/brand.js",
+    "sha256": "4923890b1322efb21e58063c0fcbbfb471042e87bf6948855c7ce41e5f9f6310"
+  },
+  {
+    "project": "ai",
+    "path": "controllers/category.js",
+    "sha256": "cd64474f640560034baed7276deef09cdd3b0a0bf8a8375eeee1dcc75cbe9c03"
+  },
+  {
+    "project": "ai",
+    "path": "controllers/embed_helper.js",
+    "sha256": "d6f2633562531eac9f9382b37f90f5520962913e9e21f96ec20692ac8646db74"
+  },
+  {
+    "project": "ai",
+    "path": "controllers/index-builder.js",
+    "sha256": "c0a401c4c3c62c6813deee181f8840381fe54c8dfc31dfc2c13104c72d887ab1"
+  },
+  {
+    "project": "ai",
+    "path": "controllers/job.js",
+    "sha256": "87b5ad74dacdcbd0c24151a8ebfc4ceddd63a21c62504adfeadbeb8e641a23db"
+  },
+  {
+    "project": "ai",
+    "path": "controllers/migrate.js",
+    "sha256": "f5b8886520dc4e47c71774108b3101a2dddc4cf1c0e4460c8519ce355f919ea6"
+  },
+  {
+    "project": "ai",
+    "path": "controllers/multi-scan.js",
+    "sha256": "785ad4d59abab7c125ec6b1f28d787995f131e2061d07643c7cd3d9dd1455f5a"
+  },
+  {
+    "project": "ai",
+    "path": "controllers/payment.js",
+    "sha256": "b2116c89e764f4a046ae2feea0384bbd42ee730ec12628ce935841400dedce0a"
+  },
+  {
+    "project": "ai",
+    "path": "controllers/product.js",
+    "sha256": "9e9096e50114cee32bbf3545cfecb781ac8390c46f016cfcbccf11e6d8a71124"
+  },
+  {
+    "project": "ai",
+    "path": "controllers/rating.js",
+    "sha256": "68119e93f31d4d49da927913c64729fb2ee5a5af92a8fed9b04c2c13644b8767"
+  },
+  {
+    "project": "ai",
+    "path": "controllers/setting.js",
+    "sha256": "5836ac5ad8dc5aa96b6a0f15d84ab831187104df791fc9a1d03733626cb5c6e6"
+  },
+  {
+    "project": "ai",
+    "path": "controllers/user.js",
+    "sha256": "2e5049125492212fe349982f7760b3bb933b9d76f2abf03269b0d1dbb4f6423b"
+  },
+  {
+    "project": "ai",
+    "path": "middlewares/auth.js",
+    "sha256": "4776bdc869fc208dc3d6726480f78da7169477bead3339374feae37e2d5e4805"
+  },
+  {
+    "project": "ai",
+    "path": "middlewares/multi-scan-service-auth.js",
+    "sha256": "78df37d1e7c3947df20bc8caf10b1d9deb0d16c9398b7003f098fd0c04f3392d"
+  },
+  {
+    "project": "ai",
+    "path": "models/brand.js",
+    "sha256": "f1d73504bf43ef8a7f5cf71695bb19f89a638fb2c01eae8cc0f2e51a62a7befd"
+  },
+  {
+    "project": "ai",
+    "path": "models/category.js",
+    "sha256": "76fe2ee4f0ef78967e2af4138f644f735564e9e6bd1f7bd26217b3a5bc297273"
+  },
+  {
+    "project": "ai",
+    "path": "models/country.js",
+    "sha256": "259db4ff33af3ebcca401bcb04eac860cb0015a35d94481cb4be0d91eeae5cad"
+  },
+  {
+    "project": "ai",
+    "path": "models/estore.js",
+    "sha256": "86c82c7aceee1794dd588da4d57d8950f82d81203bac5e5b661e5c452d18818f"
+  },
+  {
+    "project": "ai",
+    "path": "models/package.js",
+    "sha256": "b41bbc10e8a7585ed214327e7669c3250036b3091fd7dc5ffc6d9584cc70eac8"
+  },
+  {
+    "project": "ai",
+    "path": "models/payment.js",
+    "sha256": "93fd4823ebc2d6de3f5386bbb9b57fc70aef564f7ec2096c0179ef845ddc7535"
+  },
+  {
+    "project": "ai",
+    "path": "models/product.js",
+    "sha256": "8ab05da78ae371e988c66e8835b732ab7f2ff72c27c58e47c1df567b8166ecf6"
+  },
+  {
+    "project": "ai",
+    "path": "models/rating.js",
+    "sha256": "4dec45362267754b4b0b3ddb587c91397d6f358abf9f7c35dda359446d73ab86"
+  },
+  {
+    "project": "ai",
+    "path": "models/user.js",
+    "sha256": "efb8ea99f8c45d9543b90d2cdfbc910c8e570e896d8c960ebb67a151a9d9dbdf"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/contracts.js",
+    "sha256": "c8eac759d1d76bc7e9a7de7164439e2c8bdee7790181b5a5aa020585a10df8ff"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/runtime.js",
+    "sha256": "e8ce0587a557815319aafbe694331178e8551ee4ce4bb2dea98d2cb2c312a7ca"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage3/artifact.js",
+    "sha256": "cc4cf99caeb4749d919c452b8f4355363801d1181813b1a604186724b4065962"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage3/config.js",
+    "sha256": "1811b2b6cd38a533b969cf72a2559f5ebbde0faf0abd2dff6b157933bde872ad"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage3/crops.js",
+    "sha256": "5332217eba99447a09bf02dedb4015cc7aa1014b0f4cfa1bf89f3116b4d47239"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage3/detector.js",
+    "sha256": "32366d68d32493b79d5cb80d755b509a9f3b85e4db1223efb92f05ab4890ad63"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage3/errors.js",
+    "sha256": "63413e13dc73285a03263a8bb40787e4d828a78dcfc204fa8d4aae0404196f8f"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage3/geometry.js",
+    "sha256": "a608c1786348e5326a6376e31e6506253ed33aa37dd01a12ca5265901c934ae1"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage3/postprocess.js",
+    "sha256": "6ac14f6b725534f3d64ad2096c9f7291203acce9401582b2b24d481bae1617cb"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage3/preprocess.js",
+    "sha256": "2c78aa5a65feffa1f6c77a19329abc60ad66fee834a99bc4eab7393e7f4b1070"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage3/session.js",
+    "sha256": "6b746f3dd02916d7bbbb64dcbb85efcfc06b8da955ca6bfe261b5e905b95dbd1"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage3/worker-detector.js",
+    "sha256": "71d6a5e541f8c149192742e20e277d1b03fb264177855511216807502a3575a2"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage4/artifact.js",
+    "sha256": "e92131e6189776645f6c9d0e5f1e06ce72c1c2ba981cc8ee1da3ed6360dac5e4"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage4/contracts.js",
+    "sha256": "4233befdf995cc0854333586bc9797fe27251a4d881b9a699f8b53fcdc618782"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage4/embedding.js",
+    "sha256": "fe054e926c0cb741ea1c79e5c1eef1f5bb8644c4577ea700b0648333bfab9019"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage4/index-store.js",
+    "sha256": "9451da311f11889ca214e2073e13e40581bedf7d71cd51370a71e780c0b79d50"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage4/preprocess.js",
+    "sha256": "18a2d851e7707799819500b910e333e00507f05ea779d9406aeadd643e942a0a"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage4/recognizer.js",
+    "sha256": "1049397bd96907fb3ef6a5993ab85fa2653e4625abb4957aa6f7241653ef29dd"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage4/resize.js",
+    "sha256": "5a4e1cf190e2c2a6752354165dc3d07df31757fe0e825c10a40e1eb6ede48f87"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage4/worker-embedder.js",
+    "sha256": "4523898bb96a51b4848617e98abb51d8e194ae3d73b9ab2f5381609f696eb143"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage5/artifact.js",
+    "sha256": "912e859e799b35f37cc13ef24fbb3bc218b11c63fb92aa746ece1160326c2f6c"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage5/combined-recognizer.js",
+    "sha256": "25f8423eca5355b6f1677ff2a4032d159fd53f0c663b1e13ae3b6c3d3737f0cc"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage5/contracts.js",
+    "sha256": "0fdfdd68ec292f3e2f1411f8cd1d22fa9364b60f1c7a9a2c598ddc41916a240d"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage5/embedding.js",
+    "sha256": "b37e5101bd60290c50c63bfecad884f34bd91dde045f9409578e256db294cd2f"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage5/index-store.js",
+    "sha256": "754a419e6a25eb92b83256b225e971a81934931c427ea746e257f23a7b7de568"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage5/preprocess.js",
+    "sha256": "2b146a8db474bb53216a7266e7a9c530612abd98cc5eb04bde3cd273da35edc7"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage5/recognizer.js",
+    "sha256": "1049397bd96907fb3ef6a5993ab85fa2653e4625abb4957aa6f7241653ef29dd"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage5/resize.js",
+    "sha256": "1966735312b3da6c639264fe40804ff51e173741ff18a63b8179864d66e3c263"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage5/worker-embedder.js",
+    "sha256": "58ed23249dbb181de28f4d78e4ec2a844f21b76cb9141e0514932e46d5f184b8"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage6/artifact.js",
+    "sha256": "0b484a6f3aee395fddefdbc2292869b15f336bea053520806a863c35e373f091"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage6/contracts.js",
+    "sha256": "f8ef785bec8a3a66180bfae359efa85c95ffe272205f8431367c5c259ba1d815"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage6/ctc.js",
+    "sha256": "bb20c5d3d1f34992f0ecae438592cd68593ba101d17cdfba4835baeface38b0d"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage6/geometry.js",
+    "sha256": "ede8af2dbfec639f85e310cb8df6f2fa9c456cb0781c77ac1600e46aa230c20c"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage6/ocr.js",
+    "sha256": "d3f0812418534e5d95cb51079b2035dad5f887739864e053cbc706f445617a93"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage6/pipeline.js",
+    "sha256": "4f15bd863d2c6fe7185d8159c0988ecb07ab4af46e2ba750cadb1d6b6ad6e809"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage6/preprocess.js",
+    "sha256": "a0db5883aaebe9f4dea7c4f49999c98ea88a02c75263f0467b012b85c0ec4259"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage6/reranker.js",
+    "sha256": "05420da9dd73823a6c9d365c03a6f12a4e59c7168e1a824e2181a8899a6fbf00"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage6/text.js",
+    "sha256": "802424e702e1478b80fe2d32885fb725e8a9aeb8afaa52e8b5bfe21d5faf2993"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/stage7/receiver.js",
+    "sha256": "3aa12bdfb9f0a4c791cc31bf609b5786dfba86444908dba95e74284a745d53b7"
+  },
+  {
+    "project": "ai",
+    "path": "services/multi-scan/upload.js",
+    "sha256": "3f082bb1330904284434848af1053948bdd75cbd82a23f004ba0ba5a129525fd"
+  },
+  {
+    "project": "ai",
+    "path": "dbconnect/address.js",
+    "sha256": "8607a6896c480af62e6afde3a7b13777d527e45b8dfcb44d8a912d3db4c0512e"
+  },
+  {
+    "project": "ai",
+    "path": "dbconnect/estoreid.js",
+    "sha256": "27ba804ecfc2ea7066a71bbe87738f21ee5c493dfc523e9f4d094a790b56f677"
+  },
+  {
+    "project": "ai",
+    "path": "dbconnect/reseller.js",
+    "sha256": "763c1f3bd4d597ed7ec2a454f1458b114fed45ee2ea355eaae071d7d42779c59"
+  },
+  {
+    "project": "ai",
+    "path": "server.js",
+    "sha256": "5065b86ac77687fd388f3040b06c6503ab369392cdacf860bedad24af6e09c02"
+  },
+  {
+    "project": "ai",
+    "path": "package.json",
+    "sha256": "a33e057ef74f4fc731c6c3a571449e432bb66d79008d3efc2b8d9dce0748cb71"
+  },
+  {
+    "project": "ai",
+    "path": "package-lock.json",
+    "sha256": "c4e5caa3d51db0b0f8d34d14951921af4c64684201c5cbd15ea77f9e8e8e0163"
+  },
+  {
+    "project": "frontend",
+    "path": "src/App.js",
+    "sha256": "e96b1fccd47cd6492c626c49a95c8e0a352991187328ae2cac25f48847597b19"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/admin/AffiliateDash.js",
+    "sha256": "2c340c69967fb2811a0da49938b8a61768286ea37d78102609352f384b927e0f"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/admin/BarcodeSearch.js",
+    "sha256": "2908b53059b26822ef80b8c0d2255c62712b28212ca6cbc843366307eec3ae30"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/admin/BrandList.js",
+    "sha256": "5ee9f75782c5ed70954be47eb4e9e70128f91a4f4e139be729fa44f0db676c40"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/admin/CategoryList.js",
+    "sha256": "5e9d58f2bac5b17f2353e951af1f5e1bafcfd7c17b996c2827b0ecf55cd36afc"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/admin/DashProducts.js",
+    "sha256": "db056fafdfa133bdfd5cf3206a09e6c9e617ec8cbae85986af21f68f9eb2aff6"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/admin/DetailsPos.js",
+    "sha256": "a2d75b5a6462517ff75ee45b33b6aaf19051a9346389bd5b64b322230bfc3090"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/admin/DetailsTable.js",
+    "sha256": "8ea045368066b77b6342513ef839b7e774ca51b2df0650271e58eb8087edcd7d"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/admin/OrderTable.js",
+    "sha256": "f28712c6e44b8b736eb961a7de9b799a1e13e482db61194de2327bd8d7ce4710"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/admin/PaymentList.js",
+    "sha256": "98f090f717433464b005920aa6eb10e13a2e167fa3a303882b30f5e20ca8be52"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/admin/ProdShowCards.js",
+    "sha256": "c6a869e6674dfe3b55affafeb36a72e09836d117b959e85830eea646cfa9a03a"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/admin/SalesDashboard.js",
+    "sha256": "dbc2dc8eb963b23b68631f7c106a32960bd5dfffc8220cfd7e71514d6f130263"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/admin/ShowInventory.js",
+    "sha256": "3bba0ce06561325cafff97afd2f06ecaea13ea9f87f1fa6d9a5ac4be01ed834c"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/admin/ShowSales.js",
+    "sha256": "28922f6bda880c63aa1e691db1315ee3fd2d484b0897a1b10b09494ce68f5c62"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/admin/UsersList.js",
+    "sha256": "8925078b196bea531aca65a7f2dfba4eee68f544ebee8adbded7cfa6409c8e26"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/admin/branches/OrderBody.js",
+    "sha256": "649b8891a3aa0a958967ddc9f5f4cc1909e6deccead025235343dafb8f053f4a"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/cards/AdminProdCard.js",
+    "sha256": "6ee32a69bba070432ed7059fd3f09d35c48aaa0f1b85e6b6f025ebf477963ab9"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/cards/BrandCard.js",
+    "sha256": "85fd722c5060f6952428bb40690c632a1d8e55afbeb555314aa697c171e7dba6"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/cards/CategoryCard.js",
+    "sha256": "19bb38ff562b30d094f9fd108b378c1eb2d7187b35f10b3e1c03ab2a5cd7cc8d"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/cards/Jumbotron.js",
+    "sha256": "0439687ab8d92b4eaa92bcd6dc9618a1477c6d38b0b7139a1adb87fdd54c3a77"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/cards/LoadingCard.js",
+    "sha256": "b2bc989287c0403e8c1af2c0e996d6425d5d248b303fb6aaeba2eb837344f574"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/cards/ProductCard.js",
+    "sha256": "062f0a0ee4faa07dd91949dfb25470b45b598ea4cec8faea40c5434f6ed80b3a"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/cards/ReviewCard.js",
+    "sha256": "3996deba6aa92122ca7c8ec7005898793f4268a39c97020620b10e0f5b2fbf2d"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/cards/UserProdCard.js",
+    "sha256": "564c3ee2aa99ae6f71218a2cd4a25b6bca2bafcfee5ad5542f2f2a9e33f43dc9"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/checkout/CartProductTable.js",
+    "sha256": "13169e6c7982b85cc9dfeab4b3b0b4d7a3fc868061e655a64b59c067bb08aec8"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/checkout/CheckoutDetails.js",
+    "sha256": "a6f5d159d1e0bcd8c17b35a215f7da17a0fc88816da0e80ba167e482759de379"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/checkout/PointOfSaleDetails.js",
+    "sha256": "e3e3c9b6e9ae77ad351a2d3ab781ee45cb60343cad2735ea9f4fc18faff4e446"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/checkout/SummaryCompute.js",
+    "sha256": "bd2fdbe8001b105d9ac71b60adf62d409a6191cf5bcd9038c92247388a9899a7"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/checkout/SummaryProducts.js",
+    "sha256": "3a9946932de95bbd513ca3b1791751a10edee36bb5d9c1f67ba1aa2c0bb0a2af"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/common/Alerts.js",
+    "sha256": "6cd47bca1a76c13eec2067bcc271ee93db648dc43abd4e2fe601b187b2890376"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/common/AntSelect.js",
+    "sha256": "1976548c2077ae8c65f97c9e2df8ba819b4959693746bf8c7580bdec27a9ccc8"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/common/BrandImage.js",
+    "sha256": "71360bceb983116afd1eda4f258bf59a3eb0b5063302ce58c69ad0338d3585cd"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/common/CategoryImage.js",
+    "sha256": "072e868a3e55debf03aa9a4936a25498e76a714585b09105a70bada7d362c485"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/common/CoverPhoto.js",
+    "sha256": "1d2835cdbe558b76015a6ddabedf2c23ef20b9d693d9840ff62f2c08d9d86b56"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/common/Footer.js",
+    "sha256": "d19d469a201e7d2a4ac434a974c206beb80798d58d4487f6d57c8d0fd14e0342"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/common/ImageCarousel.js",
+    "sha256": "88e2d23bc360c4f2ad41aff65697923ae518cac959d21679baf4be0cd8b01b8f"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/common/ImageShow.js",
+    "sha256": "380f0ff6f7d7fc5c1f79e54b47ff8d11dbd7ee1cf2790be6e7b74219ae6841d5"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/common/ImagesShow.js",
+    "sha256": "9a559c5e7b56511d6bfe5d0417ca48543c3b8bf033c4e9438790fae39220ac72"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/common/InputNumber.js",
+    "sha256": "cc6fb42f5751acb3b9e2791ab8d59f5c0eedd77ab622af6ae8db07f6dd8aeaa5"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/common/InputSearch.js",
+    "sha256": "bdc794b4a4fed102b7669a9d8fc15d5e5cc1732a29f07ecc4bca1f1d80a5b7dd"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/common/InputSelect.js",
+    "sha256": "c017016e96ecbdac5901a474454aeb4fc00398699a5880861fe557954a4f736b"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/common/InputText.js",
+    "sha256": "0e95ba66f9fee9c4ad5b49df2ab1549bc1f5774f8cc05245fa1264315028d4d3"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/common/Limits.js",
+    "sha256": "6d82efc88602728420a704fed95120383bcce1a92ffdbb84aa6e69b426034a9b"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/common/LogoPhoto.js",
+    "sha256": "758da0f7880a9eaeb5de1f0766a258c9add50001e23e1504569ad0e16a70ab67"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/common/PaymentImage.js",
+    "sha256": "457a1846898270282409b863a0ab0bd35b15bb6b86f7f16c790b472c7183ef7d"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/common/PreSteps.js",
+    "sha256": "953b8fd77fc491df76704462332020377e2448cdcd611998579c9244fc3212de"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/common/QuickTourTooltip.js",
+    "sha256": "763cc03654c75bb93bbe3d3ab00a69a94855bb1f722f5820c6d80e42b1bcf0bc"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/common/RateImage.js",
+    "sha256": "a1b8d2ff7b8a43bb74ddd1881115e387b51c8a6d8abafbda22d8e64a44930a39"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/common/ShareLinks.js",
+    "sha256": "02b05eec0fc4a1cc5f81e2883f0fcdec65521d76f23eb6e4ee35b92aeaa94d4a"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/common/ShowingForms.js",
+    "sha256": "1b9adc9d560166641723be4ce23b7848dc3ea8f1d7226ad16e23ced50fbebe39"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/common/TableBody.js",
+    "sha256": "4bfe24f8d398a2494d2294383a0736b45961042be786e63c3280d29750a92d4a"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/common/TableHeader.js",
+    "sha256": "e9e6b79c9e93898be71edec90aa1b0df9d55723ea9e20792279df7b857251b41"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/common/UploadImage.js",
+    "sha256": "2b6a953fe488cb98da73c8286c10ae146f10cc2156e3ff070864f5284ed03033"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/common/UserIdentityCard.js",
+    "sha256": "5a5433d3f223c9d391165af4c9355be5f6d60ef0df668eb916d90b3f56aaa98f"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/common/UserImages.js",
+    "sha256": "2867344ce92539d3ba56698295262d2cc2b42e06ff25772592323f0a8e41e47e"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/common/UserPhoto.js",
+    "sha256": "0c044cf04d21820f471edabe100aed5771ef1a8a6ebd5e286feee57ad2bce30e"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/common/getUnique.js",
+    "sha256": "652f2ff50cecc81467fe22d49cd4c885d8df433ef7800005af23e48a1e9eaf1c"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/home/BestSeller.js",
+    "sha256": "87ff14f60610c18daaead22bd439a02f7ac20742c367c3b3c0e58e2e94f4a059"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/home/Brands.js",
+    "sha256": "a06ffd082e43774c9f910d1e7cafed38cbd4f33040bb62db08a69db4bd2727cf"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/home/Categories.js",
+    "sha256": "a09caf1c65d34d5db60efdde31c92802385c8072de4ae62151f8d3d66a5d1088"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/home/CosmicCover.js",
+    "sha256": "04b25eba5eeea6294b3be9d884da3387f42af526d97f02a8f29a3c623b88a0b7"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/home/HomeCarousel.js",
+    "sha256": "c1ca236959408c9f266846f610845b1be11bfd96e783f28bf1bdb8e94241eaab"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/home/ItemsForYou.js",
+    "sha256": "88ab4aa8074a3fddac8b334565da1922ce802da9328e971e3b328335c3aeb445"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/home/JobListing.js",
+    "sha256": "47cf308c77e4c9be2cbb4a7740a69cd1616757f4e0bae42c7df2fdd3df40f1a9"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/home/RandomItems.js",
+    "sha256": "342a7bf4d44bdbc50450cd042ca316334a8c8d29c33161f6244aaebafa7fa4b0"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/location/LocationButton.js",
+    "sha256": "94848e94c15912c52f79c706e6ed54359a61c248f5c12e9013264614a551f85a"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/location/LocationDetails.js",
+    "sha256": "bd00d32a142e0c533686fded4ea1295be86368da6b1654bb55c5d75fbd1c1afa"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/location/LocationInputs.js",
+    "sha256": "81f8c38aeb859f516c2056838c174f8f843a5179cc38b6764360847a522318d1"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/location/LocationProperty.js",
+    "sha256": "99cbfea77dbde707e2aebe7e25f07a5833aca11060a31dc68ef58bdb13a0387a"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/location/MyLocationForms.js",
+    "sha256": "0c36a95c67eed33c979bb25ebf03bd077386a80cd49555e212c0bcaaea6f2bf7"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/location/MyLocationProperty.js",
+    "sha256": "6b63736a5c7c36f26ded474cc5ee02dd17635d069a88f0255899b56810a4926d"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/location/MyLocationTable.js",
+    "sha256": "45bb5c1c93cd99786bfe82ff3ff2c740b330dffddb4e8a696498d99b6421d716"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/modal/AddCategory.js",
+    "sha256": "fdcefbc25360cd33e4fa641c0d726bc66515aa6d2a84f0b3c5a0d503f1854e98"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/modal/AddEditUser.js",
+    "sha256": "91604c4745555272b971fab2149fafe88f74ff42aea229520cfdc22d1f7c32e5"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/modal/AddQuantity.js",
+    "sha256": "e8d4c65294dd3acf2bc037981a8cff4ca52ce0e249efd514e8ffec2b69762e9f"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/modal/AddToCart.js",
+    "sha256": "917e12b7c194cac8c07011710f4b2d2fa3fd6cc5bf2420e43a3c4948b32e61ed"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/modal/Barcode.js",
+    "sha256": "0c0b243d50d9f9803d7a8113f50a57fe14d022344ca06f99195c279facefda9e"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/modal/CreateVoid.js",
+    "sha256": "3442571116d6a9c89c48606afe668fdbd559bbf6fdb4fa322a5fb08b4506252c"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/modal/DomainCheck.js",
+    "sha256": "02490149923180ffba3cae478ae6ea0f5ee9ed818c9950830d55b052b8127070"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/modal/ForgotModal.js",
+    "sha256": "1ea0c5f7a8337ab6188f1174501e2c5505ea2783022676e3824ed045b308cbc0"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/modal/ImportBrands.js",
+    "sha256": "7395a8eac4bb0229127a688995c63a8d5ebf646d2ab3de5e07437047606bb726"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/modal/ImportCategories.js",
+    "sha256": "3e34eb7454a1334dad8ad2c4ab87c12a69f7eb14524f32cbe7e66caa6a33f4db"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/modal/ImportProducts.js",
+    "sha256": "e367d9317f289597aaaebd5873ca968be0046594f10dc253d27f5f81f6847412"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/modal/ImportUsers.js",
+    "sha256": "37b171117b7b5ffbd6719da4638538aa1c19b82e00db3773e3659ad6d366e543"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/modal/LocationModal.js",
+    "sha256": "7639034de687d04af96d482a283841f8f7ce0632fa411f0fd17b4d4ca745898d"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/modal/MarketPrice.js",
+    "sha256": "6d57759415c77282f0809f60d5fe70ab768033f9ab8f5b91212e12048b7e5e8d"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/modal/OrderModal.js",
+    "sha256": "a56e52958f54f4ae7b575182dcc6836754a6914a2727bde20bd11536fc240426"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/modal/PayInstructModal.js",
+    "sha256": "6978cbbe7ce1ae066e040e2faef358e9468914f52b7ba8154700cb714f0e4c5d"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/modal/PopConfirm.js",
+    "sha256": "213691541162762fdda3ec5f269488fcf185ee3a6e37e3767673c77c25c6850d"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/modal/ProductVariant.js",
+    "sha256": "e63e1088f17da4066341582339505bfcb8dd682a66e5bca8986c5ef744acf957"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/modal/RateModal.js",
+    "sha256": "a042cd8ee11805dd44c2eb54350ae65b6e71a2aec66c31471fa144c67db8f841"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/modal/RaviewImages.js",
+    "sha256": "85463e705a26d5ffaae41fb243e98806f0130290504affda280756eb4c60db32"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/modal/ReceiptModal.js",
+    "sha256": "4da07e2ebfbf3f9199b97c418fa4512272a0fb99e865dfe2285f0dc2192a9c50"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/modal/ReceiveItems.js",
+    "sha256": "57c62f941f95527fde25e5c2e4ca5de80cb1af19764de385f6f7292abac56b09"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/modal/Roulette.js",
+    "sha256": "6323d7211066c82dd0b336e95d2bbd55f31b09c408900d42bb8e67b61a24b2b3"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/modal/ServerBusy.js",
+    "sha256": "2a12ec7a951c35412f49313a818c736237e89566604e914c05bd0001750b5613"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/modal/SplitItems.js",
+    "sha256": "70426e95ac4585d111a87d70b5cb7d7821bc4fdcaaf1fece8a22bbba1b9a8d54"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/modal/UpgradeVerify.js",
+    "sha256": "2db312628ab7650576f90fcb8289b992540d4d9aac62c87034794153d4a97c1d"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/modal/VerifyEmail.js",
+    "sha256": "4e1030e3be6e80549c3e3fc23ee5ca3758edad213fa82665988c6e7bc7643b69"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/modal/WaitingItems.js",
+    "sha256": "870d6733338c5283fb7580d1ae8df7c8e15df6dee8bb3575bcade9298b94d9ea"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/modal/location/Addiv1Select.js",
+    "sha256": "54dfa0ee7480f3fd69fc610d77b7309eb9cc8de15351e2ed220a06a7bc18c910"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/modal/location/Addiv2Select.js",
+    "sha256": "c99dc14fc2acf82db1369859585a1894efcbf99b6727d05769a6c1e6358a392f"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/modal/location/Addiv3Select.js",
+    "sha256": "9539e934083c879726f9fc73d8ab3bd3c52141fbd3cd1414ad63637b4fd055ee"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/modal/location/CountrySelect.js",
+    "sha256": "9e6e8114aa49a5de5f524fd55e827bafed8f36d2cd0120c04b2c606b663fc827"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/modal/modalComponents/ImageCapture.js",
+    "sha256": "7717f4b9b9482f95dabfec8c3b5afe224b3ec31399522ab968d38f2719e2f7f9"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/multiScan/CameraCapture.jsx",
+    "sha256": "8966789a823742d4be7eeb2a03e5193a5e00c2ec5e47160d37896bb86cb2c303"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/multiScan/DetectionOverlay.jsx",
+    "sha256": "ad74dca5764bfaf77319fd3cb3fddce97f4355914c0d258f9cc6c1451f520ad0"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/multiScan/DetectionReview.jsx",
+    "sha256": "483bdcc9dd70466ff441db9c840c5f58e9ed07fa0a3f7a8a76c3ef463daec97d"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/multiScan/ImagePreview.jsx",
+    "sha256": "79cc534fcc4dee9f5f7703d61ef4c13fa00ad0cbda6b8c0a6a01798e3c4d4803"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/multiScan/ManualProductSearch.jsx",
+    "sha256": "1361e29fcaf7693518ee1b302a1beace01e8c11856236cb6def026da60c1d1c9"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/multiScan/MultiProductCameraScanner.jsx",
+    "sha256": "c91afce869e0bd91d61e1877c4e0ed049bb11dbc59904ef1c663edd233679a99"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/multiScan/MultiScanPosPanel.jsx",
+    "sha256": "791fa56e7619a4391c17b456f2b60ef0781040db9654aa8067a924fc2d74fce2"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/multiScan/MultiScanSummary.jsx",
+    "sha256": "cb464ddcc3369215752ca53332c3a7d84287b4bb855cdb16b21d3fdf36d925a9"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/multiScan/__tests__/stage8.test.js",
+    "sha256": "a36ba25b3bf54135c013e14c42df4ad6207dcaf11a5934f371045328fd7107ff"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/multiScan/__tests_stage9__/handoff.test.js",
+    "sha256": "57aece360f7b15d8e28cdee8396dd6739699966aa10fe4f3bee2d8679813a5aa"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/multiScan/camera.js",
+    "sha256": "d280cf78c79025e859222da189d6f4004b62a4e4d4ff5caba8713ba01c678c37"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/multiScan/cartAdapter.js",
+    "sha256": "84bc68e23f2c52512d8f74447b9d1834c88f0c43dea495715d9d68de27b7f3e7"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/multiScan/model.js",
+    "sha256": "f8f7ed44794013830dc223b38a128590372ea5b30e475cd3315b4e04b715ead2"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/multiScan/useMultiScan.js",
+    "sha256": "9f96b4a9cd475870bdec5cfcf9903201c5adff877fac87e863fe64bac5d293ae"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/navigation/AdminNav.js",
+    "sha256": "7ea2c8463837dc776563975cc8bfc9fc89a00f4b2efe57df9b41f581b21899e1"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/navigation/BuyButton.js",
+    "sha256": "b4b7cd7e7147790faed2e45dc49c67dc9d4bde2a61250ef74f6f4a11ed833ece"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/navigation/CartButton.js",
+    "sha256": "2cebb1fa9e0cd83cf78cd7345e28e32afae48fd9e144abe6a33a43b341a0b97e"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/navigation/Categories.js",
+    "sha256": "515d3cdce3302d030b1919562cb7d3ba8bcf0dd598a2f708def20691cb31a876"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/navigation/Categories2.js",
+    "sha256": "02b9ea3887f7bf94f36bdd5548feb68f45f8219f17f14d1145cc05739660c617"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/navigation/CheckoutButton.js",
+    "sha256": "e862a06e9f6fff941f99f41b07688a950bef38716c8e0046459879c036affa0d"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/navigation/Footer.js",
+    "sha256": "7c032eb27dca1965b1dde49a0c313d2f5a3b0259594689837dc80f9f2e39ab7a"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/navigation/Header.js",
+    "sha256": "d40c36df3da4d0c838dcbf900de25bbf14eb0765ebc6466e07e99b3002992f3d"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/navigation/PointOfSaleButton.js",
+    "sha256": "118d05b0cc5e477e8da76e9e85be1fb7b9411539959f5bee62899fae67eaa32f"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/navigation/SearchHead.js",
+    "sha256": "50529ce8fb79df3f166370429288ee1a4be29ab40ac9d1e05904cac808e28123"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/navigation/TabBottom.js",
+    "sha256": "b7398c9ca3e13e495479c30a96a6103e31c1eaac9af8cad99e2bfe8e07c61428"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/navigation/UserNav.js",
+    "sha256": "7647023f835aaf7ae96ff888b3c5518d55326e1bd4a4659dbb67ef2faf0f0a35"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/product/ProductListItems.js",
+    "sha256": "3bf6bae84ddfa084367d7d79b2d671543fe8bb27100aaec7268896cae0dbb7bb"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/product/SingleProduct.js",
+    "sha256": "e0922aae0862ea5801add29d54ce833d2e1d7187030495555d1453fb3441e2dd"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/routes/AdminRoute.js",
+    "sha256": "bbd87a0307d0912edd21fc15370f58ced2c51ff7b75252ad9ec754e03f25f625"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/routes/LoadingToRedirect.js",
+    "sha256": "93d5cc039d39a3a7d0a3a628d6f2f7189ca5ad848b7810e420968aad49f79bcc"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/routes/NoUserRoute.js",
+    "sha256": "b3dab53b7eecdf677172d994589bed42b1b278c7202ca4a6c70ea40a667c930d"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/routes/UserRoute.js",
+    "sha256": "ffe6075bef3a4a2ff97bb4d77eb97ac321850e4e1efc69fafad6cb9ea2d8d4df"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/summary/InventorySummary.js",
+    "sha256": "9be12d91c305e74e3c849b64fe226b25774cc67257b17e35653b70dfcca077d1"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/summary/OrderHistory.js",
+    "sha256": "3df6570d8b475437c152f249fe0fd05720dd90de9cc5fe15f6a623f11bb5cc93"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/user/DetailsTable.js",
+    "sha256": "2ffd98b91b3a34b1aea4bfe7282b6f720dc0ce03709b8aa48f0d0abede9f65e9"
+  },
+  {
+    "project": "frontend",
+    "path": "src/components/user/OrderTable.js",
+    "sha256": "a35b446d144e68c68406cb012dd08394df4bce3b250ad254171ac4463a47820f"
+  },
+  {
+    "project": "frontend",
+    "path": "src/cssfiles/original/theme.js",
+    "sha256": "60cb44c5d28b1c1f3273270231d323233c94297658319eb590587cb385f713e7"
+  },
+  {
+    "project": "frontend",
+    "path": "src/functions/address.js",
+    "sha256": "cd72450cfbd8e2ae5421d1dca0fffa952cea418084847bef77339fb77ca6f3c3"
+  },
+  {
+    "project": "frontend",
+    "path": "src/functions/ai-image.js",
+    "sha256": "86b5519867162128acce45ec9a240604aa50361b4a759fb0ac3e4255b2a3288e"
+  },
+  {
+    "project": "frontend",
+    "path": "src/functions/auth.js",
+    "sha256": "977620dba30a659e3f4409ba6d99c039d073629227fc0ba6b5a199dc60690a12"
+  },
+  {
+    "project": "frontend",
+    "path": "src/functions/billing.js",
+    "sha256": "f51d2105b58cd81a7a50278ca504113a559891153313913d47b2a5bdb693a9eb"
+  },
+  {
+    "project": "frontend",
+    "path": "src/functions/brand.js",
+    "sha256": "802cfa7925a15cee99b515e64527fcbf1f552095d0b0ae0592fe9a528b7a1c05"
+  },
+  {
+    "project": "frontend",
+    "path": "src/functions/cashflow.js",
+    "sha256": "5c6c79a3eabe046c820b6286e08b0963657e59d23c46e925dec3125f67031f20"
+  },
+  {
+    "project": "frontend",
+    "path": "src/functions/category.js",
+    "sha256": "1bd4856e20a77d2dd73cd3a4da3e7532bbd97171d092e745034f3f80a5d90939"
+  },
+  {
+    "project": "frontend",
+    "path": "src/functions/estore.js",
+    "sha256": "928c420ec7840b72eeedc960372a1e0d60972ad43153af726ee8ef667e73a7ae"
+  },
+  {
+    "project": "frontend",
+    "path": "src/functions/events.js",
+    "sha256": "b34da3121db7d51cb0aabd09ed8a59ff65cdcaeb651b46b7a143861e8a0daa76"
+  },
+  {
+    "project": "frontend",
+    "path": "src/functions/eventsData.js",
+    "sha256": "c06d1a0b9538a46faffac829439e4fb5699552e546c26187bed186a4841d0b3a"
+  },
+  {
+    "project": "frontend",
+    "path": "src/functions/jobList.js",
+    "sha256": "7dfc54a46bffb1e0e40ffbfca352a3e2613a3927969faa8a4acd93deb9ca963b"
+  },
+  {
+    "project": "frontend",
+    "path": "src/functions/joborder.js",
+    "sha256": "f677de298a8a88a524305b27cd3dc52935bcadc2d327013348dce3fd3a71a4f8"
+  },
+  {
+    "project": "frontend",
+    "path": "src/functions/multi-scan.js",
+    "sha256": "66d616dace0582812704d1309a31a7e03e4746c60407c171ca34a55fc6a04046"
+  },
+  {
+    "project": "frontend",
+    "path": "src/functions/order.js",
+    "sha256": "2d95f626a8bbe553bedc9f94412db5206a8e9167720b083fd48d23bffead31c8"
+  },
+  {
+    "project": "frontend",
+    "path": "src/functions/payment.js",
+    "sha256": "032f3db6cbd83a4077b8d2be3c28d97e4472f885ef012f47542a0b55752262ae"
+  },
+  {
+    "project": "frontend",
+    "path": "src/functions/points.js",
+    "sha256": "5ac557cdff1b6eeb9ef5c94102770fba01b2f778ba7dc0c2ba61d0db2f12f790"
+  },
+  {
+    "project": "frontend",
+    "path": "src/functions/product.js",
+    "sha256": "d8fe7ab2d095c44c491769fa9ebb778d1dfbbdf867a4916eeeb7a694b11ea989"
+  },
+  {
+    "project": "frontend",
+    "path": "src/functions/rating.js",
+    "sha256": "1b44bfcb42cda8401e64c4b3b9b5ffa530ceb8e9791d8093b6d25b977b964b85"
+  },
+  {
+    "project": "frontend",
+    "path": "src/functions/sender.js",
+    "sha256": "622cf73217cc09e1d74a66f95dc6bd00d7e5aee996fd0eeb006d7338b4bb4375"
+  },
+  {
+    "project": "frontend",
+    "path": "src/functions/user.js",
+    "sha256": "1d01897cf8a71ecbc829316daffc0a294dd903b01c335c7d8dad702993f29bdc"
+  },
+  {
+    "project": "frontend",
+    "path": "src/functions/withdraw.js",
+    "sha256": "b4790b11a4e0b1163bd02893bb26d4b617eba154e7ac78d529fafb27b6e712a9"
+  },
+  {
+    "project": "frontend",
+    "path": "src/index.js",
+    "sha256": "6b731b255d7f96e1eba2a3ef74b141e1180f5f5c44606aaebb10e794159f5ce9"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/About.js",
+    "sha256": "034eab66dad929a328bede19dd0204d1b22b1207ec4199da7e72019ceee41ffb"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/Cart.js",
+    "sha256": "ef98662fb629fbe1519b5d373bc1ce54220c43043876f953afc9d9d330605b30"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/Checkout.js",
+    "sha256": "330605e93608fec0c349be545b1093e47131c73b57d8c5d025acd76c6806e3a6"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/Contact.js",
+    "sha256": "d7e51ed4e70300c3d7826289cc9653532bbb956e58615c901afde4d9db35e31b"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/Home.js",
+    "sha256": "777b636ee968a124cc1c4f529a5fc1faf6d00b33e1fbc6c4824213ec06981d1d"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/NoStore.js",
+    "sha256": "971e0aae6dc03e5600406b322554efd28d67580ee781b37d4c966856700080ff"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/PointOfSale.js",
+    "sha256": "d08d19a4bed2711c503d6cddedabf3c9da047735435b3e7203947dcc233d80b2"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/PreSingle.js",
+    "sha256": "6dd0e8307e20c3b0b812094df6b1b6b870bd1d8b72fb3e89abe0c1e5df3ee02b"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/Product.js",
+    "sha256": "c397787469b214ed704ec6ffe4da09d1603f02753628ad9bfa44448f1affa310"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/Purchase.js",
+    "sha256": "e4a769b616ea62ac04f51224890457acea9d7944665d7133f67c4b2ca83ae87c"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/Shop.js",
+    "sha256": "efaf4ca4ffb123c0a0bf9947db2081775b3eeb94fb1ad1bb030b374dc4c8b8cb"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/Single.js",
+    "sha256": "d7e6b7ca971b39d0deb72725fa6790d1f3bb544d307f881d50374eeec29d9edf"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/Stores.js",
+    "sha256": "4a3bad918f34950bfddc2ffa6dbbe762416b45ba73db7e15dba90d6587468f32"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/ThankYou.js",
+    "sha256": "729da690b8a19fa8403188f9ffaa7156b741e2505c5717e28b4fb4c61d9b5593"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/ThankYouPaid.js",
+    "sha256": "4fe48c3642bad4c9d09379ba907b0c979cb8dfea209d87f4f3f0573d11e62c42"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/Welcome1.js",
+    "sha256": "a4b06421c78b2ce339174faa74971598167fff9352c013eca8a10cb860cb63b5"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/Welcome2.js",
+    "sha256": "4889d54b0b49934860ae67719e61cb77d23fd5610e18c8a921cdfe56b307ee19"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/Welcome3.js",
+    "sha256": "eb30f5f26d34e2154ddafae198b13529ae1ee56fd61132bce0f933213389a9ad"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/Welcome4.js",
+    "sha256": "acaa812e738b3b83e2404c2d28ba03d9fcb38003d324eef1604dbf28fe8e8699"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/WelcomePaid.js",
+    "sha256": "212a39884238e79dbf2a9489cdbd428849fc26c767c1237cf0e2784568e725d7"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/affiliate/AffLinks.js",
+    "sha256": "6943be33778264b39f8518ab5dddc1bd6437450bb694565a17e2347d1c8206b5"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/affiliate/Affiliate.js",
+    "sha256": "c272380f50188ee03f47433c1bc430d8ca7c47a5572e62bebb87923250b9ab97"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/affiliate/Dashboard.js",
+    "sha256": "9d29da48a6df59ba2b88469cbfcc8fe5f49643a33faf6d3b4091db1c5ced70bb"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/affiliate/Withdraw.js",
+    "sha256": "8ae4b8822db6c785303f13b2c270b2f6437e313d470329be60aec1e89e729fe1"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/billing/Billing.js",
+    "sha256": "a15c4a7508d2ce18fdeaccc953ce19281abc6dded8b0317fc4bff233fe84aab4"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/billing/BillingHistory.js",
+    "sha256": "3afcdc26a5855b05c0b66f5a950de5141ca2be36794872e7d061d946b1cb2527"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/billing/PayInstructions.js",
+    "sha256": "e4059e10d8fdc1639a15582dc69bf0782dea9184c32771eb90e20395ea9b3359"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/billing/PayUpgrade1.js",
+    "sha256": "4f276f2263d74f9b9db47db3f9d28214363c466bd74efa31400ca5189f08bff5"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/billing/PayUpgrade10.js",
+    "sha256": "3d8710ca008c3f79ed3897f0593de0a5c127af108e439df01a2d22a0e3aea163"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/billing/PayUpgrade2.js",
+    "sha256": "5be3953d7df0f7b454c4eb6c95f63ba118ee4a0c4859e2726d2e295c09d68653"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/billing/PayUpgrade3.js",
+    "sha256": "8b36a1a0cfabc52f687cbf52287889d11bc0cb07ffdc1fd10036567640a5d9cb"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/billing/PayUpgrade4.js",
+    "sha256": "740f982882c4f8eb656558b90a640e069d9ffc597a0c7f066e51adb231ab4ac6"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/billing/PayUpgrade5.js",
+    "sha256": "a44adec604557a60b37fb8948444fc752099a498141bae0e1572a9bd4751da46"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/billing/PayUpgrade6.js",
+    "sha256": "b521439dcfda956dd0386aa31df5a927365bffbbd08aad8df513eebf9168ab46"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/billing/PayUpgrade7.js",
+    "sha256": "f6be966068bd24bd49eb8a076b722bae954e24faf15d99f2496f465aaef6cbe6"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/billing/PayUpgrade8.js",
+    "sha256": "3119d8af3068330db8dbb5fdc2f2195b05014a329d6f9e7bd5c20f4296a76461"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/billing/PayUpgrade9.js",
+    "sha256": "96905fac4c106ff562dcf0749ab10564c0fc60a0511333a271e07e8953bae731"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/brand/BrandCreate.js",
+    "sha256": "56b762854d8cce6de6ca88b3704059dfca46b5c5ee4c0296d5767b72dddefc04"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/brand/BrandUpdate.js",
+    "sha256": "d4b2506188dfe5e4ecff2269462850d101691b953abfd99a6acb39e774dbde60"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/cashflow/Cashflow.js",
+    "sha256": "41e6ceda7515ae78ba961e00373825652076542f31a1ab007d68dcbe663278a2"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/cashflow/FlowDetials.js",
+    "sha256": "1b1d31eff6278cef7c0722b5f6d99b95d63c598cd707daf1422d8b8b457803fd"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/cashflow/Summary.js",
+    "sha256": "b5fd1625227d7ed1e512c9d61a6b814908979736384db56a9970247e06391ee3"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/category/CategoryCreate.js",
+    "sha256": "1bced27ca8fd4127c1c2da8768bd384085377c42d64767619dddccf4e88916e2"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/category/CategoryUpdate.js",
+    "sha256": "326d82848ffa5fb7a3f57c559ae0742b5a2cab1de08bf5c9edb99bc844530998"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/category/categoryCreateTourSteps.js",
+    "sha256": "521dcea52d2ba5b8199d4016446aff3e3767f7a13d5e61e5a02382c22a0d2923"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/dashboard/Dashboard.js",
+    "sha256": "7ccd46dec44c5396b71d6725019a481ca622483d24862c56b0b3543671ef74ff"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/fbads/FbAds.js",
+    "sha256": "59a92182fb05843a80ce32ca8da95e2f00f80d0eabff8bede27d9dd7de0670db"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/guide/CosmicGuide.js",
+    "sha256": "8248a78a69b212794b8b4c5f1e996b4885fa5e1a990499a947bdb3bf0ef62bd0"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/guide/GuideSelect.js",
+    "sha256": "cd8b071292f98135b7efb889d1e4fdafebc1ca8c812cfbb1295cdc4a448242db"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/guide/OwnGuide.js",
+    "sha256": "f278c2473e1bd981321d513c3fd870c9e50e0f201c8230b35d875c514f51df69"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/guide/assets/lists.js",
+    "sha256": "d5ff3daf2c60a3ce9f8fbc974198bad06cca08f0c1e88114c98f22394951427e"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/inventory/Inventory.js",
+    "sha256": "b9487ba6a79c8496dc84c5abf12cde5871495a4c397ffead61fa9e6364f47882"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/jobs/Jobs.js",
+    "sha256": "86f7698e18ba2399ca24558e1d997387eee971a8a502404cd43e74110650595f"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/location/Location.js",
+    "sha256": "c2d2d6d185caf85da74530cd4b1ea740818d6ce3bf0f56080132a67b99d95384"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/location/LocationCreate.js",
+    "sha256": "523866d98be11d9e252e966f9618fd69e0bdade184690776f58c88d326f90f73"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/location/LocationUpdate.js",
+    "sha256": "704ecf93273003b62137b985ec95d6c15971dd3b15e4b4e493ad759eec73bd5e"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/location/locationTourSteps.js",
+    "sha256": "ff233debfeec4e738db5b011bca5ede75b996d333dd2a6241e277de466cb7bea"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/order/ItemsOrdered.js",
+    "sha256": "d9e0f7f08ab04c6dade9dfa9b390fb64ea0ef761fd49b712c7a5ababe38d1eb3"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/order/JobOrder.js",
+    "sha256": "c96e4bd096dc8a73926d0ce898cc4a02170842cccffa5d60ec78ad0907d805fb"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/order/JobOrderDetails.js",
+    "sha256": "cc5540975d36746ec97669f61d0127f894dad3397320ece1f7272e4e4ceb27da"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/order/OrderDetails.js",
+    "sha256": "dec075994d2d7b36624452bbc9628a95fa03fb66acf21c4ea5acd46b9e396184"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/order/Orders.js",
+    "sha256": "a64563baf0621bebbb05907f5667aa33ea04a111c1339e620c94693668eb422e"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/order/PoRequest.js",
+    "sha256": "28a1487f2c60e37fdd1d16d493bb3a8df919362581ee09f70a6d7a5e5ea8ae67"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/order/PurchaseDetails.js",
+    "sha256": "2b3d12206201078eaa477e918444bf49103c997702bb380ad82d527e3d1b131d"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/order/PurchaseOrder.js",
+    "sha256": "5173535a8c8a72a40a932cc664b6c5f1a07ffdf7362154ecdd54769d7a05f138"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/order/ResponsiveOrderTable.js",
+    "sha256": "c6f7b38f8b8291f76d2eeb469483d43254cce5e84d4969bc33b6e88104303c7f"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/payment/PaymentCreate.js",
+    "sha256": "ed7b48e903ca317e9a3c8da1da603b4d23193a5505b504a49cf3b1d00d2c43fc"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/payment/PaymentUpdate.js",
+    "sha256": "ce27b3de96037cb2254c2691b1c070acfb794f5a252c948d8c84f1875569c43e"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/payment/paymentCreateTourSteps.js",
+    "sha256": "51a25cb6e7d356dab54d661339179fb07d9bbf10384989ac84f73f510d17c9bd"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/points/Points.js",
+    "sha256": "b576018172479fe1a15b197d14c6b49c0b766965e52f1e6da71bb753bb5e8378"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/product/AllProducts.js",
+    "sha256": "41a734081d0b4a488e9c4b0b97282e1c0bde94f968e8a3aff66f5f0ff4cd13e2"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/product/CreateProduct.js",
+    "sha256": "f07612c0442005726ae2dc9fca0ec84998488fb11f4e8a289a346f1162647171"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/product/ShowBarcodes.js",
+    "sha256": "0ec367bd55a4744c3c0e7650375b3f1013880d5244402bc6119c52a3766f8a49"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/product/UpdateProduct.js",
+    "sha256": "709a3ad317935fc721326bf112ed6386c7481739a3d7e177b6520b9f771a0ea9"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/product/createProductTourSteps.js",
+    "sha256": "2a36dcd498203c642fc960ff6b609e12074a57752a4718debfe860ae7fa3674a"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/raffle/Raffles.js",
+    "sha256": "b7d48a8239099ce10833469bf1e221ea1813ab8d533c4d527023896dcaf9aebd"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/reseller/Reseller.js",
+    "sha256": "06084b41e911a6d9537fbf157e3a1999eb7abbcaada168ba079f4640d16eccfc"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/sales/Sales.js",
+    "sha256": "de861c915ccd2e1e40df75acb372cf16b5103c36dd0e46f9bd2a379778379d61"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/setting/Accessibility.js",
+    "sha256": "757271d7d3f6ed7db15f7767527ca3d9c77d8668d8117404b01f545d431f1c23"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/setting/AdminSetting.js",
+    "sha256": "f4d457c0e72ad3d9d3635fb6df46c32c71046c4a41e1d11157ca0c7d04ff2e45"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/setting/AiSetting.js",
+    "sha256": "d0002c445c3fd3e11d65608bdb41e605b0767253cdeab32bdaead1ae0c620564"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/setting/Design.js",
+    "sha256": "586a40f82ab60745c1e4fef473bf71d4dd57f74b62472fb6fe32bd3ea7b95cfb"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/setting/Offiline.js",
+    "sha256": "254c792ada117dafbd9302fbf5685996b9f729c4c1980cc5ee6749bdce348a6c"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/setting/Receipt.js",
+    "sha256": "2195501e069429184c1eabe0236f6382c94f6a79dc9b2cb12be4b0d449990b0c"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/setting/Store.js",
+    "sha256": "f774b9cfd7ffae9cf89c8f57f0dc7ce3adfc49891db459b119d6904ba98558b0"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/setting/adminSettingTourSteps.js",
+    "sha256": "0869323a15d906e5d81e6abd102dc9c68bec154d4e8a2dc6b7ccf8d20d92dec1"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/upgrade/Upgrade.js",
+    "sha256": "9f42cde72bad3a64144ae598f4d994e66788ca67b64fdc28d20eb3171bf0332f"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/upgrade/UpgradeCard.js",
+    "sha256": "35403e65994c363c910122247b0c22bb0f74eb6abf716315de42485cdee269b2"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/admin/user/ManageUser.js",
+    "sha256": "0c278064cf68b61d14f16f2618648b713eeea7bff67dd38ea21b49c1e7998ba3"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/auth/Auth.js",
+    "sha256": "0fdb6ba6a0a25173f336ee5fcfd406eadb1acfb7232084e27b13eaf0d1068a0b"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/auth/Auth1.js",
+    "sha256": "378b3ee676a2a55fe771423f2c08400662d273335466f26615b161568dda7370"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/auth/Auth2.js",
+    "sha256": "ff8f1be99a7beac1447fe4c24cc2c25ce44e8a2063b5b393169eba5aadbf79d0"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/auth/Auth3.js",
+    "sha256": "d32f5532ed539c1d300ff21b283cc72c61ae8c8eace097368e1bf72231715fcc"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/auth/Auth4.js",
+    "sha256": "8a7124aa381b26c2c8ed47571ff5543cc9ea0912db2e58f5e2b8e40c997eca25"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/auth/Auth5.js",
+    "sha256": "e17f3a651e4ebc0528b3cb54f31f41828673be3b980a87faf9d9589d8f8e1df6"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/auth/Forgot.js",
+    "sha256": "22a6db522170d52eb671051d8c97ff065a24737d9f77a536a8d459ecd902d152"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/auth/HosterAccess.js",
+    "sha256": "2290b9af852ace3e08190b358af9068e5f80f89095be13372dc99649a416b793"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/auth/Login.js",
+    "sha256": "082db976075da5b8b0b9592c556a1839b46acd4165d03cd76707a50d80472440"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/auth/Register.js",
+    "sha256": "546a483af76040e21e3646fbf430ae5dfbce76256938fc23a9610a1a02029488"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/auth/Register1.js",
+    "sha256": "0a1da8b2e0741b0d00a02d25eff123a8abd174702ff37fd71bf06f4df313049b"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/auth/Register2.js",
+    "sha256": "21c8d130d863da91e99e9b527c89b402a4f31c8485b55c1602b7e69d6a9ea9ee"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/auth/Register3.js",
+    "sha256": "b3fc09cf0284807aaf0cf33cb5ce98076c469566c1bea4f56746d0a185a3d9e1"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/auth/Register4.js",
+    "sha256": "2c3434558857181d30867fe5bd028fdeeb7492e9f73ba37651ef8a1c6c72b665"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/auth/Register5.js",
+    "sha256": "4d4175398e58e23ec62efc02fe1de848db52d932022157c5cc57a4fb6ee73493"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/dedicated/Welcome1.js",
+    "sha256": "6ffcbed0ce2ecf4b8a4816ad7ac8a2f6a6670b1747639dcd4e4bfb82b8d32fe6"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/dedicated/Welcome2.js",
+    "sha256": "4e3a129d636acefbb2c5bf00926c7124a28692e4484d21e892427a4c2382a069"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/dedicated/Welcome3.js",
+    "sha256": "9ede50dda70cae291ded970cdfcc13780c2c20cc038ef52957cf72349ae58438"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/homeTourSteps.js",
+    "sha256": "2e24c6d254c462a6a12c3ca621e088197b448a52fbfcaf0e258d78e3abe639c4"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/post/MyPosts.js",
+    "sha256": "4ca97fefcd0a6b6f99b881de932a4933b75fca4ac3bd260a5ebc23f4b6b858ff"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/user/AppPayment.js",
+    "sha256": "09983a82eb49766c03d320a805eff9685353feaa50701cfa5ffd9456c338a211"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/user/OrderDetails.js",
+    "sha256": "35c16a579c1e5f4c2004252f5fc0daeb31a54892d607611545e1f6a8b19d3b70"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/user/Settings.js",
+    "sha256": "9b22bcf2c8da0fd8c78ea35967f3b8e932574873720351ca13edc30ee6723378"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/user/UserAccount.js",
+    "sha256": "fa8af078ae65d1a4eeedc73ac10cdb2ca98c288d888a0234451191cf8a1313c0"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/user/UserDelete.js",
+    "sha256": "457938fa156c519173d8d19b40c8dca23481c31da9593238bcae2882bb2e7c6e"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/user/UserJobOrders.js",
+    "sha256": "2999c40f2a66d7c42809ef1042cbc4109a12584e4942447e0ea73c39a9822005"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/user/UserOrder.js",
+    "sha256": "29c1471af6542c56bc993a1aed0ef10767044f5b6024446f6cb72056925b4cbb"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/user/UserRaffles.js",
+    "sha256": "55cd7ca692208a55f92751c2fcd138a857f306e1ef96c1848c087535de435bf0"
+  },
+  {
+    "project": "frontend",
+    "path": "src/pages/user/Wishlist.js",
+    "sha256": "d94d935b97d330696d2404cd9bfa0f34956d6703d0f010b321b28492eb1c2cbc"
+  },
+  {
+    "project": "frontend",
+    "path": "src/reducers/brandSlice.js",
+    "sha256": "5097c90f382222e7b1bf68a510619a1ecd866e2e783ec58e60ea541426d03432"
+  },
+  {
+    "project": "frontend",
+    "path": "src/reducers/cartSlice.js",
+    "sha256": "0bc9cf7496608399a111ed6f8ba8fc1d344440d30c09fd568f548bd114162ab8"
+  },
+  {
+    "project": "frontend",
+    "path": "src/reducers/cashflowSlice.js",
+    "sha256": "5a7db537f8a0e18879b0ab173650454e3eca4ec8d4d6a8367d8687e1048290c8"
+  },
+  {
+    "project": "frontend",
+    "path": "src/reducers/categorySlice.js",
+    "sha256": "93b5885b0f5fc9cb2f5aa73dd0942922172d8f7d551a72a1f5cc09b663b5c220"
+  },
+  {
+    "project": "frontend",
+    "path": "src/reducers/estoreSlice.js",
+    "sha256": "7781212d6e8b2c55075651c0191661695de559e9951acc97419110729444a9bc"
+  },
+  {
+    "project": "frontend",
+    "path": "src/reducers/jobOrdersSlice.js",
+    "sha256": "cfe207577dd380693c1b4f185a098527d5692ac1c015b4ca3cfee4273e2cf356"
+  },
+  {
+    "project": "frontend",
+    "path": "src/reducers/jobSlice.js",
+    "sha256": "ca3f2e1d298065c2810ae31d9a9a976535ca797b9c6241b8d3049b36f6ec2fb4"
+  },
+  {
+    "project": "frontend",
+    "path": "src/reducers/locationSlice.js",
+    "sha256": "aa62c2b58dcc1a55d3bb15b9adba1aa09ed1c8d3f4d0963f4b6f1968337a8149"
+  },
+  {
+    "project": "frontend",
+    "path": "src/reducers/ordersSlice.js",
+    "sha256": "1dbdedcca7356d175f58c81c035cc4bdf6c881c8ee443b16da7f19b0042ffc30"
+  },
+  {
+    "project": "frontend",
+    "path": "src/reducers/paymentSlice.js",
+    "sha256": "bfb1e2caec2e99c7ec83a4315615e84265ba6389a57e99e4103f905df587c6fb"
+  },
+  {
+    "project": "frontend",
+    "path": "src/reducers/pointsSlice.js",
+    "sha256": "4274d92cc339c6e6f7958f112b2af2665999dd3335e4cbce94545e571e5b3d4a"
+  },
+  {
+    "project": "frontend",
+    "path": "src/reducers/productSlice.js",
+    "sha256": "436b2403b79258a0fbd97969e8e3d8bea2752072e18c679d8f80592ac4026b3d"
+  },
+  {
+    "project": "frontend",
+    "path": "src/reducers/resellerSlice.js",
+    "sha256": "b6c3ce8452cc12e15a662c27f77fbec291186cb7d904d64fed2804eafe4c3aaa"
+  },
+  {
+    "project": "frontend",
+    "path": "src/reducers/salesDashboardSlice.js",
+    "sha256": "f998105566b4bd1738581753d52bebf22a64be19d5d3d1476bdde85c9b08cf6a"
+  },
+  {
+    "project": "frontend",
+    "path": "src/reducers/store.js",
+    "sha256": "3eeb960fe88f41ad48d5a692510da9158d6ef38fc770ef77d574e9c2848ed0e7"
+  },
+  {
+    "project": "frontend",
+    "path": "src/reducers/userSlice.js",
+    "sha256": "f063327dec2efa83590e4be4731b53179a554a7df30c86ec3dcc3e2ac7b965e1"
+  },
+  {
+    "project": "frontend",
+    "path": "src/reducers/usersSlice.js",
+    "sha256": "4fd302081571166f2df7ac1975da71e3676090d414746dff7cba7aa6d0fef329"
+  }
+]

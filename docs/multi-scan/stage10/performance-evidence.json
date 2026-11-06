@@ -1,0 +1,694 @@
+{
+  "readOnlyReviewOfExistingArtifacts": true,
+  "newBenchmarksExecuted": false,
+  "deploymentCapacityEstablished": false,
+  "sources": [
+    {
+      "source": "/mnt/g/clavstore/clavstore-api/clavstore-ai-image-api/docs/multi-scan/stage3/smoke-cpu-isolated.json",
+      "sha256": "17f32f00c064cbe9ea75366483147c120d30abfb6d28b59a1b30493c1d563cfa",
+      "kind": "actual-onnx-cpu-smoke",
+      "hardware": {
+        "platform": "linux",
+        "architecture": "x64",
+        "cpu": "Intel(R) Core(TM) i9-9900 CPU @ 3.10GHz",
+        "logicalCpuCount": 16,
+        "totalMemoryBytes": 25165713408
+      },
+      "caveats": [
+        "One local process, one active request, not the production VPS.",
+        "Iteration 1 includes model loading; subsequent iterations reuse the session.",
+        "Process memory high-water mark includes runtime/model and persists across iterations.",
+        "Generic COCO detection; no grocery accuracy or physical hidden-item count validation.",
+        "Sharp linear resizing is not claimed bit-identical to OpenCV INTER_LINEAR."
+      ],
+      "samples": [
+        {
+          "timings": {
+            "decodeMs": 447.92758799996227,
+            "preprocessMs": 7.2683999999426305,
+            "modelLoadMs": 370.130189999938,
+            "inferenceMs": 38.65889899991453,
+            "postprocessMs": 3.1946990001015365,
+            "cropMs": 22.050700000021607,
+            "totalMs": 889.3318759999238
+          },
+          "memory": {
+            "rssBytes": 144076800,
+            "peakProcessRssBytes": 161902592,
+            "scope": "process-lifetime-high-water-mark"
+          },
+          "count": 3
+        },
+        {
+          "timings": {
+            "decodeMs": 13.792799999937415,
+            "preprocessMs": 7.191999000031501,
+            "modelLoadMs": 0.008299999870359898,
+            "inferenceMs": 37.11229899991304,
+            "postprocessMs": 1.143900000024587,
+            "cropMs": 20.067299999762326,
+            "totalMs": 79.37219799961895
+          },
+          "memory": {
+            "rssBytes": 161509376,
+            "peakProcessRssBytes": 161902592,
+            "scope": "process-lifetime-high-water-mark"
+          },
+          "count": 3
+        },
+        {
+          "timings": {
+            "decodeMs": 13.029999000020325,
+            "preprocessMs": 12.267500000074506,
+            "modelLoadMs": 0.005100000184029341,
+            "inferenceMs": 35.40629900014028,
+            "postprocessMs": 1.8072000001557171,
+            "cropMs": 20.400698999874294,
+            "totalMs": 82.94389700004831
+          },
+          "memory": {
+            "rssBytes": 170553344,
+            "peakProcessRssBytes": 170553344,
+            "scope": "process-lifetime-high-water-mark"
+          },
+          "count": 3
+        },
+        {
+          "timings": {
+            "decodeMs": 13.968799999915063,
+            "preprocessMs": 2.5575999999418855,
+            "modelLoadMs": 0.0038999998942017555,
+            "inferenceMs": 38.01269899960607,
+            "postprocessMs": 1.1652000001631677,
+            "cropMs": 19.791899000294507,
+            "totalMs": 75.52379799960181
+          },
+          "memory": {
+            "rssBytes": 173830144,
+            "peakProcessRssBytes": 173830144,
+            "scope": "process-lifetime-high-water-mark"
+          },
+          "count": 3
+        },
+        {
+          "timings": {
+            "decodeMs": 12.95299999974668,
+            "preprocessMs": 3.6639000000432134,
+            "modelLoadMs": 0.004399999976158142,
+            "inferenceMs": 32.86929899966344,
+            "postprocessMs": 0.8355000000447035,
+            "cropMs": 21.375799000263214,
+            "totalMs": 71.72399800037965
+          },
+          "memory": {
+            "rssBytes": 181563392,
+            "peakProcessRssBytes": 181563392,
+            "scope": "process-lifetime-high-water-mark"
+          },
+          "count": 3
+        }
+      ]
+    },
+    {
+      "source": "/mnt/g/clavstore/clavstore-api/clavstore-ai-image-api/docs/multi-scan/stage4/actual-cpu-benchmark-final.json",
+      "sha256": "c3d4f9992ace4d5bb4a7002c58d64bebe53c01898701a2d60874e27465ff7629",
+      "kind": "actual-siglip2-cpu-and-fixture-hnsw-benchmark",
+      "hardware": {
+        "platform": "linux",
+        "arch": "x64",
+        "cpu": "Intel(R) Core(TM) i9-9900 CPU @ 3.10GHz",
+        "logicalCpus": 16,
+        "totalMemory": 25165709312
+      },
+      "caveats": [
+        "Local CPU, not InterServer VPS.",
+        "All catalog IDs/images/vectors are fixtures; no production database access.",
+        "No labeled grocery accuracy or auto-accept threshold validation.",
+        "Index build benchmarks at 100/1000/5000 references exclude image inference; six-reference image index includes it.",
+        "Process RSS is a lifetime high-water mark across all benchmark phases."
+      ],
+      "peakProcessRssBytes": 1170685952,
+      "embeddingSamples": [
+        {
+          "timings": {
+            "preprocessMs": 22.949891000054777,
+            "initializeMs": 3608.055473999819,
+            "inferenceMs": 212.96433300012723,
+            "normalizationMs": 1.1895580000709742,
+            "totalMs": 3845.26806199993
+          },
+          "memory": {
+            "rssBytes": 1096196096,
+            "peakProcessRssBytes": 1096196096,
+            "scope": "process-lifetime-high-water-mark"
+          },
+          "count": null
+        },
+        {
+          "timings": {
+            "preprocessMs": 18.401502000167966,
+            "initializeMs": 0.005300000077113509,
+            "inferenceMs": 232.0043650001753,
+            "normalizationMs": 0.21461099991574883,
+            "totalMs": 250.6633800000418
+          },
+          "memory": {
+            "rssBytes": 1108140032,
+            "peakProcessRssBytes": 1108140032,
+            "scope": "process-lifetime-high-water-mark"
+          },
+          "count": null
+        },
+        {
+          "timings": {
+            "preprocessMs": 17.847073999932036,
+            "initializeMs": 0.0059999998193234205,
+            "inferenceMs": 216.5928109998349,
+            "normalizationMs": 0.18980899988673627,
+            "totalMs": 234.69869799981825
+          },
+          "memory": {
+            "rssBytes": 1109057536,
+            "peakProcessRssBytes": 1109057536,
+            "scope": "process-lifetime-high-water-mark"
+          },
+          "count": null
+        },
+        {
+          "timings": {
+            "preprocessMs": 31.46094200015068,
+            "initializeMs": 0.019700999837368727,
+            "inferenceMs": 306.49931599991396,
+            "normalizationMs": 0.1884090001694858,
+            "totalMs": 338.22646999987774
+          },
+          "memory": {
+            "rssBytes": 1109188608,
+            "peakProcessRssBytes": 1109188608,
+            "scope": "process-lifetime-high-water-mark"
+          },
+          "count": null
+        },
+        {
+          "timings": {
+            "preprocessMs": 12.377506999997422,
+            "initializeMs": 0.010200000135228038,
+            "inferenceMs": 220.70271300012246,
+            "normalizationMs": 0.1657080000732094,
+            "totalMs": 233.42103499989025
+          },
+          "memory": {
+            "rssBytes": 1109319680,
+            "peakProcessRssBytes": 1109319680,
+            "scope": "process-lifetime-high-water-mark"
+          },
+          "count": null
+        }
+      ]
+    },
+    {
+      "source": "/mnt/g/clavstore/clavstore-api/clavstore-ai-image-api/docs/multi-scan/stage5/actual-cpu-benchmark-final.json",
+      "sha256": "af06100a4029f6294961c8b526133c89b808231b903818d86b6ffb9f65ed2bfc",
+      "kind": "actual-onnx-cpu-stage5",
+      "hardware": {
+        "cpu": "Intel(R) Core(TM) i9-9900 CPU @ 3.10GHz",
+        "logicalCpus": 16,
+        "totalMemory": 25165709312,
+        "platform": "linux",
+        "arch": "x64"
+      },
+      "caveats": [
+        "Synthetic image and vector fixtures, no grocery recognition accuracy measurement.",
+        "Original PyTorch-to-ONNX numerical parity unverified.",
+        "Local WSL CPU only, no VPS capacity claim.",
+        "RSS high-water mark includes all earlier phases, resident sessions and native indexes.",
+        "Temporary SigLIP fixture indexes are new Stage 5 test assets; all existing Stage 4 files remain frozen."
+      ],
+      "dinoCold": {
+        "dimension": 384,
+        "norm": 1.000000003399128,
+        "timings": {
+          "preprocessMs": 30.425135999917984,
+          "initializeMs": 1126.1854690001346,
+          "inferenceMs": 75.87897900026292,
+          "normalizationMs": 1.570894000120461,
+          "totalMs": 1234.1459850003012
+        },
+        "memory": {
+          "rssBytes": 283127808,
+          "peakProcessRssBytes": 283127808,
+          "scope": "process-lifetime-high-water-mark"
+        },
+        "wallMs": 1234.5704109999351
+      },
+      "dinoWarm": [
+        {
+          "dimension": 384,
+          "norm": 1.000000003399128,
+          "timings": {
+            "preprocessMs": 21.48799700010568,
+            "initializeMs": 0.005600000265985727,
+            "inferenceMs": 91.21790499985218,
+            "normalizationMs": 2.2290350003167987,
+            "totalMs": 114.9897400001064
+          },
+          "memory": {
+            "rssBytes": 289157120,
+            "peakProcessRssBytes": 289157120,
+            "scope": "process-lifetime-high-water-mark"
+          }
+        },
+        {
+          "dimension": 384,
+          "norm": 1.000000003399128,
+          "timings": {
+            "preprocessMs": 34.135660000145435,
+            "initializeMs": 0.03070200001820922,
+            "inferenceMs": 69.28748199995607,
+            "normalizationMs": 1.0411629998125136,
+            "totalMs": 104.59051300026476
+          },
+          "memory": {
+            "rssBytes": 291254272,
+            "peakProcessRssBytes": 291254272,
+            "scope": "process-lifetime-high-water-mark"
+          }
+        },
+        {
+          "dimension": 384,
+          "norm": 1.000000003399128,
+          "timings": {
+            "preprocessMs": 19.469374999869615,
+            "initializeMs": 0.008901000022888184,
+            "inferenceMs": 62.69108399981633,
+            "normalizationMs": 1.4329860000871122,
+            "totalMs": 83.63484700024128
+          },
+          "memory": {
+            "rssBytes": 292958208,
+            "peakProcessRssBytes": 292958208,
+            "scope": "process-lifetime-high-water-mark"
+          }
+        },
+        {
+          "dimension": 384,
+          "norm": 1.000000003399128,
+          "timings": {
+            "preprocessMs": 8.097988999914378,
+            "initializeMs": 0.007100999820977449,
+            "inferenceMs": 62.212954999879,
+            "normalizationMs": 1.0487640001811087,
+            "totalMs": 71.39750899979845
+          },
+          "memory": {
+            "rssBytes": 293220352,
+            "peakProcessRssBytes": 293220352,
+            "scope": "process-lifetime-high-water-mark"
+          }
+        },
+        {
+          "dimension": 384,
+          "norm": 1.000000003399128,
+          "timings": {
+            "preprocessMs": 8.042884999886155,
+            "initializeMs": 0.006100000347942114,
+            "inferenceMs": 61.30459999991581,
+            "normalizationMs": 1.3897839998826385,
+            "totalMs": 70.77737100003287
+          },
+          "memory": {
+            "rssBytes": 293351424,
+            "peakProcessRssBytes": 293351424,
+            "scope": "process-lifetime-high-water-mark"
+          }
+        }
+      ],
+      "siglipColdInitializationMs": 2919.5405049999245,
+      "bothSessionsResidentRssBytes": 1071439872,
+      "peakProcessRssBytes": 1119703040,
+      "combined": [
+        {
+          "count": 1,
+          "totalMs": 297.17983600031585,
+          "perCropMs": 297.17983600031585,
+          "cropsPerSecond": 3.364965851851864,
+          "rssBytes": 1094537216,
+          "peakProcessRssBytes": 1094537216
+        },
+        {
+          "count": 5,
+          "totalMs": 1373.1737879998982,
+          "perCropMs": 274.63475759997965,
+          "cropsPerSecond": 3.6411997109868883,
+          "rssBytes": 1094799360,
+          "peakProcessRssBytes": 1094799360
+        },
+        {
+          "count": 10,
+          "totalMs": 3056.375721000135,
+          "perCropMs": 305.6375721000135,
+          "cropsPerSecond": 3.2718490502626127,
+          "rssBytes": 1095323648,
+          "peakProcessRssBytes": 1095323648
+        }
+      ]
+    },
+    {
+      "source": "/mnt/g/clavstore/clavstore-api/clavstore-ai-image-api/docs/multi-scan/stage6/actual-cpu-benchmark-final.json",
+      "sha256": "46e15536d6182d1075135aae3521f0910205ca64fc354b775e0339169bdaa16d",
+      "kind": "Actual PP-OCRv5 + SigLIP2 + DINOv2 local CPU fixture benchmark",
+      "hardware": {
+        "cpu": "Intel(R) Core(TM) i9-9900 CPU @ 3.10GHz",
+        "logicalCpus": 16,
+        "totalMemory": 25165709312,
+        "platform": "linux",
+        "arch": "x64"
+      },
+      "caveats": [
+        "Generated flat-label images, not representative packaging photographs or a labeled grocery evaluation.",
+        "Measured local CPU only; VPS capacity unverified.",
+        "Rank/text policy is heuristic, not calibrated confidence.",
+        "Three-model batch timings exclude object detection; separate detector composition timing included.",
+        "Lifetime peak includes all resident models, temporary native indexes and final actual detector smoke.",
+        "No production database, service startup, HTTP activation or live index rebuild."
+      ],
+      "initializationMs": {
+        "ocr": 647.4754179995507,
+        "siglip2": 3061.383353999816,
+        "dinov2": 689.5485370000824
+      },
+      "peakProcessRssBytes": 1128144896,
+      "actualDetectorComposition": {
+        "kind": "Actual frozen YOLOX on generated label, not a grocery detection accuracy evaluation",
+        "results": 0,
+        "reviewReasons": [
+          "NO_OBJECT_CROPS"
+        ],
+        "detector": {
+          "model": {
+            "id": "yolox-tiny-coco-0.1.1rc0",
+            "sha256": "427cc366d34e27ff7a03e2899b5e3671425c262ea2291f88bb942bc1cc70b0f7"
+          },
+          "quality": {
+            "invalidRows": 0,
+            "suppressed": 0,
+            "truncated": false,
+            "candidateLimitApplied": false,
+            "groceryValidated": false,
+            "scoreType": "objectness_times_class_score_not_calibrated_probability"
+          },
+          "image": {
+            "width": 640,
+            "height": 300,
+            "coordinateSpace": "exif-oriented-source-pixels"
+          }
+        },
+        "timings": {
+          "detection": {
+            "decodeMs": 4.798767000436783,
+            "preprocessMs": 7.01093600038439,
+            "modelLoadMs": 174.1680009998381,
+            "inferenceMs": 32.79820500034839,
+            "postprocessMs": 0.9715740000829101,
+            "cropMs": 1.1686889994889498,
+            "totalMs": 221.01068000029773
+          },
+          "totalMs": 221.4358109999448
+        },
+        "memory": {
+          "rssBytes": 1074790400,
+          "peakProcessRssBytes": 1128144896
+        }
+      },
+      "combined": [
+        {
+          "count": 1,
+          "totalMs": 672.2814150005579,
+          "perCropMs": 672.2814150005579,
+          "cropsPerSecond": 1.4874723258550442,
+          "rssBytes": 1046347776,
+          "peakProcessRssBytes": 1128144896
+        },
+        {
+          "count": 5,
+          "totalMs": 3468.3930339999497,
+          "perCropMs": 693.6786067999899,
+          "cropsPerSecond": 1.4415897941744258,
+          "rssBytes": 1049346048,
+          "peakProcessRssBytes": 1128144896
+        },
+        {
+          "count": 10,
+          "totalMs": 6904.714654999785,
+          "perCropMs": 690.4714654999785,
+          "cropsPerSecond": 1.4482857727884355,
+          "rssBytes": 1049878528,
+          "peakProcessRssBytes": 1128144896
+        }
+      ]
+    },
+    {
+      "source": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/docs/multi-scan/stage9/performance-summary.json",
+      "sha256": "33870c028ab8eca537b3e122663c19b03d0167b9aa4f350f72e6ce1e580e9788",
+      "summary": {
+        "kind": "Local native CPU synthetic workload; not grocery accuracy or VPS capacity",
+        "hardware": {
+          "cpu": "Intel(R) Core(TM) i9-9900 CPU @ 3.10GHz",
+          "logicalCpus": 16,
+          "totalMemoryBytes": 25165709312,
+          "platform": "linux",
+          "arch": "x64",
+          "node": "v18.20.4"
+        },
+        "threadsPerModel": 2,
+        "rows": [
+          {
+            "controlledCrops": 1,
+            "inputDimensions": {
+              "width": 640,
+              "height": 300,
+              "coordinateSpace": "exif-oriented-source-pixels"
+            },
+            "coldModelScanMs": {
+              "detectionMs": 554.3067790009081,
+              "croppingMs": 1.195778001099825,
+              "controlledDecodeAndCropMs": 6.613631000742316,
+              "siglip2InferenceMs": 168.34630899876356,
+              "dinov2InferenceMs": 62.863799000158906,
+              "ocrMs": 731.6288399994373,
+              "retrievalMs": 4.636095000430942,
+              "rerankingMs": 4.791304999962449,
+              "modelInitializationMs": 4219.445412997156,
+              "catalogValidationMs": 0.3750239983201027,
+              "totalMs": 5088.016404001042,
+              "simulatedAggregationMs": 0.1327080000191927,
+              "finalFreshReviewMs": 2.2108410000801086,
+              "totalThroughSimulatedReviewMs": 5090.359953001142
+            },
+            "warmMeanMs": {
+              "detectionMs": 45.81151399947703,
+              "croppingMs": 1.0837690010666847,
+              "controlledDecodeAndCropMs": 5.761066000908613,
+              "siglip2InferenceMs": 173.90526250004768,
+              "dinov2InferenceMs": 65.01758600026369,
+              "ocrMs": 370.9389960002154,
+              "retrievalMs": 4.400879500433803,
+              "rerankingMs": 1.8253159997984767,
+              "modelInitializationMs": 0.0795050011947751,
+              "catalogValidationMs": 0.23281499929726124,
+              "totalMs": 734.1830025007948,
+              "simulatedAggregationMs": 0.021651499904692173,
+              "finalFreshReviewMs": 0.5873374994844198,
+              "totalThroughSimulatedReviewMs": 734.7919915001839
+            },
+            "warmSampleSize": 2,
+            "warmRangeTotalMs": [
+              714.9347780011594,
+              753.4312270004302
+            ],
+            "peakProcessRssMiB": 1115.23046875,
+            "cpuMicroseconds": [
+              {
+                "user": 2972105,
+                "system": 687062
+              },
+              {
+                "user": 1337480,
+                "system": 37087
+              },
+              {
+                "user": 1283495,
+                "system": 29730
+              }
+            ],
+            "concurrent": {
+              "secondRejected": true,
+              "code": "HARNESS_BUSY",
+              "waitingQueue": false
+            },
+            "duplicateSubmission": {
+              "rejected": true,
+              "code": "DUPLICATE_SUBMISSION"
+            }
+          },
+          {
+            "controlledCrops": 5,
+            "inputDimensions": {
+              "width": 3200,
+              "height": 300,
+              "coordinateSpace": "exif-oriented-source-pixels"
+            },
+            "coldModelScanMs": {
+              "detectionMs": 548.2826770003885,
+              "croppingMs": 5.315739000216126,
+              "controlledDecodeAndCropMs": 23.349184999242425,
+              "siglip2InferenceMs": 873.2341970000416,
+              "dinov2InferenceMs": 309.0740899965167,
+              "ocrMs": 2189.8105229996145,
+              "retrievalMs": 22.275036999955773,
+              "rerankingMs": 13.040148999541998,
+              "modelInitializationMs": 4200.345952996984,
+              "catalogValidationMs": 0.4267179984599352,
+              "totalMs": 7773.060539999977,
+              "simulatedAggregationMs": 0.1833069995045662,
+              "finalFreshReviewMs": 2.6290110014379025,
+              "totalThroughSimulatedReviewMs": 7775.872858000919
+            },
+            "warmMeanMs": {
+              "detectionMs": 53.175492499955,
+              "croppingMs": 5.54273649957031,
+              "controlledDecodeAndCropMs": 29.403425499796867,
+              "siglip2InferenceMs": 932.946852998808,
+              "dinov2InferenceMs": 338.6764990016818,
+              "ocrMs": 1663.7340420000255,
+              "retrievalMs": 20.17163550015539,
+              "rerankingMs": 7.7308535017073154,
+              "modelInitializationMs": 0.2123635020107031,
+              "catalogValidationMs": 0.35097150038927794,
+              "totalMs": 3215.0605495003983,
+              "simulatedAggregationMs": 0.1700604995712638,
+              "finalFreshReviewMs": 2.5284064989537,
+              "totalThroughSimulatedReviewMs": 3217.7590164989233
+            },
+            "warmSampleSize": 2,
+            "warmRangeTotalMs": [
+              3208.9553299993277,
+              3221.165769001469
+            ],
+            "peakProcessRssMiB": 1134.6328125,
+            "cpuMicroseconds": [
+              {
+                "user": 7964694,
+                "system": 685098
+              },
+              {
+                "user": 6098048,
+                "system": 61566
+              },
+              {
+                "user": 6093597,
+                "system": 67725
+              }
+            ],
+            "concurrent": {
+              "secondRejected": true,
+              "code": "HARNESS_BUSY",
+              "waitingQueue": false
+            },
+            "duplicateSubmission": {
+              "rejected": true,
+              "code": "DUPLICATE_SUBMISSION"
+            }
+          },
+          {
+            "controlledCrops": 10,
+            "inputDimensions": {
+              "width": 3200,
+              "height": 600,
+              "coordinateSpace": "exif-oriented-source-pixels"
+            },
+            "coldModelScanMs": {
+              "detectionMs": 537.8990749996156,
+              "croppingMs": 10.059422001242638,
+              "controlledDecodeAndCropMs": 43.67450200021267,
+              "siglip2InferenceMs": 1667.1022680029273,
+              "dinov2InferenceMs": 618.0129960030317,
+              "ocrMs": 3616.5264619980007,
+              "retrievalMs": 45.20932199805975,
+              "rerankingMs": 19.47027900069952,
+              "modelInitializationMs": 4070.239688001573,
+              "catalogValidationMs": 0.4313249997794628,
+              "totalMs": 10384.744860999286,
+              "simulatedAggregationMs": 0.19381100125610828,
+              "finalFreshReviewMs": 2.3203350007534027,
+              "totalThroughSimulatedReviewMs": 10387.259007001296
+            },
+            "warmMeanMs": {
+              "detectionMs": 62.04168199934065,
+              "croppingMs": 9.898934000171721,
+              "controlledDecodeAndCropMs": 40.07796650007367,
+              "siglip2InferenceMs": 1667.8929600007832,
+              "dinov2InferenceMs": 603.9756749970838,
+              "ocrMs": 3032.579301001504,
+              "retrievalMs": 40.963792498223484,
+              "rerankingMs": 12.508664998225868,
+              "modelInitializationMs": 0.24076200183480978,
+              "catalogValidationMs": 0.30796550028026104,
+              "totalMs": 5772.877265499905,
+              "simulatedAggregationMs": 0.14180649910122156,
+              "finalFreshReviewMs": 2.3737669996917248,
+              "totalThroughSimulatedReviewMs": 5775.392838998698
+            },
+            "warmSampleSize": 2,
+            "warmRangeTotalMs": [
+              5710.498848000541,
+              5835.255682999268
+            ],
+            "peakProcessRssMiB": 1142.42578125,
+            "cpuMicroseconds": [
+              {
+                "user": 12956084,
+                "system": 774112
+              },
+              {
+                "user": 10926130,
+                "system": 157604
+              },
+              {
+                "user": 10768427,
+                "system": 146018
+              }
+            ],
+            "concurrent": {
+              "secondRejected": true,
+              "code": "HARNESS_BUSY",
+              "waitingQueue": false
+            },
+            "duplicateSubmission": {
+              "rejected": true,
+              "code": "DUPLICATE_SUBMISSION"
+            }
+          }
+        ],
+        "naturalYolox": {
+          "detectedObjects": [
+            0,
+            0,
+            0
+          ],
+          "coldMs": 532.734681000933,
+          "warmMeanMs": 48.520312999375165,
+          "peakProcessRssMiB": 203.08203125
+        },
+        "twentyObjectRun": {
+          "executed": false,
+          "reason": "Frozen Stage 6/7 cap is ten; coordinated approved changes required."
+        },
+        "indexBuildMs": 5834.428179001436,
+        "coldDefinition": "Fresh native child and unloaded model sessions; indexes already built and OS filesystem page cache not purged. Snapshot/reference/index setup is reported separately.",
+        "substageCaveat": "Detection includes decode/preprocess/model-load/postprocess/cropping; controlled crop timing additionally includes decode. OCR includes its initialization and internal stages. Substage columns overlap and are not additive. Full scan total includes JWT/HMAC/serialization/current catalog validation. Simulated aggregation and final current reprice are additional separately measured stages; human review waiting time is excluded.",
+        "limits": "Four synthetic catalog SKUs, four reference labels, two warm samples/count, one single-worker admission test/count. No real camera, photograph recognition accuracy, HTTP/TLS or InterServer capacity established."
+      }
+    }
+  ]
+}

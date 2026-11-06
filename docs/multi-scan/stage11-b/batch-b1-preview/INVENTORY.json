@@ -1,0 +1,74 @@
+{
+  "existing_files_unchanged": 106911,
+  "symlinks_unchanged": 88,
+  "modified_existing_files": [],
+  "unrelated_changes": [],
+  "new_document_count": 16,
+  "new_documentation": [
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-preview/ADAPTER-v2-VALIDATION.json",
+      "sha256": "7944b0d89a1113ae115b4d816149ff8671fb60dbed2f6095e32cd00af62747ff"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-preview/APPROVAL-SCOPE.md",
+      "sha256": "3ecad0ea0ccd09510922a39cc350b3cce5542387fcc2de2401331f7200569557"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-preview/AUTHORIZATION-SOURCES.md",
+      "sha256": "62210d6eb0f054720cf053489959125c1683ac3e1302340244b6fda741c14ce2"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-preview/BASELINE.json.gz",
+      "sha256": "ef92e36befa6ba92eea8bb59be1a87c4509b8624b7966082750e1f8245b8a960"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-preview/BATCH-B1-PREVIEW.md",
+      "sha256": "12cfb28bd07b587338ae3ea5672060f9bf080bc5ccf22f226278fddc16e3a627"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-preview/FINAL-AUDIT.json.gz",
+      "sha256": "15665bf7a69be556ac87f68d11c149956365bfde452f55640b51341b83c8cbb4"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-preview/INTEGRITY-REPORT.md",
+      "sha256": "59b996cb926c6f1882940ee0f684235da77c5f30a00ad2e82781e617e9c3cc6c"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-preview/LEGACY-TRANSITION.md",
+      "sha256": "7bbed3312e9e1f63b57e9c747e22e151a8dfa302909575e41a05b5d5d3fa7a7c"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-preview/NEW-ADAPTER-v2.diff",
+      "sha256": "a494744ff1df73fd2536ee32ede1062004b70e123a6c22591043bcb0aade1bad"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-preview/NEW-ADAPTER.diff",
+      "sha256": "029d666d56ac9bc3ce94cd73019041485a9225794cd4116cffdfd9ff6d6266bb"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-preview/REGRESSION-ROLLBACK.md",
+      "sha256": "006591f9145696904946e14f00a6687e97bffd3f1e8bb5f46a076131f3643b99"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-preview/SECURITY-TEST-PLAN.md",
+      "sha256": "0774952f9eef5c1a1c3049059445a45b31a774c10448b0ba7bc53045bb8d5601"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-preview/SOURCE-EVIDENCE.json",
+      "sha256": "b0c363e716a91e7be3368c647bba091acffc0dafea76cef628c6209c37b2cacd"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-preview/TRUSTED-ADAPTER-v2.md",
+      "sha256": "1e77f749fc9ec8531075fc4c43bbc102e2d2720fac912462db21c7eb8c04aa4a"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-preview/TRUSTED-ADAPTER.md",
+      "sha256": "d0fc5cd00aa3aada2d35438a8fe46d6cde0575890844db311a760317d9ca6eed"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-preview/INVENTORY.json",
+      "sha256": null,
+      "reason": "self-referential inventory boundary"
+    }
+  ]
+}

@@ -1,0 +1,1716 @@
+{
+  "kind": "native-offline-pipeline-benchmark",
+  "mode": "controlled-crops",
+  "count": 1,
+  "synthetic": true,
+  "realGroceryAccuracyMeasured": false,
+  "hardware": {
+    "cpu": "Intel(R) Core(TM) i9-9900 CPU @ 3.10GHz",
+    "logicalCpus": 16,
+    "totalMemoryBytes": 25165709312,
+    "platform": "linux",
+    "arch": "x64",
+    "node": "v18.20.4"
+  },
+  "baselineRssBytes": 52551680,
+  "setupMs": 104.56220600008965,
+  "models": {
+    "siglip2": {
+      "modelId": "google/siglip2-base-patch16-224",
+      "modelRevision": "ba1f3b0843f24bc5417d38e19c37b287d719b2f4",
+      "modelSha256": "c0573e3f4140c3a7c4e9cc5912bd6b26a033b46a6a8e8af26cbea262b163bcad",
+      "preprocessingVersion": "siglip2-rgb224-pillow-bilinear-22bit-v1",
+      "preprocessorSha256": "9b36b57ebaf20f09bf4c22100ccc21877ea6bfe5aead0c00c59f8af8ccefacfc",
+      "dimension": 768
+    },
+    "dinov2": {
+      "modelId": "facebook/dinov2-small",
+      "modelRevision": "c2bb04a51fab207c420665f1946016107bffc701",
+      "modelSha256": "83141175ec78b4ff9a2bb58a4c7c264ba0054d1c2e122e5a8114b79a8d4179ea",
+      "preprocessingVersion": "dinov2-rgb-short256-pillow-bicubic-crop224-imagenet-cls0-v1",
+      "preprocessorSha256": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828",
+      "dimension": 384
+    },
+    "ocr": {
+      "id": "PaddlePaddle/PP-OCRv5-mobile-onnx",
+      "detRevision": "e6f4fa85f00e168c862bc462aebca69eef9b3d3d",
+      "detSha256": "a431985659dc921974177a95adcfbb90fd9e51989a5e04d70d0b75f597b6e61d",
+      "recRevision": "ed152b8b495f84de93cda5709d768548a9127622",
+      "recSha256": "da72dc72ca4dc220df0dfde68c1dedc31c58d3e76a25871122e5056227d50092",
+      "dictionarySha256": "14ccb8e120e701464bd3084acf3b398ffee767e515477ad27d3c80fd5996c180",
+      "preprocessingVersion": "ppocrv5-bgr-long960-stride128-linear-rec48-ctc-db-quad-v1",
+      "postprocessingVersion": "component8-hull-minrect-boxmean-unclip-miter-1.5-v1",
+      "configSha256": "05d0f85e52803797577bc50d9321a040c74276dbd63a8bad7940c6fe0cb2b75c"
+    }
+  },
+  "indexBuilds": {},
+  "threadsPerNativeModel": 2,
+  "photoBytes": 10775,
+  "samples": [
+    {
+      "phase": "cold-model-scan",
+      "count": 1,
+      "actualYoloxDetections": 0,
+      "timings": {
+        "detectionMs": 554.3067790009081,
+        "croppingMs": 1.195778001099825,
+        "controlledDecodeAndCropMs": 6.613631000742316,
+        "siglip2InferenceMs": 168.34630899876356,
+        "dinov2InferenceMs": 62.863799000158906,
+        "ocrMs": 731.6288399994373,
+        "retrievalMs": 4.636095000430942,
+        "rerankingMs": 4.791304999962449,
+        "modelInitializationMs": 4219.445412997156,
+        "catalogValidationMs": 0.3750239983201027,
+        "totalMs": 5088.016404001042,
+        "simulatedAggregationMs": 0.1327080000191927,
+        "finalFreshReviewMs": 2.2108410000801086,
+        "totalThroughSimulatedReviewMs": 5090.359953001142
+      },
+      "cpu": {
+        "user": 2972105,
+        "system": 687062
+      },
+      "memory": {
+        "rssBytes": 910327808,
+        "processLifetimePeakRssBytes": 1169403904
+      },
+      "unknownDetections": 0
+    },
+    {
+      "phase": "warm-scan",
+      "count": 1,
+      "actualYoloxDetections": 0,
+      "timings": {
+        "detectionMs": 43.307155000045896,
+        "croppingMs": 1.100270001217723,
+        "controlledDecodeAndCropMs": 6.196194000542164,
+        "siglip2InferenceMs": 181.88477000035346,
+        "dinov2InferenceMs": 63.232922000810504,
+        "ocrMs": 390.63114900141954,
+        "retrievalMs": 4.302574001252651,
+        "rerankingMs": 1.8525179997086525,
+        "modelInitializationMs": 0.12330800108611584,
+        "catalogValidationMs": 0.26591699942946434,
+        "totalMs": 753.4312270004302,
+        "simulatedAggregationMs": 0.023302000015974045,
+        "finalFreshReviewMs": 0.49273099936544895,
+        "totalThroughSimulatedReviewMs": 753.9472599998116
+      },
+      "cpu": {
+        "user": 1337480,
+        "system": 37087
+      },
+      "memory": {
+        "rssBytes": 1045008384,
+        "processLifetimePeakRssBytes": 1169403904
+      },
+      "unknownDetections": 0
+    },
+    {
+      "phase": "warm-scan",
+      "count": 1,
+      "actualYoloxDetections": 0,
+      "timings": {
+        "detectionMs": 48.31587299890816,
+        "croppingMs": 1.0672680009156466,
+        "controlledDecodeAndCropMs": 5.325938001275063,
+        "siglip2InferenceMs": 165.9257549997419,
+        "dinov2InferenceMs": 66.80224999971688,
+        "ocrMs": 351.2468429990113,
+        "retrievalMs": 4.499184999614954,
+        "rerankingMs": 1.798113999888301,
+        "modelInitializationMs": 0.03570200130343437,
+        "catalogValidationMs": 0.19971299916505814,
+        "totalMs": 714.9347780011594,
+        "simulatedAggregationMs": 0.0200009997934103,
+        "finalFreshReviewMs": 0.6819439996033907,
+        "totalThroughSimulatedReviewMs": 715.6367230005562
+      },
+      "cpu": {
+        "user": 1283495,
+        "system": 29730
+      },
+      "memory": {
+        "rssBytes": 1042821120,
+        "processLifetimePeakRssBytes": 1169403904
+      },
+      "unknownDetections": 0
+    }
+  ],
+  "example": {
+    "kind": "offline-stage9-review",
+    "review": {
+      "schemaVersion": 1,
+      "scanId": "f703af1e-67f4-4ce3-a187-c051472b3a73",
+      "requestId": "8d02422d-90f5-4327-961e-da1185e1aea6",
+      "tenant": {
+        "storeId": "111111111111111111111111",
+        "packageId": "222222222222222222222222"
+      },
+      "detections": [
+        {
+          "detectionId": "0e5bfb4a8cbf7baf2e797f2fa0bf703f",
+          "box": [
+            0,
+            0,
+            640,
+            300
+          ],
+          "status": "review_required",
+          "candidates": [
+            {
+              "productId": "000000000000000000000001",
+              "title": "MILO CHOCOLATE 20g",
+              "brand": "Synthetic labels",
+              "variant": "CHOCOLATE",
+              "currentPrice": {
+                "retail": 12.75,
+                "wholesaleEligible": true,
+                "wholesaleTiers": [
+                  {
+                    "minimumQuantity": 3,
+                    "unitPrice": 8
+                  }
+                ],
+                "suggestedUnitPrice": 12.75,
+                "legacyWholesale": {
+                  "wprice": null,
+                  "wcount": null,
+                  "applied": false
+                },
+                "source": "current_main_catalog",
+                "requiresFinalReprice": true
+              },
+              "availability": {
+                "activate": true,
+                "quantity": 100,
+                "segregate": false,
+                "waitingStockPresent": false,
+                "availableForSuggestedQuantity": true,
+                "stockReserved": false,
+                "potentialAggregateQuantity": 1
+              },
+              "suggestedQuantity": 1,
+              "unitOfMeasure": "pack",
+              "reviewRequired": true,
+              "confirmed": false,
+              "eligibleForReview": true,
+              "reviewReasons": [
+                "CASHIER_REVIEW_REQUIRED"
+              ],
+              "recognition": {
+                "rank": 1,
+                "rankingScore": 0.81806582,
+                "scores": {
+                  "siglip2": {
+                    "similarity": 0.9999997019767761,
+                    "rank": 1,
+                    "referenceId": "ref_00647d898f7b663e650743db"
+                  },
+                  "dinov2": {
+                    "similarity": 1,
+                    "rank": 1,
+                    "referenceId": "ref_00647d898f7b663e650743db"
+                  }
+                },
+                "conflicts": [],
+                "reviewReasons": [],
+                "scoreType": "uncalibrated_suggestion"
+              }
+            },
+            {
+              "productId": "000000000000000000000002",
+              "title": "MILO CHOCOLATE 30g",
+              "brand": "Synthetic labels",
+              "variant": "CHOCOLATE",
+              "currentPrice": {
+                "retail": 11,
+                "wholesaleEligible": true,
+                "wholesaleTiers": [
+                  {
+                    "minimumQuantity": 3,
+                    "unitPrice": 9
+                  }
+                ],
+                "suggestedUnitPrice": 11,
+                "legacyWholesale": {
+                  "wprice": null,
+                  "wcount": null,
+                  "applied": false
+                },
+                "source": "current_main_catalog",
+                "requiresFinalReprice": true
+              },
+              "availability": {
+                "activate": true,
+                "quantity": 100,
+                "segregate": false,
+                "waitingStockPresent": false,
+                "availableForSuggestedQuantity": true,
+                "stockReserved": false,
+                "potentialAggregateQuantity": 1
+              },
+              "suggestedQuantity": 1,
+              "unitOfMeasure": "pack",
+              "reviewRequired": true,
+              "confirmed": false,
+              "eligibleForReview": true,
+              "reviewReasons": [
+                "SIZE_CONFLICT",
+                "CASHIER_REVIEW_REQUIRED"
+              ],
+              "recognition": {
+                "rank": 2,
+                "rankingScore": 0.09707107,
+                "scores": {
+                  "siglip2": {
+                    "similarity": 0.977993369102478,
+                    "rank": 2,
+                    "referenceId": "ref_ae8043cb9a4eadb38f87837b"
+                  },
+                  "dinov2": {
+                    "similarity": 1,
+                    "rank": 2,
+                    "referenceId": "ref_ae8043cb9a4eadb38f87837b"
+                  }
+                },
+                "conflicts": [
+                  "SIZE_CONFLICT"
+                ],
+                "reviewReasons": [
+                  "SIZE_CONFLICT"
+                ],
+                "scoreType": "uncalibrated_suggestion"
+              }
+            },
+            {
+              "productId": "000000000000000000000003",
+              "title": "NESCAFE ORIGINAL 30g",
+              "brand": "Synthetic labels",
+              "variant": "ORIGINAL",
+              "currentPrice": {
+                "retail": 12,
+                "wholesaleEligible": true,
+                "wholesaleTiers": [
+                  {
+                    "minimumQuantity": 3,
+                    "unitPrice": 10
+                  }
+                ],
+                "suggestedUnitPrice": 12,
+                "legacyWholesale": {
+                  "wprice": null,
+                  "wcount": null,
+                  "applied": false
+                },
+                "source": "current_main_catalog",
+                "requiresFinalReprice": true
+              },
+              "availability": {
+                "activate": true,
+                "quantity": 100,
+                "segregate": false,
+                "waitingStockPresent": false,
+                "availableForSuggestedQuantity": true,
+                "stockReserved": false,
+                "potentialAggregateQuantity": 1
+              },
+              "suggestedQuantity": 1,
+              "unitOfMeasure": "pack",
+              "reviewRequired": true,
+              "confirmed": false,
+              "eligibleForReview": true,
+              "reviewReasons": [
+                "OCR_NAME_DISAGREEMENT",
+                "VARIANT_CONFLICT",
+                "SIZE_CONFLICT",
+                "CASHIER_REVIEW_REQUIRED"
+              ],
+              "recognition": {
+                "rank": 3,
+                "rankingScore": -0.54444444,
+                "scores": {
+                  "siglip2": {
+                    "similarity": 0.7182880640029907,
+                    "rank": 3,
+                    "referenceId": "ref_9873c5c1984e838c6ed4039f"
+                  },
+                  "dinov2": {
+                    "similarity": 0.9119718074798584,
+                    "rank": 3,
+                    "referenceId": "ref_9873c5c1984e838c6ed4039f"
+                  }
+                },
+                "conflicts": [
+                  "VARIANT_CONFLICT",
+                  "SIZE_CONFLICT"
+                ],
+                "reviewReasons": [
+                  "OCR_NAME_DISAGREEMENT",
+                  "VARIANT_CONFLICT",
+                  "SIZE_CONFLICT"
+                ],
+                "scoreType": "uncalibrated_suggestion"
+              }
+            },
+            {
+              "productId": "000000000000000000000004",
+              "title": "NESCAFE CREAMY WHITE 30g",
+              "brand": "Synthetic labels",
+              "variant": "CREAMY WHITE",
+              "currentPrice": {
+                "retail": 13,
+                "wholesaleEligible": true,
+                "wholesaleTiers": [
+                  {
+                    "minimumQuantity": 3,
+                    "unitPrice": 11
+                  }
+                ],
+                "suggestedUnitPrice": 13,
+                "legacyWholesale": {
+                  "wprice": null,
+                  "wcount": null,
+                  "applied": false
+                },
+                "source": "current_main_catalog",
+                "requiresFinalReprice": true
+              },
+              "availability": {
+                "activate": true,
+                "quantity": 100,
+                "segregate": false,
+                "waitingStockPresent": false,
+                "availableForSuggestedQuantity": true,
+                "stockReserved": false,
+                "potentialAggregateQuantity": 1
+              },
+              "suggestedQuantity": 1,
+              "unitOfMeasure": "pack",
+              "reviewRequired": true,
+              "confirmed": false,
+              "eligibleForReview": true,
+              "reviewReasons": [
+                "OCR_NAME_DISAGREEMENT",
+                "VARIANT_CONFLICT",
+                "SIZE_CONFLICT",
+                "CASHIER_REVIEW_REQUIRED"
+              ],
+              "recognition": {
+                "rank": 4,
+                "rankingScore": -0.57619048,
+                "scores": {
+                  "siglip2": {
+                    "similarity": 0.7047408819198608,
+                    "rank": 4,
+                    "referenceId": "ref_764ff5b7a66dbc21644fe8fe"
+                  },
+                  "dinov2": {
+                    "similarity": 0.9066963195800781,
+                    "rank": 4,
+                    "referenceId": "ref_764ff5b7a66dbc21644fe8fe"
+                  }
+                },
+                "conflicts": [
+                  "VARIANT_CONFLICT",
+                  "SIZE_CONFLICT"
+                ],
+                "reviewReasons": [
+                  "OCR_NAME_DISAGREEMENT",
+                  "VARIANT_CONFLICT",
+                  "SIZE_CONFLICT"
+                ],
+                "scoreType": "uncalibrated_suggestion"
+              }
+            }
+          ],
+          "suggestedProductId": null,
+          "selectionRequired": true,
+          "leadingSuggestionUnavailable": false,
+          "alternatives": [
+            "000000000000000000000001",
+            "000000000000000000000002",
+            "000000000000000000000003",
+            "000000000000000000000004"
+          ],
+          "rejected": [],
+          "ocr": {
+            "rawText": "MILO\nCHOCOLATE\n20g",
+            "normalizedText": "milo chocolate 20g",
+            "regions": [
+              {
+                "rawText": "MILO",
+                "recognitionScore": 0.9969101697206497,
+                "detectionScore": 0.9371654276144804,
+                "box": [
+                  [
+                    27.542092871311993,
+                    33.42980363451209
+                  ],
+                  [
+                    197.93073968664774,
+                    34.604357725610456
+                  ],
+                  [
+                    197.46273899331464,
+                    94.27444612558409
+                  ],
+                  [
+                    27.074092177978866,
+                    93.09989203448575
+                  ]
+                ],
+                "acceptedForEvidence": true
+              },
+              {
+                "rawText": "CHOCOLATE",
+                "recognitionScore": 0.999577694469028,
+                "detectionScore": 0.9036816437883111,
+                "box": [
+                  [
+                    29.51129518072289,
+                    127.27621423192771
+                  ],
+                  [
+                    296.73870481927713,
+                    127.27621423192771
+                  ],
+                  [
+                    296.73870481927713,
+                    173.3097232680723
+                  ],
+                  [
+                    29.51129518072289,
+                    173.3097232680723
+                  ]
+                ],
+                "acceptedForEvidence": true
+              },
+              {
+                "rawText": "20g",
+                "recognitionScore": 0.9963198701540629,
+                "detectionScore": 0.8966131426737745,
+                "box": [
+                  [
+                    26.960128677757893,
+                    199.14792822303912
+                  ],
+                  [
+                    148.29056913549405,
+                    206.48646292814416
+                  ],
+                  [
+                    143.3241977471126,
+                    278.65404716556196
+                  ],
+                  [
+                    21.993757289376454,
+                    271.3155124604569
+                  ]
+                ],
+                "acceptedForEvidence": true
+              }
+            ]
+          },
+          "models": {
+            "siglip2": {
+              "modelId": "google/siglip2-base-patch16-224",
+              "modelRevision": "ba1f3b0843f24bc5417d38e19c37b287d719b2f4",
+              "dimension": 768,
+              "modelSha256": "c0573e3f4140c3a7c4e9cc5912bd6b26a033b46a6a8e8af26cbea262b163bcad",
+              "preprocessorSha256": "9b36b57ebaf20f09bf4c22100ccc21877ea6bfe5aead0c00c59f8af8ccefacfc",
+              "preprocessingVersion": "siglip2-rgb224-pillow-bilinear-22bit-v1"
+            },
+            "dinov2": {
+              "modelId": "facebook/dinov2-small",
+              "modelRevision": "c2bb04a51fab207c420665f1946016107bffc701",
+              "dimension": 384,
+              "modelSha256": "83141175ec78b4ff9a2bb58a4c7c264ba0054d1c2e122e5a8114b79a8d4179ea",
+              "preprocessorSha256": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828",
+              "preprocessingVersion": "dinov2-rgb-short256-pillow-bicubic-crop224-imagenet-cls0-v1"
+            },
+            "ocr": {
+              "id": "PaddlePaddle/PP-OCRv5-mobile-onnx",
+              "detRevision": "e6f4fa85f00e168c862bc462aebca69eef9b3d3d",
+              "recRevision": "ed152b8b495f84de93cda5709d768548a9127622",
+              "detSha256": "a431985659dc921974177a95adcfbb90fd9e51989a5e04d70d0b75f597b6e61d",
+              "recSha256": "da72dc72ca4dc220df0dfde68c1dedc31c58d3e76a25871122e5056227d50092",
+              "dictionarySha256": "14ccb8e120e701464bd3084acf3b398ffee767e515477ad27d3c80fd5996c180",
+              "configSha256": "05d0f85e52803797577bc50d9321a040c74276dbd63a8bad7940c6fe0cb2b75c",
+              "preprocessingVersion": "ppocrv5-bgr-long960-stride128-linear-rec48-ctc-db-quad-v1",
+              "postprocessingVersion": "component8-hull-minrect-boxmean-unclip-miter-1.5-v1"
+            }
+          },
+          "indexGenerations": {
+            "siglip2": "g-fdb6d2c0-8644-4282-875a-bb4effbd3ec1",
+            "dinov2": "g-8ed0d4d0-e7cc-4a2c-acac-3ed144311140"
+          },
+          "policy": {
+            "version": "stage6-rank-fusion-text-v1",
+            "sha256": "20feeab68402c16b085bd3159c3e945e734cc4e3de6f0d86be3961a70b94bf15"
+          },
+          "inferenceCatalogRevision": "5c2e5138ff3d4baa9c0c05ff9e2d8a9786c47293eedea16c80b1593c63b5117d",
+          "reviewRequired": true,
+          "confirmed": false,
+          "reviewReasons": [
+            "CASHIER_REVIEW_REQUIRED",
+            "EXPLICIT_SKU_SELECTION_REQUIRED",
+            "NO_STOCK_RESERVATION",
+            "OCR_NAME_DISAGREEMENT",
+            "SIZE_CONFLICT",
+            "VARIANT_CONFLICT"
+          ]
+        }
+      ],
+      "resolutionFingerprint": "0fba33847d3d45840c5a6d71b35f6b909c8fc51a0c13f114c64fab241d64a891",
+      "priceAuthority": "current_main_catalog",
+      "reviewRequired": true,
+      "confirmed": false,
+      "cartMutation": false,
+      "orderPersisted": false,
+      "reviewReasons": []
+    },
+    "raw": {
+      "schemaVersion": 1,
+      "scanId": "f703af1e-67f4-4ce3-a187-c051472b3a73",
+      "tenant": {
+        "packageId": "222222222222222222222222",
+        "storeId": "111111111111111111111111"
+      },
+      "results": [
+        {
+          "schemaVersion": 1,
+          "detectionId": "0e5bfb4a8cbf7baf2e797f2fa0bf703f",
+          "tenant": {
+            "packageId": "222222222222222222222222",
+            "storeId": "111111111111111111111111"
+          },
+          "candidates": [
+            {
+              "productId": "000000000000000000000001",
+              "packageId": "222222222222222222222222",
+              "storeId": "111111111111111111111111",
+              "scores": {
+                "siglip2": {
+                  "similarity": 0.9999997019767761,
+                  "rank": 1,
+                  "referenceId": "ref_00647d898f7b663e650743db",
+                  "modelVersion": "ba1f3b0843f24bc5417d38e19c37b287d719b2f4",
+                  "indexGeneration": "g-fdb6d2c0-8644-4282-875a-bb4effbd3ec1"
+                },
+                "dinov2": {
+                  "similarity": 1,
+                  "rank": 1,
+                  "referenceId": "ref_00647d898f7b663e650743db",
+                  "modelVersion": "c2bb04a51fab207c420665f1946016107bffc701",
+                  "indexGeneration": "g-8ed0d4d0-e7cc-4a2c-acac-3ed144311140"
+                }
+              },
+              "title": "MILO CHOCOLATE 20g",
+              "brand": "Synthetic labels",
+              "variant": "CHOCOLATE",
+              "rankingScore": 0.81806582,
+              "scoreType": "uncalibrated_policy_score_not_probability",
+              "evidence": {
+                "visual": {
+                  "siglip2": {
+                    "rawSimilarity": 0.9999997019767761,
+                    "rank": 1,
+                    "rankSupport": 1,
+                    "weak": false
+                  },
+                  "dinov2": {
+                    "rawSimilarity": 1,
+                    "rank": 1,
+                    "rankSupport": 1,
+                    "weak": false
+                  }
+                },
+                "metadata": {
+                  "available": true,
+                  "completeness": 1,
+                  "warnings": []
+                },
+                "text": {
+                  "normalizedObserved": "milo chocolate 20g",
+                  "name": {
+                    "state": "agreement",
+                    "score": 1,
+                    "matched": [
+                      "milo",
+                      "chocolate",
+                      "20g"
+                    ]
+                  },
+                  "description": {
+                    "state": "unobserved",
+                    "score": 0,
+                    "matched": []
+                  },
+                  "brand": {
+                    "state": "unobserved",
+                    "score": 0,
+                    "matched": []
+                  },
+                  "variant": {
+                    "state": "agreement",
+                    "score": 1,
+                    "matched": [
+                      "chocolate"
+                    ]
+                  },
+                  "size": {
+                    "state": "agreement",
+                    "score": 1,
+                    "observed": [
+                      {
+                        "kind": "mass",
+                        "value": 20,
+                        "unit": "g",
+                        "raw": "20g"
+                      }
+                    ],
+                    "expected": [
+                      {
+                        "kind": "mass",
+                        "value": 20,
+                        "unit": "g",
+                        "raw": "20g"
+                      }
+                    ],
+                    "conflicts": []
+                  },
+                  "packQuantity": {
+                    "state": "missing",
+                    "score": 0
+                  }
+                },
+                "quality": {
+                  "ocrSupport": 0.9976025781145802,
+                  "visualSupport": 1,
+                  "calibrated": false
+                },
+                "scoring": {
+                  "contributions": {
+                    "siglip2": 0.19047619047619047,
+                    "dinov2": 0.19047619047619047,
+                    "text": 0.11401172321309487,
+                    "description": 0,
+                    "brand": 0,
+                    "variant": 0.15201563095079318,
+                    "size": 0.1425146540163686,
+                    "quantity": 0,
+                    "metadata": 0.02857142857142857
+                  },
+                  "conflictPenalty": 0
+                }
+              },
+              "conflicts": [],
+              "reviewReasons": [],
+              "reviewRequired": true,
+              "rank": 1
+            },
+            {
+              "productId": "000000000000000000000002",
+              "packageId": "222222222222222222222222",
+              "storeId": "111111111111111111111111",
+              "scores": {
+                "siglip2": {
+                  "similarity": 0.977993369102478,
+                  "rank": 2,
+                  "referenceId": "ref_ae8043cb9a4eadb38f87837b",
+                  "modelVersion": "ba1f3b0843f24bc5417d38e19c37b287d719b2f4",
+                  "indexGeneration": "g-fdb6d2c0-8644-4282-875a-bb4effbd3ec1"
+                },
+                "dinov2": {
+                  "similarity": 1,
+                  "rank": 2,
+                  "referenceId": "ref_ae8043cb9a4eadb38f87837b",
+                  "modelVersion": "c2bb04a51fab207c420665f1946016107bffc701",
+                  "indexGeneration": "g-8ed0d4d0-e7cc-4a2c-acac-3ed144311140"
+                }
+              },
+              "title": "MILO CHOCOLATE 30g",
+              "brand": "Synthetic labels",
+              "variant": "CHOCOLATE",
+              "rankingScore": 0.09707107,
+              "scoreType": "uncalibrated_policy_score_not_probability",
+              "evidence": {
+                "visual": {
+                  "siglip2": {
+                    "rawSimilarity": 0.977993369102478,
+                    "rank": 2,
+                    "rankSupport": 0.5,
+                    "weak": false
+                  },
+                  "dinov2": {
+                    "rawSimilarity": 1,
+                    "rank": 2,
+                    "rankSupport": 0.5,
+                    "weak": false
+                  }
+                },
+                "metadata": {
+                  "available": true,
+                  "completeness": 1,
+                  "warnings": []
+                },
+                "text": {
+                  "normalizedObserved": "milo chocolate 20g",
+                  "name": {
+                    "state": "partial",
+                    "score": 0.6666666666666666,
+                    "matched": [
+                      "milo",
+                      "chocolate"
+                    ]
+                  },
+                  "description": {
+                    "state": "unobserved",
+                    "score": 0,
+                    "matched": []
+                  },
+                  "brand": {
+                    "state": "unobserved",
+                    "score": 0,
+                    "matched": []
+                  },
+                  "variant": {
+                    "state": "agreement",
+                    "score": 1,
+                    "matched": [
+                      "chocolate"
+                    ]
+                  },
+                  "size": {
+                    "state": "conflict",
+                    "score": 0,
+                    "observed": [
+                      {
+                        "kind": "mass",
+                        "value": 20,
+                        "unit": "g",
+                        "raw": "20g"
+                      }
+                    ],
+                    "expected": [
+                      {
+                        "kind": "mass",
+                        "value": 30,
+                        "unit": "g",
+                        "raw": "30g"
+                      }
+                    ],
+                    "conflicts": [
+                      {
+                        "kind": "mass",
+                        "value": 20,
+                        "unit": "g",
+                        "raw": "20g"
+                      }
+                    ]
+                  },
+                  "packQuantity": {
+                    "state": "missing",
+                    "score": 0
+                  }
+                },
+                "quality": {
+                  "ocrSupport": 0.9976025781145802,
+                  "visualSupport": 1,
+                  "calibrated": false
+                },
+                "scoring": {
+                  "contributions": {
+                    "siglip2": 0.09523809523809523,
+                    "dinov2": 0.09523809523809523,
+                    "text": 0.07600781547539659,
+                    "description": 0,
+                    "brand": 0,
+                    "variant": 0.15201563095079318,
+                    "size": 0,
+                    "quantity": 0,
+                    "metadata": 0.02857142857142857
+                  },
+                  "conflictPenalty": 0.35
+                }
+              },
+              "conflicts": [
+                {
+                  "code": "SIZE_CONFLICT",
+                  "observed": [
+                    {
+                      "kind": "mass",
+                      "value": 20,
+                      "unit": "g",
+                      "raw": "20g"
+                    }
+                  ],
+                  "expected": [
+                    {
+                      "kind": "mass",
+                      "value": 30,
+                      "unit": "g",
+                      "raw": "30g"
+                    }
+                  ]
+                }
+              ],
+              "reviewReasons": [
+                "SIZE_CONFLICT"
+              ],
+              "reviewRequired": true,
+              "rank": 2
+            },
+            {
+              "productId": "000000000000000000000003",
+              "packageId": "222222222222222222222222",
+              "storeId": "111111111111111111111111",
+              "scores": {
+                "siglip2": {
+                  "similarity": 0.7182880640029907,
+                  "rank": 3,
+                  "referenceId": "ref_9873c5c1984e838c6ed4039f",
+                  "modelVersion": "ba1f3b0843f24bc5417d38e19c37b287d719b2f4",
+                  "indexGeneration": "g-fdb6d2c0-8644-4282-875a-bb4effbd3ec1"
+                },
+                "dinov2": {
+                  "similarity": 0.9119718074798584,
+                  "rank": 3,
+                  "referenceId": "ref_9873c5c1984e838c6ed4039f",
+                  "modelVersion": "c2bb04a51fab207c420665f1946016107bffc701",
+                  "indexGeneration": "g-8ed0d4d0-e7cc-4a2c-acac-3ed144311140"
+                }
+              },
+              "title": "NESCAFE ORIGINAL 30g",
+              "brand": "Synthetic labels",
+              "variant": "ORIGINAL",
+              "rankingScore": -0.54444444,
+              "scoreType": "uncalibrated_policy_score_not_probability",
+              "evidence": {
+                "visual": {
+                  "siglip2": {
+                    "rawSimilarity": 0.7182880640029907,
+                    "rank": 3,
+                    "rankSupport": 0.3333333333333333,
+                    "weak": false
+                  },
+                  "dinov2": {
+                    "rawSimilarity": 0.9119718074798584,
+                    "rank": 3,
+                    "rankSupport": 0.3333333333333333,
+                    "weak": false
+                  }
+                },
+                "metadata": {
+                  "available": true,
+                  "completeness": 1,
+                  "warnings": []
+                },
+                "text": {
+                  "normalizedObserved": "milo chocolate 20g",
+                  "name": {
+                    "state": "unobserved",
+                    "score": 0,
+                    "matched": []
+                  },
+                  "description": {
+                    "state": "unobserved",
+                    "score": 0,
+                    "matched": []
+                  },
+                  "brand": {
+                    "state": "unobserved",
+                    "score": 0,
+                    "matched": []
+                  },
+                  "variant": {
+                    "state": "unobserved",
+                    "score": 0,
+                    "matched": []
+                  },
+                  "size": {
+                    "state": "conflict",
+                    "score": 0,
+                    "observed": [
+                      {
+                        "kind": "mass",
+                        "value": 20,
+                        "unit": "g",
+                        "raw": "20g"
+                      }
+                    ],
+                    "expected": [
+                      {
+                        "kind": "mass",
+                        "value": 30,
+                        "unit": "g",
+                        "raw": "30g"
+                      }
+                    ],
+                    "conflicts": [
+                      {
+                        "kind": "mass",
+                        "value": 20,
+                        "unit": "g",
+                        "raw": "20g"
+                      }
+                    ]
+                  },
+                  "packQuantity": {
+                    "state": "missing",
+                    "score": 0
+                  }
+                },
+                "quality": {
+                  "ocrSupport": 0.9976025781145802,
+                  "visualSupport": 1,
+                  "calibrated": false
+                },
+                "scoring": {
+                  "contributions": {
+                    "siglip2": 0.06349206349206349,
+                    "dinov2": 0.06349206349206349,
+                    "text": 0,
+                    "description": 0,
+                    "brand": 0,
+                    "variant": 0,
+                    "size": 0,
+                    "quantity": 0,
+                    "metadata": 0.02857142857142857
+                  },
+                  "conflictPenalty": 0.7
+                }
+              },
+              "conflicts": [
+                {
+                  "code": "VARIANT_CONFLICT",
+                  "observed": "CHOCOLATE",
+                  "expected": "ORIGINAL"
+                },
+                {
+                  "code": "SIZE_CONFLICT",
+                  "observed": [
+                    {
+                      "kind": "mass",
+                      "value": 20,
+                      "unit": "g",
+                      "raw": "20g"
+                    }
+                  ],
+                  "expected": [
+                    {
+                      "kind": "mass",
+                      "value": 30,
+                      "unit": "g",
+                      "raw": "30g"
+                    }
+                  ]
+                }
+              ],
+              "reviewReasons": [
+                "OCR_NAME_DISAGREEMENT",
+                "VARIANT_CONFLICT",
+                "SIZE_CONFLICT"
+              ],
+              "reviewRequired": true,
+              "rank": 3
+            },
+            {
+              "productId": "000000000000000000000004",
+              "packageId": "222222222222222222222222",
+              "storeId": "111111111111111111111111",
+              "scores": {
+                "siglip2": {
+                  "similarity": 0.7047408819198608,
+                  "rank": 4,
+                  "referenceId": "ref_764ff5b7a66dbc21644fe8fe",
+                  "modelVersion": "ba1f3b0843f24bc5417d38e19c37b287d719b2f4",
+                  "indexGeneration": "g-fdb6d2c0-8644-4282-875a-bb4effbd3ec1"
+                },
+                "dinov2": {
+                  "similarity": 0.9066963195800781,
+                  "rank": 4,
+                  "referenceId": "ref_764ff5b7a66dbc21644fe8fe",
+                  "modelVersion": "c2bb04a51fab207c420665f1946016107bffc701",
+                  "indexGeneration": "g-8ed0d4d0-e7cc-4a2c-acac-3ed144311140"
+                }
+              },
+              "title": "NESCAFE CREAMY WHITE 30g",
+              "brand": "Synthetic labels",
+              "variant": "CREAMY WHITE",
+              "rankingScore": -0.57619048,
+              "scoreType": "uncalibrated_policy_score_not_probability",
+              "evidence": {
+                "visual": {
+                  "siglip2": {
+                    "rawSimilarity": 0.7047408819198608,
+                    "rank": 4,
+                    "rankSupport": 0.25,
+                    "weak": false
+                  },
+                  "dinov2": {
+                    "rawSimilarity": 0.9066963195800781,
+                    "rank": 4,
+                    "rankSupport": 0.25,
+                    "weak": false
+                  }
+                },
+                "metadata": {
+                  "available": true,
+                  "completeness": 1,
+                  "warnings": []
+                },
+                "text": {
+                  "normalizedObserved": "milo chocolate 20g",
+                  "name": {
+                    "state": "unobserved",
+                    "score": 0,
+                    "matched": []
+                  },
+                  "description": {
+                    "state": "unobserved",
+                    "score": 0,
+                    "matched": []
+                  },
+                  "brand": {
+                    "state": "unobserved",
+                    "score": 0,
+                    "matched": []
+                  },
+                  "variant": {
+                    "state": "unobserved",
+                    "score": 0,
+                    "matched": []
+                  },
+                  "size": {
+                    "state": "conflict",
+                    "score": 0,
+                    "observed": [
+                      {
+                        "kind": "mass",
+                        "value": 20,
+                        "unit": "g",
+                        "raw": "20g"
+                      }
+                    ],
+                    "expected": [
+                      {
+                        "kind": "mass",
+                        "value": 30,
+                        "unit": "g",
+                        "raw": "30g"
+                      }
+                    ],
+                    "conflicts": [
+                      {
+                        "kind": "mass",
+                        "value": 20,
+                        "unit": "g",
+                        "raw": "20g"
+                      }
+                    ]
+                  },
+                  "packQuantity": {
+                    "state": "missing",
+                    "score": 0
+                  }
+                },
+                "quality": {
+                  "ocrSupport": 0.9976025781145802,
+                  "visualSupport": 1,
+                  "calibrated": false
+                },
+                "scoring": {
+                  "contributions": {
+                    "siglip2": 0.047619047619047616,
+                    "dinov2": 0.047619047619047616,
+                    "text": 0,
+                    "description": 0,
+                    "brand": 0,
+                    "variant": 0,
+                    "size": 0,
+                    "quantity": 0,
+                    "metadata": 0.02857142857142857
+                  },
+                  "conflictPenalty": 0.7
+                }
+              },
+              "conflicts": [
+                {
+                  "code": "VARIANT_CONFLICT",
+                  "observed": "CHOCOLATE",
+                  "expected": "CREAMY WHITE"
+                },
+                {
+                  "code": "SIZE_CONFLICT",
+                  "observed": [
+                    {
+                      "kind": "mass",
+                      "value": 20,
+                      "unit": "g",
+                      "raw": "20g"
+                    }
+                  ],
+                  "expected": [
+                    {
+                      "kind": "mass",
+                      "value": 30,
+                      "unit": "g",
+                      "raw": "30g"
+                    }
+                  ]
+                }
+              ],
+              "reviewReasons": [
+                "OCR_NAME_DISAGREEMENT",
+                "VARIANT_CONFLICT",
+                "SIZE_CONFLICT"
+              ],
+              "reviewRequired": true,
+              "rank": 4
+            }
+          ],
+          "alternatives": [
+            "000000000000000000000002",
+            "000000000000000000000003",
+            "000000000000000000000004"
+          ],
+          "visualLeaders": {
+            "siglip2": "000000000000000000000001",
+            "dinov2": "000000000000000000000001"
+          },
+          "ocr": {
+            "schemaVersion": 1,
+            "rawText": "MILO\nCHOCOLATE\n20g",
+            "normalizedText": "milo chocolate 20g",
+            "regions": [
+              {
+                "box": [
+                  [
+                    27.542092871311993,
+                    33.42980363451209
+                  ],
+                  [
+                    197.93073968664774,
+                    34.604357725610456
+                  ],
+                  [
+                    197.46273899331464,
+                    94.27444612558409
+                  ],
+                  [
+                    27.074092177978866,
+                    93.09989203448575
+                  ]
+                ],
+                "detectionScore": 0.9371654276144804,
+                "rawText": "MILO",
+                "normalizedText": "milo",
+                "recognitionScore": 0.9969101697206497,
+                "scoreType": "mean_selected_ctc_probability_not_sku_confidence",
+                "acceptedForEvidence": true,
+                "orientation": 0,
+                "orientationAmbiguous": false,
+                "clippedAspect": false
+              },
+              {
+                "box": [
+                  [
+                    29.51129518072289,
+                    127.27621423192771
+                  ],
+                  [
+                    296.73870481927713,
+                    127.27621423192771
+                  ],
+                  [
+                    296.73870481927713,
+                    173.3097232680723
+                  ],
+                  [
+                    29.51129518072289,
+                    173.3097232680723
+                  ]
+                ],
+                "detectionScore": 0.9036816437883111,
+                "rawText": "CHOCOLATE",
+                "normalizedText": "chocolate",
+                "recognitionScore": 0.999577694469028,
+                "scoreType": "mean_selected_ctc_probability_not_sku_confidence",
+                "acceptedForEvidence": true,
+                "orientation": 0,
+                "orientationAmbiguous": false,
+                "clippedAspect": false
+              },
+              {
+                "box": [
+                  [
+                    26.960128677757893,
+                    199.14792822303912
+                  ],
+                  [
+                    148.29056913549405,
+                    206.48646292814416
+                  ],
+                  [
+                    143.3241977471126,
+                    278.65404716556196
+                  ],
+                  [
+                    21.993757289376454,
+                    271.3155124604569
+                  ]
+                ],
+                "detectionScore": 0.8966131426737745,
+                "rawText": "20g",
+                "normalizedText": "20g",
+                "recognitionScore": 0.9963198701540629,
+                "scoreType": "mean_selected_ctc_probability_not_sku_confidence",
+                "acceptedForEvidence": true,
+                "orientation": 0,
+                "orientationAmbiguous": false,
+                "clippedAspect": false
+              }
+            ],
+            "packaging": {
+              "measurements": [
+                {
+                  "kind": "mass",
+                  "value": 20,
+                  "unit": "g",
+                  "raw": "20g"
+                }
+              ],
+              "packQuantities": [],
+              "identifyingText": "milo chocolate 20g",
+              "brand": null,
+              "productName": null,
+              "variant": null,
+              "limitation": "Brand/product/variant are candidate-conditioned evidence, not inferred entities."
+            },
+            "quality": {
+              "width": 640,
+              "height": 300,
+              "luminanceStd": 44.536122882794494,
+              "laplacianEnergy": 969.7478403755869,
+              "reasons": [],
+              "usable": true,
+              "calibrated": false,
+              "components": 3,
+              "regionsTruncated": false,
+              "geometryLimited": false
+            },
+            "model": {
+              "id": "PaddlePaddle/PP-OCRv5-mobile-onnx",
+              "detRevision": "e6f4fa85f00e168c862bc462aebca69eef9b3d3d",
+              "detSha256": "a431985659dc921974177a95adcfbb90fd9e51989a5e04d70d0b75f597b6e61d",
+              "recRevision": "ed152b8b495f84de93cda5709d768548a9127622",
+              "recSha256": "da72dc72ca4dc220df0dfde68c1dedc31c58d3e76a25871122e5056227d50092",
+              "dictionarySha256": "14ccb8e120e701464bd3084acf3b398ffee767e515477ad27d3c80fd5996c180",
+              "preprocessingVersion": "ppocrv5-bgr-long960-stride128-linear-rec48-ctc-db-quad-v1",
+              "postprocessingVersion": "component8-hull-minrect-boxmean-unclip-miter-1.5-v1",
+              "configSha256": "05d0f85e52803797577bc50d9321a040c74276dbd63a8bad7940c6fe0cb2b75c"
+            },
+            "reviewRequired": true,
+            "reviewReasons": [],
+            "timings": {
+              "decodeMs": 6.949742000550032,
+              "initializeMs": 248.64601700007915,
+              "detectorPreprocessMs": 31.712618000805378,
+              "detectorInferenceMs": 162.9553660005331,
+              "detectorPostprocessMs": 149.7886279989034,
+              "rectificationMs": 16.960279000923038,
+              "recognizerPreprocessMs": 13.326748000457883,
+              "recognizerInferenceMs": 44.85255300067365,
+              "ctcDecodeMs": 49.96647900156677,
+              "totalMs": 731.6288399994373
+            },
+            "nativeRecognitionCalls": 3,
+            "tensorContracts": {
+              "detector": {
+                "input": [
+                  1,
+                  3,
+                  512,
+                  1024
+                ],
+                "output": [
+                  1,
+                  1,
+                  512,
+                  1024
+                ]
+              },
+              "recognizer": [
+                {
+                  "input": [
+                    1,
+                    3,
+                    48,
+                    320
+                  ],
+                  "output": [
+                    1,
+                    40,
+                    18385
+                  ]
+                },
+                {
+                  "input": [
+                    1,
+                    3,
+                    48,
+                    320
+                  ],
+                  "output": [
+                    1,
+                    40,
+                    18385
+                  ]
+                },
+                {
+                  "input": [
+                    1,
+                    3,
+                    48,
+                    320
+                  ],
+                  "output": [
+                    1,
+                    40,
+                    18385
+                  ]
+                }
+              ]
+            },
+            "coordinateSpace": "exif-oriented-crop-pixels",
+            "memory": {
+              "rssBytes": 910196736,
+              "peakProcessRssBytes": 1169403904
+            }
+          },
+          "models": {
+            "siglip2": {
+              "modelId": "google/siglip2-base-patch16-224",
+              "modelRevision": "ba1f3b0843f24bc5417d38e19c37b287d719b2f4",
+              "modelSha256": "c0573e3f4140c3a7c4e9cc5912bd6b26a033b46a6a8e8af26cbea262b163bcad",
+              "preprocessingVersion": "siglip2-rgb224-pillow-bilinear-22bit-v1",
+              "preprocessorSha256": "9b36b57ebaf20f09bf4c22100ccc21877ea6bfe5aead0c00c59f8af8ccefacfc",
+              "dimension": 768
+            },
+            "dinov2": {
+              "modelId": "facebook/dinov2-small",
+              "modelRevision": "c2bb04a51fab207c420665f1946016107bffc701",
+              "modelSha256": "83141175ec78b4ff9a2bb58a4c7c264ba0054d1c2e122e5a8114b79a8d4179ea",
+              "preprocessingVersion": "dinov2-rgb-short256-pillow-bicubic-crop224-imagenet-cls0-v1",
+              "preprocessorSha256": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828",
+              "dimension": 384
+            },
+            "ocr": {
+              "id": "PaddlePaddle/PP-OCRv5-mobile-onnx",
+              "detRevision": "e6f4fa85f00e168c862bc462aebca69eef9b3d3d",
+              "detSha256": "a431985659dc921974177a95adcfbb90fd9e51989a5e04d70d0b75f597b6e61d",
+              "recRevision": "ed152b8b495f84de93cda5709d768548a9127622",
+              "recSha256": "da72dc72ca4dc220df0dfde68c1dedc31c58d3e76a25871122e5056227d50092",
+              "dictionarySha256": "14ccb8e120e701464bd3084acf3b398ffee767e515477ad27d3c80fd5996c180",
+              "preprocessingVersion": "ppocrv5-bgr-long960-stride128-linear-rec48-ctc-db-quad-v1",
+              "postprocessingVersion": "component8-hull-minrect-boxmean-unclip-miter-1.5-v1",
+              "configSha256": "05d0f85e52803797577bc50d9321a040c74276dbd63a8bad7940c6fe0cb2b75c"
+            }
+          },
+          "indexGenerations": {
+            "siglip2": "g-fdb6d2c0-8644-4282-875a-bb4effbd3ec1",
+            "dinov2": "g-8ed0d4d0-e7cc-4a2c-acac-3ed144311140"
+          },
+          "catalogRevision": "5c2e5138ff3d4baa9c0c05ff9e2d8a9786c47293eedea16c80b1593c63b5117d",
+          "policy": {
+            "version": "stage6-rank-fusion-text-v1",
+            "sha256": "20feeab68402c16b085bd3159c3e945e734cc4e3de6f0d86be3961a70b94bf15",
+            "settings": {
+              "weights": {
+                "siglip2": 0.2,
+                "dinov2": 0.2,
+                "text": 0.12,
+                "description": 0.02,
+                "brand": 0.12,
+                "variant": 0.16,
+                "size": 0.15,
+                "quantity": 0.05,
+                "metadata": 0.03
+              },
+              "conflictPenalty": 0.35,
+              "weakSimilarity": {
+                "siglip2": 0.15,
+                "dinov2": 0.25
+              },
+              "ambiguityGap": 0.08,
+              "minOcrScore": 0.65,
+              "variantTerms": [
+                "beef",
+                "chicken",
+                "original",
+                "creamy white",
+                "chocolate",
+                "strawberry",
+                "vanilla",
+                "pork",
+                "spicy"
+              ]
+            },
+            "scoreType": "uncalibrated_rank_and_text_policy"
+          },
+          "status": "review_required",
+          "reviewRequired": true,
+          "reviewReasons": [
+            "OCR_NAME_DISAGREEMENT",
+            "SIZE_CONFLICT",
+            "VARIANT_CONFLICT"
+          ],
+          "acceptanceAllowed": false,
+          "timings": {
+            "visual": {
+              "siglip2": {
+                "embedding": {
+                  "preprocessMs": 25.22024199925363,
+                  "initializeMs": 2797.54312899895,
+                  "inferenceMs": 168.34630899876356,
+                  "normalizationMs": 0.19081199914216995,
+                  "totalMs": 2991.3922979999334
+                },
+                "retrieval": {
+                  "loadMs": 2.08313300088048,
+                  "retrievalMs": 0.20781300030648708,
+                  "totalMs": 2.293546000495553
+                },
+                "totalMs": 2994.270580999553
+              },
+              "dinov2": {
+                "embedding": {
+                  "preprocessMs": 42.56200800091028,
+                  "initializeMs": 676.5411359984428,
+                  "inferenceMs": 62.863799000158906,
+                  "normalizationMs": 1.4478919990360737,
+                  "totalMs": 783.4803379997611
+                },
+                "retrieval": {
+                  "loadMs": 2.1670379992574453,
+                  "retrievalMs": 0.17461100034415722,
+                  "totalMs": 2.3425489999353886
+                },
+                "totalMs": 786.3823230005801
+              },
+              "totalMs": 3781.504158999771
+            },
+            "ocr": {
+              "decodeMs": 6.949742000550032,
+              "initializeMs": 248.64601700007915,
+              "detectorPreprocessMs": 31.712618000805378,
+              "detectorInferenceMs": 162.9553660005331,
+              "detectorPostprocessMs": 149.7886279989034,
+              "rectificationMs": 16.960279000923038,
+              "recognizerPreprocessMs": 13.326748000457883,
+              "recognizerInferenceMs": 44.85255300067365,
+              "ctcDecodeMs": 49.96647900156677,
+              "totalMs": 731.6288399994373
+            },
+            "rerankingMs": 4.791304999962449,
+            "totalMs": 4520.058439999819
+          },
+          "memory": {
+            "rssBytes": 910327808,
+            "peakProcessRssBytes": 1169403904
+          },
+          "detection": {
+            "box": [
+              0,
+              0,
+              640,
+              300
+            ],
+            "cropBox": [
+              0,
+              0,
+              640,
+              300
+            ],
+            "score": 1,
+            "classId": 0
+          }
+        }
+      ],
+      "reviewRequired": true,
+      "acceptanceAllowed": false,
+      "reviewReasons": [],
+      "detector": {
+        "model": {
+          "id": "yolox-tiny-coco-0.1.1rc0",
+          "sha256": "427cc366d34e27ff7a03e2899b5e3671425c262ea2291f88bb942bc1cc70b0f7"
+        },
+        "quality": {
+          "invalidRows": 0,
+          "suppressed": 0,
+          "truncated": false,
+          "candidateLimitApplied": false,
+          "groceryValidated": false,
+          "scoreType": "objectness_times_class_score_not_calibrated_probability",
+          "controlledSyntheticBoxes": true
+        },
+        "image": {
+          "width": 640,
+          "height": 300,
+          "coordinateSpace": "exif-oriented-source-pixels"
+        }
+      },
+      "timings": {
+        "detection": {
+          "decodeMs": 8.356343999505043,
+          "preprocessMs": 6.70223599858582,
+          "modelLoadMs": 496.71513099968433,
+          "inferenceMs": 40.17941600084305,
+          "postprocessMs": 1.0548679996281862,
+          "cropMs": 1.195778001099825,
+          "totalMs": 554.3067790009081,
+          "controlledDecodeAndCropMs": 6.613631000742316
+        },
+        "totalMs": 5081.869707999751
+      },
+      "memory": {
+        "rssBytes": 910327808,
+        "peakProcessRssBytes": 1169403904
+      }
+    },
+    "timings": {
+      "inferenceMs": 5082.056019999087,
+      "catalogValidationMs": 0.3750239983201027,
+      "totalMs": 5088.016404001042
+    },
+    "cpu": {
+      "user": 2972105,
+      "system": 687062
+    },
+    "memory": {
+      "rssBytes": 910327808,
+      "processLifetimePeakRssBytes": 1169403904
+    },
+    "featureActivated": false,
+    "cartMutation": false,
+    "orderPersisted": false,
+    "simulatedCashierAggregation": {
+      "items": [
+        {
+          "productId": "000000000000000000000001",
+          "quantity": 1,
+          "detectionIds": [
+            "0e5bfb4a8cbf7baf2e797f2fa0bf703f"
+          ]
+        }
+      ],
+      "unknown": [],
+      "reviewRequired": true,
+      "confirmed": false,
+      "cartMutation": false
+    },
+    "cartReadyReview": {
+      "tenant": {
+        "storeId": "111111111111111111111111",
+        "packageId": "222222222222222222222222"
+      },
+      "scanId": "f703af1e-67f4-4ce3-a187-c051472b3a73",
+      "catalogRevision": "b52d3d6ae78994e258e7b0dfff96df82e6570e5b6ed4f552b4f4d043f9dce418",
+      "reviewRequired": true,
+      "confirmed": false,
+      "cartMutation": false,
+      "items": [
+        {
+          "productId": "000000000000000000000001",
+          "quantity": 1,
+          "product": {
+            "_id": "000000000000000000000001",
+            "estoreid": "111111111111111111111111",
+            "title": "MILO CHOCOLATE 20g",
+            "brand": "888888888888888888888888",
+            "variantName": "CHOCOLATE",
+            "description": "Synthetic generated label fixture, NOT real grocery data",
+            "images": [
+              {
+                "url": "https://offline.example.test/references/milo20.png"
+              }
+            ],
+            "quantity": 100,
+            "waiting": {},
+            "segregate": false,
+            "activate": true,
+            "price": 12.75,
+            "wholesale": [
+              {
+                "wcount": 3,
+                "wprice": 8
+              }
+            ],
+            "packaging": {},
+            "unitOfMeasure": "pack",
+            "updatedAt": "2026-10-22T00:00:00Z"
+          },
+          "unitPrice": 12.75,
+          "priceAuthority": "current_main_catalog"
+        }
+      ]
+    },
+    "image": {
+      "width": 640,
+      "height": 300,
+      "coordinateSpace": "exif-oriented-source-pixels"
+    }
+  },
+  "initialization": {
+    "siglip": {
+      "residentBeforeFirstScan": false
+    },
+    "dino": {
+      "residentBeforeFirstScan": false
+    },
+    "ocr": {
+      "residentBeforeFirstScan": false
+    },
+    "yolox": {
+      "residentBeforeFirstScan": false
+    }
+  },
+  "simulatedCashier": {
+    "items": [
+      {
+        "productId": "000000000000000000000001",
+        "quantity": 1,
+        "detectionIds": [
+          "0e5bfb4a8cbf7baf2e797f2fa0bf703f"
+        ]
+      }
+    ],
+    "unknown": [],
+    "reviewRequired": true,
+    "confirmed": false,
+    "cartMutation": false
+  },
+  "concurrent": {
+    "secondRejected": true,
+    "code": "HARNESS_BUSY",
+    "waitingQueue": false
+  },
+  "duplicateSubmission": {
+    "rejected": true,
+    "code": "DUPLICATE_SUBMISSION"
+  },
+  "currentPriceAfterInference": 12.75,
+  "processCpuUsage": {
+    "user": 7033449,
+    "system": 908055
+  },
+  "peakProcessRssBytes": 1169403904,
+  "finalRssBytes": 1061494784,
+  "totalWorkerMs": 8074.1076630000025,
+  "databaseWrites": 0,
+  "cartMutation": false,
+  "featureActivated": false
+}

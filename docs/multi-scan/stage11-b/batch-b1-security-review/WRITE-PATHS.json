@@ -1,0 +1,538 @@
+[
+  {
+    "id": "W01",
+    "http_method": "GET",
+    "router_relative_path": "/gratis/user-details/:resellid",
+    "router_file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/routes/user.js",
+    "controller": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/user.js",
+    "function": "getUserDetails",
+    "controller_line": 114,
+    "writes": "Membership repair on read",
+    "authentication_middleware": [
+      "authCheck"
+    ],
+    "trusted_identity_source": "None cryptographically verified in shown legacy chain; authCheck decodes headers.authtoken",
+    "authorization_checks": "No verified privileged-grant middleware; function-specific checks described",
+    "tenant_scoping_and_risk": "email-only dedicated-store fallback can restore removed membership",
+    "required_remediation": "Remove implicit grant repair; missing membership denies; promoStart bookkeeping is not authority",
+    "evidence_class": "Source-confirmed behavior; deployment reachability/exploit not tested"
+  },
+  {
+    "id": "W02",
+    "http_method": "POST",
+    "router_relative_path": "/gratis/user-create/:resellid",
+    "router_file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/routes/user.js",
+    "controller": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/user.js",
+    "function": "createNewUser",
+    "controller_line": 707,
+    "writes": "Role / primary membership / reseller / credentials",
+    "authentication_middleware": [
+      "none"
+    ],
+    "trusted_identity_source": "No authenticated identity on this route",
+    "authorization_checks": "No verified privileged-grant middleware; function-specific checks described",
+    "tenant_scoping_and_risk": "Public creation copies requested role; issues legacy token and returns user",
+    "required_remediation": "Server-force public customer role; staff onboarding separate verified tenant-admin workflow with field allowlist and independent approved grants",
+    "evidence_class": "Source-confirmed behavior; deployment reachability/exploit not tested"
+  },
+  {
+    "id": "W03",
+    "http_method": "PUT",
+    "router_relative_path": "/gratis/user-update",
+    "router_file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/routes/user.js",
+    "controller": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/user.js",
+    "function": "updateUser",
+    "controller_line": 963,
+    "writes": "Role / membership / reseller / elevated flags / password via broad body",
+    "authentication_middleware": [
+      "authCheck"
+    ],
+    "trusted_identity_source": "None cryptographically verified in shown legacy chain; authCheck decodes headers.authtoken",
+    "authorization_checks": "No verified privileged-grant middleware; function-specific checks described",
+    "tenant_scoping_and_risk": "Decode identity; broad body update; selected-store equality does not constrain new authority fields",
+    "required_remediation": "Verified identity; explicit self-profile allowlist; dedicated protected staff-change endpoint; tenant-scoped CAS and policy version update",
+    "evidence_class": "Source-confirmed behavior; deployment reachability/exploit not tested"
+  },
+  {
+    "id": "W04",
+    "http_method": "PUT",
+    "router_relative_path": "/gratis/update-customer/:userid",
+    "router_file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/routes/user.js",
+    "controller": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/user.js",
+    "function": "updateCustomer",
+    "controller_line": 1024,
+    "writes": "Any schema authority fields via broad body",
+    "authentication_middleware": [
+      "authCheck"
+    ],
+    "trusted_identity_source": "None cryptographically verified in shown legacy chain; authCheck decodes headers.authtoken",
+    "authorization_checks": "No verified privileged-grant middleware; function-specific checks described",
+    "tenant_scoping_and_risk": "Decoded caller; superAdmin branch omits target store; otherwise target chosen by id/store without required admin check",
+    "required_remediation": "Verified privileged actor/current grant; constrain target user+tenant; deny self-granted elevated flags; profile/authority APIs separate",
+    "evidence_class": "Source-confirmed behavior; deployment reachability/exploit not tested"
+  },
+  {
+    "id": "W05",
+    "http_method": "PUT",
+    "router_relative_path": "/gratis/user-verify",
+    "router_file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/routes/user.js",
+    "controller": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/user.js",
+    "function": "verifyUserEmail",
+    "controller_line": 1056,
+    "writes": "Email confirmation and store reactivation for admin",
+    "authentication_middleware": [
+      "authCheck"
+    ],
+    "trusted_identity_source": "None cryptographically verified in shown legacy chain; authCheck decodes headers.authtoken",
+    "authorization_checks": "No verified privileged-grant middleware; function-specific checks described",
+    "tenant_scoping_and_risk": "Weak identity guard; code equality without visible single-use expiry policy; can set store active",
+    "required_remediation": "Bind expiring single-use challenge to user+tenant; email confirmation must not automatically reenable independently disabled store/account",
+    "evidence_class": "Source-confirmed behavior; deployment reachability/exploit not tested"
+  },
+  {
+    "id": "W06",
+    "http_method": "PUT",
+    "router_relative_path": "/gratis/change-password",
+    "router_file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/routes/user.js",
+    "controller": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/user.js",
+    "function": "changePassword",
+    "controller_line": 1099,
+    "writes": "Credential replacement",
+    "authentication_middleware": [
+      "authCheck"
+    ],
+    "trusted_identity_source": "None cryptographically verified in shown legacy chain; authCheck decodes headers.authtoken",
+    "authorization_checks": "No verified privileged-grant middleware; function-specific checks described",
+    "tenant_scoping_and_risk": "Old password proof exists, but legacy identity/tenant handling and raw user response remain risks",
+    "required_remediation": "Preserve old-secret proof plus verified identity; no raw credential fields; advance authorization epoch after credential reset/change",
+    "evidence_class": "Source-confirmed behavior; deployment reachability/exploit not tested"
+  },
+  {
+    "id": "W07",
+    "http_method": "PUT",
+    "router_relative_path": "/gratis/reset-password/:userid",
+    "router_file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/routes/user.js",
+    "controller": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/user.js",
+    "function": "resetPassword",
+    "controller_line": 1129,
+    "writes": "Staff password reset",
+    "authentication_middleware": [
+      "authCheck",
+      "adminGratisCheck"
+    ],
+    "trusted_identity_source": "None cryptographically verified in shown legacy chain; authCheck decodes headers.authtoken",
+    "authorization_checks": "adminGratisCheck: current primary-store row role admin/moderator/cashier; signature absent, not owner-only",
+    "tenant_scoping_and_risk": "adminGratisCheck permits cashier/moderator; reset uses fixed shared password",
+    "required_remediation": "Explicit privileged reset with fresh proof; random single-use recovery, no shared default; tenant/current grant check and epoch advance",
+    "evidence_class": "Source-confirmed behavior; deployment reachability/exploit not tested"
+  },
+  {
+    "id": "W08",
+    "http_method": "PUT",
+    "router_relative_path": "/gratis/forgot-password",
+    "router_file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/routes/user.js",
+    "controller": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/user.js",
+    "function": "forgotPassword",
+    "controller_line": 1152,
+    "writes": "Credential replacement incl admin fallback",
+    "authentication_middleware": [
+      "none"
+    ],
+    "trusted_identity_source": "No authenticated identity on this route",
+    "authorization_checks": "No verified privileged-grant middleware; function-specific checks described",
+    "tenant_scoping_and_risk": "Public route writes new password from email/selectors without recovery proof",
+    "required_remediation": "S01 containment candidate; then verified single-use account/tenant-bound recovery; no email-only admin fallback",
+    "evidence_class": "Source-confirmed behavior; deployment reachability/exploit not tested"
+  },
+  {
+    "id": "W09",
+    "http_method": "PUT",
+    "router_relative_path": "/gratis/delete-account-request",
+    "router_file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/routes/user.js",
+    "controller": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/user.js",
+    "function": "deleteAccountRequest",
+    "controller_line": 1209,
+    "writes": "Deletion-request denial marker",
+    "authentication_middleware": [
+      "none"
+    ],
+    "trusted_identity_source": "No authenticated identity on this route",
+    "authorization_checks": "No verified privileged-grant middleware; function-specific checks described",
+    "tenant_scoping_and_risk": "Public email-only update with no tenant; can target another identity",
+    "required_remediation": "Verified subject/fresh proof; scoped subject id; independent revocation writer with audit, no public authority toggle",
+    "evidence_class": "Source-confirmed behavior; deployment reachability/exploit not tested"
+  },
+  {
+    "id": "W10",
+    "http_method": "PUT",
+    "router_relative_path": "/gratis/import-users",
+    "router_file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/routes/user.js",
+    "controller": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/user.js",
+    "function": "importUsers",
+    "controller_line": 1232,
+    "writes": "Bulk roles / memberships / elevated flags / credentials",
+    "authentication_middleware": [
+      "authCheck",
+      "adminGratisCheck"
+    ],
+    "trusted_identity_source": "None cryptographically verified in shown legacy chain; authCheck decodes headers.authtoken",
+    "authorization_checks": "adminGratisCheck: current primary-store row role admin/moderator/cashier; signature absent, not owner-only",
+    "tenant_scoping_and_risk": "Weak staff guard plus arbitrary row bodies; insert spread accepts authority fields",
+    "required_remediation": "Separate profile import vs privileged staff-grant import; bounded strict schema, verified admin, tenant targets, CAS/audit/epoch",
+    "evidence_class": "Source-confirmed behavior; deployment reachability/exploit not tested"
+  },
+  {
+    "id": "W11",
+    "http_method": "DELETE",
+    "router_relative_path": "/gratis/user-delete/:userid",
+    "router_file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/routes/user.js",
+    "controller": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/user.js",
+    "function": "deleteUser",
+    "controller_line": 1278,
+    "writes": "Physical removal / access revocation",
+    "authentication_middleware": [
+      "authCheck",
+      "adminGratisCheck"
+    ],
+    "trusted_identity_source": "None cryptographically verified in shown legacy chain; authCheck decodes headers.authtoken",
+    "authorization_checks": "adminGratisCheck: current primary-store row role admin/moderator/cashier; signature absent, not owner-only",
+    "tenant_scoping_and_risk": "Weak guard permits any listed staff role; target id+header store, no last-admin policy",
+    "required_remediation": "Verified privileged writer; target scope and last-owner safeguards; revoke/tombstone authoritative policy before deleting",
+    "evidence_class": "Source-confirmed behavior; deployment reachability/exploit not tested"
+  },
+  {
+    "id": "W12",
+    "http_method": "PUT",
+    "router_relative_path": "/app/update-user",
+    "router_file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/routes/appuser.js",
+    "controller": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/app/user.js",
+    "function": "updateUser",
+    "controller_line": 151,
+    "writes": "Role / membership / reseller / credentials via body",
+    "authentication_middleware": [
+      "authCheck"
+    ],
+    "trusted_identity_source": "None cryptographically verified in shown legacy chain; authCheck decodes headers.authtoken",
+    "authorization_checks": "No verified privileged-grant middleware; function-specific checks described",
+    "tenant_scoping_and_risk": "Decode guard; email+header reseller filter but broad body including estoreid",
+    "required_remediation": "Same verified self-profile allowlist and dedicated scoped grant writer; never trust header reseller as authority",
+    "evidence_class": "Source-confirmed behavior; deployment reachability/exploit not tested"
+  },
+  {
+    "id": "W13",
+    "http_method": "POST",
+    "router_relative_path": "/gratis/estore-update",
+    "router_file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/routes/estore.js",
+    "controller": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/estore.js",
+    "function": "updateEstore",
+    "controller_line": 298,
+    "writes": "Cashier permissions / status / reseller / package-like settings",
+    "authentication_middleware": [
+      "authCheck",
+      "adminGratisCheck"
+    ],
+    "trusted_identity_source": "None cryptographically verified in shown legacy chain; authCheck decodes headers.authtoken",
+    "authorization_checks": "adminGratisCheck: current primary-store row role admin/moderator/cashier; signature absent, not owner-only",
+    "tenant_scoping_and_risk": "Weak staff guard; broad body; second warehouse target not constrained to actor tenant",
+    "required_remediation": "Protected per-field setting vs authority APIs; verify both target stores; permission/status/owner changes versioned and audited",
+    "evidence_class": "Source-confirmed behavior; deployment reachability/exploit not tested"
+  },
+  {
+    "id": "W14",
+    "http_method": "POST",
+    "router_relative_path": "/gratis/estore-create/:resellid",
+    "router_file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/routes/estore.js",
+    "controller": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/estore.js",
+    "function": "createEstore",
+    "controller_line": 338,
+    "writes": "Store/reseller namespace / reseller flags / plan request",
+    "authentication_middleware": [
+      "none"
+    ],
+    "trusted_identity_source": "No authenticated identity on this route",
+    "authorization_checks": "No verified privileged-grant middleware; function-specific checks described",
+    "tenant_scoping_and_risk": "Public creation accepts reseller object and parent id; default store status active",
+    "required_remediation": "Separate untrusted enrollment request from verified ownership/reseller activation; force pending request; independent owner attestation",
+    "evidence_class": "Source-confirmed behavior; deployment reachability/exploit not tested"
+  },
+  {
+    "id": "W15",
+    "http_method": "POST",
+    "router_relative_path": "/gratis/add-new-estore/:resellid",
+    "router_file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/routes/estore.js",
+    "controller": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/estore.js",
+    "function": "addNewEstore",
+    "controller_line": 454,
+    "writes": "New store parent / ownership namespace",
+    "authentication_middleware": [
+      "authCheck",
+      "adminGratisCheck"
+    ],
+    "trusted_identity_source": "None cryptographically verified in shown legacy chain; authCheck decodes headers.authtoken",
+    "authorization_checks": "adminGratisCheck: current primary-store row role admin/moderator/cashier; signature absent, not owner-only",
+    "tenant_scoping_and_risk": "Weak guard scoped to header store, creation parent comes from path; global email actor lookup",
+    "required_remediation": "Verify actor grants allow store creation under exact parent; scope lookup by actor id/tenant; no namespace reassignment",
+    "evidence_class": "Source-confirmed behavior; deployment reachability/exploit not tested"
+  },
+  {
+    "id": "W16",
+    "http_method": "POST",
+    "router_relative_path": "/gratis/copying-estore/:resellid",
+    "router_file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/routes/estore.js",
+    "controller": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/estore.js",
+    "function": "copyingEstore",
+    "controller_line": 493,
+    "writes": "Store parent and cross-store source data copy",
+    "authentication_middleware": [
+      "authCheck",
+      "adminGratisCheck"
+    ],
+    "trusted_identity_source": "None cryptographically verified in shown legacy chain; authCheck decodes headers.authtoken",
+    "authorization_checks": "adminGratisCheck: current primary-store row role admin/moderator/cashier; signature absent, not owner-only",
+    "tenant_scoping_and_risk": "Weak guard; path parent and source fromid independently selected",
+    "required_remediation": "Verify source read and destination create grants same approved namespace; explicit cross-tenant transfer protocol if ever supported",
+    "evidence_class": "Source-confirmed behavior; deployment reachability/exploit not tested"
+  },
+  {
+    "id": "W17",
+    "http_method": "PUT",
+    "router_relative_path": "/gratis/update-estore-counters",
+    "router_file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/routes/estore.js",
+    "controller": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/estore.js",
+    "function": "updateEstoreCounters",
+    "controller_line": 632,
+    "writes": "Non-authority change markers",
+    "authentication_middleware": [
+      "none"
+    ],
+    "trusted_identity_source": "No authenticated identity on this route",
+    "authorization_checks": "No verified privileged-grant middleware; function-specific checks described",
+    "tenant_scoping_and_risk": "Public selected store counters; no role/membership/status fields in explicit update",
+    "required_remediation": "Restrict internal counter mutation; do not treat counters/cache timestamps as authority",
+    "evidence_class": "Source-confirmed behavior; deployment reachability/exploit not tested"
+  },
+  {
+    "id": "W18",
+    "http_method": "PUT",
+    "router_relative_path": "/gratis/update-estores-default",
+    "router_file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/routes/estore.js",
+    "controller": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/estore.js",
+    "function": "updateEstoresDefault",
+    "controller_line": 662,
+    "writes": "Default-store selection",
+    "authentication_middleware": [
+      "none"
+    ],
+    "trusted_identity_source": "No authenticated identity on this route",
+    "authorization_checks": "No verified privileged-grant middleware; function-specific checks described",
+    "tenant_scoping_and_risk": "Public updateMany with empty filter affects all tenants",
+    "required_remediation": "Verified admin and reseller-scoped selection; no cross-tenant global reset",
+    "evidence_class": "Source-confirmed behavior; deployment reachability/exploit not tested"
+  },
+  {
+    "id": "W19",
+    "http_method": "PUT",
+    "router_relative_path": "/gratis/update-estores-visible",
+    "router_file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/routes/estore.js",
+    "controller": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/estore.js",
+    "function": "updateEstoresVissible",
+    "controller_line": 682,
+    "writes": "All supplied store fields, not just visibility",
+    "authentication_middleware": [
+      "none"
+    ],
+    "trusted_identity_source": "No authenticated identity on this route",
+    "authorization_checks": "No verified privileged-grant middleware; function-specific checks described",
+    "tenant_scoping_and_risk": "Public route forwards req.body to store update; status/resellid/accessibility are writable schema fields",
+    "required_remediation": "Verified actor plus explicit visibility-only allowlist; status/owner/permissions separate protected writer",
+    "evidence_class": "Source-confirmed behavior; deployment reachability/exploit not tested"
+  },
+  {
+    "id": "W20",
+    "http_method": "DELETE",
+    "router_relative_path": "/gratis/delete-estore/:deleteid",
+    "router_file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/routes/estore.js",
+    "controller": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/estore.js",
+    "function": "deletingEstore",
+    "controller_line": 695,
+    "writes": "Deletes store/staff; reassigns admin primary store",
+    "authentication_middleware": [
+      "authCheck",
+      "adminGratisCheck"
+    ],
+    "trusted_identity_source": "None cryptographically verified in shown legacy chain; authCheck decodes headers.authtoken",
+    "authorization_checks": "adminGratisCheck: current primary-store row role admin/moderator/cashier; signature absent, not owner-only",
+    "tenant_scoping_and_risk": "Weak guard based on header store; deleteid query lacks target tenant match; supplied reseller determines reassignment",
+    "required_remediation": "Verified owner operation; constrain every target/query/reassignment to approved tenant; policy revocation first; destructive cascade separately reviewed",
+    "evidence_class": "Source-confirmed behavior; deployment reachability/exploit not tested"
+  },
+  {
+    "id": "W21",
+    "http_method": "GET",
+    "router_relative_path": "/gratis/get-hosting-billing",
+    "router_file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/routes/billing.js",
+    "controller": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/billing.js",
+    "function": "getHostingBill",
+    "controller_line": 37,
+    "writes": "Creates plan billing on GET",
+    "authentication_middleware": [
+      "authCheck",
+      "adminGratisCheck"
+    ],
+    "trusted_identity_source": "None cryptographically verified in shown legacy chain; authCheck decodes headers.authtoken",
+    "authorization_checks": "adminGratisCheck: current primary-store row role admin/moderator/cashier; signature absent, not owner-only",
+    "tenant_scoping_and_risk": "Weak guard; header store/package and email lookup; creates Unpaid record",
+    "required_remediation": "Verified billing actor and store+plan; move creation to explicit mutation; do not infer scanner permission from billing record",
+    "evidence_class": "Source-confirmed behavior; deployment reachability/exploit not tested"
+  },
+  {
+    "id": "W22",
+    "http_method": "POST",
+    "router_relative_path": "/gratis/add-billing",
+    "router_file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/routes/billing.js",
+    "controller": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/billing.js",
+    "function": "addBilling",
+    "controller_line": 131,
+    "writes": "Creates plan-associated billing rows",
+    "authentication_middleware": [
+      "authCheck",
+      "adminGratisCheck"
+    ],
+    "trusted_identity_source": "None cryptographically verified in shown legacy chain; authCheck decodes headers.authtoken",
+    "authorization_checks": "adminGratisCheck: current primary-store row role admin/moderator/cashier; signature absent, not owner-only",
+    "tenant_scoping_and_risk": "Weak guard; body-selected stores/packages; no independent ownership proof in shown function",
+    "required_remediation": "Verified actor and allowed target scopes; explicit field allowlist; billing plan distinct from scanner reseller namespace",
+    "evidence_class": "Source-confirmed behavior; deployment reachability/exploit not tested"
+  },
+  {
+    "id": "W23",
+    "http_method": "PUT",
+    "router_relative_path": "/gratis/update-billing",
+    "router_file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/routes/billing.js",
+    "controller": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/billing.js",
+    "function": "updateBilling",
+    "controller_line": 167,
+    "writes": "Updates plan/status/billing fields",
+    "authentication_middleware": [
+      "authCheck",
+      "adminGratisCheck"
+    ],
+    "trusted_identity_source": "None cryptographically verified in shown legacy chain; authCheck decodes headers.authtoken",
+    "authorization_checks": "adminGratisCheck: current primary-store row role admin/moderator/cashier; signature absent, not owner-only",
+    "tenant_scoping_and_risk": "Weak guard; header-scoped lookup and broad update; Paid preserved but no independent entitlement authority",
+    "required_remediation": "Verified tenant billing writer and protected payment status transition; explicit trusted entitlement source if required",
+    "evidence_class": "Source-confirmed behavior; deployment reachability/exploit not tested"
+  },
+  {
+    "id": "W24",
+    "http_method": "GET",
+    "router_relative_path": "/gratis/get-hosting-super-billing",
+    "router_file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/routes/billing.js",
+    "controller": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/superBilling.js",
+    "function": "getHostingSuperBill",
+    "controller_line": 38,
+    "writes": "Creates super-database billing on GET",
+    "authentication_middleware": [
+      "authCheck"
+    ],
+    "trusted_identity_source": "None cryptographically verified in shown legacy chain; authCheck decodes headers.authtoken",
+    "authorization_checks": "No verified privileged-grant middleware; function-specific checks described",
+    "tenant_scoping_and_risk": "Decode-only guard; separate DB models with names similar to Gratis models",
+    "required_remediation": "Keep separate connection and grant domain; no scanner fallback to super DB; explicit verified billing scope",
+    "evidence_class": "Source-confirmed behavior; deployment reachability/exploit not tested"
+  },
+  {
+    "id": "W25",
+    "http_method": "POST",
+    "router_relative_path": "/gratis/save-cart-order",
+    "router_file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/routes/order.js",
+    "controller": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/order.js",
+    "function": "saveCartOrder",
+    "controller_line": 1154,
+    "writes": "Creates customer identity at checkout",
+    "authentication_middleware": [
+      "authCheck"
+    ],
+    "trusted_identity_source": "None cryptographically verified in shown legacy chain; authCheck decodes headers.authtoken",
+    "authorization_checks": "No verified privileged-grant middleware; function-specific checks described",
+    "tenant_scoping_and_risk": "Sets role customer explicitly; selected-store/scoped input; weak auth remains broader concern",
+    "required_remediation": "Keep hardcoded least-privilege customer role; no staff enrollment or automatic scanner policy migration",
+    "evidence_class": "Source-confirmed behavior; deployment reachability/exploit not tested"
+  },
+  {
+    "id": "W26",
+    "http_method": "POST",
+    "router_relative_path": "/gratis/save-cart-purchase",
+    "router_file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/routes/order.js",
+    "controller": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/order.js",
+    "function": "saveCartPurchase",
+    "controller_line": 1331,
+    "writes": "Creates customer identity at purchase",
+    "authentication_middleware": [
+      "authCheck",
+      "adminGratisCheck"
+    ],
+    "trusted_identity_source": "None cryptographically verified in shown legacy chain; authCheck decodes headers.authtoken",
+    "authorization_checks": "adminGratisCheck: current primary-store row role admin/moderator/cashier; signature absent, not owner-only",
+    "tenant_scoping_and_risk": "Explicit customer role; weak staff guard; not a direct arbitrary staff-role writer",
+    "required_remediation": "Same: no automatic staff promotion/grant; credential default modernization separate",
+    "evidence_class": "Source-confirmed behavior; deployment reachability/exploit not tested"
+  },
+  {
+    "id": "W27",
+    "http_method": "POST",
+    "router_relative_path": "/app/save-pos-orders",
+    "router_file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/routes/apporder.js",
+    "controller": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/app/order.js",
+    "function": "saveOrder",
+    "controller_line": 237,
+    "writes": "Creates customer and updates store counters",
+    "authentication_middleware": [
+      "authCheck",
+      "adminGratisCheck"
+    ],
+    "trusted_identity_source": "None cryptographically verified in shown legacy chain; authCheck decodes headers.authtoken",
+    "authorization_checks": "adminGratisCheck: current primary-store row role admin/moderator/cashier; signature absent, not owner-only",
+    "tenant_scoping_and_risk": "Explicit customer role, fixed order/product change fields; weak staff guard",
+    "required_remediation": "Keep non-authority fields constrained; never migrate customers into staff policy",
+    "evidence_class": "Source-confirmed behavior; deployment reachability/exploit not tested"
+  },
+  {
+    "id": "W28",
+    "http_method": "POST",
+    "router_relative_path": "/app/send-pos-orders",
+    "router_file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/routes/apporder.js",
+    "controller": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/app/order.js",
+    "function": "sendOrder",
+    "controller_line": 432,
+    "writes": "Creates customer and updates store counters",
+    "authentication_middleware": [
+      "authCheck",
+      "adminGratisCheck"
+    ],
+    "trusted_identity_source": "None cryptographically verified in shown legacy chain; authCheck decodes headers.authtoken",
+    "authorization_checks": "adminGratisCheck: current primary-store row role admin/moderator/cashier; signature absent, not owner-only",
+    "tenant_scoping_and_risk": "Explicit customer role; weak staff guard",
+    "required_remediation": "Same least-privilege separation; not trusted authority enrollment",
+    "evidence_class": "Source-confirmed behavior; deployment reachability/exploit not tested"
+  },
+  {
+    "id": "W29",
+    "http_method": "GET",
+    "router_relative_path": "/gratis/user-to-affiliate/:email",
+    "router_file": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/routes/withdraw.js",
+    "controller": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/withdraw.js",
+    "function": "getUserToAffiliate",
+    "controller_line": 38,
+    "writes": "Referral association refid on GET",
+    "authentication_middleware": [
+      "authCheck",
+      "adminGratisCheck"
+    ],
+    "trusted_identity_source": "None cryptographically verified in shown legacy chain; authCheck decodes headers.authtoken",
+    "authorization_checks": "adminGratisCheck: current primary-store row role admin/moderator/cashier; signature absent, not owner-only",
+    "tenant_scoping_and_risk": "Weak guard, global email/referral lookup; refid is not Stage7 reseller/store ownership",
+    "required_remediation": "Scope affiliate operation and separate from tenant authority; no grant derived from refid",
+    "evidence_class": "Source-confirmed behavior; deployment reachability/exploit not tested"
+  }
+]

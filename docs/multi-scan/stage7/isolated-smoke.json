@@ -1,0 +1,400 @@
+{
+  "kind": "Isolated Stage 7 integration smoke; mock DB and transport, real JWT/HMAC/validators, serialized frozen Stage 6 fixture; no native inference/network/production access",
+  "reviewed": {
+    "schemaVersion": 1,
+    "scanId": "90d5caad-506e-4033-b5a7-41ca9e88e9ac",
+    "requestId": "41e0f90d-1ca0-43d8-821a-b72836070190",
+    "tenant": {
+      "storeId": "111111111111111111111111",
+      "packageId": "222222222222222222222222"
+    },
+    "detections": [
+      {
+        "detectionId": "det_1",
+        "box": [
+          0,
+          0,
+          640,
+          300
+        ],
+        "status": "review_required",
+        "candidates": [
+          {
+            "productId": "000000000000000000000001",
+            "title": "Milo 20g",
+            "brand": "Milo",
+            "variant": "Chocolate 20g",
+            "currentPrice": {
+              "retail": 12.75,
+              "wholesaleEligible": true,
+              "wholesaleTiers": [
+                {
+                  "minimumQuantity": 2,
+                  "unitPrice": 5
+                }
+              ],
+              "suggestedUnitPrice": 12.75,
+              "legacyWholesale": {
+                "wprice": 4,
+                "wcount": 5,
+                "applied": false
+              },
+              "source": "current_main_catalog",
+              "requiresFinalReprice": true
+            },
+            "availability": {
+              "activate": true,
+              "quantity": 5,
+              "segregate": false,
+              "waitingStockPresent": false,
+              "availableForSuggestedQuantity": true,
+              "stockReserved": false,
+              "potentialAggregateQuantity": 1
+            },
+            "suggestedQuantity": 1,
+            "unitOfMeasure": "sachet",
+            "reviewRequired": true,
+            "confirmed": false,
+            "eligibleForReview": true,
+            "reviewReasons": [
+              "CASHIER_REVIEW_REQUIRED"
+            ],
+            "recognition": {
+              "rank": 1,
+              "rankingScore": 0.93207754,
+              "scores": {
+                "siglip2": {
+                  "similarity": 0.9999997019767761,
+                  "rank": 1,
+                  "referenceId": "front"
+                },
+                "dinov2": {
+                  "similarity": 1,
+                  "rank": 1,
+                  "referenceId": "front"
+                }
+              },
+              "conflicts": [],
+              "reviewReasons": [],
+              "scoreType": "uncalibrated_suggestion"
+            }
+          },
+          {
+            "productId": "000000000000000000000002",
+            "title": "Milo 30g",
+            "brand": "Milo",
+            "variant": "Chocolate 30g",
+            "currentPrice": {
+              "retail": 7.5,
+              "wholesaleEligible": true,
+              "wholesaleTiers": [
+                {
+                  "minimumQuantity": 2,
+                  "unitPrice": 5
+                }
+              ],
+              "suggestedUnitPrice": 7.5,
+              "legacyWholesale": {
+                "wprice": 4,
+                "wcount": 5,
+                "applied": false
+              },
+              "source": "current_main_catalog",
+              "requiresFinalReprice": true
+            },
+            "availability": {
+              "activate": true,
+              "quantity": 10,
+              "segregate": false,
+              "waitingStockPresent": false,
+              "availableForSuggestedQuantity": true,
+              "stockReserved": false,
+              "potentialAggregateQuantity": 1
+            },
+            "suggestedQuantity": 1,
+            "unitOfMeasure": "sachet",
+            "reviewRequired": true,
+            "confirmed": false,
+            "eligibleForReview": true,
+            "reviewReasons": [
+              "SIZE_CONFLICT",
+              "CASHIER_REVIEW_REQUIRED"
+            ],
+            "recognition": {
+              "rank": 2,
+              "rankingScore": 0.21108279,
+              "scores": {
+                "siglip2": {
+                  "similarity": 0.977993369102478,
+                  "rank": 2,
+                  "referenceId": "front"
+                },
+                "dinov2": {
+                  "similarity": 1,
+                  "rank": 2,
+                  "referenceId": "front"
+                }
+              },
+              "conflicts": [
+                "SIZE_CONFLICT"
+              ],
+              "reviewReasons": [
+                "SIZE_CONFLICT"
+              ],
+              "scoreType": "uncalibrated_suggestion"
+            }
+          }
+        ],
+        "suggestedProductId": null,
+        "selectionRequired": true,
+        "leadingSuggestionUnavailable": false,
+        "alternatives": [
+          "000000000000000000000001",
+          "000000000000000000000002"
+        ],
+        "rejected": [],
+        "ocr": {
+          "rawText": "MILO\nCHOCOLATE\n20g",
+          "normalizedText": "milo chocolate 20g",
+          "regions": [
+            {
+              "rawText": "MILO",
+              "recognitionScore": 0.9969101697206497,
+              "detectionScore": 0.9371654276144804,
+              "box": [
+                [
+                  27.542092871311993,
+                  33.42980363451209
+                ],
+                [
+                  197.93073968664774,
+                  34.604357725610456
+                ],
+                [
+                  197.46273899331464,
+                  94.27444612558409
+                ],
+                [
+                  27.074092177978866,
+                  93.09989203448575
+                ]
+              ],
+              "acceptedForEvidence": true
+            },
+            {
+              "rawText": "CHOCOLATE",
+              "recognitionScore": 0.999577694469028,
+              "detectionScore": 0.9036816437883111,
+              "box": [
+                [
+                  29.51129518072289,
+                  127.27621423192771
+                ],
+                [
+                  296.73870481927713,
+                  127.27621423192771
+                ],
+                [
+                  296.73870481927713,
+                  173.3097232680723
+                ],
+                [
+                  29.51129518072289,
+                  173.3097232680723
+                ]
+              ],
+              "acceptedForEvidence": true
+            },
+            {
+              "rawText": "20g",
+              "recognitionScore": 0.9963198701540629,
+              "detectionScore": 0.8966131426737745,
+              "box": [
+                [
+                  26.960128677757893,
+                  199.14792822303912
+                ],
+                [
+                  148.29056913549405,
+                  206.48646292814416
+                ],
+                [
+                  143.3241977471126,
+                  278.65404716556196
+                ],
+                [
+                  21.993757289376454,
+                  271.3155124604569
+                ]
+              ],
+              "acceptedForEvidence": true
+            }
+          ]
+        },
+        "models": {
+          "siglip2": {
+            "modelId": "google/siglip2-base-patch16-224",
+            "modelRevision": "ba1f3b0843f24bc5417d38e19c37b287d719b2f4",
+            "dimension": 768,
+            "modelSha256": "c0573e3f4140c3a7c4e9cc5912bd6b26a033b46a6a8e8af26cbea262b163bcad",
+            "preprocessorSha256": "9b36b57ebaf20f09bf4c22100ccc21877ea6bfe5aead0c00c59f8af8ccefacfc",
+            "preprocessingVersion": "siglip2-rgb224-pillow-bilinear-22bit-v1"
+          },
+          "dinov2": {
+            "modelId": "facebook/dinov2-small",
+            "modelRevision": "c2bb04a51fab207c420665f1946016107bffc701",
+            "dimension": 384,
+            "modelSha256": "83141175ec78b4ff9a2bb58a4c7c264ba0054d1c2e122e5a8114b79a8d4179ea",
+            "preprocessorSha256": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828",
+            "preprocessingVersion": "dinov2-rgb-short256-pillow-bicubic-crop224-imagenet-cls0-v1"
+          },
+          "ocr": {
+            "id": "PaddlePaddle/PP-OCRv5-mobile-onnx",
+            "detRevision": "e6f4fa85f00e168c862bc462aebca69eef9b3d3d",
+            "recRevision": "ed152b8b495f84de93cda5709d768548a9127622",
+            "detSha256": "a431985659dc921974177a95adcfbb90fd9e51989a5e04d70d0b75f597b6e61d",
+            "recSha256": "da72dc72ca4dc220df0dfde68c1dedc31c58d3e76a25871122e5056227d50092",
+            "dictionarySha256": "14ccb8e120e701464bd3084acf3b398ffee767e515477ad27d3c80fd5996c180",
+            "configSha256": "05d0f85e52803797577bc50d9321a040c74276dbd63a8bad7940c6fe0cb2b75c",
+            "preprocessingVersion": "ppocrv5-bgr-long960-stride128-linear-rec48-ctc-db-quad-v1",
+            "postprocessingVersion": "component8-hull-minrect-boxmean-unclip-miter-1.5-v1"
+          }
+        },
+        "indexGenerations": {
+          "siglip2": "g-bd36ad79-cc93-400f-9fcb-c140ca0a1827",
+          "dinov2": "g-4a6ac111-fa4a-4353-b0bd-d02655606a10"
+        },
+        "policy": {
+          "version": "stage6-rank-fusion-text-v1",
+          "sha256": "20feeab68402c16b085bd3159c3e945e734cc4e3de6f0d86be3961a70b94bf15"
+        },
+        "inferenceCatalogRevision": "stage6-generated-labels-v1",
+        "reviewRequired": true,
+        "confirmed": false,
+        "reviewReasons": [
+          "BRAND_CONFLICT",
+          "CASHIER_REVIEW_REQUIRED",
+          "EXPLICIT_SKU_SELECTION_REQUIRED",
+          "MISSING_DINOV2_REFERENCE",
+          "MISSING_SIGLIP2_REFERENCE",
+          "NO_STOCK_RESERVATION",
+          "OCR_NAME_DISAGREEMENT",
+          "SIZE_CONFLICT",
+          "VARIANT_CONFLICT"
+        ]
+      }
+    ],
+    "resolutionFingerprint": "e741ed2f3e42f0915abeceeef4bb2f4cf3bf295407739b237d80cc7d2f87ff39",
+    "priceAuthority": "current_main_catalog",
+    "reviewRequired": true,
+    "confirmed": false,
+    "cartMutation": false,
+    "orderPersisted": false,
+    "reviewReasons": []
+  },
+  "rebuild": {
+    "state": "prepared_only",
+    "snapshot": {
+      "snapshotId": "d3b7d703-a898-47a2-83ac-730e1927181d",
+      "tenant": {
+        "storeId": "111111111111111111111111",
+        "packageId": "222222222222222222222222"
+      },
+      "revision": "fc48a331bb05a2fc120f0366500ae385453b0b2e03badc57362791eba9b894e4",
+      "createdAt": 1792664761,
+      "expiresAt": 1792668361,
+      "productCount": 2,
+      "referenceCount": 2,
+      "immutable": true
+    },
+    "executionRequested": false,
+    "liveIndexRebuilt": false
+  },
+  "indexingSnapshot": {
+    "tenant": {
+      "storeId": "111111111111111111111111",
+      "packageId": "222222222222222222222222"
+    },
+    "revision": "fc48a331bb05a2fc120f0366500ae385453b0b2e03badc57362791eba9b894e4",
+    "products": [
+      {
+        "productId": "000000000000000000000001",
+        "packageId": "222222222222222222222222",
+        "storeId": "111111111111111111111111",
+        "references": [
+          {
+            "referenceId": "ref_da266942db0eb1f23efb50f3",
+            "imageKey": "da266942db0eb1f23efb50f3021bf1217385832de36e3927ea6c6c4cd3319ba4"
+          }
+        ],
+        "status": {
+          "activate": true,
+          "aiIndex": false,
+          "referenceCount": 1
+        }
+      },
+      {
+        "productId": "000000000000000000000002",
+        "packageId": "222222222222222222222222",
+        "storeId": "111111111111111111111111",
+        "references": [
+          {
+            "referenceId": "ref_36475e442eaf722694aaee18",
+            "imageKey": "36475e442eaf722694aaee184b1426733ad2d7ead11a24fd2000a32487d090ac"
+          }
+        ],
+        "status": {
+          "activate": true,
+          "aiIndex": false,
+          "referenceCount": 1
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "tenant": {
+      "storeId": "111111111111111111111111",
+      "packageId": "222222222222222222222222"
+    },
+    "revision": "fc48a331bb05a2fc120f0366500ae385453b0b2e03badc57362791eba9b894e4",
+    "products": [
+      {
+        "_id": "000000000000000000000001",
+        "estoreid": "111111111111111111111111",
+        "packageId": "222222222222222222222222",
+        "title": "Milo 20g",
+        "brand": {
+          "_id": "888888888888888888888888",
+          "name": "Milo"
+        },
+        "variantName": "Chocolate 20g",
+        "description": "Fixture",
+        "packaging": {
+          "weight": 20
+        },
+        "unitOfMeasure": "sachet"
+      },
+      {
+        "_id": "000000000000000000000002",
+        "estoreid": "111111111111111111111111",
+        "packageId": "222222222222222222222222",
+        "title": "Milo 30g",
+        "brand": {
+          "_id": "888888888888888888888888",
+          "name": "Milo"
+        },
+        "variantName": "Chocolate 30g",
+        "description": "Fixture",
+        "packaging": {
+          "weight": 20
+        },
+        "unitOfMeasure": "sachet"
+      }
+    ]
+  },
+  "serviceCalls": 1,
+  "elapsedMs": 14.612416001036763,
+  "cartMutation": false,
+  "orderPersisted": false,
+  "featureActivated": false
+}

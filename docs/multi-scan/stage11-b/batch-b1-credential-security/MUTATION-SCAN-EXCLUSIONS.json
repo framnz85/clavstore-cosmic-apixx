@@ -1,0 +1,56 @@
+[
+  {
+    "project": "main",
+    "file": "controllers/app/order.js",
+    "line": 415,
+    "function": "submitEditOrder",
+    "expression": "Estore.findOneAndUpdate(",
+    "inventory_ids": [],
+    "reviewed_exclusion": "Explicit non-authority orderChange/jobsChange timestamp update; no password/login/role/membership/reseller field."
+  },
+  {
+    "project": "main",
+    "file": "controllers/app/order.js",
+    "line": 591,
+    "function": "updateOrder",
+    "expression": "Estore.findOneAndUpdate(",
+    "inventory_ids": [],
+    "reviewed_exclusion": "Explicit non-authority orderChange/jobsChange timestamp update; no password/login/role/membership/reseller field."
+  },
+  {
+    "project": "main",
+    "file": "controllers/app/order.js",
+    "line": 619,
+    "function": "deleteOrder",
+    "expression": "Estore.findOneAndUpdate(",
+    "inventory_ids": [],
+    "reviewed_exclusion": "Explicit non-authority orderChange/jobsChange timestamp update; no password/login/role/membership/reseller field."
+  },
+  {
+    "project": "main",
+    "file": "controllers/joborder.js",
+    "line": 216,
+    "function": "createJobOrder",
+    "expression": "Estore.findByIdAndUpdate(",
+    "inventory_ids": [],
+    "reviewed_exclusion": "Explicit non-authority orderChange/jobsChange timestamp update; no password/login/role/membership/reseller field."
+  },
+  {
+    "project": "main",
+    "file": "services/multi-scan/stage11/session-service.js",
+    "line": 29,
+    "function": "(helper/module)",
+    "expression": "jwt.sign(",
+    "inventory_ids": [],
+    "reviewed_exclusion": "Scanner session credential issuance: separately gated/disabled, fresh-password proof and verified signed scope; no credential mutation; trusted legacy grant integrity still unresolved."
+  },
+  {
+    "project": "main",
+    "file": "services/multi-scan/stage9/fixture.js",
+    "line": 23,
+    "function": "(helper/module)",
+    "expression": "jwt.sign(",
+    "inventory_ids": [],
+    "reviewed_exclusion": "Synthetic fixture credential generation, not mounted user mutation or production issuer."
+  }
+]

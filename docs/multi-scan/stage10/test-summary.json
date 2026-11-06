@@ -1,0 +1,21 @@
+{
+  "stage10": 39,
+  "stages2-9": {
+    "counts": {
+      "stage9-pipeline": 24,
+      "stage9-evaluation": 19,
+      "stage7-security-catalog": 24,
+      "stage7-repository": 8,
+      "stage7-service": 30,
+      "frontend-stages8-9": 38,
+      "stages2-6": 246
+    },
+    "total": 389,
+    "failures": 0
+  },
+  "total": 428,
+  "failures": 0,
+  "nativeRegressionTestsIncluded": 19,
+  "noLivePersistenceOrDatabase": true,
+  "realGroceryAccuracyMeasured": false
+}

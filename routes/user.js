@@ -48,13 +48,8 @@ router.put("/gratis/user-update", authCheck, updateUser);
 router.put("/gratis/update-customer/:userid", authCheck, updateCustomer);
 router.put("/gratis/user-verify", authCheck, verifyUserEmail);
 router.put("/gratis/change-password", authCheck, changePassword);
-router.put(
-  "/gratis/reset-password/:userid",
-  authCheck,
-  adminGratisCheck,
-  resetPassword,
-);
-router.put("/gratis/forgot-password", forgotPassword);
+router.put("/gratis/reset-password/:userid", (_req, res) => res.status(503).json({ err: "Password recovery is temporarily unavailable." }));
+router.put("/gratis/forgot-password", (_req, res) => res.status(503).json({ err: "Password recovery is temporarily unavailable." }));
 router.put("/gratis/delete-account-request", deleteAccountRequest);
 router.put("/gratis/import-users", authCheck, adminGratisCheck, importUsers);
 router.delete(

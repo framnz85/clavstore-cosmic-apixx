@@ -1,0 +1,170 @@
+{
+  "security": {
+    "tests": 28,
+    "pass": 28,
+    "fail": 0,
+    "skipped": 0,
+    "required_cases_covered": 24
+  },
+  "historical": {
+    "tests": 428,
+    "pass": 427,
+    "fail": 1,
+    "skipped": 0,
+    "cancelled": 0
+  },
+  "historical_details": [
+    {
+      "file": "docs/multi-scan/stage11-b/batch-a-implementation/historical-regressions/stage10.tap",
+      "tests": 39,
+      "pass": 39,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    {
+      "file": "docs/multi-scan/stage11-b/batch-a-implementation/historical-regressions/stages2-9/frontend-stages8-9.log",
+      "tests": 38,
+      "pass": 38,
+      "fail": 0,
+      "skipped": 0
+    },
+    {
+      "file": "docs/multi-scan/stage11-b/batch-a-implementation/historical-regressions/stages2-9/stage7-repository.log",
+      "tests": 8,
+      "pass": 8,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    {
+      "file": "docs/multi-scan/stage11-b/batch-a-implementation/historical-regressions/stages2-9/stage7-security-catalog.log",
+      "tests": 24,
+      "pass": 24,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    {
+      "file": "docs/multi-scan/stage11-b/batch-a-implementation/historical-regressions/stages2-9/stage7-service.log",
+      "tests": 30,
+      "pass": 30,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    {
+      "file": "docs/multi-scan/stage11-b/batch-a-implementation/historical-regressions/stages2-9/stage9-evaluation.log",
+      "tests": 19,
+      "pass": 19,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    {
+      "file": "docs/multi-scan/stage11-b/batch-a-implementation/historical-regressions/stages2-9/stage9-pipeline.log",
+      "tests": 24,
+      "pass": 24,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    {
+      "file": "docs/multi-scan/stage11-b/batch-a-implementation/historical-regressions/stages2-9/stages2-6/stage2.tap",
+      "tests": 31,
+      "pass": 30,
+      "fail": 1,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    {
+      "file": "docs/multi-scan/stage11-b/batch-a-implementation/historical-remaining/stage3.tap",
+      "tests": 33,
+      "pass": 33,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    {
+      "file": "docs/multi-scan/stage11-b/batch-a-implementation/historical-remaining/stage4.tap",
+      "tests": 39,
+      "pass": 39,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    {
+      "file": "docs/multi-scan/stage11-b/batch-a-implementation/historical-remaining/stage5-actual.tap",
+      "tests": 4,
+      "pass": 4,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    {
+      "file": "docs/multi-scan/stage11-b/batch-a-implementation/historical-remaining/stage5-combined.tap",
+      "tests": 11,
+      "pass": 11,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    {
+      "file": "docs/multi-scan/stage11-b/batch-a-implementation/historical-remaining/stage5-unit.tap",
+      "tests": 41,
+      "pass": 41,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    {
+      "file": "docs/multi-scan/stage11-b/batch-a-implementation/historical-remaining/stage6-actual.tap",
+      "tests": 15,
+      "pass": 15,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    {
+      "file": "docs/multi-scan/stage11-b/batch-a-implementation/historical-remaining/stage6-ocr.tap",
+      "tests": 24,
+      "pass": 24,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    {
+      "file": "docs/multi-scan/stage11-b/batch-a-implementation/historical-remaining/stage6-pipeline.tap",
+      "tests": 10,
+      "pass": 10,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    {
+      "file": "docs/multi-scan/stage11-b/batch-a-implementation/historical-remaining/stage6-reranker.tap",
+      "tests": 38,
+      "pass": 38,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    }
+  ],
+  "historical_failure": {
+    "file": "tests/multi-scan/stage2.test.js:206",
+    "reason": "Exact inventory expects five old route paths; approved /session creates sixth route. Assertion unchanged; all other Stage2 tests pass."
+  },
+  "initial_launcher_failure": "Node subprocess capture EPERM, before any tests executed. Preserved SECURITY-FIRST.tap; replaced only new test launcher with Python child-process fixture runner.",
+  "syntax_checks": {
+    "approved_modules": 5,
+    "router": 1,
+    "new_js_test": 1,
+    "new_python_runner_ast": 1
+  },
+  "not_executed": [
+    "Production server/DB/Redis/network/deployment",
+    "Live ingress/global parser/logging and multi-worker validation",
+    "Actual browser/POS hardware validation"
+  ],
+  "fixture_configuration": "Temporary synthetic key and flag settings supplied only to isolated child process environment; no application env/configuration file changed and no production key provisioned."
+}

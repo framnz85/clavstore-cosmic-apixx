@@ -1,0 +1,9 @@
+{
+  "syntaxOnlyModules": 5,
+  "syntaxOnlyRouter": true,
+  "inMemoryDiffContextVerified": true,
+  "hunks": 2,
+  "sourceExecution": false,
+  "patchApplied": false,
+  "proposedTargetSHA256": "469c88c14c7472b59aa145e74c785d8ec85adbd1540a8be3fcffd0f98cd99836"
+}

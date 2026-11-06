@@ -1,0 +1,81 @@
+{
+  "applied": false,
+  "approvalRequired": true,
+  "files": [
+    {
+      "path": "/mnt/g/clavstore/clavstore-ui/clavstore-reseller-original/src/App.js",
+      "sha256": "e96b1fccd47cd6492c626c49a95c8e0a352991187328ae2cac25f48847597b19",
+      "proposedPurpose": "separate disabled import/route"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-ui/clavstore-reseller-original/src/components/multiScan/MultiScanPosPanel.jsx",
+      "sha256": "791fa56e7619a4391c17b456f2b60ef0781040db9654aa8067a924fc2d74fce2",
+      "proposedPurpose": "dedicated scanner credential wrapper alternative"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-ui/clavstore-reseller-original/src/components/multiScan/model.js",
+      "sha256": "f8f7ed44794013830dc223b38a128590372ea5b30e475cd3315b4e04b715ead2",
+      "proposedPurpose": "preserve global warnings, defense in depth"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-ui/clavstore-reseller-original/src/components/multiScan/MultiProductCameraScanner.jsx",
+      "sha256": "c91afce869e0bd91d61e1877c4e0ed049bb11dbc59904ef1c663edd233679a99",
+      "proposedPurpose": "show incomplete/global warning UI"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-ui/clavstore-reseller-original/src/components/multiScan/useMultiScan.js",
+      "sha256": "9f96b4a9cd475870bdec5cfcf9903201c5adff877fac87e863fe64bac5d293ae",
+      "proposedPurpose": "block incomplete review if approved"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-ui/clavstore-reseller-original/src/functions/multi-scan.js",
+      "sha256": "66d616dace0582812704d1309a31a7e03e4746c60407c171ca34a55fc6a04046",
+      "proposedPurpose": "explicit incomplete-scan error mapping"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/routes/multi-scan.js",
+      "sha256": "f4948acc53c4e6d6b2029e8896bd8ef21b5e33516a47c31bff44ab7736440c08",
+      "proposedPurpose": "explicit authenticated scan/search/review/credential registration"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/multi-scan.js",
+      "sha256": "e630cd4c7ceb80bd861b424cd2fdb2af22175b16b8b52d893b8183bfd449f457",
+      "proposedPurpose": "rich handler alternative; new controller import may avoid this edit"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-ai-image-api/server.js",
+      "sha256": "5065b86ac77687fd388f3040b06c6503ab369392cdacf860bedad24af6e09c02",
+      "proposedPurpose": "early exact-path gated private receiver/parser"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/auth.js",
+      "sha256": "d01a8be6f5c7095b64076d5582bc0ec7668029ee080a095c179aee32c9eaaeda",
+      "proposedPurpose": "common-token alternative only"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/user.js",
+      "sha256": "2a09aff9e6dc78e5d5365e71ce9f973865d0cb17e3bf6202027a2660f6b6bcb6",
+      "proposedPurpose": "common-token alternative only"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/app/user.js",
+      "sha256": "e0f084616a0fcaf5017ce73d180819624cf495afaa4bcbd54b386e79d642ebf9",
+      "proposedPurpose": "common-token alternative only"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/controllers/order.js",
+      "sha256": "44591ff2e486deebfecbd853d7a57280b7548a27b505804cf187da8590a15008",
+      "proposedPurpose": "purpose isolation review; do not blanket-upgrade"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-ai-image-api/services/multi-scan/stage6/pipeline.js",
+      "sha256": "4f15bd863d2c6fe7185d8159c0988ecb07ab4af46e2ba750cadb1d6b6ad6e809",
+      "proposedPurpose": "future >10 only"
+    },
+    {
+      "path": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/services/multi-scan/stage7/validation.js",
+      "sha256": "70b8ba54faf6769e8861389fbc812f46fe831b29f2e5e8f088d4d1ad610d370e",
+      "proposedPurpose": "future >10 only"
+    }
+  ]
+}

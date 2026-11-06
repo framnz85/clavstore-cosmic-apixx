@@ -1,0 +1,170 @@
+{
+  "overall": "BLOCKED",
+  "productionReady": false,
+  "featureEnabled": false,
+  "cartMutationAllowed": false,
+  "components": [
+    {
+      "component": "JWT/session compatibility",
+      "status": "BLOCKED",
+      "evidence": "AUTHENTICATION.md; offline no-exp/algorithm/audience tests",
+      "remainingBlocker": "Legacy no-exp tokens; decode-only legacy middleware; order-derived tokens",
+      "requiredChange": "Approve dedicated credential-validated scanner token issuer/key/audience and frontend wrapper; keep Stage 7 strict",
+      "riskLevel": "critical",
+      "approvalNeeded": "Credential flow and explicit route/wrapper edits"
+    },
+    {
+      "component": "Store/reseller isolation",
+      "status": "READY FOR OFFLINE TESTING",
+      "evidence": "Stage 7 current membership/grants and rerun tenant tests",
+      "remainingBlocker": "Actual deployment ownership mappings/session topology not verified",
+      "requiredChange": "Validate real scoped fixtures in authorized staging; no role-claim bypass",
+      "riskLevel": "high",
+      "approvalNeeded": "Staging dataset and connection authorization"
+    },
+    {
+      "component": "Browser/main scan endpoints",
+      "status": "BLOCKED",
+      "evidence": "INTEGRATION-PATCHES.md; Stage 2 strips rich DTO",
+      "remainingBlocker": "Unregistered Stage 7 rich handlers and search/review",
+      "requiredChange": "Approve main route/controller wiring; complete-review guard; server-owned scan binding",
+      "riskLevel": "high",
+      "approvalNeeded": "Protected route/controller specification"
+    },
+    {
+      "component": "Upload bridge",
+      "status": "READY FOR OFFLINE TESTING",
+      "evidence": "New encodeOrientedRgb tests compose frozen Stage 2/7",
+      "remainingBlocker": "Not wired or tested through HTTP; PNG expansion cap",
+      "requiredChange": "Wire approved new helper; verify real multipart/orientation/disconnects",
+      "riskLevel": "medium",
+      "approvalNeeded": "Controller/route composition; no upload.js edit required"
+    },
+    {
+      "component": "Private inference receiver",
+      "status": "BLOCKED",
+      "evidence": "Stage 7 HMAC tests; parser source inspection",
+      "remainingBlocker": "2 MiB global and 32 KiB prefix parsers; receiver unmounted",
+      "requiredChange": "Approve early gated bounded mount and real private TLS/disconnect checks",
+      "riskLevel": "high",
+      "approvalNeeded": "AI server.js registration and staging network scope"
+    },
+    {
+      "component": "Native models/retrieval/OCR/reranking",
+      "status": "READY FOR OFFLINE TESTING",
+      "evidence": "Stage 3\u20139 pinned native evidence; 19 native regression tests rerun",
+      "remainingBlocker": "No real grocery accuracy/production index reference delivery",
+      "requiredChange": "Pinned production worker composition; authorized immutable reference provider",
+      "riskLevel": "high",
+      "approvalNeeded": "Trusted startup modules/config and staging tests"
+    },
+    {
+      "component": "Frontend disabled mounting",
+      "status": "BLOCKED",
+      "evidence": "Stage 8/9/10 regression UI evidence; proposed App.js diff",
+      "remainingBlocker": "No route registered; dedicated credentials absent",
+      "requiredChange": "Approve separate disabled route; explicit credential boundary later",
+      "riskLevel": "medium",
+      "approvalNeeded": "App.js patch, optional approved new wrapper"
+    },
+    {
+      "component": "Actual camera/browser UX",
+      "status": "NOT VERIFIED",
+      "evidence": "Stage 8 mocked lifecycle/EXIF/overlay tests only",
+      "remainingBlocker": "Hardware/device/EXIF/permission/cancel/accessibility not exercised",
+      "requiredChange": "Authorized browser matrix with real photographs and safe test accounts",
+      "riskLevel": "medium",
+      "approvalNeeded": "Browser/staging validation scope"
+    },
+    {
+      "component": "Ten-object supported offline contract",
+      "status": "READY FOR OFFLINE TESTING",
+      "evidence": "Stage 6 maxCrops and Stage 7 <=10 validation",
+      "remainingBlocker": "Global truncation reason lost by frozen UI unless server guard wired",
+      "requiredChange": "Reject CROP_LIMIT_APPLIED via new guard; add UI warning defense later",
+      "riskLevel": "high",
+      "approvalNeeded": "Guard composition and any frontend warning edits"
+    },
+    {
+      "component": "Twenty-plus objects",
+      "status": "BLOCKED",
+      "evidence": "RESOURCES-ACCURACY-CART.md",
+      "remainingBlocker": "Hard cap and candidate/response/CPU budgets",
+      "requiredChange": "Coordinated cap/budget/UX change and actual new benchmarks",
+      "riskLevel": "high",
+      "approvalNeeded": "Separate frozen pipeline/validator limit-change approval"
+    },
+    {
+      "component": "Real grocery recognition",
+      "status": "BLOCKED",
+      "evidence": "Stage 9 dataset availability: zero qualifying scenes",
+      "remainingBlocker": "No human-reviewed real SKU/box/quantity labels",
+      "requiredChange": "Collect rights-cleared held-out data; approve and evaluate release gates",
+      "riskLevel": "critical",
+      "approvalNeeded": "Dataset rights/collection and metric acceptance approval"
+    },
+    {
+      "component": "Review-only cart adapter",
+      "status": "READY FOR OFFLINE TESTING",
+      "evidence": "Frozen Stage 8/9 action/fresh-review/stock/slug tests",
+      "remainingBlocker": "Live catalog/cart authority not integrated; no reservation",
+      "requiredChange": "Keep commit disabled; bind fresh review to real authorized cart",
+      "riskLevel": "high",
+      "approvalNeeded": "Search/review controller and staging cart fixture scope"
+    },
+    {
+      "component": "Live cart mutation",
+      "status": "BLOCKED",
+      "evidence": "Stage 8 commit always rejects; no persistence test calls",
+      "remainingBlocker": "No durable idempotency/atomic stock/validated credential persistence flow",
+      "requiredChange": "Separate optional Phase F security/transaction/reconciliation design",
+      "riskLevel": "critical",
+      "approvalNeeded": "Explicit mutation authorization; not part of current rollout"
+    },
+    {
+      "component": "Local performance evidence",
+      "status": "READY FOR OFFLINE TESTING",
+      "evidence": "performance-evidence.json; Stage 9 synthetic timings",
+      "remainingBlocker": "Small synthetic catalog; two warm samples; no natural grocery detections",
+      "requiredChange": "Use only for initial sizing hypotheses, then representative load tests",
+      "riskLevel": "medium",
+      "approvalNeeded": "None for reading existing local artifacts"
+    },
+    {
+      "component": "VPS/deployment capacity",
+      "status": "NOT VERIFIED",
+      "evidence": "No InterServer access or measurements",
+      "remainingBlocker": "Target CPU shares, RAM/OOM, disk, startup and p95/p99 unknown",
+      "requiredChange": "Separately authorize staging host; one worker; verify budgets under sustained load",
+      "riskLevel": "high",
+      "approvalNeeded": "Explicit host access/provisioning/deployment authorization"
+    },
+    {
+      "component": "Logging/admission/privacy helpers",
+      "status": "READY FOR OFFLINE TESTING",
+      "evidence": "New offline sanitization, rate/capacity, correlation tests",
+      "remainingBlocker": "No durable/shared limiter/audit/retention/monitoring integration",
+      "requiredChange": "Approve safe sinks, edge/shared admission, audit and privacy policy",
+      "riskLevel": "high",
+      "approvalNeeded": "Telemetry/retention/production startup scope"
+    },
+    {
+      "component": "Deployment rollback",
+      "status": "NOT VERIFIED",
+      "evidence": "Offline disable/drain tests; SECURITY-OBSERVABILITY.md",
+      "remainingBlocker": "No real deployment or rollback performed",
+      "requiredChange": "Signed artifacts, gates, drain/watchdog and staging restore exercise",
+      "riskLevel": "high",
+      "approvalNeeded": "Explicit authorized staging/rollback exercise"
+    },
+    {
+      "component": "Overall production readiness",
+      "status": "BLOCKED",
+      "evidence": "All preceding evidence",
+      "remainingBlocker": "Accuracy, endpoints, auth and deployment capacity remain open",
+      "requiredChange": "Complete approved phases and independent go/no-go review",
+      "riskLevel": "critical",
+      "approvalNeeded": "Explicit implementation, staging and later activation decisions"
+    }
+  ]
+}

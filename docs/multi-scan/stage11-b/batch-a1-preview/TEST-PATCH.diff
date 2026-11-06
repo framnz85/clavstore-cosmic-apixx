@@ -1,0 +1,11 @@
+--- a/tests/multi-scan/stage2.test.js
++++ b/tests/multi-scan/stage2.test.js
+@@ -203,7 +203,7 @@
+   assert.ok(fs.readdirSync(path.join(root,'routes')).includes('multi-scan.js'));
+  }
+  const mainPaths=main.stack.filter(l=>l.route).map(l=>l.route.path);
+- assert.deepEqual(mainPaths.sort(),['/ai/multi-scan/status','/ai/multi-scan/index/status','/ai/multi-scan/scan','/ai/multi-scan/confirm','/ai/multi-scan/index/rebuild'].sort());
++ assert.deepEqual(mainPaths.sort(),['/ai/multi-scan/status','/ai/multi-scan/index/status','/ai/multi-scan/scan','/ai/multi-scan/confirm','/ai/multi-scan/index/rebuild','/ai/multi-scan/session'].sort());
+  assert.ok(image.stack.filter(l=>l.route).every(l=>l.route.path.startsWith('/internal/ai/multi-scan/')));
+  const cache=Object.keys(require.cache);
+  assert.ok(!cache.some(p=>/controllers\/(ai-image|index-builder|embed_helper)\.js$/.test(p)));

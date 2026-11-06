@@ -1,0 +1,160 @@
+TAP version 13
+# Subtest: AI response validates a real frozen Stage 6 result and strips arbitrary AI price/title
+ok 1 - AI response validates a real frozen Stage 6 result and strips arbitrary AI price/title
+  ---
+  duration_ms: 3.206
+  ...
+# Subtest: foreign scope, request IDs, scan IDs and detection IDs fail closed
+ok 2 - foreign scope, request IDs, scan IDs and detection IDs fail closed
+  ---
+  duration_ms: 2.0165
+  ...
+# Subtest: duplicate detections/products and excessive candidate lists are rejected
+ok 3 - duplicate detections/products and excessive candidate lists are rejected
+  ---
+  duration_ms: 2.251301
+  ...
+# Subtest: invalid quantities and hidden candidate quantities are rejected
+ok 4 - invalid quantities and hidden candidate quantities are rejected
+  ---
+  duration_ms: 3.5437
+  ...
+# Subtest: forged confirmation, non-review status, bad model/index pins and nonfinite scores rejected
+ok 5 - forged confirmation, non-review status, bad model/index pins and nonfinite scores rejected
+  ---
+  duration_ms: 2.7197
+  ...
+# Subtest: invalid source bounds and OCR coordinates/scores are rejected
+ok 6 - invalid source bounds and OCR coordinates/scores are rejected
+  ---
+  duration_ms: 1.3744
+  ...
+# Subtest: current prices replace AI price suggestions and wholesale follows actual user permission
+ok 7 - current prices replace AI price suggestions and wholesale follows actual user permission
+  ---
+  duration_ms: 12.863001
+  ...
+# Subtest: current catalog changes after inference are reflected before review
+ok 8 - current catalog changes after inference are reflected before review
+  ---
+  duration_ms: 2.3172
+  ...
+# Subtest: deleted/inactive products are removed without silently substituting another SKU
+ok 9 - deleted/inactive products are removed without silently substituting another SKU
+  ---
+  duration_ms: 1.9434
+  ...
+# Subtest: variant alternatives stay separate and require cashier SKU selection
+ok 10 - variant alternatives stay separate and require cashier SKU selection
+  ---
+  duration_ms: 1.418901
+  ...
+# Subtest: unknown AI product suggestions never become confirmed cart lines
+ok 11 - unknown AI product suggestions never become confirmed cart lines
+  ---
+  duration_ms: 0.9161
+  ...
+# Subtest: duplicate potential SKUs across detections require aggregate stock/quantity review
+ok 12 - duplicate potential SKUs across detections require aggregate stock/quantity review
+  ---
+  duration_ms: 1.624
+  ...
+# Subtest: waiting-stock pointers are never automatically substituted or exposed
+ok 13 - waiting-stock pointers are never automatically substituted or exposed
+  ---
+  duration_ms: 1.2602
+  ...
+# Subtest: malformed stock/price and duplicate wholesale breaks block unsafe price assumptions
+ok 14 - malformed stock/price and duplicate wholesale breaks block unsafe price assumptions
+  ---
+  duration_ms: 1.913
+  ...
+# Subtest: service client signs tenant, path and exact body with a distinct secret
+ok 15 - service client signs tenant, path and exact body with a distinct secret
+  ---
+  duration_ms: 1.7829
+  ...
+# Subtest: client configuration rejects external IPs, credential URLs and insecure private HTTP
+ok 16 - client configuration rejects external IPs, credential URLs and insecure private HTTP
+  ---
+  duration_ms: 0.4763
+  ...
+# Subtest: DNS rebinding/foreign resolved address is rejected before outbound transport
+ok 17 - DNS rebinding/foreign resolved address is rejected before outbound transport
+  ---
+  duration_ms: 0.4603
+  ...
+# Subtest: only status GET retries; recognition POST never retries
+ok 18 - only status GET retries; recognition POST never retries
+  ---
+  duration_ms: 0.9978
+  ...
+# Subtest: redirects, oversized responses, invalid JSON and missing indexes become structured failures
+ok 19 - redirects, oversized responses, invalid JSON and missing indexes become structured failures
+  ---
+  duration_ms: 1.5278
+  ...
+# Subtest: timeout retains the active slot until an uncooperative transport settles
+ok 20 - timeout retains the active slot until an uncooperative transport settles
+  ---
+  duration_ms: 11.111701
+  ...
+# Subtest: pre-aborted requests perform no outbound work
+ok 21 - pre-aborted requests perform no outbound work
+  ---
+  duration_ms: 0.3209
+  ...
+# Subtest: frozen capability verifier authenticates the new isolated receiver; replay fails
+ok 22 - frozen capability verifier authenticates the new isolated receiver; replay fails
+  ---
+  duration_ms: 1.8639
+  ...
+# Subtest: unsigned and tampered service payloads never invoke inference
+ok 23 - unsigned and tampered service payloads never invoke inference
+  ---
+  duration_ms: 0.5924
+  ...
+# Subtest: complete integration verifies JWT, signs service request, validates AI and reloads prices
+ok 24 - complete integration verifies JWT, signs service request, validates AI and reloads prices
+  ---
+  duration_ms: 2.6307
+  ...
+# Subtest: rebuild prepares admin snapshot only and never calls AI rebuild/network
+ok 25 - rebuild prepares admin snapshot only and never calls AI rebuild/network
+  ---
+  duration_ms: 1.8109
+  ...
+# Subtest: authentication/database failures prevent AI requests and produce no partial cart result
+ok 26 - authentication/database failures prevent AI requests and produce no partial cart result
+  ---
+  duration_ms: 0.4088
+  ...
+# Subtest: explicit composition refuses credential reuse and performs no startup/database/network work
+ok 27 - explicit composition refuses credential reuse and performs no startup/database/network work
+  ---
+  duration_ms: 32.652902
+  ...
+# Subtest: oversized request bodies and arbitrary operation paths are rejected before transport
+ok 28 - oversized request bodies and arbitrary operation paths are rejected before transport
+  ---
+  duration_ms: 0.2832
+  ...
+# Subtest: a deleted leading suggestion is never silently replaced by a different SKU
+ok 29 - a deleted leading suggestion is never silently replaced by a different SKU
+  ---
+  duration_ms: 0.8844
+  ...
+# Subtest: backend error details and credentials are not exposed by public integration operations
+ok 30 - backend error details and credentials are not exposed by public integration operations
+  ---
+  duration_ms: 0.7513
+  ...
+1..30
+# tests 30
+# suites 0
+# pass 30
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 110.346607

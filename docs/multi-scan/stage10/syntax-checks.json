@@ -1,0 +1,14 @@
+{
+  "checked": [
+    "services/multi-scan/stage10/admission.js",
+    "services/multi-scan/stage10/observability.js",
+    "services/multi-scan/stage10/readiness.js",
+    "services/multi-scan/stage10/review-contract.js",
+    "services/multi-scan/stage10/upload-bridge.js",
+    "tests/multi-scan/stage10/readiness.test.js",
+    "scripts/multi-scan/stage10/assess.js",
+    "scripts/multi-scan/stage10/run-tests.py",
+    "scripts/multi-scan/stage10/verify-protected.py"
+  ],
+  "failures": 0
+}

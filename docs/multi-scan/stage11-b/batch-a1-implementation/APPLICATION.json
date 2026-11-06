@@ -1,0 +1,17 @@
+{
+  "exact_approved_patch_applied": true,
+  "target": "tests/multi-scan/stage2.test.js",
+  "original_sha256": "62d3bf92d27c5f8b84edf89985760f1720cc296d84154920fa74967d6eb75ec3",
+  "resulting_sha256": "a7ff4edd000f7882b9d27e4b3c7e709904a5063f0ddf7dbdadd1ff56465ebe4a",
+  "rollback_artifact": "docs/multi-scan/stage11-b/batch-a1-implementation/STAGE2-ORIGINAL.txt",
+  "syntax_passed": [
+    "tests/multi-scan/stage2.test.js",
+    "routes/multi-scan.js",
+    "tests/multi-scan/stage11/auth-session.test.js",
+    "services/multi-scan/stage11/credential-repository.js",
+    "services/multi-scan/stage11/session-config.js",
+    "services/multi-scan/stage11/session-factory.js",
+    "services/multi-scan/stage11/session-handler.js",
+    "services/multi-scan/stage11/session-service.js"
+  ]
+}

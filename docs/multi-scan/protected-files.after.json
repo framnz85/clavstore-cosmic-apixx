@@ -1,0 +1,60 @@
+{
+  "baseline": "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api/docs/multi-scan/protected-files.before.json",
+  "exclusions": [
+    "node_modules",
+    ".git",
+    ".agents",
+    ".aws",
+    ".codex"
+  ],
+  "projects": {
+    "/mnt/g/clavstore/clavstore-ui/clavstore-reseller-original": {
+      "protected_files": 415,
+      "protected_symlinks": 0,
+      "changed": [],
+      "missing": [],
+      "new_files": [],
+      "git_status_before": "?? clavstore/clavstore-ui/clavstore-reseller-original/\n",
+      "git_status_after": "?? clavstore/clavstore-ui/clavstore-reseller-original/\n"
+    },
+    "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api": {
+      "protected_files": 100,
+      "protected_symlinks": 0,
+      "changed": [],
+      "missing": [],
+      "new_files": [
+        "controllers/multi-scan.js",
+        "docs/multi-scan/STAGE2.md",
+        "docs/multi-scan/protected-files.before.json",
+        "docs/multi-scan/tests-stage2.tap",
+        "middlewares/multi-scan-auth.js",
+        "multi-scan-runtime/package.json",
+        "routes/multi-scan.js",
+        "services/multi-scan/contracts.js",
+        "services/multi-scan/runtime.js",
+        "services/multi-scan/upload.js",
+        "tests/multi-scan/stage2.test.js",
+        "tests/multi-scan/verify-protected.py"
+      ],
+      "git_status_before": "",
+      "git_status_after": "?? controllers/multi-scan.js\n?? docs/\n?? middlewares/multi-scan-auth.js\n?? multi-scan-runtime/\n?? routes/multi-scan.js\n?? services/\n?? tests/\n"
+    },
+    "/mnt/g/clavstore/clavstore-api/clavstore-ai-image-api": {
+      "protected_files": 11129,
+      "protected_symlinks": 0,
+      "changed": [],
+      "missing": [],
+      "new_files": [
+        "controllers/multi-scan.js",
+        "middlewares/multi-scan-service-auth.js",
+        "routes/multi-scan.js",
+        "services/multi-scan/contracts.js",
+        "services/multi-scan/runtime.js",
+        "services/multi-scan/upload.js"
+      ],
+      "git_status_before": "",
+      "git_status_after": "?? controllers/multi-scan.js\n?? middlewares/multi-scan-service-auth.js\n?? routes/multi-scan.js\n?? services/\n"
+    }
+  },
+  "unchanged": true
+}

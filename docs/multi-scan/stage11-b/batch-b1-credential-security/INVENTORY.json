@@ -1,0 +1,212 @@
+{
+  "review_only": true,
+  "modified_existing_files": [],
+  "new_files": [
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/01-GENERIC-WRITER-CONTAINMENT.diff",
+      "bytes": 1905,
+      "sha256": "dbf25f9ad995c2a0b36d962c3c98eede1679a415f5feba82387a457fa5af6236"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/02-RELATED-AUTHORITY-CONTAINMENT.diff",
+      "bytes": 5139,
+      "sha256": "54bfa3536c7a8ac85bec688f5c7920612dffe5676a14f3e4b9e1e3268ae7fb51"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/03-REMOVE-IMPLICIT-MEMBERSHIP-WRITE.diff",
+      "bytes": 897,
+      "sha256": "e6b8e59a779ac19360def4d8a10f484683e3f1a1400636a880849250a32a00f4"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/04-STOP-SHARED-PASSWORD-PROVISIONING.diff",
+      "bytes": 2816,
+      "sha256": "2fd652373ace02ee5f266fc1cb1574ffe771397d9aa9c0b2dd100ff3adff8afd"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/05-PAYMENT-CREDENTIAL-CONTAINMENT.diff",
+      "bytes": 1054,
+      "sha256": "0faac8b1260697449ad127453683679216bdc649b9849b9877b16b0904542c30"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/06-FUTURE-SELF-PROFILE-CORE.diff",
+      "bytes": 10644,
+      "sha256": "6f9f64c82dd3b95d7cc5211a84f2ff5116466aa8c8c9dbc8ee28881e4224ddd0"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/AFTER.json.gz",
+      "bytes": 4699846,
+      "sha256": "6d528f5a5ce2b5acabefbd5d7f7811ee89054b7f36f5257a8c532b19b39ce01a"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/AUTHENTICATION-ANALYSIS.md",
+      "bytes": 3602,
+      "sha256": "f1bac48c97e2b5fb1a481f68f9175f83f86b2f9d4d8b7d4cd82870449821eb53"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/BASELINE.json.gz",
+      "bytes": 4682412,
+      "sha256": "15e8f3fcd3cc3d5d68983349ed78a816fd9b1c06d8f913ccee2c9f5db4549fac"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/COMPATIBILITY.md",
+      "bytes": 6402,
+      "sha256": "cc29e291ad5f6f8e6ca54dac990bbf17f6b8d38ea0154240e26df3bcfc4fefd4"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/CREDENTIAL-WRITE-INVENTORY.json",
+      "bytes": 50295,
+      "sha256": "68909e5cb86c186998a3d96b081dd931fdcc94c787baeebb7a90a69095f142dc"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/CREDENTIAL-WRITE-INVENTORY.md",
+      "bytes": 29997,
+      "sha256": "f1e4d41528815206445b63195f13cdba99d612e561aa4d3b78454bfed70fc5a2"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/DIFF-INVENTORY.json",
+      "bytes": 1339,
+      "sha256": "89d72cbc7f9e64ab070bf57fda638b641efd9717e2db88ff78e04bbb44a1d8f3"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/FUTURE-CORE-CHECKS.json",
+      "bytes": 785,
+      "sha256": "a1bcb6ddf6b24c31683599aaa01467991637b768e239a3176d3457ba1d93c724"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/INLINE-AND-TRUST-GAPS.md",
+      "bytes": 3663,
+      "sha256": "1d3f888ad0b5cd9b22f9215985106271d04f872d0216892c1538c7cb899a0641"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/INTEGRITY-REPORT.json",
+      "bytes": 5572,
+      "sha256": "014c70d2367ce268308af8b143cac324b96bf5f46054ad507f7d82ce81e296be"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/INTEGRITY-REPORT.md",
+      "bytes": 1987,
+      "sha256": "50723a41799e9df315dac9d86fadc1bc0857923a0eb06ce796dde5f3223f88db"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/MUTATION-SCAN-EXCLUSIONS.json",
+      "bytes": 2064,
+      "sha256": "4eaa2f47d699467f7e05283f1e6e02121e8523ffee72267a8226ea5a23926290"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/MUTATION-SCAN.json",
+      "bytes": 11975,
+      "sha256": "135576a055ed60b9e81807aa1381f7e4978064f182b39cab56d6a49104b640e4"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/PATCH-MANIFEST.json",
+      "bytes": 4800,
+      "sha256": "90c4bdd9e92ddca97d0841e10436c89af8306895f16973b6857ac21eecb5ebdf"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/PROFILE-WRITE.js.txt",
+      "bytes": 4788,
+      "sha256": "c33cd316bec8a709899e832418e5f1f35c5299a053b1a82cd196f5726f704e0b"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/PROFILE-WRITE.test.js.txt",
+      "bytes": 5580,
+      "sha256": "bbf3c997cac8c46cc9833caac44ca5d6861c9740c2b0aa760e7b154f5efdff7f"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/REMEDIATION-PLAN.md",
+      "bytes": 6364,
+      "sha256": "12fa8a87536a8516f8ed836ac800f283d2857f2da5240444a7d074148652d666"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/REVIEW.md",
+      "bytes": 7310,
+      "sha256": "828a17a73a533bb253ad2b2c65de570b153619cfc5cbe8eef77fb674dc9a734a"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/ROLLBACK-PREIMAGES.json",
+      "bytes": 1673,
+      "sha256": "157eceee554db99459804fd8d64ad61ab99bb5616b6b2aafcb0dd5b2ec640233"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/ROLLBACK.md",
+      "bytes": 2876,
+      "sha256": "8a32595dd61d40691cbac5c93e90e47ad7860b0017c238c2f19e0a20d72aa8e4"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/SECURITY-FINDINGS.md",
+      "bytes": 9482,
+      "sha256": "9d25b20c257211a0ff445d9a852dac74c8a3c3a2500c1b6c9ca186bec2e40720"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/SECURITY-TEST-SPECIFICATIONS.md",
+      "bytes": 9811,
+      "sha256": "0401505222bd7678c3fa68c3b583e108b5cf09b01f6056f0ec302a10c678918a"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/SOURCE-EVIDENCE.json",
+      "bytes": 81856,
+      "sha256": "661908c1bb8472a44bb7e7a6e590c4d08a664749eb4674b4e737b5b078c8c724"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/build-inventory.py",
+      "bytes": 21345,
+      "sha256": "feefe4d002c60379c354bb8fa43f1359c471845883d0c087d1f1d73ff63e2d43"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/prepare-patches.py",
+      "bytes": 4518,
+      "sha256": "d6050389033c214b420057da362efa449cb60f85eea16227e06e2d7f698dc78d"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/rollback-preimages/controllers__app__order.js.txt",
+      "bytes": 17067,
+      "sha256": "69e13e320f64ee88de0af05a36860ca2b784a2fe8bbde8b3d01be2092d26260b"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/rollback-preimages/controllers__order.js.txt",
+      "bytes": 59506,
+      "sha256": "44591ff2e486deebfecbd853d7a57280b7548a27b505804cf187da8590a15008"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/rollback-preimages/controllers__user.js.txt",
+      "bytes": 33922,
+      "sha256": "2a09aff9e6dc78e5d5365e71ce9f973865d0cb17e3bf6202027a2660f6b6bcb6"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/rollback-preimages/routes__appuser.js.txt",
+      "bytes": 623,
+      "sha256": "4914854967c2b0d2139e285a48790cc2b2c40b8c2216746082f83fc9e35e2339"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/rollback-preimages/routes__estore.js.txt",
+      "bytes": 2125,
+      "sha256": "5af12554d439319a7cf3b480c6168ea937a19a7ecc9b44b25376a0d699e2aefe"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/rollback-preimages/routes__order.js.txt",
+      "bytes": 2555,
+      "sha256": "cab1f734e9b34b2585d3f8777b42325ba934412a7d6a639925dad61b796664bd"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/rollback-preimages/routes__payment.js.txt",
+      "bytes": 945,
+      "sha256": "dcb59b7c6ed941ac3e0f84c103f03014eac57d577e4488e50cb678f870a8a71f"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/rollback-preimages/routes__user.js.txt",
+      "bytes": 2233,
+      "sha256": "a8c092ffc22484b7d5cfd0b876ac160a04a2343d12bedea0d39a56a198216ddd"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/rollback-preimages/routes__withdraw.js.txt",
+      "bytes": 906,
+      "sha256": "897e7827fbd4e8cb63b7469798de5393f4e98f7ada0d3e29eb5c6abc92951a85"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-b1-credential-security/write-review.py",
+      "bytes": 26227,
+      "sha256": "d44a984a0bd07a644c95a0b2e62211fc58c092a4c82aee2a06501a6f931441b1"
+    }
+  ],
+  "self_excluded": "docs/multi-scan/stage11-b/batch-b1-credential-security/INVENTORY.json"
+}

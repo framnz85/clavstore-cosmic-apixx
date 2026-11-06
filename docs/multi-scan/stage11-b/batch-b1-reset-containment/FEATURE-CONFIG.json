@@ -1,0 +1,28 @@
+{
+  "configuration_files": [
+    {
+      "file": ".env",
+      "flags": {
+        "MULTI_SCAN_ENABLED": {
+          "present": false,
+          "any_exact_true": false
+        },
+        "MULTI_SCAN_SESSION_ENABLED": {
+          "present": false,
+          "any_exact_true": false
+        }
+      }
+    }
+  ],
+  "inherited_process": {
+    "MULTI_SCAN_ENABLED": {
+      "present": false,
+      "exact_true": false
+    },
+    "MULTI_SCAN_SESSION_ENABLED": {
+      "present": false,
+      "exact_true": false
+    }
+  },
+  "notes": "Only flag presence/enabled booleans recorded; no secret values. Source defaults false. No environment/configuration files changed."
+}

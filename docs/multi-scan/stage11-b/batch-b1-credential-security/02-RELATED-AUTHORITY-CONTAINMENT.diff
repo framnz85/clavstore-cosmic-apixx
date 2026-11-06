@@ -1,0 +1,96 @@
+--- a/routes/user.js
++++ b/routes/user.js
+@@ -39,25 +39,20 @@
+   getNotification,
+ );
+ router.post("/gratis/all-users", authCheck, adminGratisCheck, getAllUsers);
+-router.post("/gratis/user-create/:resellid", createNewUser);
++router.post("/gratis/user-create/:resellid", (_req, res) => res.status(503).json({ err: "Account authority operations are temporarily unavailable." }));
+ router.post("/gratis/user-email", sendEmail);
+ router.post("/gratis/add-wishlist", authCheck, addToWishlist);
+ router.post("/gratis/workflow-register1", handleWorkflow1);
+ router.post("/gratis/send-verification-code", sendVerificationCode);
+ router.put("/gratis/user-update", (_req, res) => res.status(503).json({ err: "Account updates are temporarily unavailable." }));
+ router.put("/gratis/update-customer/:userid", (_req, res) => res.status(503).json({ err: "Account updates are temporarily unavailable." }));
+-router.put("/gratis/user-verify", authCheck, verifyUserEmail);
++router.put("/gratis/user-verify", (_req, res) => res.status(503).json({ err: "Account authority operations are temporarily unavailable." }));
+ router.put("/gratis/change-password", authCheck, changePassword);
+ router.put("/gratis/reset-password/:userid", (_req, res) => res.status(503).json({ err: "Password recovery is temporarily unavailable." }));
+ router.put("/gratis/forgot-password", (_req, res) => res.status(503).json({ err: "Password recovery is temporarily unavailable." }));
+-router.put("/gratis/delete-account-request", deleteAccountRequest);
++router.put("/gratis/delete-account-request", (_req, res) => res.status(503).json({ err: "Account authority operations are temporarily unavailable." }));
+ router.put("/gratis/import-users", (_req, res) => res.status(503).json({ err: "Account updates are temporarily unavailable." }));
+-router.delete(
+-  "/gratis/user-delete/:userid",
+-  authCheck,
+-  adminGratisCheck,
+-  deleteUser,
+-);
++router.delete("/gratis/user-delete/:userid", (_req, res) => res.status(503).json({ err: "Account authority operations are temporarily unavailable." }));
+ router.delete(
+   "/gratis/delete-all-raffles",
+   authCheck,
+--- a/routes/estore.js
++++ b/routes/estore.js
+@@ -38,28 +38,13 @@
+ router.post("/gratis/allowed-estores", getAllowedEstores);
+ router.post("/gratis/estore-by-id-text", searchEstoreByText);
+ router.post("/gratis/warehouse-estores-search", searchWarehouseByText);
+-router.post("/gratis/estore-update", authCheck, adminGratisCheck, updateEstore);
+-router.post("/gratis/estore-create/:resellid", createEstore);
+-router.post(
+-  "/gratis/add-new-estore/:resellid",
+-  authCheck,
+-  adminGratisCheck,
+-  addNewEstore,
+-);
+-router.post(
+-  "/gratis/copying-estore/:resellid",
+-  authCheck,
+-  adminGratisCheck,
+-  copyingEstore,
+-);
++router.post("/gratis/estore-update", (_req, res) => res.status(503).json({ err: "Account authority operations are temporarily unavailable." }));
++router.post("/gratis/estore-create/:resellid", (_req, res) => res.status(503).json({ err: "Account authority operations are temporarily unavailable." }));
++router.post("/gratis/add-new-estore/:resellid", (_req, res) => res.status(503).json({ err: "Account authority operations are temporarily unavailable." }));
++router.post("/gratis/copying-estore/:resellid", (_req, res) => res.status(503).json({ err: "Account authority operations are temporarily unavailable." }));
+ router.put("/gratis/update-estore-counters", updateEstoreCounters);
+ router.put("/gratis/update-estores-default", updateEstoresDefault);
+-router.put("/gratis/update-estores-visible", updateEstoresVissible);
+-router.delete(
+-  "/gratis/delete-estore/:deleteid",
+-  authCheck,
+-  adminGratisCheck,
+-  deletingEstore,
+-);
++router.put("/gratis/update-estores-visible", (_req, res) => res.status(503).json({ err: "Account authority operations are temporarily unavailable." }));
++router.delete("/gratis/delete-estore/:deleteid", (_req, res) => res.status(503).json({ err: "Account authority operations are temporarily unavailable." }));
+ 
+ module.exports = router;
+--- a/routes/order.js
++++ b/routes/order.js
+@@ -29,7 +29,7 @@
+ const { authCheck, adminGratisCheck } = require("../middlewares/auth");
+ 
+ router.get("/gratis/user-order/:orderid", authCheck, userOrder);
+-router.get("/gratis/user-order-app/:orderid", userAppOrder);
++router.get("/gratis/user-order-app/:orderid", (_req, res) => res.status(503).json({ err: "Account authority operations are temporarily unavailable." }));
+ router.get(
+   "/gratis/admin-order/:orderid",
+   authCheck,
+--- a/routes/withdraw.js
++++ b/routes/withdraw.js
+@@ -11,12 +11,7 @@
+ const { authCheck, adminGratisCheck } = require("../middlewares/auth");
+ 
+ router.get("/gratis/get-dashboard", authCheck, adminGratisCheck, getDashboard);
+-router.get(
+-  "/gratis/user-to-affiliate/:email",
+-  authCheck,
+-  adminGratisCheck,
+-  getUserToAffiliate
+-);
++router.get("/gratis/user-to-affiliate/:email", (_req, res) => res.status(503).json({ err: "Account authority operations are temporarily unavailable." }));
+ router.post(
+   "/gratis/get-withdrawals",
+   authCheck,

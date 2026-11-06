@@ -1,0 +1,97 @@
+{
+  "testOnly": true,
+  "userId": "333333333333333333333333",
+  "bundle": {
+    "release": {
+      "schemaVersion": 1,
+      "releaseId": "11111111-1111-4111-8111-111111111111",
+      "tenant": {
+        "storeId": "111111111111111111111111",
+        "packageId": "222222222222222222222222"
+      },
+      "catalog": {
+        "snapshotRevision": "synthetic-catalog-v1",
+        "metadataSha256": "24031da4304b9da98d87fd5009cc71ec8b69915c73ac203ddf977c31669d6de2",
+        "productSetSha256": "2f427c04d82a790ebeab255fc3b20e89100352163bbc6661487b02c1d6e7ac0c"
+      },
+      "pipeline": {
+        "detectorDigest": "89da56919041b6fff629d7c30aac4a9f1fb5091a47739cceedd1cb10aa72ee30",
+        "ocrAndDictionaryDigest": "c1517e4609dff156ecc1e366ca242dd76a4bfcef4f33405759aedb2b44a0831d",
+        "policyDigest": "bfca95ac14f3d1c52c99858bd54efd669820220d9a10f45d86d35f7922f1ab51"
+      },
+      "issuedAt": 1800000000,
+      "expiresAt": 1800003600,
+      "approvalVersion": 1,
+      "siglip": {
+        "generation": "g-22222222-2222-4222-8222-222222222222",
+        "manifestSha256": "54c3602860436b54df32d677d8c393c68a07a356ffa8147690bfc4f114007251",
+        "modelAndPreprocessorDigest": "0bca7ff3c2ab6d22f31e3e46477bd7f959044044e2bb6ac8fd296d1c4b4259e2"
+      },
+      "dino": {
+        "generation": "g-33333333-3333-4333-8333-333333333333",
+        "manifestSha256": "cad3d67485312af490eb7c48d1206e3cacc22347cb1575e3e42ed30c3713f650",
+        "modelAndPreprocessorDigest": "c296d21db2a39fc5a8df3e56f98be30032882c50cca1780ba616cb670259175a"
+      }
+    },
+    "metadata": {
+      "tenant": {
+        "storeId": "111111111111111111111111",
+        "packageId": "222222222222222222222222"
+      },
+      "revision": "synthetic-catalog-v1",
+      "products": [
+        {
+          "_id": "444444444444444444444444",
+          "estoreid": "111111111111111111111111",
+          "packageId": "222222222222222222222222",
+          "title": "Synthetic grocery",
+          "brand": null,
+          "variantName": "20g",
+          "description": "Synthetic only",
+          "packaging": {
+            "weight": 20
+          },
+          "unitOfMeasure": "sachet",
+          "references": [
+            {
+              "referenceId": "front",
+              "imageKey": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+              "imageSha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+            }
+          ]
+        }
+      ]
+    },
+    "indexes": {
+      "siglip": {
+        "manifestJson": "{\"schemaVersion\":1,\"generation\":\"g-22222222-2222-4222-8222-222222222222\",\"tenant\":{\"storeId\":\"111111111111111111111111\",\"packageId\":\"222222222222222222222222\"},\"model\":{\"modelId\":\"google/siglip2-base-patch16-224\",\"modelRevision\":\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"modelSha256\":\"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\",\"preprocessingVersion\":\"synthetic-test-v1\",\"preprocessorSha256\":\"cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc\",\"dimension\":768},\"catalogRevision\":\"synthetic-catalog-v1\",\"referenceCount\":1,\"productCount\":1,\"skipped\":[],\"files\":{\"mapping.json\":{\"bytes\":155,\"sha256\":\"0b6d306a5179906a0b78305232643b3d00f544bda94cc408f56dc12b02401148\"},\"siglip2.bin\":{\"bytes\":15,\"sha256\":\"51caecaf899d3667180c2835710c5b42b0d6db985011aa4ceea4e4d887ede586\"}}}",
+        "mappingJson": "[{\"label\":0,\"productId\":\"444444444444444444444444\",\"referenceId\":\"front\",\"imageSha256\":\"eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee\"}]"
+      },
+      "dino": {
+        "manifestJson": "{\"schemaVersion\":1,\"generation\":\"g-33333333-3333-4333-8333-333333333333\",\"tenant\":{\"storeId\":\"111111111111111111111111\",\"packageId\":\"222222222222222222222222\"},\"model\":{\"modelId\":\"facebook/dinov2-small\",\"modelRevision\":\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"modelSha256\":\"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\",\"preprocessingVersion\":\"synthetic-test-v1\",\"preprocessorSha256\":\"cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc\",\"dimension\":384},\"catalogRevision\":\"synthetic-catalog-v1\",\"referenceCount\":1,\"productCount\":1,\"skipped\":[],\"files\":{\"mapping.json\":{\"bytes\":155,\"sha256\":\"0b6d306a5179906a0b78305232643b3d00f544bda94cc408f56dc12b02401148\"},\"dinov2.bin\":{\"bytes\":15,\"sha256\":\"51caecaf899d3667180c2835710c5b42b0d6db985011aa4ceea4e4d887ede586\"}},\"namespace\":\"stage5-dinov2\"}",
+        "mappingJson": "[{\"label\":0,\"productId\":\"444444444444444444444444\",\"referenceId\":\"front\",\"imageSha256\":\"eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee\"}]"
+      }
+    },
+    "pipeline": {
+      "detector": {
+        "id": "yolox-tiny-coco-0.1.1rc0",
+        "sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+      },
+      "ocr": {
+        "id": "PaddlePaddle/PP-OCRv5-mobile-onnx",
+        "detRevision": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "detSha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "recRevision": "cccccccccccccccccccccccccccccccccccccccc",
+        "recSha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+        "dictionarySha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+        "preprocessingVersion": "synthetic-ocr-v1",
+        "postprocessingVersion": "synthetic-post-v1",
+        "configSha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+      },
+      "policy": {
+        "version": "synthetic-policy-v1",
+        "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      }
+    }
+  }
+}

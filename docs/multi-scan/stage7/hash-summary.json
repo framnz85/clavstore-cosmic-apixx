@@ -1,0 +1,162 @@
+{
+  "stage": 7,
+  "existingFilesUnchanged": true,
+  "protectedFiles": 106628,
+  "protectedSymlinks": 88,
+  "changedFiles": 0,
+  "missingFiles": 0,
+  "changedSymlinks": 0,
+  "readErrors": [],
+  "exclusions": [],
+  "authoredFileCount": 39,
+  "authoredByProject": {
+    "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api": [
+      "docs/multi-scan/stage7/STAGE7.md",
+      "docs/multi-scan/stage7/hash-summary.json",
+      "docs/multi-scan/stage7/inspected-contracts.json",
+      "docs/multi-scan/stage7/isolated-smoke.json",
+      "docs/multi-scan/stage7/protected-files.before.json.gz",
+      "docs/multi-scan/stage7/protected-files.final.json.gz",
+      "docs/multi-scan/stage7/regression-stage2.tap",
+      "docs/multi-scan/stage7/regression-stage3.tap",
+      "docs/multi-scan/stage7/regression-stage4.tap",
+      "docs/multi-scan/stage7/regression-stage5-actual.tap",
+      "docs/multi-scan/stage7/regression-stage5-combined.tap",
+      "docs/multi-scan/stage7/regression-stage5-unit.tap",
+      "docs/multi-scan/stage7/regression-stage6-actual.tap",
+      "docs/multi-scan/stage7/regression-stage6-ocr.tap",
+      "docs/multi-scan/stage7/regression-stage6-pipeline.tap",
+      "docs/multi-scan/stage7/regression-stage6-reranker.tap",
+      "docs/multi-scan/stage7/regression-summary.json",
+      "docs/multi-scan/stage7/repository.tap",
+      "docs/multi-scan/stage7/security-catalog.tap",
+      "docs/multi-scan/stage7/service-validation.tap",
+      "docs/multi-scan/stage7/syntax-checks.json",
+      "docs/multi-scan/stage7/test-summary.json",
+      "scripts/multi-scan/stage7/regressions.py",
+      "scripts/multi-scan/stage7/smoke.js",
+      "scripts/multi-scan/stage7/verify-protected.py",
+      "services/multi-scan/stage7/catalog.js",
+      "services/multi-scan/stage7/client.js",
+      "services/multi-scan/stage7/composition.js",
+      "services/multi-scan/stage7/contracts.js",
+      "services/multi-scan/stage7/integration.js",
+      "services/multi-scan/stage7/repository.js",
+      "services/multi-scan/stage7/resolution.js",
+      "services/multi-scan/stage7/security.js",
+      "services/multi-scan/stage7/validation.js",
+      "tests/multi-scan/stage7/fixtures.js",
+      "tests/multi-scan/stage7/repository.test.js",
+      "tests/multi-scan/stage7/security-catalog.test.js",
+      "tests/multi-scan/stage7/service.test.js"
+    ],
+    "/mnt/g/clavstore/clavstore-api/clavstore-ai-image-api": [
+      "services/multi-scan/stage7/receiver.js"
+    ]
+  },
+  "authoredSha256": {
+    "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api": {
+      "docs/multi-scan/stage7/STAGE7.md": "764fa4ae102e29cb1571d3840ca9e05db6bd4958267057c46ed0ac92d1c20f43",
+      "docs/multi-scan/stage7/inspected-contracts.json": "284788e9f4911ec4196d018849bcfbb866ab8233b0f0fe1aece92971cf5edd9e",
+      "docs/multi-scan/stage7/isolated-smoke.json": "af44f93b029d25c9eb554ce774490bf1d6545c28164474f26f478d9b4d882d55",
+      "docs/multi-scan/stage7/protected-files.before.json.gz": "808de84fe021d60e23464382102b7169f5beded7949563979dfae4d4781b1a04",
+      "docs/multi-scan/stage7/protected-files.final.json.gz": "6104e8807bc05cac22bbfe7d207a25d0e2538483b9bc3fabebcf3c8320b6f58d",
+      "docs/multi-scan/stage7/regression-stage2.tap": "bf74ba66b6ec76d85cc8e0bac3887b856ad394358c909c25cac0ad1a063dc90e",
+      "docs/multi-scan/stage7/regression-stage3.tap": "d659d1d75db307914e4bd2ba5dbb1b3ce9b5889fcc153f737d37632186c3abe9",
+      "docs/multi-scan/stage7/regression-stage4.tap": "fa7f71ec6595e375c48ccf3433358323cc309bb0820fd01af1a3553ce9ff06d2",
+      "docs/multi-scan/stage7/regression-stage5-actual.tap": "c9191d3465813d71bd65a3bbc31f55c7e4a95c5681defdbac784a5845161bd60",
+      "docs/multi-scan/stage7/regression-stage5-combined.tap": "6c5b3252ac4acb3bd908d7242654cbd67ee2306ba2f2d1f4d167645048beda5c",
+      "docs/multi-scan/stage7/regression-stage5-unit.tap": "625e6081b7e487a9acca19958b45bcf92ef35b6fc2f04880b75e9d4842a64025",
+      "docs/multi-scan/stage7/regression-stage6-actual.tap": "3bd3ac2a4a62dbf23c5797356625a677db56074e5b7bdcb80e9bfe974c9e7e57",
+      "docs/multi-scan/stage7/regression-stage6-ocr.tap": "8762ab948ed1de7bfec7d18ffd94420527fce79b2743b9e31be708b496b376bd",
+      "docs/multi-scan/stage7/regression-stage6-pipeline.tap": "05e9bb5f3e9cec8a9834c175ef8374ef7ee78929af96d3512655daa08a239e25",
+      "docs/multi-scan/stage7/regression-stage6-reranker.tap": "ffda3bb378a1c5690c74923e0715950ea9abf41931242b06603cc0e7e65001a8",
+      "docs/multi-scan/stage7/regression-summary.json": "bf7f2a2e8268b8faa760e8e1209d97aa59eb484f61a75e2043d0c56cf233c4d2",
+      "docs/multi-scan/stage7/repository.tap": "ce11e8ced92a6f6de2fbfc96a1c8f5225b524c5224dfb65ee6d44aa637df650e",
+      "docs/multi-scan/stage7/security-catalog.tap": "17c675228f73fbcde3431d5899d6fa1c52cfd5840f3817d839c916bdbf9f05c2",
+      "docs/multi-scan/stage7/service-validation.tap": "6a8c3add87074e7ebd3f93b9d2df42d8e0a2dd78706eb78f6b0ed9a58afe2a9c",
+      "docs/multi-scan/stage7/syntax-checks.json": "93f25f848f62103c00fbc104055361d387ad4f470e138b322a15691cbcb44788",
+      "docs/multi-scan/stage7/test-summary.json": "7bd1401e01a1cfc80427ba284318ca4138cc4bd2cbba52f5b328a04e9c776525",
+      "scripts/multi-scan/stage7/regressions.py": "400a1c89373b7e552779efd9356dd6b08f7c2f29af0810224074bb0d5c40fb3a",
+      "scripts/multi-scan/stage7/smoke.js": "57d6da267f1c0db3fd904bb0cde603b8b59cd5de03fef109087d9c670a2728b4",
+      "scripts/multi-scan/stage7/verify-protected.py": "197185fb52c097bbb3e20e936590dcfb83fb0db1bbebb8301044ff6b71e87430",
+      "services/multi-scan/stage7/catalog.js": "9b57dc10a3b8a3ddefb77c545b0990f76985ac1c45fd0270c7cb0aac9321cb83",
+      "services/multi-scan/stage7/client.js": "e983b8795f9595c6ec25b3db1b9d4336f98ef82e503c3b59693f21a86cf60295",
+      "services/multi-scan/stage7/composition.js": "3130d571939635fceab207a1e4b317ff397fa7df5688276f9b2ffd1272e87cd9",
+      "services/multi-scan/stage7/contracts.js": "a4340c1329a874a63d6bae6492fcbbeb4e50cb5c542eb8842a7402c18a36e955",
+      "services/multi-scan/stage7/integration.js": "774dc015564880333460313f6c20a2ed18858fafd64ffb6588f282db4b928c6a",
+      "services/multi-scan/stage7/repository.js": "429cb03fcd0f788adff7a0ee3e71598e7398f187a5c086bbb08716c8f2699bee",
+      "services/multi-scan/stage7/resolution.js": "a9fe75f4e033b299793e362f4523b9652cddb27786179cbdd990fe1ce71e7d47",
+      "services/multi-scan/stage7/security.js": "6a7a064ab3d94d2dc0a5f8c5e7408a715bd681ad2921b545f1264e827991e763",
+      "services/multi-scan/stage7/validation.js": "70b8ba54faf6769e8861389fbc812f46fe831b29f2e5e8f088d4d1ad610d370e",
+      "tests/multi-scan/stage7/fixtures.js": "b1f7a1e5875e57a322a493146e6a15ac0987a37c9687213cec3978f53d203d4c",
+      "tests/multi-scan/stage7/repository.test.js": "8d6f10ddb1487a1798cdd052dfd7333557f03f999e656b499f9d33a55a8d1f20",
+      "tests/multi-scan/stage7/security-catalog.test.js": "86a81173f8e8b62159a5f95bc344522dc4b5d456536c60828fa322addd1035e0",
+      "tests/multi-scan/stage7/service.test.js": "fa4d775f45adada1a9f7e41dc717fbe7bd5856b506293644138ce18b140d8e9d"
+    },
+    "/mnt/g/clavstore/clavstore-api/clavstore-ai-image-api": {
+      "services/multi-scan/stage7/receiver.js": "3aa12bdfb9f0a4c791cc31bf609b5786dfba86444908dba95e74284a745d53b7"
+    }
+  },
+  "observedExternalAdditions": {
+    "/mnt/g/clavstore/clavstore-ui/clavstore-reseller-original": [],
+    "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api": [],
+    "/mnt/g/clavstore/clavstore-api/clavstore-ai-image-api": []
+  },
+  "projects": {
+    "/mnt/g/clavstore/clavstore-ui/clavstore-reseller-original": {
+      "protectedFiles": 85492,
+      "changed": [],
+      "missing": [],
+      "changedSymlinks": [],
+      "newFilesObservedAtAudit": 0
+    },
+    "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api": {
+      "protectedFiles": 6845,
+      "changed": [],
+      "missing": [],
+      "changedSymlinks": [],
+      "newFilesObservedAtAudit": 36
+    },
+    "/mnt/g/clavstore/clavstore-api/clavstore-ai-image-api": {
+      "protectedFiles": 14291,
+      "changed": [],
+      "missing": [],
+      "changedSymlinks": [],
+      "newFilesObservedAtAudit": 1
+    }
+  },
+  "tests": {
+    "stage2": 31,
+    "stage3": 33,
+    "stage4": 39,
+    "stage5": 56,
+    "stage6": 87,
+    "stage7": 62,
+    "stage7Groups": {
+      "security-catalog.tap": 24,
+      "repository.tap": 8,
+      "service-validation.tap": 30
+    },
+    "total": 308,
+    "failures": 0,
+    "existingNativeInferenceTestsRerun": 19,
+    "stage7Inference": "serialized frozen Stage 6 fixture; no new native model or live network/database integration claimed"
+  },
+  "syntaxChecks": 15,
+  "productionDatabaseAccess": false,
+  "productionServerStarted": false,
+  "networkIntegrationTested": "Injected transport and real frozen HMAC verifier; no live internal service or HTTP/TLS connectivity tested",
+  "liveIndexRebuilt": false,
+  "cartMutation": false,
+  "orderPersistence": false,
+  "featureActivated": false,
+  "stage8Implemented": false,
+  "auditBoundary": "The final inventory was written after root enumeration; it excludes itself and this later summary. Both are explicitly listed in authoredByProject. This summary does not recursively embed its own hash.",
+  "integrationBlockers": [
+    "Existing JWT issuance lacks mandatory expiry",
+    "Frozen Stage 2 scan DTO reduction and confirmed:true semantics conflict with review-only response",
+    "Frozen raw RGB upload and 32KiB AI JSON limit need separately authorized wiring",
+    "Production ownership/session topology, image provider, durable snapshots and real private service connectivity remain unvalidated"
+  ]
+}

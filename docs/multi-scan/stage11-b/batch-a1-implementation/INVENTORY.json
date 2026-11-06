@@ -1,0 +1,140 @@
+{
+  "changed_existing_files": [
+    "tests/multi-scan/stage2.test.js"
+  ],
+  "unchanged_existing_files": 106878,
+  "unchanged_symlinks": 88,
+  "unrelated_changes": [],
+  "new_documentation_count": 32,
+  "new_files": [
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-implementation/APPLICATION.json",
+      "sha256": "3a696021734e958fc667d291a6f4d3c6c2b794d4efee839bef5ac37798cc3911"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-implementation/BASELINE.json.gz",
+      "sha256": "7332e7201503746f5548036933c4100f4ebc6d896bedd30c009a609b91517607"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-implementation/FINAL-AUDIT.json.gz",
+      "sha256": "8ebb64d719f4906461ae8879eae15c63035e9271c0e13cfa9555d827882c4b80"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-implementation/IMPLEMENTATION-REPORT.md",
+      "sha256": "f5393ed858162d278245ce37e434f6261778cbacf829bf937a3e2e9faac45a35"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-implementation/INTEGRITY-REPORT.md",
+      "sha256": "63acdee549a395b84fb95253e93d37e873e9506737ee9fa32bad6d7842768830"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-implementation/STAGE2-ORIGINAL.txt",
+      "sha256": "62d3bf92d27c5f8b84edf89985760f1720cc296d84154920fa74967d6eb75ec3"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-implementation/STAGE2.tap",
+      "sha256": "859475f23f4fd2cfc0fc0b4becb5675cb2b32fc6f3ce6d01d1eaabacd1736c52"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-implementation/TEMP-ARTIFACTS.json",
+      "sha256": "32df6f16cc56076aac1bea85a085bba1d808eb3128b40056e5a5e3cb6a511740"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-implementation/TEST-RESULTS.json",
+      "sha256": "334ca7a666bf108fddeb7362b9c69a87f57330964d6aa9ba43e366e5fb130539"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stage10.tap",
+      "sha256": "798ed4a8c44c1fb26c63dfda89ba35d5b3339115f381239417c43c6d9347be56"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stages2-9/frontend-stages8-9.log",
+      "sha256": "5c2ae92080ba01546f52a9b6ddadf05f01906322de92a7d1756383d3826e780c"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stages2-9/stage7-repository.log",
+      "sha256": "e545a3f58d7e0ce3718c7e1667d095bc4865ceb2f373926d2f01c55b95be39f3"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stages2-9/stage7-security-catalog.log",
+      "sha256": "68c4fa2611b23c3ea4b83b87277858aadbd4f14f97bb5edf814541b4676a058d"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stages2-9/stage7-service.log",
+      "sha256": "dafbba98f637f50c0898b982f6776752d5e0a6b09559269244a99bf7b27bb70b"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stages2-9/stage9-evaluation.log",
+      "sha256": "28d7783ae1f63672db80dcc98698c6baf92f53cc707eb811364dc37466e5f512"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stages2-9/stage9-pipeline.log",
+      "sha256": "5444538e28a3729c678f3df9ed5e47440e51e8f83d25c112606469b171d4a8c0"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stages2-9/stages2-6/stage2.tap",
+      "sha256": "9053940f55e58f6b68545d37f29f064b2a9d31991a451485823aae3cabd1c476"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stages2-9/stages2-6/stage3.tap",
+      "sha256": "8b34a641d64b952390e023829ef9d9a4adac52f1abd447cc456a88f575c41839"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stages2-9/stages2-6/stage4.tap",
+      "sha256": "c82b57d2d2fe42693b43dea1cef84c3f7effb4281ddb4d124dae09857e2457a8"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stages2-9/stages2-6/stage5-actual.tap",
+      "sha256": "de85797ab23e0d20770836b67601c0312ce6970ef26fde9c7d89382191b06870"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stages2-9/stages2-6/stage5-combined.tap",
+      "sha256": "5fc5508ceb4a7e2ba8d0f770dd6c6ce42e02f372d2107914492cdfe0db6f4430"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stages2-9/stages2-6/stage5-unit.tap",
+      "sha256": "bab3c1b1537057426ffe07737107a08b8b15e92adc557ef75ef942266cbd6ac3"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stages2-9/stages2-6/stage6-actual.tap",
+      "sha256": "78f912fa893ea30face176a0b1e1271c14b9f644669e67e34a2283f6ae82bc3f"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stages2-9/stages2-6/stage6-ocr.tap",
+      "sha256": "585a34a92de2c221d407acc310816fbda3aa32147542a884ea4f9b5b818433f0"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stages2-9/stages2-6/stage6-pipeline.tap",
+      "sha256": "ae4b63ba3ed40bf00df655ba0be569dabd4b67c1ea5a73389dafe7bbb53b348b"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stages2-9/stages2-6/stage6-reranker.tap",
+      "sha256": "149bea0d8758940f14856955284ac00c76e6de9e194d7a00e65c5c352e73cffa"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stages2-9/stages2-6/summary.json",
+      "sha256": "bf7f2a2e8268b8faa760e8e1209d97aa59eb484f61a75e2043d0c56cf233c4d2"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/stages2-9/summary.json",
+      "sha256": "72156dd6cd0db203b9b49a37ba83ac2ee6b0a7f10e5ac70fdb6e4407838b7ee2"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-implementation/historical-regressions/summary.json",
+      "sha256": "440f26f906cd3bf44c37c615e9f126dc1a98d3705eab63fff6287404e8db516f"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-implementation/security-run/FLAG-RESULTS.json",
+      "sha256": "a254cfc521689978a3a52c949cfc4b45d3e37b9127bcf947f6a9247ad6fe8e00"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-implementation/security-run/SECURITY.tap",
+      "sha256": "ceab6d129232ae38768b2e0d543f8d72df21928a0f0199b64893c64f7f34c7bd"
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/batch-a1-implementation/INVENTORY.json",
+      "sha256": null,
+      "reason": "self-referential inventory boundary"
+    }
+  ]
+}

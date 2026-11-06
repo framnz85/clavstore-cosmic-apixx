@@ -1,0 +1,10 @@
+{
+  "realGroceryDatasetAvailable": false,
+  "qualifyingReferences": 0,
+  "labeledCheckoutScenes": 0,
+  "labeledKnownObjects": 0,
+  "labeledUnknownObjects": 0,
+  "accuracyMetrics": null,
+  "reason": "Existing Stage 6 manifest explicitly identifies generated flat-label fixtures, not grocery photographs. No rights-cleared human-labeled grocery dataset was supplied or located in inspected multi-scan assets/tests/docs. Other unlabeled legacy images are not assigned invented IDs or labels. No images were downloaded.",
+  "commercialAccuracyEstablished": false
+}

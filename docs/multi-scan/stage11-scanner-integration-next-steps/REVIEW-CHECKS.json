@@ -1,0 +1,20 @@
+{
+  "source_files_reverified": 44,
+  "modified_application_files": [],
+  "tests_run": false,
+  "scanner_flags": {
+    "MULTI_SCAN_ENABLED": {
+      "inherited_present": false,
+      "inherited_exact_true": false,
+      "config_present": false,
+      "config_any_exact_true": false
+    },
+    "MULTI_SCAN_SESSION_ENABLED": {
+      "inherited_present": false,
+      "inherited_exact_true": false,
+      "config_present": false,
+      "config_any_exact_true": false
+    }
+  },
+  "scope": "scanner-only next-step review; no deployment/activation"
+}

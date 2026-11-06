@@ -1,0 +1,77 @@
+{
+  "kind": "native-isolated-index-build",
+  "mode": "controlled-crops",
+  "count": 1,
+  "synthetic": true,
+  "realGroceryAccuracyMeasured": false,
+  "hardware": {
+    "cpu": "Intel(R) Core(TM) i9-9900 CPU @ 3.10GHz",
+    "logicalCpus": 16,
+    "totalMemoryBytes": 25165709312,
+    "platform": "linux",
+    "arch": "x64",
+    "node": "v18.20.4"
+  },
+  "baselineRssBytes": 52264960,
+  "setupMs": 5833.362610001117,
+  "models": {
+    "siglip2": {
+      "modelId": "google/siglip2-base-patch16-224",
+      "modelRevision": "ba1f3b0843f24bc5417d38e19c37b287d719b2f4",
+      "modelSha256": "c0573e3f4140c3a7c4e9cc5912bd6b26a033b46a6a8e8af26cbea262b163bcad",
+      "preprocessingVersion": "siglip2-rgb224-pillow-bilinear-22bit-v1",
+      "preprocessorSha256": "9b36b57ebaf20f09bf4c22100ccc21877ea6bfe5aead0c00c59f8af8ccefacfc",
+      "dimension": 768
+    },
+    "dinov2": {
+      "modelId": "facebook/dinov2-small",
+      "modelRevision": "c2bb04a51fab207c420665f1946016107bffc701",
+      "modelSha256": "83141175ec78b4ff9a2bb58a4c7c264ba0054d1c2e122e5a8114b79a8d4179ea",
+      "preprocessingVersion": "dinov2-rgb-short256-pillow-bicubic-crop224-imagenet-cls0-v1",
+      "preprocessorSha256": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828",
+      "dimension": 384
+    },
+    "ocr": {
+      "id": "PaddlePaddle/PP-OCRv5-mobile-onnx",
+      "detRevision": "e6f4fa85f00e168c862bc462aebca69eef9b3d3d",
+      "detSha256": "a431985659dc921974177a95adcfbb90fd9e51989a5e04d70d0b75f597b6e61d",
+      "recRevision": "ed152b8b495f84de93cda5709d768548a9127622",
+      "recSha256": "da72dc72ca4dc220df0dfde68c1dedc31c58d3e76a25871122e5056227d50092",
+      "dictionarySha256": "14ccb8e120e701464bd3084acf3b398ffee767e515477ad27d3c80fd5996c180",
+      "preprocessingVersion": "ppocrv5-bgr-long960-stride128-linear-rec48-ctc-db-quad-v1",
+      "postprocessingVersion": "component8-hull-minrect-boxmean-unclip-miter-1.5-v1",
+      "configSha256": "05d0f85e52803797577bc50d9321a040c74276dbd63a8bad7940c6fe0cb2b75c"
+    }
+  },
+  "indexBuilds": {
+    "siglip2": {
+      "generation": "g-fdb6d2c0-8644-4282-875a-bb4effbd3ec1",
+      "catalogRevision": "5c2e5138ff3d4baa9c0c05ff9e2d8a9786c47293eedea16c80b1593c63b5117d",
+      "referenceCount": 4,
+      "productCount": 4,
+      "skipped": [],
+      "buildMs": 4661.608624000102,
+      "directorySync": true
+    },
+    "dinov2": {
+      "generation": "g-8ed0d4d0-e7cc-4a2c-acac-3ed144311140",
+      "catalogRevision": "5c2e5138ff3d4baa9c0c05ff9e2d8a9786c47293eedea16c80b1593c63b5117d",
+      "referenceCount": 4,
+      "productCount": 4,
+      "skipped": [],
+      "buildMs": 1131.7242629993707,
+      "directorySync": true
+    }
+  },
+  "threadsPerNativeModel": 2,
+  "processCpuUsage": {
+    "user": 3732678,
+    "system": 822729
+  },
+  "peakProcessRssBytes": 1142824960,
+  "finalRssBytes": 869527552,
+  "totalWorkerMs": 5834.428179001436,
+  "databaseWrites": 0,
+  "cartMutation": false,
+  "featureActivated": false
+}

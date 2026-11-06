@@ -1,0 +1,93 @@
+{
+  "stage": "11-A",
+  "scope": "Review/documentation only",
+  "preexistingFilesUnchanged": true,
+  "protectedPreexistingFiles": 106806,
+  "originalSymlinkTargetsUnchanged": 88,
+  "errors": [],
+  "preexistingExclusions": [],
+  "newFileCount": 17,
+  "projects": {
+    "/mnt/g/clavstore/clavstore-ui/clavstore-reseller-original": {
+      "protectedFiles": 85533,
+      "protectedSymlinks": 75,
+      "changed": [],
+      "missing": [],
+      "changedSymlinks": [],
+      "gitStatusBefore": "?? clavstore/clavstore-ui/clavstore-reseller-original/\n",
+      "gitStatusAfter": "?? clavstore/clavstore-ui/clavstore-reseller-original/\n",
+      "newFiles": []
+    },
+    "/mnt/g/clavstore/clavstore-api/clavstore-cosmic-api": {
+      "protectedFiles": 6981,
+      "protectedSymlinks": 5,
+      "changed": [],
+      "missing": [],
+      "changedSymlinks": [],
+      "gitStatusBefore": "?? controllers/multi-scan.js\n?? docs/\n?? middlewares/multi-scan-auth.js\n?? multi-scan-runtime/\n?? routes/multi-scan.js\n?? scripts/\n?? services/\n?? tests/\n",
+      "gitStatusAfter": "?? controllers/multi-scan.js\n?? docs/\n?? middlewares/multi-scan-auth.js\n?? multi-scan-runtime/\n?? routes/multi-scan.js\n?? scripts/\n?? services/\n?? tests/\n",
+      "newFiles": [
+        "docs/multi-scan/stage11-a/APPROVAL-MATRIX.json",
+        "docs/multi-scan/stage11-a/APPROVAL-ROLLBACK.md",
+        "docs/multi-scan/stage11-a/BACKEND-AI-REVIEW.md",
+        "docs/multi-scan/stage11-a/FRONTEND-CART-PATCH.md",
+        "docs/multi-scan/stage11-a/INTEGRITY.md",
+        "docs/multi-scan/stage11-a/INVENTORY.json",
+        "docs/multi-scan/stage11-a/JWT-COMPATIBILITY.md",
+        "docs/multi-scan/stage11-a/REPOSITORIES.json",
+        "docs/multi-scan/stage11-a/REVIEW-CORRECTIONS.md",
+        "docs/multi-scan/stage11-a/SOURCE-EVIDENCE.json",
+        "docs/multi-scan/stage11-a/STAGE11-A.md",
+        "docs/multi-scan/stage11-a/THREATS-REGRESSION.md",
+        "docs/multi-scan/stage11-a/baseline-audit.log",
+        "docs/multi-scan/stage11-a/protected-files.before.json.gz",
+        "docs/multi-scan/stage11-a/protected-files.final.json.gz",
+        "docs/multi-scan/stage11-a/protected-files.scope-before.json.gz",
+        "docs/multi-scan/stage11-a/source-probes.json"
+      ]
+    },
+    "/mnt/g/clavstore/clavstore-api/clavstore-ai-image-api": {
+      "protectedFiles": 14292,
+      "protectedSymlinks": 8,
+      "changed": [],
+      "missing": [],
+      "changedSymlinks": [],
+      "gitStatusBefore": "?? controllers/multi-scan.js\n?? docs/\n?? middlewares/multi-scan-service-auth.js\n?? multi-scan-data/\n?? routes/multi-scan.js\n?? scripts/\n?? services/\n?? tests/\n",
+      "gitStatusAfter": "?? controllers/multi-scan.js\n?? docs/\n?? middlewares/multi-scan-service-auth.js\n?? multi-scan-data/\n?? routes/multi-scan.js\n?? scripts/\n?? services/\n?? tests/\n",
+      "newFiles": []
+    }
+  },
+  "newRepositoryCaches": [],
+  "newTemporaryRuntimeArtifacts": [],
+  "historicalTests": {
+    "count": 428,
+    "rerunIn11A": false
+  },
+  "currentProbes": {
+    "count": 8,
+    "executionFailures": 0,
+    "limitationReproductions": [
+      "P05",
+      "P06",
+      "P07",
+      "P08"
+    ]
+  },
+  "documentationChecks": {
+    "approvalRowsComplete": 25,
+    "sourceHashesMatch": true,
+    "selectedUniqueProtectedFiles": 4,
+    "firstBatch": [
+      "A01"
+    ]
+  },
+  "sourceChangesApplied": false,
+  "configOrDependencyChanges": false,
+  "productionAccess": false,
+  "featureActivatedOrMounted": false,
+  "cartMutation": false,
+  "rollbackExecuted": false,
+  "proceedTo11B": false,
+  "baselineScopeNote": "Raw baseline captured this new review audit log; scoped-before excludes only that newly created documentation log, retaining all actual pre-existing files. Both immutable manifests are retained. No pre-existing file excluded.",
+  "enumerationBoundary": "Final manifest, STAGE11-A.md, INTEGRITY.md and this inventory listed explicitly outside their recursive enumeration; no pre-existing file changed afterward."
+}

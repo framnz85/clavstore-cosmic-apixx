@@ -1,0 +1,70 @@
+TAP version 13
+# Subtest: 01 forgot returns uniform 503 for absent/existing/missing/empty selectors
+ok 1 - 01 forgot returns uniform 503 for absent/existing/missing/empty selectors
+  ---
+  duration_ms: 1.6804
+  ...
+# Subtest: 02 reset binding returns 503 and Express mounted/trailing-slash routing reaches terminal callback
+ok 2 - 02 reset binding returns 503 and Express mounted/trailing-slash routing reaches terminal callback
+  ---
+  duration_ms: 1633.910818
+  ...
+# Subtest: 03 old handlers and auth guards are absent from both complete binding chains
+ok 3 - 03 old handlers and auth guards are absent from both complete binding chains
+  ---
+  duration_ms: 3.795499
+  ...
+# Subtest: 04 request is never read; no model/proof/secret dependencies are available
+ok 4 - 04 request is never read; no model/proof/secret dependencies are available
+  ---
+  duration_ms: 0.1641
+  ...
+# Subtest: 05 forged JWT denied before legacy guard/controller
+ok 5 - 05 forged JWT denied before legacy guard/controller
+  ---
+  duration_ms: 0.2241
+  ...
+# Subtest: 06 expired JWT denied before legacy guard/controller
+ok 6 - 06 expired JWT denied before legacy guard/controller
+  ---
+  duration_ms: 0.1356
+  ...
+# Subtest: 07 cashier context cannot reset another/admin account
+ok 7 - 07 cashier context cannot reset another/admin account
+  ---
+  duration_ms: 0.2591
+  ...
+# Subtest: 08 conflicting and forged cross-store selectors denied on both endpoints
+ok 8 - 08 conflicting and forged cross-store selectors denied on both endpoints
+  ---
+  duration_ms: 0.1963
+  ...
+# Subtest: 09 login files unchanged; original normal login success/error behavior with owned fake dependencies
+ok 9 - 09 login files unchanged; original normal login success/error behavior with owned fake dependencies
+  ---
+  duration_ms: 52.037388
+  ...
+# Subtest: 10 other eighteen bindings and every other source byte unchanged; old-password proof fixture retained
+ok 10 - 10 other eighteen bindings and every other source byte unchanged; old-password proof fixture retained
+  ---
+  duration_ms: 3.694299
+  ...
+# Subtest: 11 no account existence disclosure or selector-dependent response
+ok 11 - 11 no account existence disclosure or selector-dependent response
+  ---
+  duration_ms: 0.7491
+  ...
+# Subtest: 12 scanner implementation and historical inventory pins retained; defaults fail closed
+ok 12 - 12 scanner implementation and historical inventory pins retained; defaults fail closed
+  ---
+  duration_ms: 6.389198
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1737.467095

@@ -1,0 +1,53 @@
+{
+  "kind": "Stage11-A non-mutating in-memory public-interface probes",
+  "scope": "Fixture-only keys/repositories, no production models/server/native sessions/network/env changes",
+  "checks": [
+    {
+      "id": "P01",
+      "finding": "Installed default signs HS256 with iat and no exp unless configured",
+      "passed": true
+    },
+    {
+      "id": "P02",
+      "finding": "Strict Stage 7 rejects fixture legacy no-exp token",
+      "passed": true
+    },
+    {
+      "id": "P03",
+      "finding": "Bounded fixture token resolves current authorized store",
+      "passed": true
+    },
+    {
+      "id": "P04",
+      "finding": "A token signed with a different fixture key is rejected",
+      "passed": true
+    },
+    {
+      "id": "P05",
+      "finding": "Stage 7 versions() accepts a different valid-shaped SHA; trusted pin allowlist is absent at this boundary",
+      "passed": true,
+      "meaning": "Reproduced a limitation, not a safety pass"
+    },
+    {
+      "id": "P06",
+      "finding": "Detector quality truncation flags are lost by Stage 7 and do not trigger the Stage 10 crop-only guard",
+      "passed": true,
+      "meaning": "Reproduced a limitation using serialized fixture response; no native inference or production request"
+    },
+    {
+      "id": "P07",
+      "finding": "Stage 7 product projection does not supply slug to a full cart-review record",
+      "passed": true
+    },
+    {
+      "id": "P08",
+      "finding": "Stage 9 textual /tmp prefix condition is not canonical path confinement; no file was created there",
+      "passed": true
+    }
+  ],
+  "total": 8,
+  "failures": 0,
+  "historicalRegressionTests": 428,
+  "historicalRegressionsRerun": false,
+  "limitations": "These observations do not implement fixes, prove browser/VPS readiness or constitute active production testing."
+}

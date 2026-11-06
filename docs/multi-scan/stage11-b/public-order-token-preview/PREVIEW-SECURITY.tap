@@ -1,0 +1,55 @@
+TAP version 13
+# Subtest: 01 current source unmodified; proposed source has exact single-route substitution
+ok 1 - 01 current source unmodified; proposed source has exact single-route substitution
+  ---
+  duration_ms: 1.4373
+  ...
+# Subtest: 02 proposed disabled route returns generic503 for all synthetic selectors/credentials
+ok 2 - 02 proposed disabled route returns generic503 for all synthetic selectors/credentials
+  ---
+  duration_ms: 0.6344
+  ...
+# Subtest: 03 terminal callback never reads request/account data
+ok 3 - 03 terminal callback never reads request/account data
+  ---
+  duration_ms: 0.1073
+  ...
+# Subtest: 04 full binding excludes original controller, guards and token/model dependencies
+ok 4 - 04 full binding excludes original controller, guards and token/model dependencies
+  ---
+  duration_ms: 0.741
+  ...
+# Subtest: 05 no account/order/token disclosure and identical existing/missing responses
+ok 5 - 05 no account/order/token disclosure and identical existing/missing responses
+  ---
+  duration_ms: 0.2232
+  ...
+# Subtest: 06 every other order route and all unaffected source bytes remain exact
+ok 6 - 06 every other order route and all unaffected source bytes remain exact
+  ---
+  duration_ms: 2.2705
+  ...
+# Subtest: 07 source-extracted original cache-hit branch issues token without caller proof (owned fixtures)
+ok 7 - 07 source-extracted original cache-hit branch issues token without caller proof (owned fixtures)
+  ---
+  duration_ms: 3.0494
+  ...
+# Subtest: 08 source-extracted original database-result branch issues token without caller proof (owned fixtures)
+ok 8 - 08 source-extracted original database-result branch issues token without caller proof (owned fixtures)
+  ---
+  duration_ms: 2.3796
+  ...
+# Subtest: 09 proposed callback on owned Express router returns503 at mounted prefix and trailing slash
+ok 9 - 09 proposed callback on owned Express router returns503 at mounted prefix and trailing slash
+  ---
+  duration_ms: 1664.342547
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1690.310247

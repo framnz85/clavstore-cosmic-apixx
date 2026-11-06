@@ -1,0 +1,48 @@
+{
+  "stage": 10,
+  "scope": "offline-readiness-assessment-only",
+  "overall": {
+    "status": "BLOCKED",
+    "productionReady": false,
+    "featureEnabled": false,
+    "cartMutationAllowed": false,
+    "approvalStillRequired": true
+  },
+  "commercialRecognition": {
+    "status": "BLOCKED",
+    "blockers": [
+      "REAL_RIGHTS_CLEARED_HELD_OUT_DATA_REQUIRED",
+      "INSUFFICIENT_LABELED_SAMPLES",
+      "METRIC_GATE_exactSkuTop1",
+      "METRIC_GATE_detectionRecall",
+      "METRIC_GATE_objectCountingAccuracy",
+      "METRIC_GATE_reviewedSkuCountingAccuracy",
+      "METRIC_GATE_unknownRejection",
+      "VARIANT_CONFUSION_GATE",
+      "FALSE_ACCEPTANCE_EVIDENCE_GATE",
+      "REVIEW_ONLY_POLICY_GATE"
+    ],
+    "falseAcceptanceUpper95": null,
+    "productionReady": false,
+    "activationAllowed": false,
+    "thresholdsAreProposed": true
+  },
+  "proposedGates": {
+    "minimumScenes": 200,
+    "minimumKnownObjects": 1000,
+    "minimumUnknownObjects": 300,
+    "minimumAcceptedEvaluationDecisions": 1000,
+    "exactSkuTop1": 0.95,
+    "detectionRecall": 0.95,
+    "objectCountingAccuracy": 0.95,
+    "reviewedSkuCountingAccuracy": 0.99,
+    "unknownRejection": 0.95,
+    "maximumVariantConfusion": 0.02,
+    "maximumFalseAcceptanceUpper95": 0.005,
+    "requiredCashierReviewCoverage": 1
+  },
+  "featureMounted": false,
+  "productionAccess": false,
+  "cartMutation": false,
+  "rolloutPhasesExecuted": []
+}

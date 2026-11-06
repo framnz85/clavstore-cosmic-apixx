@@ -1,0 +1,134 @@
+[
+  {
+    "file": "historical/stage10.tap",
+    "tests": [
+      "39"
+    ],
+    "failed": [
+      "0"
+    ],
+    "skipped": [
+      "0"
+    ]
+  },
+  {
+    "file": "historical/stages2-9/stages2-6/stage2.tap",
+    "tests": [
+      "31"
+    ],
+    "failed": [
+      "0"
+    ],
+    "skipped": [
+      "0"
+    ]
+  },
+  {
+    "file": "historical/stages2-9/stages2-6/stage3.tap",
+    "tests": [
+      "33"
+    ],
+    "failed": [
+      "0"
+    ],
+    "skipped": [
+      "0"
+    ]
+  },
+  {
+    "file": "historical/stages2-9/stages2-6/stage4.tap",
+    "tests": [
+      "39"
+    ],
+    "failed": [
+      "0"
+    ],
+    "skipped": [
+      "0"
+    ]
+  },
+  {
+    "file": "historical/stages2-9/stages2-6/stage5-actual.tap",
+    "tests": [
+      "4"
+    ],
+    "failed": [
+      "0"
+    ],
+    "skipped": [
+      "0"
+    ]
+  },
+  {
+    "file": "historical/stages2-9/stages2-6/stage5-combined.tap",
+    "tests": [
+      "11"
+    ],
+    "failed": [
+      "0"
+    ],
+    "skipped": [
+      "0"
+    ]
+  },
+  {
+    "file": "historical/stages2-9/stages2-6/stage5-unit.tap",
+    "tests": [
+      "41"
+    ],
+    "failed": [
+      "0"
+    ],
+    "skipped": [
+      "0"
+    ]
+  },
+  {
+    "file": "historical/stages2-9/stages2-6/stage6-actual.tap",
+    "tests": [
+      "15"
+    ],
+    "failed": [
+      "0"
+    ],
+    "skipped": [
+      "0"
+    ]
+  },
+  {
+    "file": "historical/stages2-9/stages2-6/stage6-ocr.tap",
+    "tests": [
+      "24"
+    ],
+    "failed": [
+      "0"
+    ],
+    "skipped": [
+      "0"
+    ]
+  },
+  {
+    "file": "historical/stages2-9/stages2-6/stage6-pipeline.tap",
+    "tests": [
+      "10"
+    ],
+    "failed": [
+      "0"
+    ],
+    "skipped": [
+      "0"
+    ]
+  },
+  {
+    "file": "historical/stages2-9/stages2-6/stage6-reranker.tap",
+    "tests": [
+      "38"
+    ],
+    "failed": [
+      "0"
+    ],
+    "skipped": [
+      "0"
+    ]
+  }
+]

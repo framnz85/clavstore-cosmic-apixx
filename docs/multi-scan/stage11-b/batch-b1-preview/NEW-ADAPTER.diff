@@ -1,0 +1,71 @@
+--- /dev/null
++++ b/services/multi-scan/stage11/trusted-sources.js
+@@ -0,0 +1,68 @@
++'use strict';
++// PROPOSAL ONLY: no model/database/bootstrap imports and no inferred identity policy.
++const {id} = require('../stage7/contracts');
++const {fault} = require('./session-config');
++const {CredentialRepository} = require('./credential-repository');
++function createTrustedSourcesProvider({getHandles,identityStatus,clock = Date.now} = {}) {
++  // Construction is inert; source resolution happens only when existing gated issuance calls this provider.
++  return async function getSources() {
++    if (typeof getHandles !== 'function' || typeof identityStatus !== 'function') throw fault(503,'UNAVAILABLE');
++    const handles = await getHandles();
++    const {User,Estore,connection} = handles || {};
++    function ready() {
++      if (!connection || connection.readyState !== 1 || !User || !Estore ||
++          User.db !== connection || Estore.db !== connection ||
++          User.modelName !== 'GratisUser' || Estore.modelName !== 'GratisEstore' ||
++          connection.models?.GratisUser !== User || connection.models?.GratisEstore !== Estore ||
++          typeof User.find !== 'function' || typeof Estore.find !== 'function') throw fault(503,'UNAVAILABLE');
++    }
++    ready();
++    function readFacade(model,isUser) {
++      return Object.freeze({find(filter) {
++        ready();
++        let q = model.find(filter), limit, timeout, selected = false, sorted = false, lean = false;
++        if (!q || typeof q.read !== 'function') throw fault(503,'UNAVAILABLE');
++        q = q.read('primary');
++        const chain = {
++          select(value) { selected=true;q=q.select(value);return chain; },
++          sort(value) {
++            if (!value || Object.keys(value).length !== 1 || value._id !== 1) throw fault(503,'UNAVAILABLE');
++            sorted=true;q=q.sort(value);return chain;
++          },
++          limit(value) { limit=value;q=q.limit(value);return chain; },
++          maxTimeMS(value) { timeout=value;q=q.maxTimeMS(value);return chain; },
++          lean() { lean=true;q=q.lean();return chain; },
++          async exec() {
++            ready();
++            if (!selected || !sorted || !lean || !Number.isSafeInteger(limit) || limit<1 || limit>2 ||
++                !Number.isSafeInteger(timeout) || timeout<100 || timeout>5000) throw fault(503,'UNAVAILABLE');
++            const rows = await q.exec();ready();
++            if (!Array.isArray(rows) || rows.length>limit) throw fault(503,'UNAVAILABLE');
++            if (!isUser) return rows;
++            const allowed=[];
++            for (const row of rows) {
++              const userId=id(row._id);
++              if (row.deleteAccount?.request === true) continue;
++              const notBefore=clock();
++              const decision=await identityStatus(Object.freeze({userId,notBefore}));
++              const now=clock();ready();
++              // These are NEW provider DTO fields, not guessed fields in existing MongoDB documents.
++              if (!decision || decision.userId!==userId || !Number.isSafeInteger(decision.observedAt) ||
++                  decision.observedAt<notBefore || decision.observedAt>now ||
++                  !['active','disabled','revoked'].includes(decision.state)) throw fault(503,'UNAVAILABLE');
++              if (decision.state==='active') allowed.push(row);
++            }
++            return allowed;
++          }
++        };
++        return chain;
++      }});
++    }
++    return Object.freeze({User:readFacade(User,true),Estore:readFacade(Estore,false)});
++  };
++}
++async function createTrustedRepository(options) {
++  // Same provePassword/usersByEmail/store/packageOwner contract as the approved Batch A repository.
++  return new CredentialRepository(await createTrustedSourcesProvider(options)());
++}
++module.exports = {createTrustedSourcesProvider,createTrustedRepository};

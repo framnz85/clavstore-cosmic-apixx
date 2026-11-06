@@ -1,0 +1,102 @@
+{
+  "preview_only": true,
+  "modified_existing_files": [],
+  "new_files": [
+    {
+      "path": "docs/multi-scan/stage11-b/public-order-token-preview/AFTER.json.gz",
+      "sha256": "d6eae2feee142af6a4f9271dfb14aa417b82174784a74d2de81401d81d3c2224",
+      "bytes": 4656910
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/public-order-token-preview/BASELINE.json.gz",
+      "sha256": "618bff257ea1a09f0829a7b0ca34e176db61e8125c6309bc32dbd2f13203437d",
+      "bytes": 4679899
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/public-order-token-preview/FEATURE-DISABLED.json",
+      "sha256": "888281a71535ce373072580864fdac9e433e22776c4a4a340a99a950e3fcf9c8",
+      "bytes": 458
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/public-order-token-preview/FINDINGS-AND-COMPATIBILITY.md",
+      "sha256": "1d9a320ef54f7a910ed957af1dc0390acdeeb98e4909a78f7c181940c8e4fb59",
+      "bytes": 6096
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/public-order-token-preview/INTEGRITY-REPORT.json",
+      "sha256": "b5fbd9120c318fccff31246fdddda43e3de471b91f5bc5ac41ed8d64554cec93",
+      "bytes": 4035
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/public-order-token-preview/INTEGRITY-REPORT.md",
+      "sha256": "cfa79e0b8021ea9a1e28d034bd4b0d38b319b48b108cdeb74cbfb216a2dca313",
+      "bytes": 1612
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/public-order-token-preview/ONE-ROUTE.diff",
+      "sha256": "b0471e2d7b39ecd3314d76aef5465576fd2a0cefde6dc2d152cb70031c6a78d9",
+      "bytes": 490
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/public-order-token-preview/ORDER-ROUTES-ORIGINAL.txt",
+      "sha256": "cab1f734e9b34b2585d3f8777b42325ba934412a7d6a639925dad61b796664bd",
+      "bytes": 2555
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/public-order-token-preview/ORDER-ROUTES-PROPOSED.txt",
+      "sha256": "2a448f501d35157b9c4a11ac3c0a2a21ed476aeb6f8d4d7dceb8064457223bdf",
+      "bytes": 2648
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/public-order-token-preview/PATCH-MANIFEST.json",
+      "sha256": "e6aeb0e663e436ab111d26a6b6bb4ad298a66ded3a34aa4d24bd6901752df0f9",
+      "bytes": 2198
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/public-order-token-preview/PREVIEW-SECURITY.tap",
+      "sha256": "855005da177ec84eed8058590e87c208ad446665aa6944b957de8809695f5302",
+      "bytes": 2086
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/public-order-token-preview/REVIEW.md",
+      "sha256": "26443f25f8c8ec0ed1e28a73793f324f12bcba7f8b952a270b5ab58f7d8c0f04",
+      "bytes": 6452
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/public-order-token-preview/ROLLBACK.md",
+      "sha256": "8dbf4c6de7794fa26dfb903a7bbca0dd5cd09834c1cecde19b11b39e1d8f9a2c",
+      "bytes": 1746
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/public-order-token-preview/STAGE2.tap",
+      "sha256": "b62033bdb5699c1fa5f70fcd526611af9737cf9da65b132b168d622a79977c9c",
+      "bytes": 5404
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/public-order-token-preview/SYNTAX.json",
+      "sha256": "60cb0c829b2e7805154f1fb4518025ae08fd9d57144b57931f7bdb324acff3be",
+      "bytes": 168
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/public-order-token-preview/TEST-PLAN-AND-RESULTS.md",
+      "sha256": "7807c236c2d4e6070306ebc50058e9d7de800c13113bff3455cf90ad8b28408a",
+      "bytes": 4297
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/public-order-token-preview/preview-security.cjs",
+      "sha256": "b7a8a21572f5920f52fe84859f08e9042cd0392ed6893bcb077d9e6ad597cb59",
+      "bytes": 6989
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/public-order-token-preview/scanner-security/FLAG-RESULTS.json",
+      "sha256": "757754a2e3df3a045145a6ff48c41fcb2b1eb00225dc6dc9ca3a999a43fff108",
+      "bytes": 3823
+    },
+    {
+      "path": "docs/multi-scan/stage11-b/public-order-token-preview/scanner-security/SECURITY.tap",
+      "sha256": "746a95fa9912572bd1076b2d47fbc87f319987a291e0e2de940d8c454c3663e3",
+      "bytes": 4589
+    }
+  ],
+  "self_excluded": "docs/multi-scan/stage11-b/public-order-token-preview/INVENTORY.json"
+}

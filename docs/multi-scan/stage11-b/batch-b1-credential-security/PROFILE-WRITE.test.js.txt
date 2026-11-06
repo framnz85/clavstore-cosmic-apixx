@@ -1,0 +1,40 @@
+'use strict';
+// Proposed isolated fixtures for a future approved core. No models, network or real secrets.
+const {test}=require('node:test');
+const assert=require('node:assert/strict');
+const jwt=require('jsonwebtoken');
+const {createSelfProfileEndpoint,ISSUER,AUDIENCE,PURPOSE}=require('../../../services/account-security/profile-write');
+const key='synthetic-profile-key-for-isolated-tests-only-123456';
+const userId='1'.repeat(24), storeId='2'.repeat(24), packageId='3'.repeat(24), now=1800000000;
+function fixture() {
+  const calls={reads:0,writes:[]};
+  const state={userId,storeId,packageId,active:true,deleted:false,storeActive:true,packageActive:true,
+    role:'customer',credentialEpoch:2,authorizationEpoch:3,profileVersion:4};
+  const options={key,forbiddenKeys:['synthetic-other-legacy-key'],clock:()=>now,
+    resolveCurrent:async()=>{calls.reads++;return {...state};},
+    commitProfile:async data=>{calls.writes.push(data);return {matchedCount:1};}};
+  const sign=(changes={},otherKey=key)=>{
+    const payload={iss:ISSUER,aud:AUDIENCE,purpose:PURPOSE,sub:userId,storeId,packageId,credentialEpoch:2,authorizationEpoch:3,iat:now-1,exp:now+299,...changes};
+    for(const k of Object.keys(payload))if(payload[k]===undefined)delete payload[k];
+    return jwt.sign(payload,otherKey,{algorithm:'HS256'});
+  };
+  async function run({body={name:'Valid profile'},headers={},token=sign()}={}) {
+    let status=200,value;const res={set(){return this;},status(n){status=n;return this;},json(v){value=v;return this;}};
+    await createSelfProfileEndpoint(options)({headers:{authtoken:token,estoreid:storeId,...headers},body},res);
+    return {status,body:value};
+  }
+  return {calls,state,options,sign,run};
+}
+test('forged JWT rejected without current-state read or write',async()=>{const f=fixture();assert.equal((await f.run({token:f.sign({},'synthetic-wrong-signature-key')})).status,401);assert.equal(f.calls.reads,0);assert.equal(f.calls.writes.length,0);});
+test('expired and missing-exp tokens rejected',async()=>{for(const exp of [now-1,undefined]){const f=fixture();assert.equal((await f.run({token:f.sign({exp})})).status,401);assert.equal(f.calls.writes.length,0);}});
+test('password/hash fields cannot be written even by self',async()=>{for(const field of ['password','showPass','passwordHash','verifyCode']){const f=fixture();assert.equal((await f.run({body:{[field]:'injected'}})).status,400);assert.equal(f.calls.writes.length,0);}});
+test('cross-tenant header and current-state mismatch denied',async()=>{let f=fixture();assert.equal((await f.run({headers:{estoreid:'4'.repeat(24)}})).status,403);assert.equal(f.calls.reads,0);f=fixture();f.state.storeId='4'.repeat(24);assert.equal((await f.run()).status,403);assert.equal(f.calls.writes.length,0);});
+test('cashier cannot elevate role or privileged flags',async()=>{for(const field of ['role','superAdmin','wholesale','changeStore']){const f=fixture();f.state.role='cashier';assert.equal((await f.run({body:{[field]:'admin'}})).status,400);assert.equal(f.calls.writes.length,0);}});
+test('ownership and login identifiers cannot be changed',async()=>{for(const field of ['_id','email','estoreid','estoreids','resellid','refid']){const f=fixture();assert.equal((await f.run({body:{[field]:'injected'}})).status,400);assert.equal(f.calls.writes.length,0);}});
+test('operator/dotted/prototype and array injection rejected',async()=>{for(const body of [{$set:{password:'x'}},{'address.password':'x'},JSON.parse('{"__proto__":{"role":"admin"}}'),{constructor:'x'},[],{}]){const f=fixture();assert.equal((await f.run({body})).status,400);assert.equal(f.calls.writes.length,0);}});
+test('import-shaped rows never accepted by self-profile',async()=>{const f=fixture();assert.equal((await f.run({body:{users:[{password:'x',role:'admin'}]}})).status,400);assert.equal(f.calls.writes.length,0);});
+test('legitimate current owner profile writes only safe $set contract',async()=>{const f=fixture();assert.equal((await f.run({body:{name:'Updated',phone:'09123456789'}})).status,200);assert.equal(f.calls.writes.length,1);assert.deepEqual(f.calls.writes[0],{userId,storeId,packageId,credentialEpoch:2,authorizationEpoch:3,profileVersion:4,tokenExpiresAt:now+299,patch:{name:'Updated',phone:'09123456789'}});});
+test('signed different subject cannot write target account',async()=>{const f=fixture();assert.equal((await f.run({token:f.sign({sub:'4'.repeat(24)})})).status,403);assert.equal(f.calls.writes.length,0);});
+test('revoked credentials/membership and unknown inactive state denied',async()=>{for(const changes of [{credentialEpoch:9},{authorizationEpoch:9},{deleted:true},{active:false},{storeActive:false},{packageActive:false},{role:'unknown'},{profileVersion:undefined}]){const f=fixture();Object.assign(f.state,changes);assert.equal((await f.run()).status,403);assert.equal(f.calls.writes.length,0);}});
+test('atomic conflict returns 409 and sanitized unavailable failures return 503',async()=>{let f=fixture();f.options.commitProfile=async()=>({matchedCount:0});assert.equal((await f.run()).status,409);f=fixture();f.options.resolveCurrent=async()=>{throw Error('private internal secret');};const r=await f.run();assert.equal(r.status,503);assert.doesNotMatch(JSON.stringify(r.body),/secret/);});
+test('missing composition or legacy-key reuse fails closed',async()=>{let f=fixture();f.options.forbiddenKeys=[key];assert.equal((await f.run()).status,503);assert.equal(f.calls.reads,0);f=fixture();delete f.options.resolveCurrent;assert.equal((await f.run()).status,503);assert.equal(f.calls.writes.length,0);});

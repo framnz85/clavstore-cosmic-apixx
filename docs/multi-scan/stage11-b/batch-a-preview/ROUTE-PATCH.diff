@@ -1,0 +1,18 @@
+--- a/routes/multi-scan.js
++++ b/routes/multi-scan.js
+@@ -2,6 +2,7 @@
+ const express = require('express');
+ const { config, gate, wrap, capacity, errorHandler, ScanError } = require('../services/multi-scan/contracts');
+ const { createUpload } = require('../services/multi-scan/upload');
++const { createSessionEndpoint } = require('../services/multi-scan/stage11/session-factory');
+ function createRouter(options = {}) {
+   const cfg = options.config || config();
+   const adapters = options.adapters || {};
+@@ -16,6 +17,7 @@
+     if (req.body && Buffer.byteLength(JSON.stringify(req.body)) > 32768) return next(new ScanError(413,'JSON_TOO_LARGE','Multi-scan JSON body exceeds limit'));
+     next();
+   };
++  router.post(prefix+'/session', createSessionEndpoint({ mainEnabled: cfg.enabled, getSources: options.getSessionSources }));
+   router.use(prefix, gate(cfg), express.json({limit:'32kb'}), jsonLimit, (req,res,next) => { req.multiScanRoute = prefix + req.path; next(); }, wrap(auth));
+   router.get(prefix+'/status', wrap(c.status));
+   router.get(prefix+'/index/status', admin, wrap(c.indexStatus));

@@ -1,0 +1,32 @@
+[
+  {
+    "file": "01-GENERIC-WRITER-CONTAINMENT.diff",
+    "sha256": "dbf25f9ad995c2a0b36d962c3c98eede1679a415f5feba82387a457fa5af6236",
+    "numstat": "3\t3\troutes/user.js\n1\t1\troutes/appuser.js\n"
+  },
+  {
+    "file": "02-RELATED-AUTHORITY-CONTAINMENT.diff",
+    "sha256": "54bfa3536c7a8ac85bec688f5c7920612dffe5676a14f3e4b9e1e3268ae7fb51",
+    "numstat": "4\t9\troutes/user.js\n6\t21\troutes/estore.js\n1\t1\troutes/order.js\n1\t6\troutes/withdraw.js\n"
+  },
+  {
+    "file": "03-REMOVE-IMPLICIT-MEMBERSHIP-WRITE.diff",
+    "sha256": "e6b8e59a779ac19360def4d8a10f484683e3f1a1400636a880849250a32a00f4",
+    "numstat": "1\t24\tcontrollers/user.js\n"
+  },
+  {
+    "file": "04-STOP-SHARED-PASSWORD-PROVISIONING.diff",
+    "sha256": "2fd652373ace02ee5f266fc1cb1574ffe771397d9aa9c0b2dd100ff3adff8afd",
+    "numstat": "4\t18\tcontrollers/order.js\n6\t20\tcontrollers/app/order.js\n"
+  },
+  {
+    "file": "05-PAYMENT-CREDENTIAL-CONTAINMENT.diff",
+    "sha256": "0faac8b1260697449ad127453683679216bdc649b9849b9877b16b0904542c30",
+    "numstat": "3\t13\troutes/payment.js\n"
+  },
+  {
+    "file": "06-FUTURE-SELF-PROFILE-CORE.diff",
+    "sha256": "6f9f64c82dd3b95d7cc5211a84f2ff5116466aa8c8c9dbc8ee28881e4224ddd0",
+    "numstat": "72\t0\tservices/account-security/profile-write.js\n40\t0\ttests/multi-scan/stage11/profile-write.test.js\n"
+  }
+]

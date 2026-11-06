@@ -1,0 +1,264 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:clavstore:stage9:grocery-dataset",
+  "title": "Real grocery validation manifest",
+  "description": "Schema only. No photographs or ground-truth labels are supplied. dataset.js additionally enforces ownership scope, paths, bounds, exact counts and leakage checks.",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "kind": {
+      "const": "real-grocery-photographs"
+    },
+    "datasetId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]{1,64}$"
+    },
+    "tenant": {
+      "type": "object",
+      "properties": {
+        "storeId": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{24}$"
+        },
+        "packageId": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{24}$"
+        }
+      },
+      "required": [
+        "storeId",
+        "packageId"
+      ]
+    },
+    "products": {
+      "type": "array",
+      "maxItems": 5000,
+      "items": {
+        "type": "object",
+        "properties": {
+          "productId": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{24}$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "variantFamily": {
+            "type": "string"
+          },
+          "size": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "productId",
+          "title",
+          "variantFamily",
+          "size"
+        ]
+      }
+    },
+    "references": {
+      "type": "array",
+      "maxItems": 10000,
+      "items": {
+        "allOf": [
+          {
+            "$ref": "#/$defs/image"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "productId": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{24}$"
+              }
+            },
+            "required": [
+              "productId"
+            ]
+          }
+        ]
+      }
+    },
+    "scenes": {
+      "type": "array",
+      "maxItems": 10000,
+      "items": {
+        "allOf": [
+          {
+            "$ref": "#/$defs/image"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "annotation": {
+                "type": "object",
+                "properties": {
+                  "source": {
+                    "const": "human"
+                  },
+                  "reviewed": {
+                    "const": true
+                  },
+                  "protocol": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "source",
+                  "reviewed",
+                  "protocol"
+                ]
+              },
+              "conditions": {
+                "type": "array",
+                "items": {
+                  "enum": [
+                    "occlusion",
+                    "rotation",
+                    "poor-lighting",
+                    "similar-variant",
+                    "different-size",
+                    "normal"
+                  ]
+                }
+              },
+              "objects": {
+                "type": "array",
+                "maxItems": 100,
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "objectId": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "productId": {
+                      "anyOf": [
+                        {
+                          "type": "string",
+                          "pattern": "^[a-f0-9]{24}$"
+                        },
+                        {
+                          "type": "null"
+                        }
+                      ]
+                    },
+                    "box": {
+                      "type": "array",
+                      "minItems": 4,
+                      "maxItems": 4,
+                      "items": {
+                        "type": "number"
+                      }
+                    },
+                    "visibleFraction": {
+                      "type": "number",
+                      "exclusiveMinimum": 0,
+                      "maximum": 1
+                    }
+                  },
+                  "required": [
+                    "objectId",
+                    "productId",
+                    "box",
+                    "visibleFraction"
+                  ]
+                }
+              },
+              "quantities": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              }
+            },
+            "required": [
+              "annotation",
+              "conditions",
+              "objects",
+              "quantities"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "kind",
+    "datasetId",
+    "tenant",
+    "products",
+    "references",
+    "scenes"
+  ],
+  "$defs": {
+    "image": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{1,64}$"
+        },
+        "path": {
+          "type": "string",
+          "maxLength": 256
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "width": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "captureSession": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rights": {
+          "type": "object",
+          "properties": {
+            "basis": {
+              "enum": [
+                "owned",
+                "permission",
+                "licensed",
+                "public-domain"
+              ]
+            },
+            "evidence": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2048
+            }
+          },
+          "required": [
+            "basis",
+            "evidence"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "path",
+        "sha256",
+        "width",
+        "height",
+        "captureSession",
+        "rights"
+      ]
+    }
+  }
+}

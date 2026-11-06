@@ -1,0 +1,350 @@
+{
+  "boundary": "No full /tmp baseline; matching top-level test paths observed with mtime >= project baseline creation. Existing historical tests create isolated temporary fixture indexes/images and Jest uses /tmp caches; no deletion performed. These are not production index rebuilds.",
+  "observed": [
+    {
+      "path": "/tmp/clav-stage4-index-qX7JTb",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage5-index-nyNLIH",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage5-index-Xru19l",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage9-photo-link-R1KpH4",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage4-index-9mTm4P",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage4-index-sODwlQ",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage4-index-UiHPAV",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage4-outside-ovBpSJ",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage5-index-T1bNlb",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage9-photo-corrupt-gP8Y1H",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage4-index-XX7Gsq",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage4-index-1kM2TS",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage9-corrupt-p6YeOw",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage4-index-23IFxb",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage5-index-rBJVCA",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage5-index-4LDLdG",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage4-index-uCpP19",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage4-index-mfVQl1",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage4-index-e3SsLo",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage5-index-OwXdc4",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage5-index-MteFBH",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage5-index-G7smud",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage5-index-PhBJVV",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage6-artifact-tub56e",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage5-index-k4zkzj",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage5-index-SqbMO0",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage5-index-wH51PO",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage4-index-CESFyq",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage5-index-jzWuOw",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage4-index-G8zZ5C",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage5-index-hWFG2X",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage4-index-mZs65P",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage4-index-YIBiJZ",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage5-index-uvat7A",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage9-photo-unit-LFizh7",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage5-index-iF1mHU",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage5-index-9m2ntQ",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage4-index-vhCSL2",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage5-index-Ew8kbe",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage4-index-MaI3t2",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage5-index-NrJ7FY",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage5-artifact-6wdwZr",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage5-index-veKjPT",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage4-artifact-8jHZrN",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage4-index-vIxNvZ",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage5-index-mbu5i2",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage5-index-vfz1v7",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage5-index-HfRndI",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage9-photo-outside-FBOUMp",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage4-index-mIOAAs",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage4-index-zcZLaH",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage4-index-epMl8j",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage3-artifact-64HIx6",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage5-outside-tX4WGv",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage4-index-RjBNZa",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage4-index-84gucP",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage4-index-RDtwgw",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage4-index-x2GeUC",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage5-index-szwdCb",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage5-index-uaxnvH",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage4-index-ipgHef",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage5-index-fOnLD8",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage5-index-3h8ctR",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage4-index-1lC4r5",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage4-index-hS425t",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage4-index-PU4YJY",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage5-index-A3NFgx",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage5-index-42fWKB",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    },
+    {
+      "path": "/tmp/clav-stage4-index-Kqz7Me",
+      "kind": "directory",
+      "classification": "test fixture/cache under /tmp; no protected project path"
+    }
+  ]
+}

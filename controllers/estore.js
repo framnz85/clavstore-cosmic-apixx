@@ -1,3 +1,4 @@
+const crypto = require("crypto");
 const ObjectId = require("mongoose").Types.ObjectId;
 const slugify = require("slugify");
 
@@ -336,6 +337,37 @@ exports.updateEstore = async (req, res) => {
 };
 
 exports.createEstore = async (req, res) => {
+  const configuredKey = process.env.ESTORE_CREATE_PRIVATE_KEY;
+  if (!configuredKey) {
+    return res.status(503).json({ error: "Store creation encryption is not configured." });
+  }
+  const code = req.get("x-estore-create-code");
+  if (!code || code.length > 1024 || !/^[A-Za-z0-9+/]+={0,2}$/.test(code)) {
+    return res.status(403).json({ error: "Missing or invalid store creation code." });
+  }
+  let key;
+  try {
+    key = crypto.createPrivateKey({
+      key: Buffer.from(configuredKey, "base64"), format: "der", type: "pkcs8",
+    });
+  } catch (_) {
+    return res.status(503).json({ error: "Store creation encryption is not configured correctly." });
+  }
+  try {
+    const payload = JSON.parse(crypto.privateDecrypt({
+      key, padding: crypto.constants.RSA_PKCS1_OAEP_PADDING, oaepHash: "sha256",
+    }, Buffer.from(code, "base64")).toString("utf8"));
+    const digest = crypto.createHash("sha256").update(JSON.stringify(req.body)).digest("hex");
+    const age = Date.now() - payload.t;
+    if (payload.v !== 1 || !Number.isSafeInteger(payload.t) || age < -30000 || age > 120000 ||
+        payload.r !== String(req.params.resellid) || payload.h !== digest) {
+      throw new Error("Invalid code");
+    }
+    // The decrypted code matches; continue with store creation.
+  } catch (_) {
+    return res.status(403).json({ error: "Missing, expired, or invalid store creation code." });
+  }
+
   const resellid = req.params.resellid;
   const refid = req.body.refid;
   const upPackage = req.body.upPackage;

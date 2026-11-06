@@ -1,0 +1,590 @@
+[
+  {
+    "project": "main",
+    "file": "controllers/app/order.js",
+    "line": 278,
+    "function": "saveOrder",
+    "expression": "new User(",
+    "inventory_ids": [
+      "C21"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/app/order.js",
+    "line": 372,
+    "function": "saveOrder",
+    "expression": "Estore.findOneAndUpdate(",
+    "inventory_ids": [
+      "C21"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/app/order.js",
+    "line": 415,
+    "function": "submitEditOrder",
+    "expression": "Estore.findOneAndUpdate(",
+    "inventory_ids": []
+  },
+  {
+    "project": "main",
+    "file": "controllers/app/order.js",
+    "line": 480,
+    "function": "sendOrder",
+    "expression": "new User(",
+    "inventory_ids": [
+      "C22"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/app/order.js",
+    "line": 550,
+    "function": "sendOrder",
+    "expression": "Estore.findByIdAndUpdate(",
+    "inventory_ids": [
+      "C22"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/app/order.js",
+    "line": 591,
+    "function": "updateOrder",
+    "expression": "Estore.findOneAndUpdate(",
+    "inventory_ids": []
+  },
+  {
+    "project": "main",
+    "file": "controllers/app/order.js",
+    "line": 619,
+    "function": "deleteOrder",
+    "expression": "Estore.findOneAndUpdate(",
+    "inventory_ids": []
+  },
+  {
+    "project": "main",
+    "file": "controllers/app/user.js",
+    "line": 115,
+    "function": "loginUser",
+    "expression": "jwt.sign(",
+    "inventory_ids": [
+      "C25"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/app/user.js",
+    "line": 160,
+    "function": "updateUser",
+    "expression": "User.findOneAndUpdate(",
+    "inventory_ids": [
+      "C03"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/auth.js",
+    "line": 104,
+    "function": "loginUser",
+    "expression": "jwt.sign(",
+    "inventory_ids": [
+      "C23"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/auth.js",
+    "line": 129,
+    "function": "loginUserByMd5",
+    "expression": "jwt.sign(",
+    "inventory_ids": [
+      "C24"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/billing.js",
+    "line": 95,
+    "function": "getHostingBill",
+    "expression": "new Billing(",
+    "inventory_ids": [
+      "C35"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/billing.js",
+    "line": 157,
+    "function": "addBilling",
+    "expression": "new Billing(",
+    "inventory_ids": [
+      "C36"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/billing.js",
+    "line": 184,
+    "function": "updateBilling",
+    "expression": "Billing.findOneAndUpdate(",
+    "inventory_ids": [
+      "C37"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/estore.js",
+    "line": 318,
+    "function": "updateEstore",
+    "expression": "Estore.findByIdAndUpdate(",
+    "inventory_ids": [
+      "C13"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/estore.js",
+    "line": 328,
+    "function": "updateEstore",
+    "expression": "Estore.findByIdAndUpdate(",
+    "inventory_ids": [
+      "C13"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/estore.js",
+    "line": 352,
+    "function": "createEstore",
+    "expression": "new Estore(",
+    "inventory_ids": [
+      "C15"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/estore.js",
+    "line": 405,
+    "function": "createEstore",
+    "expression": "Estore.findOneAndUpdate(",
+    "inventory_ids": [
+      "C15"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/estore.js",
+    "line": 425,
+    "function": "createEstore",
+    "expression": "Estore.findOneAndUpdate(",
+    "inventory_ids": [
+      "C15"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/estore.js",
+    "line": 464,
+    "function": "addNewEstore",
+    "expression": "new Estore(",
+    "inventory_ids": [
+      "C16"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/estore.js",
+    "line": 504,
+    "function": "copyingEstore",
+    "expression": "new Estore(",
+    "inventory_ids": [
+      "C17"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/estore.js",
+    "line": 642,
+    "function": "updateEstoreCounters",
+    "expression": "Estore.findByIdAndUpdate(",
+    "inventory_ids": [
+      "C33"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/estore.js",
+    "line": 666,
+    "function": "updateEstoresDefault",
+    "expression": "Estore.updateMany(",
+    "inventory_ids": [
+      "C32"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/estore.js",
+    "line": 667,
+    "function": "updateEstoresDefault",
+    "expression": "Estore.findByIdAndUpdate(",
+    "inventory_ids": [
+      "C32"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/estore.js",
+    "line": 686,
+    "function": "updateEstoresVissible",
+    "expression": "Estore.findByIdAndUpdate(",
+    "inventory_ids": [
+      "C14"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/estore.js",
+    "line": 703,
+    "function": "deletingEstore",
+    "expression": "Estore.findOneAndDelete(",
+    "inventory_ids": [
+      "C18"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/estore.js",
+    "line": 711,
+    "function": "deletingEstore",
+    "expression": "Payment.deleteMany(",
+    "inventory_ids": [
+      "C18"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/estore.js",
+    "line": 715,
+    "function": "deletingEstore",
+    "expression": "User.deleteMany(",
+    "inventory_ids": [
+      "C18"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/estore.js",
+    "line": 723,
+    "function": "deletingEstore",
+    "expression": "User.updateMany(",
+    "inventory_ids": [
+      "C18"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/joborder.js",
+    "line": 216,
+    "function": "createJobOrder",
+    "expression": "Estore.findByIdAndUpdate(",
+    "inventory_ids": []
+  },
+  {
+    "project": "main",
+    "file": "controllers/order.js",
+    "line": 124,
+    "function": "userAppOrder",
+    "expression": "jwt.sign(",
+    "inventory_ids": [
+      "C26"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/order.js",
+    "line": 1201,
+    "function": "saveCartOrder",
+    "expression": "new User(",
+    "inventory_ids": [
+      "C19"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/order.js",
+    "line": 1384,
+    "function": "saveCartPurchase",
+    "expression": "new User(",
+    "inventory_ids": [
+      "C20"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/payment.js",
+    "line": 78,
+    "function": "addPayment",
+    "expression": "new Payment(",
+    "inventory_ids": [
+      "C28"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/payment.js",
+    "line": 90,
+    "function": "updatePayment",
+    "expression": "Payment.findOneAndUpdate(",
+    "inventory_ids": [
+      "C29"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/payment.js",
+    "line": 110,
+    "function": "removePayment",
+    "expression": "Payment.findOneAndDelete(",
+    "inventory_ids": [
+      "C30"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/superBilling.js",
+    "line": 96,
+    "function": "getHostingSuperBill",
+    "expression": "new Billing(",
+    "inventory_ids": [
+      "C38"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/user.js",
+    "line": 134,
+    "function": "getUserDetails",
+    "expression": "User.updateOne(",
+    "inventory_ids": [
+      "C06"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/user.js",
+    "line": 269,
+    "function": "getUserDetails",
+    "expression": "User.updateOne(",
+    "inventory_ids": [
+      "C06"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/user.js",
+    "line": 769,
+    "function": "createNewUser",
+    "expression": "new User(",
+    "inventory_ids": [
+      "C05"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/user.js",
+    "line": 793,
+    "function": "createNewUser",
+    "expression": "jwt.sign(",
+    "inventory_ids": [
+      "C05"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/user.js",
+    "line": 867,
+    "function": "addToWishlist",
+    "expression": "User.findOneAndUpdate(",
+    "inventory_ids": [
+      "C34"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/user.js",
+    "line": 1000,
+    "function": "updateUser",
+    "expression": "User.findOneAndUpdate(",
+    "inventory_ids": [
+      "C01"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/user.js",
+    "line": 1034,
+    "function": "updateCustomer",
+    "expression": "User.findOneAndUpdate(",
+    "inventory_ids": [
+      "C02"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/user.js",
+    "line": 1038,
+    "function": "updateCustomer",
+    "expression": "User.findOneAndUpdate(",
+    "inventory_ids": [
+      "C02"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/user.js",
+    "line": 1062,
+    "function": "verifyUserEmail",
+    "expression": "User.findOneAndUpdate(",
+    "inventory_ids": [
+      "C07"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/user.js",
+    "line": 1078,
+    "function": "verifyUserEmail",
+    "expression": "Estore.findOneAndUpdate(",
+    "inventory_ids": [
+      "C07"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/user.js",
+    "line": 1106,
+    "function": "changePassword",
+    "expression": "User.findOneAndUpdate(",
+    "inventory_ids": [
+      "C08"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/user.js",
+    "line": 1134,
+    "function": "resetPassword",
+    "expression": "User.findOneAndUpdate(",
+    "inventory_ids": [
+      "C09"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/user.js",
+    "line": 1160,
+    "function": "forgotPassword",
+    "expression": "User.findOneAndUpdate(",
+    "inventory_ids": [
+      "C10"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/user.js",
+    "line": 1172,
+    "function": "forgotPassword",
+    "expression": "User.findOneAndUpdate(",
+    "inventory_ids": [
+      "C10"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/user.js",
+    "line": 1185,
+    "function": "forgotPassword",
+    "expression": "User.findOneAndUpdate(",
+    "inventory_ids": [
+      "C10"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/user.js",
+    "line": 1213,
+    "function": "deleteAccountRequest",
+    "expression": "User.findOneAndUpdate(",
+    "inventory_ids": [
+      "C11"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/user.js",
+    "line": 1238,
+    "function": "importUsers",
+    "expression": "User.findOneAndUpdate(",
+    "inventory_ids": [
+      "C04"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/user.js",
+    "line": 1252,
+    "function": "importUsers",
+    "expression": "User.findOneAndUpdate(",
+    "inventory_ids": [
+      "C04"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/user.js",
+    "line": 1261,
+    "function": "importUsers",
+    "expression": "new User(",
+    "inventory_ids": [
+      "C04"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/user.js",
+    "line": 1283,
+    "function": "deleteUser",
+    "expression": "User.findOneAndDelete(",
+    "inventory_ids": [
+      "C12"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "controllers/withdraw.js",
+    "line": 70,
+    "function": "getUserToAffiliate",
+    "expression": "User.findOneAndUpdate(",
+    "inventory_ids": [
+      "C27"
+    ]
+  },
+  {
+    "project": "main",
+    "file": "services/multi-scan/stage11/session-service.js",
+    "line": 29,
+    "function": "(helper/module)",
+    "expression": "jwt.sign(",
+    "inventory_ids": []
+  },
+  {
+    "project": "main",
+    "file": "services/multi-scan/stage9/fixture.js",
+    "line": 23,
+    "function": "(helper/module)",
+    "expression": "jwt.sign(",
+    "inventory_ids": []
+  }
+]

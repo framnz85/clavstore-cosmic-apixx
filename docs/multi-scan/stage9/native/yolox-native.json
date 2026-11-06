@@ -1,0 +1,275 @@
+{
+  "kind": "native-offline-pipeline-benchmark",
+  "mode": "yolox",
+  "count": 1,
+  "synthetic": true,
+  "realGroceryAccuracyMeasured": false,
+  "hardware": {
+    "cpu": "Intel(R) Core(TM) i9-9900 CPU @ 3.10GHz",
+    "logicalCpus": 16,
+    "totalMemoryBytes": 25165709312,
+    "platform": "linux",
+    "arch": "x64",
+    "node": "v18.20.4"
+  },
+  "baselineRssBytes": 52723712,
+  "setupMs": 98.90944200009108,
+  "models": {
+    "siglip2": {
+      "modelId": "google/siglip2-base-patch16-224",
+      "modelRevision": "ba1f3b0843f24bc5417d38e19c37b287d719b2f4",
+      "modelSha256": "c0573e3f4140c3a7c4e9cc5912bd6b26a033b46a6a8e8af26cbea262b163bcad",
+      "preprocessingVersion": "siglip2-rgb224-pillow-bilinear-22bit-v1",
+      "preprocessorSha256": "9b36b57ebaf20f09bf4c22100ccc21877ea6bfe5aead0c00c59f8af8ccefacfc",
+      "dimension": 768
+    },
+    "dinov2": {
+      "modelId": "facebook/dinov2-small",
+      "modelRevision": "c2bb04a51fab207c420665f1946016107bffc701",
+      "modelSha256": "83141175ec78b4ff9a2bb58a4c7c264ba0054d1c2e122e5a8114b79a8d4179ea",
+      "preprocessingVersion": "dinov2-rgb-short256-pillow-bicubic-crop224-imagenet-cls0-v1",
+      "preprocessorSha256": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828",
+      "dimension": 384
+    },
+    "ocr": {
+      "id": "PaddlePaddle/PP-OCRv5-mobile-onnx",
+      "detRevision": "e6f4fa85f00e168c862bc462aebca69eef9b3d3d",
+      "detSha256": "a431985659dc921974177a95adcfbb90fd9e51989a5e04d70d0b75f597b6e61d",
+      "recRevision": "ed152b8b495f84de93cda5709d768548a9127622",
+      "recSha256": "da72dc72ca4dc220df0dfde68c1dedc31c58d3e76a25871122e5056227d50092",
+      "dictionarySha256": "14ccb8e120e701464bd3084acf3b398ffee767e515477ad27d3c80fd5996c180",
+      "preprocessingVersion": "ppocrv5-bgr-long960-stride128-linear-rec48-ctc-db-quad-v1",
+      "postprocessingVersion": "component8-hull-minrect-boxmean-unclip-miter-1.5-v1",
+      "configSha256": "05d0f85e52803797577bc50d9321a040c74276dbd63a8bad7940c6fe0cb2b75c"
+    }
+  },
+  "indexBuilds": {},
+  "threadsPerNativeModel": 2,
+  "photoBytes": 10775,
+  "samples": [
+    {
+      "phase": "cold-model-scan",
+      "count": 0,
+      "actualYoloxDetections": 0,
+      "timings": {
+        "detectionMs": 528.0865919999778,
+        "croppingMs": 1.200474999845028,
+        "controlledDecodeAndCropMs": 0,
+        "siglip2InferenceMs": 0,
+        "dinov2InferenceMs": 0,
+        "ocrMs": 0,
+        "retrievalMs": 0,
+        "rerankingMs": 0,
+        "modelInitializationMs": 470.9223419986665,
+        "catalogValidationMs": 0.18941199965775013,
+        "totalMs": 532.734681000933,
+        "simulatedAggregationMs": 0.08380600064992905,
+        "finalFreshReviewMs": 0.0013000015169382095,
+        "totalThroughSimulatedReviewMs": 532.8197870030999
+      },
+      "cpu": {
+        "user": 221400,
+        "system": 44702
+      },
+      "memory": {
+        "rssBytes": 189485056,
+        "processLifetimePeakRssBytes": 189485056
+      },
+      "unknownDetections": 0
+    },
+    {
+      "phase": "warm-scan",
+      "count": 0,
+      "actualYoloxDetections": 0,
+      "timings": {
+        "detectionMs": 44.042334999889135,
+        "croppingMs": 1.1302700005471706,
+        "controlledDecodeAndCropMs": 0,
+        "siglip2InferenceMs": 0,
+        "dinov2InferenceMs": 0,
+        "ocrMs": 0,
+        "retrievalMs": 0,
+        "rerankingMs": 0,
+        "modelInitializationMs": 0.004900999367237091,
+        "catalogValidationMs": 0.07210400141775608,
+        "totalMs": 45.780942998826504,
+        "simulatedAggregationMs": 0.005799999460577965,
+        "finalFreshReviewMs": 0.001199999824166298,
+        "totalThroughSimulatedReviewMs": 45.78794299811125
+      },
+      "cpu": {
+        "user": 82888,
+        "system": 7497
+      },
+      "memory": {
+        "rssBytes": 205082624,
+        "processLifetimePeakRssBytes": 205082624
+      },
+      "unknownDetections": 0
+    },
+    {
+      "phase": "warm-scan",
+      "count": 0,
+      "actualYoloxDetections": 0,
+      "timings": {
+        "detectionMs": 49.858996000140905,
+        "croppingMs": 1.0451649986207485,
+        "controlledDecodeAndCropMs": 0,
+        "siglip2InferenceMs": 0,
+        "dinov2InferenceMs": 0,
+        "ocrMs": 0,
+        "retrievalMs": 0,
+        "rerankingMs": 0,
+        "modelInitializationMs": 0.0045010000467300415,
+        "catalogValidationMs": 0.07160400040447712,
+        "totalMs": 51.259682999923825,
+        "simulatedAggregationMs": 0.007399998605251312,
+        "finalFreshReviewMs": 0.0011010002344846725,
+        "totalThroughSimulatedReviewMs": 51.26818399876356
+      },
+      "cpu": {
+        "user": 99027,
+        "system": 0
+      },
+      "memory": {
+        "rssBytes": 208228352,
+        "processLifetimePeakRssBytes": 208228352
+      },
+      "unknownDetections": 0
+    }
+  ],
+  "example": {
+    "kind": "offline-stage9-review",
+    "review": {
+      "schemaVersion": 1,
+      "scanId": "f1c31b8b-510b-4400-90bc-1d940d7e09c8",
+      "requestId": "04539a7b-f186-4b02-8a87-78635fbc134d",
+      "tenant": {
+        "storeId": "111111111111111111111111",
+        "packageId": "222222222222222222222222"
+      },
+      "detections": [],
+      "resolutionFingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "priceAuthority": "current_main_catalog",
+      "reviewRequired": true,
+      "confirmed": false,
+      "cartMutation": false,
+      "orderPersisted": false,
+      "reviewReasons": [
+        "NO_OBJECT_CROPS"
+      ]
+    },
+    "raw": {
+      "schemaVersion": 1,
+      "scanId": "f1c31b8b-510b-4400-90bc-1d940d7e09c8",
+      "tenant": {
+        "packageId": "222222222222222222222222",
+        "storeId": "111111111111111111111111"
+      },
+      "results": [],
+      "reviewRequired": true,
+      "acceptanceAllowed": false,
+      "reviewReasons": [
+        "NO_OBJECT_CROPS"
+      ],
+      "detector": {
+        "model": {
+          "id": "yolox-tiny-coco-0.1.1rc0",
+          "sha256": "427cc366d34e27ff7a03e2899b5e3671425c262ea2291f88bb942bc1cc70b0f7"
+        },
+        "quality": {
+          "invalidRows": 0,
+          "suppressed": 0,
+          "truncated": false,
+          "candidateLimitApplied": false,
+          "groceryValidated": false,
+          "scoreType": "objectness_times_class_score_not_calibrated_probability"
+        },
+        "image": {
+          "width": 640,
+          "height": 300,
+          "coordinateSpace": "exif-oriented-source-pixels"
+        }
+      },
+      "timings": {
+        "detection": {
+          "decodeMs": 8.575931999832392,
+          "preprocessMs": 6.7562199998646975,
+          "modelLoadMs": 470.9223419986665,
+          "inferenceMs": 39.49515200033784,
+          "postprocessMs": 1.02666400000453,
+          "cropMs": 1.200474999845028,
+          "totalMs": 528.0865919999778
+        },
+        "totalMs": 528.5742220003158
+      },
+      "memory": {
+        "rssBytes": 189485056,
+        "peakProcessRssBytes": 189485056
+      }
+    },
+    "timings": {
+      "inferenceMs": 528.7661330010742,
+      "catalogValidationMs": 0.18941199965775013,
+      "totalMs": 532.734681000933
+    },
+    "cpu": {
+      "user": 221400,
+      "system": 44702
+    },
+    "memory": {
+      "rssBytes": 189485056,
+      "processLifetimePeakRssBytes": 189485056
+    },
+    "featureActivated": false,
+    "cartMutation": false,
+    "orderPersisted": false,
+    "simulatedCashierAggregation": {
+      "items": [],
+      "unknown": [],
+      "reviewRequired": true,
+      "confirmed": false,
+      "cartMutation": false
+    },
+    "cartReadyReview": null,
+    "image": {
+      "width": 640,
+      "height": 300,
+      "coordinateSpace": "exif-oriented-source-pixels"
+    }
+  },
+  "initialization": {
+    "siglip": {
+      "residentBeforeFirstScan": false
+    },
+    "dino": {
+      "residentBeforeFirstScan": false
+    },
+    "ocr": {
+      "residentBeforeFirstScan": false
+    },
+    "yolox": {
+      "residentBeforeFirstScan": false
+    }
+  },
+  "concurrent": {
+    "secondRejected": true,
+    "code": "HARNESS_BUSY",
+    "waitingQueue": false
+  },
+  "duplicateSubmission": {
+    "rejected": true,
+    "code": "DUPLICATE_SUBMISSION"
+  },
+  "currentPriceAfterInference": 12.75,
+  "processCpuUsage": {
+    "user": 663146,
+    "system": 143625
+  },
+  "peakProcessRssBytes": 212946944,
+  "finalRssBytes": 212946944,
+  "totalWorkerMs": 1229.226529000327,
+  "databaseWrites": 0,
+  "cartMutation": false,
+  "featureActivated": false
+}
